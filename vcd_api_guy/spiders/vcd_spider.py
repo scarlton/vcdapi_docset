@@ -12,55 +12,36 @@ import urlparse
 
 domain = "https://www.vmware.com"
 base_path = "/support/vcd/doc/rest-api-doc-1.5-html/"
+doc_dir = "Documents"
 
 class VcdSpider(CrawlSpider):
     name = "vcd_api"
     allowed_domains = ["www.vmware.com"]
     start_urls = [
-        "https://www.vmware.com/support/vcd/doc/rest-api-doc-1.5-html/right-pane.html",
+        #"https://www.vmware.com/support/vcd/doc/rest-api-doc-1.5-html/right-pane.html",
         "https://www.vmware.com/support/vcd/doc/rest-api-doc-1.5-html/landing-operations.html",
-        "https://www.vmware.com/support/vcd/doc/rest-api-doc-1.5-html/landing-elements.html",
+        #"https://www.vmware.com/support/vcd/doc/rest-api-doc-1.5-html/landing-elements.html",
         "https://www.vmware.com/support/vcd/doc/rest-api-doc-1.5-html/landing-types.html"
     ]
 
     rules = (Rule (SgmlLinkExtractor(restrict_xpaths='//table[not(@class = "header-footer")]'), callback="parse_entry", follow= True),)
 
-    # def parse(self, response):
-    #     #write local file if doesn't exist
-    #     #filename = response.url.split("/")[-1]
-    #     #open(filename, 'wb').write(response.body)
-
-    #     #find entry links and create new requests
-    #     sel = Selector(response)
-    #     objects = sel.xpath('//table[not(@class = "header-footer")]//a')
-    #     reqs = []
-    #     for obj in objects:
-    #         req = Request(urlparse.urljoin(response.url, obj.xpath('@href')), callback=self.parse_guy)
-    #         if urlparse.urlparse(response.url)['path'].find('operations') != -1:
-    #             req.meta['item_type'] = 'Function'
-    #         elif urlparse.urlparse(response.url)['path'].find('elements') != -1:
-    #             req.meta['item_type'] = 'Element'
-    #         else:
-    #             req.meta['item_type'] = 'Type'
-    #         reqs.append()
-
-    #     return reqs
-
     def parse_entry(self, response):
-        #write local file if doesn't exist
+        # write local file if doesn't exist
         path = urlparse.urlsplit(response.url).path.replace(base_path, '')
 
         current_dir, current_file = os.path.split(path)
-        if not os.path.exists(current_dir):
-            os.makedirs(current_dir)
+        if not os.path.exists(os.path.join(doc_dir, current_dir)):
+            os.makedirs(os.path.join(doc_dir, current_dir))
 
-        open(path, 'wb').write(response.body)
+        open(os.path.join(doc_dir, path), 'wb').write(response.body)
 
         sel = Selector(response)
         item = VcdApiGuyItem()
-        item['name'] = sel.xpath("//h1/text()").extract()
+        item['name'] = sel.xpath("//h1/text()").extract()[0]
         item['path'] = path
 
+        # determine the item type based on the url we are scraping
         referrer = response.request.headers['Referer']
         if urlparse.urlparse(referrer).path.find('operations') != -1:
             item['item_type'] = 'Function'

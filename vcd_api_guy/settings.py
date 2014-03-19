@@ -18,3 +18,8 @@ NEWSPIDER_MODULE = 'vcd_api_guy.spiders'
 ITEM_PIPELINES = {
     'vcd_api_guy.pipelines.VcdApiGuyPipeline':10
 }
+
+
+
+DOCSET_DB_PATH = 'vCD_API.docset/Contents/Resources'
+DOCSET_DB_NAME = 'docSet.dsidx'

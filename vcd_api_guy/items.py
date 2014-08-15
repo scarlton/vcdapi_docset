@@ -11,3 +11,5 @@ class VcdApiGuyItem(Item):
     name = Field()
     item_type = Field()
     path = Field()
+    url = Field()
+    content = Field()

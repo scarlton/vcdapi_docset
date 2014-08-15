@@ -16,10 +16,15 @@ NEWSPIDER_MODULE = 'vcd_api_guy.spiders'
 
 
 ITEM_PIPELINES = {
-    'vcd_api_guy.pipelines.VcdApiGuyPipeline':10
+    'vcd_api_guy.pipelines.SqlitePipeline':10,
+    'vcd_api_guy.pipelines.ContentPipeline':20,
+    'vcd_api_guy.pipelines.FilePipeline':30
 }
 
 
+DOMAIN = "http://pubs.vmware.com"
+BASE_PATH = "/vcd-51/topic/com.vmware.vcloud.api.reference.doc_51/doc/"
+INITIAL_REFERRER = DOMAIN + BASE_PATH + "index.html"
 
 DOCSET_DB_PATH = 'vCD_API.docset/Contents/Resources'
 DOCSET_DB_NAME = 'docSet.dsidx'

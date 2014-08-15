@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleIdentifier</key>
-    <string>vcd_api</string>
+    <string>vcd</string>
     <key>CFBundleName</key>
-    <string>vCD REST API</string>
+    <string>VMware vCD</string>
     <key>DocSetPlatformFamily</key>
-    <string>vcd_api</string>
+    <string>vcd</string>
     <key>isDashDocset</key>
     <true/>
     <key>dashIndexFilePath</key>

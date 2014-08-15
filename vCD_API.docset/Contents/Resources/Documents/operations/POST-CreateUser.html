@@ -1,94 +1,28 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
-    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>vCloud REST API - POST-CreateUser</title>
-    <script src="../dynamic-content.js" type="text/javascript"></script>
-    <script language="JavaScript" src="../commonRes.js"> type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="../doc-style.css">
-    <link rel="stylesheet" type="text/css" href="../xml-style.css">
+    <style>
+h4.feedbackheading
+{
+color: #F90;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+font-weight: bold;
+line-height: 16px;
+padding: 10px 5px 10px 10px;
+margin-bottom:5px;
+border-bottom: 1px solid #A1C2E1;
+border-top: 1px solid #A1C2E1;
+}
+</style>
+<!-- -->
 </head>
-<body>
+<body onload="javascript:setupEventHandlers()">
+<div id="feedbackhover" class="feedbackhover"><a style="border:none;color:white;text-decoration:none" href="javascript:openFeedbackForm();">SEND US FEEDBACK!</a></div>
 
-<table class="header-footer" cellSpacing="0" id="top">
-    <tr>
-    <td></td>
-                    <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td><a href="#examples">Examples</a></td>
-                </tr>
-    <tr>
-            <td>
-                    <a href="../right-pane.html">Home</a><br>
-            <a href="../index.html">Frames</a>
-                </td>
-            <td>
-                    <dl>
-            <dt>User</dt>
-            <dd style="margin-left: 0px">
-                        <a href="../landing-user_operations.html">Operations</a>
-                        <a href="../landing-user_elements.html">Elements</a>
-                        <a href="../landing-user_types.html">Types</a>
-                        </dd>
-            </dl>
-                </td>
-            <td>
-                    <dl>
-            <dt>Admin</dt>
-            <dd style="margin-left: 0px">
-                        <a href="../landing-admin_operations.html">Operations</a>
-                        <a href="../landing-admin_elements.html">Elements</a>
-                        <a href="../landing-admin_types.html">Types</a>
-                        </dd>
-            </dl>
-                </td>
-            <td>
-                    <dl>
-            <dt>Extension</dt>
-            <dd style="margin-left: 0px">
-                        <a href="../landing-extension_operations.html">Operations</a>
-                        <a href="../landing-extension_elements.html">Elements</a>
-                        <a href="../landing-extension_types.html">Types</a>
-                        </dd>
-            </dl>
-                </td>
-            <td>
-                    <dl>
-            <dt>All</dt>
-            <dd style="margin-left: 0px">
-                        <a href="../landing-operations.html">Operations</a>
-                        <a href="../landing-elements.html">Elements</a>
-                        <a href="../landing-types.html">Types</a>
-                        </dd>
-            </dl>
-                </td>
-        </tr>
-</table>
-<br>
+
+<br/>
 
 <h1>POST /admin/org/{id}/users</h1>
 
@@ -96,98 +30,121 @@
     <dt>Operation:</dt>
     <dd>POST /admin/org/{id}/users</dd>
     <dt>Description:</dt>
-    <dd>Creates or imports a user in an organization.
-
- The user could be enabled or disabled.</dd>
+    <dd>Create or import a user.
+<p>
+ Users can be created locally or imported from the organization's LDAP
+ service.</p></dd>
     <dt>Since:</dt>
     <dd>0.9</dd>
-    <dt>Input parameters</dt>
+        <dt>Input parameters</dt>
     <dd>
                 <dl>
             <dt>Consume media type(s):</dt>
-            <dd>application/vnd.vmware.admin.user+xml<br></dd>
+            <dd>application/vnd.vmware.admin.user+xml<br/></dd>
             <dt>Input type:</dt>
             <dd><a href="../types/UserType.html">UserType</a></dd>
         </dl>
     </dd>
     <dt>Output parameters</dt>
     <dd>
-                    UserType<br><br>
+                    UserType<br/><br/>
                 <dl>
             <dt>Produce media type(s):</dt>
-            <dd>application/vnd.vmware.admin.user+xml<br></dd>
+            <dd>application/vnd.vmware.admin.user+xml<br/></dd>
             <dt>Output type:</dt>
             <dd><a href="../types/UserType.html">UserType</a></dd>
         </dl>
     </dd>
     <dt>Examples</dt>
-    <a id="examples" name="examples"></a>
+    <a id="examples" name="examples"/>
     <dd>
     <dl>
+                    <dt>Request</dt>
+        <dd>
+            HTTP&#160;1.1<br/>POST&#160;/api/admin/org/6a105bef-88d4-4e95-95ac-e7a24a3d6d64/users<br/>
+            <br/><strong>Headers:</strong><br/>
+            Content-Length:&#160;993<br/>Content-Type:&#160;application/vnd.vmware.admin.user+xml;&#160;charset=ISO-8859-1<br/>x-vcloud-authorization:&#160;fTfnzPNcL7YDfWMqvrI+kEODLdCeJMAoUMvmHOigT5o=<br/>
+            <br/>
+                            <strong><a style="cursor:hand; cursor:pointer" onclick="expandcontent(this, 'request-body-div')">Body:</a></strong><br/>
+                <div class="switchcontent" id="request-body-div" style="display: block;">
+                <div class="examples_scroll" style="height: 400px;&gt;&#10;                &lt;!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --&gt;&#10;&lt;span class=" xml_processing_instruction="">&lt;?xml&#160;version="1.0"&#160;encoding="UTF-8"&#160;standalone="no"?&gt;<span class="xml_plain"/><br/>
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:User</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">xmlns:vcloud</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"http://www.vmware.com/vcloud/v1.5"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">name</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"orgadmin"</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:Description</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">description</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">vcloud:Description</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:FullName</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">Organization&#160;Administrator</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">vcloud:FullName</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:Telephone</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">0123456789</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">vcloud:Telephone</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:IsEnabled</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">true</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">vcloud:IsEnabled</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:IsAlertEnabled</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">true</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">vcloud:IsAlertEnabled</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:AlertEmailPrefix</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">alertmailprefix</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">vcloud:AlertEmailPrefix</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:AlertEmail</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">alertmail@alert.mail</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">vcloud:AlertEmail</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:IsDefaultCached</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">false</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">vcloud:IsDefaultCached</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:IsGroupRole</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">false</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">vcloud:IsGroupRole</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:StoredVmQuota</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">0</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">vcloud:StoredVmQuota</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:DeployedVmQuota</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">0</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">vcloud:DeployedVmQuota</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:Role</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">href</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"https://vcloud.example.com/api/admin/role/a08a8798-7d9b-34d6-8dad-48c7182c5f66"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">name</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"Organization&#160;Administrator"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"application/vnd.vmware.admin.role+xml"</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:Password</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">p4ssw0rd</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">vcloud:Password</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">vcloud:User</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+                </div>
+                </div>
+                    </dd>
+        <dt>Response</dt>
+        <dd>
+            HTTP/1.1&#160;201&#160;Created<br/>
+            <br/><strong>Headers:</strong><br/>
+            Content-Length:&#160;1352<br/>Content-Type:&#160;application/vnd.vmware.admin.user+xml;version=1.5<br/>Location:&#160;https://vcloud.example.com/api/admin/user/34453389-5aa7-45d5-ab0e-6856ad6fc5de<br/>
+            <br/>
+                            <strong><a style="cursor:hand; cursor:pointer" onclick="expandcontent(this, 'response-body-div')">Body:</a></strong><br/>
+                <div class="switchcontent" id="response-body-div" style="display: block;">
+                <div class="examples_scroll" style="height: 400px;">
+                <!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_processing_instruction">&lt;?xml&#160;version="1.0"&#160;encoding="UTF-8"&#160;standalone="no"?&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">User</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"http://www.vmware.com/vcloud/v1.5"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">xmlns:xsi</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"http://www.w3.org/2001/XMLSchema-instance"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">href</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"https://vcloud.example.com/api/admin/user/34453389-5aa7-45d5-ab0e-6856ad6fc5de"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"urn:vcloud:user:34453389-5aa7-45d5-ab0e-6856ad6fc5de"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">name</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"orgadmin"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"application/vnd.vmware.admin.user+xml"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">xsi:schemaLocation</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"http://www.vmware.com/vcloud/v1.5&#160;http://https://vcloud.example.com/api/v1.5/schema/master.xsd"</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Link</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">href</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"https://vcloud.example.com/api/admin/user/34453389-5aa7-45d5-ab0e-6856ad6fc5de"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">rel</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"edit"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"application/vnd.vmware.admin.user+xml"</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Description</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">description</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Description</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">FullName</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">Organization&#160;Administrator</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">FullName</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Telephone</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">0123456789</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Telephone</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">IsEnabled</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">true</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">IsEnabled</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">IsLocked</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">false</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">IsLocked</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">IsAlertEnabled</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">true</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">IsAlertEnabled</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">AlertEmailPrefix</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">alertmailprefix</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">AlertEmailPrefix</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">AlertEmail</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">alertmail@alert.mail</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">AlertEmail</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">IsExternal</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">false</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">IsExternal</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">IsDefaultCached</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">false</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">IsDefaultCached</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">IsGroupRole</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">false</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">IsGroupRole</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">StoredVmQuota</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">0</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">StoredVmQuota</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">DeployedVmQuota</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">0</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">DeployedVmQuota</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Role</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">href</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"https://vcloud.example.com/api/admin/role/a08a8798-7d9b-34d6-8dad-48c7182c5f66"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">name</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"Organization&#160;Administrator"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"application/vnd.vmware.admin.role+xml"</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">GroupReferences</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">User</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+                </div>
+                </div>
+                    </dd>
         </dl>
     </dd>
 </dl>
 
-<br>
-<table class="header-footer" cellSpacing="0">
-    <tr>
-    <td><a href="#top">Top of page</a></td>
-                    <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td><a href="#examples">Examples</a></td>
-                </tr>
-    <tr>
-            <td>
-                    <a href="../right-pane.html">Home</a><br>
-            <a href="../index.html">Frames</a>
-                </td>
-            <td>
-                    <dl>
-            <dt>User</dt>
-            <dd style="margin-left: 0px">
-                        <a href="../landing-user_operations.html">Operations</a>
-                        <a href="../landing-user_elements.html">Elements</a>
-                        <a href="../landing-user_types.html">Types</a>
-                        </dd>
-            </dl>
-                </td>
-            <td>
-                    <dl>
-            <dt>Admin</dt>
-            <dd style="margin-left: 0px">
-                        <a href="../landing-admin_operations.html">Operations</a>
-                        <a href="../landing-admin_elements.html">Elements</a>
-                        <a href="../landing-admin_types.html">Types</a>
-                        </dd>
-            </dl>
-                </td>
-            <td>
-                    <dl>
-            <dt>Extension</dt>
-            <dd style="margin-left: 0px">
-                        <a href="../landing-extension_operations.html">Operations</a>
-                        <a href="../landing-extension_elements.html">Elements</a>
-                        <a href="../landing-extension_types.html">Types</a>
-                        </dd>
-            </dl>
-                </td>
-            <td>
-                    <dl>
-            <dt>All</dt>
-            <dd style="margin-left: 0px">
-                        <a href="../landing-operations.html">Operations</a>
-                        <a href="../landing-elements.html">Elements</a>
-                        <a href="../landing-types.html">Types</a>
-                        </dd>
-            </dl>
-                </td>
-        </tr>
-</table>
+<br/>
 
-<br>
+<br/>
 <script language="javascript">document.write(ID_Copyright);</script>
-<br>
+<br/>
 <script language="javascript">document.write(ID_VersionInformation);</script>
 </body>
 </html>

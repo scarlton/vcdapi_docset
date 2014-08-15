@@ -1,94 +1,28 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
-    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>vCloud REST API - POST-InstantiateVAppTemplate</title>
-    <script src="../dynamic-content.js" type="text/javascript"></script>
-    <script language="JavaScript" src="../commonRes.js"> type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="../doc-style.css">
-    <link rel="stylesheet" type="text/css" href="../xml-style.css">
+    <style>
+h4.feedbackheading
+{
+color: #F90;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+font-weight: bold;
+line-height: 16px;
+padding: 10px 5px 10px 10px;
+margin-bottom:5px;
+border-bottom: 1px solid #A1C2E1;
+border-top: 1px solid #A1C2E1;
+}
+</style>
+<!-- -->
 </head>
-<body>
+<body onload="javascript:setupEventHandlers()">
+<div id="feedbackhover" class="feedbackhover"><a style="border:none;color:white;text-decoration:none" href="javascript:openFeedbackForm();">SEND US FEEDBACK!</a></div>
 
-<table class="header-footer" cellSpacing="0" id="top">
-    <tr>
-    <td></td>
-                    <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td><a href="#examples">Examples</a></td>
-                </tr>
-    <tr>
-            <td>
-                    <a href="../right-pane.html">Home</a><br>
-            <a href="../index.html">Frames</a>
-                </td>
-            <td>
-                    <dl>
-            <dt>User</dt>
-            <dd style="margin-left: 0px">
-                        <a href="../landing-user_operations.html">Operations</a>
-                        <a href="../landing-user_elements.html">Elements</a>
-                        <a href="../landing-user_types.html">Types</a>
-                        </dd>
-            </dl>
-                </td>
-            <td>
-                    <dl>
-            <dt>Admin</dt>
-            <dd style="margin-left: 0px">
-                        <a href="../landing-admin_operations.html">Operations</a>
-                        <a href="../landing-admin_elements.html">Elements</a>
-                        <a href="../landing-admin_types.html">Types</a>
-                        </dd>
-            </dl>
-                </td>
-            <td>
-                    <dl>
-            <dt>Extension</dt>
-            <dd style="margin-left: 0px">
-                        <a href="../landing-extension_operations.html">Operations</a>
-                        <a href="../landing-extension_elements.html">Elements</a>
-                        <a href="../landing-extension_types.html">Types</a>
-                        </dd>
-            </dl>
-                </td>
-            <td>
-                    <dl>
-            <dt>All</dt>
-            <dd style="margin-left: 0px">
-                        <a href="../landing-operations.html">Operations</a>
-                        <a href="../landing-elements.html">Elements</a>
-                        <a href="../landing-types.html">Types</a>
-                        </dd>
-            </dl>
-                </td>
-        </tr>
-</table>
-<br>
+
+<br/>
 
 <h1>POST /vdc/{id}/action/instantiateVAppTemplate</h1>
 
@@ -96,99 +30,168 @@
     <dt>Operation:</dt>
     <dd>POST /vdc/{id}/action/instantiateVAppTemplate</dd>
     <dt>Description:</dt>
-    <dd>Instantiate a vApp template into a new vApp.
-
- The status of vApp will be in UNRESOLVED(0) until the instantiate task is finished.</dd>
+    <dd>Create a vApp from a vApp template</dd>
     <dt>Since:</dt>
     <dd>0.9</dd>
-    <dt>Input parameters</dt>
+        <dt>Input parameters</dt>
     <dd>
                 <dl>
             <dt>Consume media type(s):</dt>
-            <dd>application/vnd.vmware.vcloud.instantiateVAppTemplateParams+xml<br></dd>
+            <dd>application/vnd.vmware.vcloud.instantiateVAppTemplateParams+xml<br/></dd>
             <dt>Input type:</dt>
             <dd><a href="../types/InstantiateVAppTemplateParamsType.html">InstantiateVAppTemplateParamsType</a></dd>
         </dl>
     </dd>
     <dt>Output parameters</dt>
     <dd>
-                    VAppType This operation returns a task in the vApp resource, the
-         user should wait this task to finish to be able to use the vApp.<br><br>
-                <dl>
+                    VAppType
+<p>
+ The response includes a Task element. You can monitor the task to
+ to track the creation of the vApp.<br/><br/>
+                </p><dl>
             <dt>Produce media type(s):</dt>
-            <dd>application/vnd.vmware.vcloud.vApp+xml<br></dd>
+            <dd>application/vnd.vmware.vcloud.vApp+xml<br/></dd>
             <dt>Output type:</dt>
             <dd><a href="../types/VAppType.html">VAppType</a></dd>
         </dl>
     </dd>
     <dt>Examples</dt>
-    <a id="examples" name="examples"></a>
+    <a id="examples" name="examples"/>
     <dd>
     <dl>
+                    <dt>Request</dt>
+        <dd>
+            HTTP&#160;1.1<br/>POST&#160;/api/vdc/f739e145-bd1a-42e8-b031-99ac98c8b737/action/instantiateVAppTemplate<br/>
+            <br/><strong>Headers:</strong><br/>
+            Content-Length:&#160;1079<br/>Content-Type:&#160;application/vnd.vmware.vcloud.instantiateVAppTemplateParams+xml;&#160;charset=ISO-8859-1<br/>x-vcloud-authorization:&#160;DOcsnuW/u0d6rcU9E2b66cGqiWdC2F8T+cV7OuAXGKg=<br/>
+            <br/>
+                            <strong><a style="cursor:hand; cursor:pointer" onclick="expandcontent(this, 'request-body-div')">Body:</a></strong><br/>
+                <div class="switchcontent" id="request-body-div" style="display: block;">
+                <div class="examples_scroll" style="height: 400px;&gt;&#10;                &lt;!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --&gt;&#10;&lt;span class=" xml_processing_instruction="">&lt;?xml&#160;version="1.0"&#160;encoding="UTF-8"&#160;standalone="no"?&gt;<span class="xml_plain"/><br/>
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:InstantiateVAppTemplateParams</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">xmlns:ovf</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"http://schemas.dmtf.org/ovf/envelope/1"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">xmlns:vcloud</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"http://www.vmware.com/vcloud/v1.5"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">deploy</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"false"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">name</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"Small&#160;vapp"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">powerOn</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"false"</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:Description</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">VApp&#160;Description</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">vcloud:Description</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:InstantiationParams</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:NetworkConfigSection</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">ovf:Info</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">NetInfo</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">ovf:Info</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:NetworkConfig</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">networkName</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"VM&#160;Network"</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:Configuration</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:ParentNetwork</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">href</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"https://vcloud.example.com/api/network/4c1b8028-f590-4133-a971-fd622846edd1"</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:FenceMode</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">bridged</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">vcloud:FenceMode</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">vcloud:Configuration</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">vcloud:NetworkConfig</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">vcloud:NetworkConfigSection</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">vcloud:InstantiationParams</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">vcloud:Source</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">href</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"https://vcloud.example.com/api/vAppTemplate/vappTemplate-20e4982e-ced0-40fe-9f7f-8d6ddfcd0bbf"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">name</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"NewCatalogItem"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"application/vnd.vmware.vcloud.vAppTemplate+xml"</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">vcloud:InstantiateVAppTemplateParams</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+                </div>
+                </div>
+                    </dd>
+        <dt>Response</dt>
+        <dd>
+            HTTP/1.1&#160;201&#160;Created<br/>
+            <br/><strong>Headers:</strong><br/>
+            Content-Length:&#160;2952<br/>Content-Type:&#160;application/vnd.vmware.vcloud.vapp+xml;version=1.5<br/>Location:&#160;https://vcloud.example.com/api/vApp/vapp-2d71c30c-267b-4d4e-8064-a6eb18f0dc59<br/>
+            <br/>
+                            <strong><a style="cursor:hand; cursor:pointer" onclick="expandcontent(this, 'response-body-div')">Body:</a></strong><br/>
+                <div class="switchcontent" id="response-body-div" style="display: block;">
+                <div class="examples_scroll" style="height: 400px;">
+                <!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) -->
+<span class="xml_processing_instruction">&lt;?xml&#160;version="1.0"&#160;encoding="UTF-8"&#160;standalone="no"?&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">VApp</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"http://www.vmware.com/vcloud/v1.5"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">xmlns:xsi</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"http://www.w3.org/2001/XMLSchema-instance"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">deployed</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"false"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">href</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"https://vcloud.example.com/api/vApp/vapp-2d71c30c-267b-4d4e-8064-a6eb18f0dc59"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"urn:vcloud:vapp:2d71c30c-267b-4d4e-8064-a6eb18f0dc59"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">name</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"Small&#160;vapp"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">status</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"0"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"application/vnd.vmware.vcloud.vApp+xml"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">xsi:schemaLocation</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"http://www.vmware.com/vcloud/v1.5&#160;http://https://vcloud.example.com/api/v1.5/schema/master.xsd"</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Link</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">href</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"https://vcloud.example.com/api/network/768701de-324b-4bf4-aec8-d647b8bd4b5b"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">name</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"external&#160;org&#160;net"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">rel</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"down"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"application/vnd.vmware.vcloud.vAppNetwork+xml"</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Link</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">href</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"https://vcloud.example.com/api/vApp/vapp-2d71c30c-267b-4d4e-8064-a6eb18f0dc59/controlAccess/"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">rel</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"down"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"application/vnd.vmware.vcloud.controlAccess+xml"</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Link</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">href</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"https://vcloud.example.com/api/vApp/vapp-2d71c30c-267b-4d4e-8064-a6eb18f0dc59/action/enterMaintenanceMode"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">rel</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"enterMaintenanceMode"</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Link</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">href</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"https://vcloud.example.com/api/vdc/f739e145-bd1a-42e8-b031-99ac98c8b737"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">rel</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"up"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"application/vnd.vmware.vcloud.vdc+xml"</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Link</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">href</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"https://vcloud.example.com/api/vApp/vapp-2d71c30c-267b-4d4e-8064-a6eb18f0dc59/owner"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">rel</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"down"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"application/vnd.vmware.vcloud.owner+xml"</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Link</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">href</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"https://vcloud.example.com/api/vApp/vapp-2d71c30c-267b-4d4e-8064-a6eb18f0dc59/metadata"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">rel</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"down"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"application/vnd.vmware.vcloud.metadata+xml"</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Description</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">VApp&#160;Description</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Description</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Tasks</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Task</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">expiryTime</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"2012-02-16T11:11:05.294+02:00"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">href</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"https://vcloud.example.com/api/task/2f854464-dcbf-412e-9540-ce07e18d8f09"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"urn:vcloud:task:2f854464-dcbf-412e-9540-ce07e18d8f09"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">name</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"task"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">operation</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"Creating&#160;Virtual&#160;Application&#160;Small&#160;vapp(2d71c30c-267b-4d4e-8064-a6eb18f0dc59)"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">operationName</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"vdcInstantiateVapp"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">startTime</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"2011-11-18T11:11:05.294+02:00"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">status</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"running"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"application/vnd.vmware.vcloud.task+xml"</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Link</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">href</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"https://vcloud.example.com/api/task/2f854464-dcbf-412e-9540-ce07e18d8f09/action/cancel"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">rel</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"task:cancel"</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Owner</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">href</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"https://vcloud.example.com/api/vApp/vapp-2d71c30c-267b-4d4e-8064-a6eb18f0dc59"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">name</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"Small&#160;vapp"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"application/vnd.vmware.vcloud.vApp+xml"</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">User</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">href</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"https://vcloud.example.com/api/admin/user/b584f4dc-89a5-4d2c-8aa2-9b9b854c262f"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">name</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"vcloud"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"application/vnd.vmware.admin.user+xml"</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Organization</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">href</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"https://vcloud.example.com/api/org/56523a16-0d07-4613-9d7d-b7a6533cf7f4"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">name</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"Default"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"application/vnd.vmware.vcloud.org+xml"</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Progress</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">1</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Progress</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Task</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Tasks</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Owner</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"application/vnd.vmware.vcloud.owner+xml"</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">User</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">href</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"https://vcloud.example.com/api/admin/user/2a54be34-ee42-4cd7-b1fc-68ce3c240348"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">name</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"system"</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"application/vnd.vmware.admin.user+xml"</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Owner</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">InMaintenanceMode</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">false</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">InMaintenanceMode</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+<span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">VApp</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"/><br/>
+                </div>
+                </div>
+                    </dd>
         </dl>
     </dd>
 </dl>
 
-<br>
-<table class="header-footer" cellSpacing="0">
-    <tr>
-    <td><a href="#top">Top of page</a></td>
-                    <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td><a href="#examples">Examples</a></td>
-                </tr>
-    <tr>
-            <td>
-                    <a href="../right-pane.html">Home</a><br>
-            <a href="../index.html">Frames</a>
-                </td>
-            <td>
-                    <dl>
-            <dt>User</dt>
-            <dd style="margin-left: 0px">
-                        <a href="../landing-user_operations.html">Operations</a>
-                        <a href="../landing-user_elements.html">Elements</a>
-                        <a href="../landing-user_types.html">Types</a>
-                        </dd>
-            </dl>
-                </td>
-            <td>
-                    <dl>
-            <dt>Admin</dt>
-            <dd style="margin-left: 0px">
-                        <a href="../landing-admin_operations.html">Operations</a>
-                        <a href="../landing-admin_elements.html">Elements</a>
-                        <a href="../landing-admin_types.html">Types</a>
-                        </dd>
-            </dl>
-                </td>
-            <td>
-                    <dl>
-            <dt>Extension</dt>
-            <dd style="margin-left: 0px">
-                        <a href="../landing-extension_operations.html">Operations</a>
-                        <a href="../landing-extension_elements.html">Elements</a>
-                        <a href="../landing-extension_types.html">Types</a>
-                        </dd>
-            </dl>
-                </td>
-            <td>
-                    <dl>
-            <dt>All</dt>
-            <dd style="margin-left: 0px">
-                        <a href="../landing-operations.html">Operations</a>
-                        <a href="../landing-elements.html">Elements</a>
-                        <a href="../landing-types.html">Types</a>
-                        </dd>
-            </dl>
-                </td>
-        </tr>
-</table>
+<br/>
 
-<br>
+<br/>
 <script language="javascript">document.write(ID_Copyright);</script>
-<br>
+<br/>
 <script language="javascript">document.write(ID_VersionInformation);</script>
 </body>
 </html>

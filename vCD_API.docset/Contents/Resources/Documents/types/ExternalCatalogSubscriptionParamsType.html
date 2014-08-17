@@ -1,0 +1,171 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>vCloud REST API - ExternalCatalogSubscriptionParams</title>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
+<!-- -->
+</head>
+<body onload="javascript:setupEventHandlers()">
+<br/>
+
+<h1>ExternalCatalogSubscriptionParamsType</h1>
+
+<dl>
+                        <dt>Element:</dt>
+            <dd>ExternalCatalogSubscriptionParams</dd>
+        <dt>Type:</dt>
+    <dd>ExternalCatalogSubscriptionParamsType</dd>
+    <dt>Namespace:</dt>
+    <dd><a href="http://www.vmware.com/vcloud/v1.5">http://www.vmware.com/vcloud/v1.5</a></dd>
+    <dt>Description:</dt>
+    <dd>
+                Configuration parameters for a catalog that has an external
+                subscription.
+            </dd>
+    <dt>Since:</dt>
+    <dd>5.5</dd>
+        <dt>Schema:</dt>
+    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/admin/vCloudEntities.xsd">vCloudEntities.xsd</a></dd>
+    <dt>Media type(s):</dt>
+    <dd>application/vnd.vmware.admin.externalCatalogSubscriptionParams+xml<br/></dd>
+    <dt>Extends:</dt>
+    <dd><a href="../types/VCloudExtensibleType.html">VCloudExtensibleType</a></dd>
+
+    <dt>XML Representation:</dt>
+    <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">ExternalCatalogSubscriptionParams</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/v1.5</span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">SubscribeToExternalFeeds</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">SubscribeToExternalFeeds</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Location</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Location</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Password</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Password</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">ExpectedSslThumbprint</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">ExpectedSslThumbprint</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">LocalCopy</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">LocalCopy</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain"/><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">ExternalCatalogSubscriptionParams</span><span class="xml_tag_symbols">&gt;</span><br/>
+</dd>
+
+    
+        <a id="elements" name="elements"/>
+    <dt><p class="table-title">Elements</p></dt>
+    <dd>
+    <table cellspacing="0">
+      <tr>
+        <th>Element</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Modifiable</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+        <th>Description</th>
+      </tr>
+                      <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.5</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
+                                      <a name="SubscribeToExternalFeeds"/>
+                    <tr class="r0">
+                <td>SubscribeToExternalFeeds</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.5</td>
+                <td/>
+                <td>
+                                  True enables the external subscription
+                                  configured by these parameters.
+                              </td>
+            </tr>
+                              <a name="Location"/>
+                    <tr class="r1">
+                <td>Location</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.5</td>
+                <td/>
+                <td>
+                                Endpoint URL to subscribe to.
+                            </td>
+            </tr>
+                                      <a name="Password"/>
+                    <tr class="r0">
+                <td>Password</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.5</td>
+                <td/>
+                <td>
+                                 Password required by the endpoint.
+                             </td>
+            </tr>
+                              <a name="ExpectedSslThumbprint"/>
+                    <tr class="r1">
+                <td>ExpectedSslThumbprint</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.5</td>
+                <td/>
+                <td>
+                                Expected SSL thumbprint of the endpoint.
+                            </td>
+            </tr>
+                                      <a name="LocalCopy"/>
+                    <tr class="r0">
+                <td>LocalCopy</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.5</td>
+                <td/>
+                <td>
+                                  If true, synchronization creates a local copy
+                                  of all items. Defaults to false, which
+                                  defers creation of the local copy until the
+                                  item is required by an operation such as
+                                  instantiation.
+                              </td>
+            </tr>
+                  </table>
+    </dd>
+    
+    
+        <a id="operations" name="operations"/>
+    <dt><p class="table-title">Operations</p></dt>
+    <dd>
+    <table cellspacing="0">
+      <tr>
+        <th>CRUD</th>
+        <th>Operation</th>
+        <th>Description</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+      </tr>
+
+                      <tr class="r1">
+            <td nowrap="1">as input</td>
+            <td nowrap="1"><a href="../operations/POST-UpdateSubscriptionSettings.html">POST /admin/catalog/{id}/action/subscribeToExternalCatalog</a></td>
+                        <td>Subscribe to an external catalog.</td>
+            <td>5.5</td>
+            <td/>
+        </tr>
+          </table>
+    </dd>
+    
+</dl>
+
+<br/>
+<br/>
+<br/>
+</body>
+</html>

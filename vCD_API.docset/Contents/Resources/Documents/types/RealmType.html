@@ -1,0 +1,129 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>vCloud REST API - RealmType</title>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
+<!-- -->
+</head>
+<body onload="javascript:setupEventHandlers()">
+<br/>
+
+<h1>RealmType</h1>
+
+<dl>
+        <dt>Type:</dt>
+    <dd>RealmType</dd>
+    <dt>Namespace:</dt>
+    <dd><a href="http://www.vmware.com/vcloud/extension/v1.5">http://www.vmware.com/vcloud/extension/v1.5</a></dd>
+    <dt>Description:</dt>
+    <dd>
+                Kerberos realm information.
+            </dd>
+    <dt>Since:</dt>
+    <dd>5.1</dd>
+        <dt>Schema:</dt>
+    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/extension/settings.xsd">settings.xsd</a></dd>
+    <dt>Media type(s):</dt>
+    <dd>None</dd>
+    <dt>Extends:</dt>
+    <dd><a href="../types/VCloudExtensibleType.html">VCloudExtensibleType</a></dd>
+
+    <dt>XML Representation:</dt>
+    <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">RealmType</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/extension/v1.5</span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns:vcloud_v1.5</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/v1.5</span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/RealmType.html#kdc" target="classFrame" title="kdc">kdc</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/RealmType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Domain</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Domain</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain"/><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">RealmType</span><span class="xml_tag_symbols">&gt;</span><br/>
+</dd>
+
+        <a id="attributes" name="attributes"/>
+    <dt><p class="table-title">Attributes</p></dt>
+    <dd>
+    <table cellspacing="0">
+      <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Modifiable</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+        <th>Description</th>
+              </tr>
+                      <a name="kdc"/>
+        <tr class="r1">
+            <td>kdc</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+            <td>No</td>
+            <td/>
+            <td>5.1</td>
+            <td/>
+            <td>
+                            The KDC for the current realm.
+                        </td>
+                    </tr>
+                              <a name="name"/>
+        <tr class="r0">
+            <td>name</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+            <td>No</td>
+            <td/>
+            <td>5.1</td>
+            <td/>
+            <td>
+                            The name of the realm. Must be all upper-case characters unless AllowLowerCaseRealms is true.
+                        </td>
+                    </tr>
+          </table>
+    </dd>
+    
+        <a id="elements" name="elements"/>
+    <dt><p class="table-title">Elements</p></dt>
+    <dd>
+    <table cellspacing="0">
+      <tr>
+        <th>Element</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Modifiable</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+        <th>Description</th>
+      </tr>
+                      <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
+                                      <a name="Domain"/>
+                    <tr class="r0">
+                <td>Domain</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
+                <td/>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                The list of all DNS suffixes associated with the realm.
+                            </td>
+            </tr>
+                  </table>
+    </dd>
+    
+    
+    
+</dl>
+
+<br/>
+<br/>
+<br/>
+</body>
+</html>

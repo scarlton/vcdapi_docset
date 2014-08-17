@@ -1,15 +1,13 @@
-# Define here the models for your scraped items
-#
-# See documentation in:
-# http://doc.scrapy.org/en/latest/topics/items.html
-
 from scrapy.item import Item, Field
 
-class VcdApiGuyItem(Item):
-    # define the fields for your item here like:
-    # name = Field()
+class DocsetItem(Item):
     name = Field()
     item_type = Field()
     path = Field()
     url = Field()
     content = Field()
+
+class SupportingFileItem(Item):
+	path = Field()
+	content = Field()
+	toc = Field()

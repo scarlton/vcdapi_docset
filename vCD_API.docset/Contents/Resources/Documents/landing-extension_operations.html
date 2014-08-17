@@ -1,0 +1,896 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>vCloud REST API Extension Operations</title>
+    <link rel="stylesheet" type="text/css" href="doc-style.css"/>
+
+<!-- -->
+</head>
+<body onload="javascript:setupEventHandlers()">
+<br/>
+
+<h1>vCloud REST API Extension Operations</h1>
+
+<h2 class="index">Extension Operations</h2>
+<br/>
+<p class="table-title">Extension Operations (171)</p>
+<table cellspacing="0">
+  <tr>
+      <th>Operation</th>
+      <th>Description</th>
+      <th>Since</th>
+  </tr>
+
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-Extension.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension" class="dashAnchor">GET /admin/extension</a></td>
+        <td>Retrieve a list of extension objects and operations.</td>
+        <td>1.0</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-RegisterVimServer.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Faction%2Fregistervimserver" class="dashAnchor">POST /admin/extension/action/registervimserver</a></td>
+        <td>Register a vCenter server and vShield manager.</td>
+        <td>0.9</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-BlockingTask.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FblockingTask%2F%7Bid%7D" class="dashAnchor">GET /admin/extension/blockingTask/{id}</a></td>
+        <td>Retrieve the representation of a blocking task.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-AbortTask.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2FblockingTask%2F%7Bid%7D%2Faction%2Fabort" class="dashAnchor">POST /admin/extension/blockingTask/{id}/action/abort</a></td>
+        <td>Abort a blocking task.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-FailTask.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2FblockingTask%2F%7Bid%7D%2Faction%2Ffail" class="dashAnchor">POST /admin/extension/blockingTask/{id}/action/fail</a></td>
+        <td>Fail a blocking task.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-ResumeTask.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2FblockingTask%2F%7Bid%7D%2Faction%2Fresume" class="dashAnchor">POST /admin/extension/blockingTask/{id}/action/resume</a></td>
+        <td>Resume a blocking task.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-UpdateProgress.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2FblockingTask%2F%7Bid%7D%2Faction%2FupdateProgress" class="dashAnchor">POST /admin/extension/blockingTask/{id}/action/updateProgress</a></td>
+        <td>Extend the expiration timeout of an active task.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-AllBlockingTasks.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FblockingTasks" class="dashAnchor">GET /admin/extension/blockingTasks</a></td>
+        <td>Retrieve a list of active or recently completed blocking task requests.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-Datastore.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fdatastore%2F%7Bid%7D" class="dashAnchor">GET /admin/extension/datastore/{id}</a></td>
+        <td>Retrieve a datastore.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-Datastore.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2Fdatastore%2F%7Bid%7D" class="dashAnchor">PUT /admin/extension/datastore/{id}</a></td>
+        <td>Update datastore properties, including name, description, and low disk
+ space thresholds.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-DisableDatastore.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fdatastore%2F%7Bid%7D%2Faction%2Fdisable" class="dashAnchor">POST /admin/extension/datastore/{id}/action/disable</a></td>
+        <td>Disable a datastore.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-EnableDatastore.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fdatastore%2F%7Bid%7D%2Faction%2Fenable" class="dashAnchor">POST /admin/extension/datastore/{id}/action/enable</a></td>
+        <td>Enable a datastore.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-DatastoreList.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fdatastores" class="dashAnchor">GET /admin/extension/datastores</a></td>
+        <td>Retrieve a list of references to datastores in the system.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-DatastoresFromQuery.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fdatastores%2Fquery" class="dashAnchor">GET /admin/extension/datastores/query</a></td>
+        <td>Get a list of all datastores by using REST API General QueryHandler.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-ExternalNetworkRefrences.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FexternalNetworkReferences" class="dashAnchor">GET /admin/extension/externalNetworkReferences</a></td>
+        <td>Retrieve a list of references to exernal networks in the system.</td>
+        <td>1.0</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-ExternalNetworksFromQuery.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FexternalNetworkReferences%2Fquery" class="dashAnchor">GET /admin/extension/externalNetworkReferences/query</a></td>
+        <td>Get list of external networks by using REST API general QueryHandler.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-ExternalNetwork.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fexternalnet%2F%7Bid%7D" class="dashAnchor">GET /admin/extension/externalnet/{id}</a></td>
+        <td>Retrieve a system administrator view of an external network.</td>
+        <td>1.0</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-ExternalNetwork.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2Fexternalnet%2F%7Bid%7D" class="dashAnchor">PUT /admin/extension/externalnet/{id}</a></td>
+        <td>Update an external network.</td>
+        <td>1.0</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/DELETE-ExternalNetwork.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Fextension%2Fexternalnet%2F%7Bid%7D" class="dashAnchor">DELETE /admin/extension/externalnet/{id}</a></td>
+        <td>Delete an external network.</td>
+        <td>1.0</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-CreateProviderNetwork.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fexternalnets" class="dashAnchor">POST /admin/extension/externalnets</a></td>
+        <td>Create an external network.</td>
+        <td>1.0</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-Host.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fhost%2F%7Bid%7D" class="dashAnchor">GET /admin/extension/host/{id}</a></td>
+        <td>Retrieve a host.</td>
+        <td>1.0</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-DisableHost.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fhost%2F%7Bid%7D%2Faction%2Fdisable" class="dashAnchor">POST /admin/extension/host/{id}/action/disable</a></td>
+        <td>Disable a host.</td>
+        <td>0.9</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-EnableHost.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fhost%2F%7Bid%7D%2Faction%2Fenable" class="dashAnchor">POST /admin/extension/host/{id}/action/enable</a></td>
+        <td>Enable a host.</td>
+        <td>0.9</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-PrepareHost.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fhost%2F%7Bid%7D%2Faction%2Fprepare" class="dashAnchor">POST /admin/extension/host/{id}/action/prepare</a></td>
+        <td>Prepare a host.</td>
+        <td>0.9</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-RepairHost.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fhost%2F%7Bid%7D%2Faction%2Frepair" class="dashAnchor">POST /admin/extension/host/{id}/action/repair</a></td>
+        <td>Repair a host.</td>
+        <td>1.0</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-UnprepareHost.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fhost%2F%7Bid%7D%2Faction%2Funprepare" class="dashAnchor">POST /admin/extension/host/{id}/action/unprepare</a></td>
+        <td>Unprepare a host.</td>
+        <td>0.9</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-UpgradeHostAgent.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fhost%2F%7Bid%7D%2Faction%2Fupgrade" class="dashAnchor">POST /admin/extension/host/{id}/action/upgrade</a></td>
+        <td>Upgrade the vCloud Director host agent on a host
+ after you have upgraded vCloud Director software.</td>
+        <td>1.0</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-HostRefrences.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FhostReferences" class="dashAnchor">GET /admin/extension/hostReferences</a></td>
+        <td>Retrieve a list of references to ESX/ESXi hosts attached to the system.</td>
+        <td>1.0</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-HostsFromQuery.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FhostReferences%2Fquery" class="dashAnchor">GET /admin/extension/hostReferences/query</a></td>
+        <td>Get list of hosts by using REST API general QueryHAndler;
+ This is read only list of host references and is not bound to specific states.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-NetworkPool.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FnetworkPool%2F%7Bid%7D" class="dashAnchor">GET /admin/extension/networkPool/{id}</a></td>
+        <td>Retrieve a network pool.</td>
+        <td>0.9</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/PUT-NetworkPool.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2FnetworkPool%2F%7Bid%7D" class="dashAnchor">PUT /admin/extension/networkPool/{id}</a></td>
+        <td>Update a network pool.</td>
+        <td>0.9</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/DELETE-NetworkPool.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Fextension%2FnetworkPool%2F%7Bid%7D" class="dashAnchor">DELETE /admin/extension/networkPool/{id}</a></td>
+        <td>Delete a network pool.</td>
+        <td>0.9</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-VendorServices.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FnetworkPool%2F%7Bid%7D%2FvendorServices" class="dashAnchor">GET /admin/extension/networkPool/{id}/vendorServices</a></td>
+        <td>Retrieve services associated with this network pool</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-NetworkPoolRefrences.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FnetworkPoolReferences" class="dashAnchor">GET /admin/extension/networkPoolReferences</a></td>
+        <td>Retrieve a list of references to network pools in the system.</td>
+        <td>1.0</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-NetworkPoolsFromQuery.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FnetworkPoolReferences%2Fquery" class="dashAnchor">GET /admin/extension/networkPoolReferences/query</a></td>
+        <td>Get list of network pools by using REST API general QueryHandler.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-CreateNetworkPool.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2FnetworkPools" class="dashAnchor">POST /admin/extension/networkPools</a></td>
+        <td>Create a network pool.</td>
+        <td>0.9</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-OrgNetworksAllFromQuery.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2ForgNetworks%2Fquery" class="dashAnchor">GET /admin/extension/orgNetworks/query</a></td>
+        <td>Get list of Organization Networks for the system by using REST API general QueryHandler.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-OrgVdcsAllFromQuery.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2ForgVdcs%2Fquery" class="dashAnchor">GET /admin/extension/orgVdcs/query</a></td>
+        <td>Get list of all Organization Vdcs in the system by using REST API general QueryHandler.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-ProviderVdcRefrences.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FproviderVdcReferences" class="dashAnchor">GET /admin/extension/providerVdcReferences</a></td>
+        <td>Retrieve a list of references to provider vDCs in the system.</td>
+        <td>1.0</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-ProviderVdcsFromQuery.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FproviderVdcReferences%2Fquery" class="dashAnchor">GET /admin/extension/providerVdcReferences/query</a></td>
+        <td>Get list of provider vDCs by using REST API general QueryHandler.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-ProviderVdc-ExtensionView.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fprovidervdc%2F%7Bid%7D" class="dashAnchor">GET /admin/extension/providervdc/{id}</a></td>
+        <td>Retrieve a system administrator view of a provider vDC.</td>
+        <td>0.9</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-Vdc-ExtensionView.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2Fprovidervdc%2F%7Bid%7D" class="dashAnchor">PUT /admin/extension/providervdc/{id}</a></td>
+        <td>Update a provider vDC.</td>
+        <td>0.9</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/DELETE-ProviderVdc.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Fextension%2Fprovidervdc%2F%7Bid%7D" class="dashAnchor">DELETE /admin/extension/providervdc/{id}</a></td>
+        <td>Delete a provider vDC.</td>
+        <td>0.9</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-DisableProviderVdc.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fprovidervdc%2F%7Bid%7D%2Faction%2Fdisable" class="dashAnchor">POST /admin/extension/providervdc/{id}/action/disable</a></td>
+        <td>Disable a provider vDC.</td>
+        <td>0.9</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-EnableProviderVdc.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fprovidervdc%2F%7Bid%7D%2Faction%2Fenable" class="dashAnchor">POST /admin/extension/providervdc/{id}/action/enable</a></td>
+        <td>Enable a provider vDC.</td>
+        <td>0.9</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-MergeProviderVdc.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fprovidervdc%2F%7Bid%7D%2Faction%2Fmerge" class="dashAnchor">POST /admin/extension/providervdc/{id}/action/merge</a></td>
+        <td>Merge provider vDCs.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-UpdatePvdcResourcePools.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fprovidervdc%2F%7Bid%7D%2Faction%2FupdateResourcePools" class="dashAnchor">POST /admin/extension/providervdc/{id}/action/updateResourcePools</a></td>
+        <td>Add or remove provider vDC resource pools.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-AvailableProviderVdcStorageClasses.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fprovidervdc%2F%7Bid%7D%2FavailableStorageProfiles" class="dashAnchor">GET /admin/extension/providervdc/{id}/availableStorageProfiles</a></td>
+        <td>Retrieve a list of storage classes that can be added to the
+ specified provider vDC.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-PvdcResourcePoolSet.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fprovidervdc%2F%7Bid%7D%2FresourcePools" class="dashAnchor">GET /admin/extension/providervdc/{id}/resourcePools</a></td>
+        <td>Retrieve a provider vDC resource pool set.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-UpdateProviderVdcStorageClasses.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fprovidervdc%2F%7Bid%7D%2FstorageProfiles" class="dashAnchor">POST /admin/extension/providervdc/{id}/storageProfiles</a></td>
+        <td>Update storage classes of a provider vDC.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-CreateProviderVdc.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fprovidervdcs" class="dashAnchor">POST /admin/extension/providervdcs</a></td>
+        <td>Create a provider vDC.</td>
+        <td>0.9</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-CreateProviderVdcParams.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fprovidervdcsparams" class="dashAnchor">POST /admin/extension/providervdcsparams</a></td>
+        <td>Create a provider vDC.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-ProviderVdcStorageProfile-ExtensionView.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FpvdcStorageProfile%2F%7Bid%7D" class="dashAnchor">GET /admin/extension/pvdcStorageProfile/{id}</a></td>
+        <td>Retrieve provider vDC storage profile details.</td>
+        <td/>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-ProviderVdcStorageProfile.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2FpvdcStorageProfile%2F%7Bid%7D" class="dashAnchor">PUT /admin/extension/pvdcStorageProfile/{id}</a></td>
+        <td>Update a provider vDC storage profile
+ <p>
+ You can update a storage profile to enable or disable it.</p></td>
+        <td/>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-DisableProviderVdcResourcePool.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2FresourcePool%2F%7Bid%7D%2Faction%2Fdisable" class="dashAnchor">POST /admin/extension/resourcePool/{id}/action/disable</a></td>
+        <td>Disable a provider vDC resource pool.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-EnableProviderVdcResourcePool.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2FresourcePool%2F%7Bid%7D%2Faction%2Fenable" class="dashAnchor">POST /admin/extension/resourcePool/{id}/action/enable</a></td>
+        <td>Enable a provider VDC resource pool</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-MigrateVm.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2FresourcePool%2F%7Bid%7D%2Faction%2FmigrateVms" class="dashAnchor">POST /admin/extension/resourcePool/{id}/action/migrateVms</a></td>
+        <td>Migrate one or more virtual machines to a different resource pool.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-VmsInResourcePool.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FresourcePool%2F%7Bid%7D%2FvmList" class="dashAnchor">GET /admin/extension/resourcePool/{id}/vmList</a></td>
+        <td>List all VMs using this resource pool.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-ExtensionServices.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fservice" class="dashAnchor">GET /admin/extension/service</a></td>
+        <td>Retrieves a list of extension service operations.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-CreateService.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fservice" class="dashAnchor">POST /admin/extension/service</a></td>
+        <td>Creates service.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-AclRule.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fservice%2Faclrule%2F%7Bid%7D" class="dashAnchor">GET /admin/extension/service/aclrule/{id}</a></td>
+        <td>Retrieve (GET) ACL rule</td>
+        <td/>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/DELETE-AclRule.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Fextension%2Fservice%2Faclrule%2F%7Bid%7D" class="dashAnchor">DELETE /admin/extension/service/aclrule/{id}</a></td>
+        <td>Delete (DELETE) ACL rule</td>
+        <td/>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-ClearUnusedBundles.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fservice%2Faction%2Fclearunusedlocalizationbundles" class="dashAnchor">POST /admin/extension/service/action/clearunusedlocalizationbundles</a></td>
+        <td>Cleanup for unused external localization resources.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-ClearUnusedRights.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fservice%2Faction%2Fclearunusedrights" class="dashAnchor">POST /admin/extension/service/action/clearunusedrights</a></td>
+        <td>Clears all the rights that are not associated with a role or acl rule and which extension
+ service is already deleted.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-ApiDefinition-ExtensionView.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fservice%2Fapidefinition%2F%7Bid%7D" class="dashAnchor">GET /admin/extension/service/apidefinition/{id}</a></td>
+        <td>Retrieve API definition.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/DELETE-ApiDefinition.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Fextension%2Fservice%2Fapidefinition%2F%7Bid%7D" class="dashAnchor">DELETE /admin/extension/service/apidefinition/{id}</a></td>
+        <td>Deletes API definition.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-FileDescriptors-ExtensionView.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fservice%2Fapidefinition%2F%7Bid%7D%2Ffiles" class="dashAnchor">GET /admin/extension/service/apidefinition/{id}/files</a></td>
+        <td>Returns all file descriptors for the API definition.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-CreateFileDescriptor.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fservice%2Fapidefinition%2F%7Bid%7D%2Ffiles" class="dashAnchor">POST /admin/extension/service/apidefinition/{id}/files</a></td>
+        <td>Creates file descriptor.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-ApiFilter.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fservice%2Fapifilter%2F%7Bid%7D" class="dashAnchor">GET /admin/extension/service/apifilter/{id}</a></td>
+        <td>Retrieves API filter.</td>
+        <td/>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/DELETE-ApiFilter.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Fextension%2Fservice%2Fapifilter%2F%7Bid%7D" class="dashAnchor">DELETE /admin/extension/service/apifilter/{id}</a></td>
+        <td>Deletes API filter.</td>
+        <td/>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-CheckAuthorizationForServices.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fservice%2Fauthorizationcheck" class="dashAnchor">POST /admin/extension/service/authorizationcheck</a></td>
+        <td>Checks user authorization for all services with enabled authorization, URL and request verb.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-FileDescriptor.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fservice%2Ffile%2F%7Bid%7D" class="dashAnchor">GET /admin/extension/service/file/{id}</a></td>
+        <td>Retrieve a file descriptor</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/DELETE-FileDescriptor.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Fextension%2Fservice%2Ffile%2F%7Bid%7D" class="dashAnchor">DELETE /admin/extension/service/file/{id}</a></td>
+        <td>Deletes file descriptor.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-ServiceLink.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fservice%2Flink%2F%7Bid%7D" class="dashAnchor">GET /admin/extension/service/link/{id}</a></td>
+        <td>Retrieves service link.</td>
+        <td/>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/DELETE-Link.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Fextension%2Fservice%2Flink%2F%7Bid%7D" class="dashAnchor">DELETE /admin/extension/service/link/{id}</a></td>
+        <td>Deletes service link.</td>
+        <td/>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-UploadLocalizationBundle.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fservice%2Flocalizationbundles" class="dashAnchor">POST /admin/extension/service/localizationbundles</a></td>
+        <td>Initiates localization bundle upload.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-ServicesFromQuery.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fservice%2Fquery" class="dashAnchor">GET /admin/extension/service/query</a></td>
+        <td/>
+        <td/>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-ResourceClass.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fservice%2Fresourceclass%2F%7Bid%7D" class="dashAnchor">GET /admin/extension/service/resourceclass/{id}</a></td>
+        <td>Retrieve (GET) resource class info</td>
+        <td/>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/DELETE-ResourceClass.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Fextension%2Fservice%2Fresourceclass%2F%7Bid%7D" class="dashAnchor">DELETE /admin/extension/service/resourceclass/{id}</a></td>
+        <td>Deletes (DELETE) resource class</td>
+        <td/>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-ResourceClassActions.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fservice%2Fresourceclass%2F%7Bid%7D%2Fresourceclassactions" class="dashAnchor">GET /admin/extension/service/resourceclass/{id}/resourceclassactions</a></td>
+        <td>List registered resource class actions for extension service.</td>
+        <td/>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-CreateResourceClassAction.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fservice%2Fresourceclass%2F%7Bid%7D%2Fresourceclassactions" class="dashAnchor">POST /admin/extension/service/resourceclass/{id}/resourceclassactions</a></td>
+        <td>Registers resource class action for extension service.</td>
+        <td/>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-ServiceResources.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fservice%2Fresourceclass%2F%7Bid%7D%2Fserviceresources" class="dashAnchor">GET /admin/extension/service/resourceclass/{id}/serviceresources</a></td>
+        <td>List registered service resources for extension service.</td>
+        <td/>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-CreateServiceResource.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fservice%2Fresourceclass%2F%7Bid%7D%2Fserviceresources" class="dashAnchor">POST /admin/extension/service/resourceclass/{id}/serviceresources</a></td>
+        <td>Registers service resource for extension service.</td>
+        <td/>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-ResourceClassAction.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fservice%2Fresourceclassaction%2F%7Bid%7D" class="dashAnchor">GET /admin/extension/service/resourceclassaction/{id}</a></td>
+        <td>Retrieve (GET) resource class action info</td>
+        <td/>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/DELETE-ResourceClassAction.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Fextension%2Fservice%2Fresourceclassaction%2F%7Bid%7D" class="dashAnchor">DELETE /admin/extension/service/resourceclassaction/{id}</a></td>
+        <td>Deletes (DELETE) resource class action</td>
+        <td/>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-AclRules.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fservice%2Fresourceclassaction%2F%7Bid%7D%2Faclrules" class="dashAnchor">GET /admin/extension/service/resourceclassaction/{id}/aclrules</a></td>
+        <td>List registered resource class ACL rule for extension service.</td>
+        <td/>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-CreateAclRule.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fservice%2Fresourceclassaction%2F%7Bid%7D%2Faclrules" class="dashAnchor">POST /admin/extension/service/resourceclassaction/{id}/aclrules</a></td>
+        <td>Registers resource class ACL rule for extension service.</td>
+        <td/>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-ServiceResource.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fservice%2Fserviceresource%2F%7Bid%7D" class="dashAnchor">GET /admin/extension/service/serviceresource/{id}</a></td>
+        <td>Retrieve (GET) service resource</td>
+        <td/>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/DELETE-ServiceResource.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Fextension%2Fservice%2Fserviceresource%2F%7Bid%7D" class="dashAnchor">DELETE /admin/extension/service/serviceresource/{id}</a></td>
+        <td>Delete (DELETE) service resource</td>
+        <td/>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-Service-ExtensionView.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fservice%2F%7Bid%7D" class="dashAnchor">GET /admin/extension/service/{id}</a></td>
+        <td>Gives information about a concrete extension service.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/PUT-Service.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2Fservice%2F%7Bid%7D" class="dashAnchor">PUT /admin/extension/service/{id}</a></td>
+        <td>Updates already registered service.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/DELETE-Service.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Fextension%2Fservice%2F%7Bid%7D" class="dashAnchor">DELETE /admin/extension/service/{id}</a></td>
+        <td>Deletes registered service.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-ApiDefinitions.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fservice%2F%7Bid%7D%2Fapidefinitions" class="dashAnchor">GET /admin/extension/service/{id}/apidefinitions</a></td>
+        <td>Returns the API definitions registered by this service.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-CreateApiDefinition.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fservice%2F%7Bid%7D%2Fapidefinitions" class="dashAnchor">POST /admin/extension/service/{id}/apidefinitions</a></td>
+        <td>Creates API definition.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-ApiFilters.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fservice%2F%7Bid%7D%2Fapifilters" class="dashAnchor">GET /admin/extension/service/{id}/apifilters</a></td>
+        <td>Returns the API filters registered by this service.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-CreateApiFilter.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fservice%2F%7Bid%7D%2Fapifilters" class="dashAnchor">POST /admin/extension/service/{id}/apifilters</a></td>
+        <td>Creates API filter.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-CheckAuthorizationForService.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fservice%2F%7Bid%7D%2Fauthorizationcheck" class="dashAnchor">POST /admin/extension/service/{id}/authorizationcheck</a></td>
+        <td>Checks user authorization for service, URL and request verb.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-Links.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fservice%2F%7Bid%7D%2Flinks" class="dashAnchor">GET /admin/extension/service/{id}/links</a></td>
+        <td>Returns the links registered by this service.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-CreateServiceLink.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fservice%2F%7Bid%7D%2Flinks" class="dashAnchor">POST /admin/extension/service/{id}/links</a></td>
+        <td>Create service link.</td>
+        <td/>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-ResourceClasses.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fservice%2F%7Bid%7D%2Fresourceclasses" class="dashAnchor">GET /admin/extension/service/{id}/resourceclasses</a></td>
+        <td>List registered resource classes for extension service.</td>
+        <td/>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-CreateResourceClass.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fservice%2F%7Bid%7D%2Fresourceclasses" class="dashAnchor">POST /admin/extension/service/{id}/resourceclasses</a></td>
+        <td>Registers resource class for extension service.</td>
+        <td/>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-Rights.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fservice%2F%7Bid%7D%2Frights" class="dashAnchor">GET /admin/extension/service/{id}/rights</a></td>
+        <td>Gives the rights registered by this extension service.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-CreateRight.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fservice%2F%7Bid%7D%2Frights" class="dashAnchor">POST /admin/extension/service/{id}/rights</a></td>
+        <td>Registers right to the rights managed by this extension service.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-SystemSettings.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fsettings" class="dashAnchor">GET /admin/extension/settings</a></td>
+        <td>Retrieve system settings.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/PUT-SystemSettings.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2Fsettings" class="dashAnchor">PUT /admin/extension/settings</a></td>
+        <td>Update system settings.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-AmqpSettings.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fsettings%2Famqp" class="dashAnchor">GET /admin/extension/settings/amqp</a></td>
+        <td>Retrieve system AMQP settings.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/PUT-AmqpSettings.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2Fsettings%2Famqp" class="dashAnchor">PUT /admin/extension/settings/amqp</a></td>
+        <td>Update system AMQP settings.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-ResetAmqpCertificate.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fsettings%2Famqp%2Faction%2FresetAmqpCertificate" class="dashAnchor">POST /admin/extension/settings/amqp/action/resetAmqpCertificate</a></td>
+        <td>Resets AMQP certificate.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-ResetAmqpTruststore.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fsettings%2Famqp%2Faction%2FresetAmqpTruststore" class="dashAnchor">POST /admin/extension/settings/amqp/action/resetAmqpTruststore</a></td>
+        <td>Resets AMQP truststore.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-TestAmqpSettings.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fsettings%2Famqp%2Faction%2Ftest" class="dashAnchor">POST /admin/extension/settings/amqp/action/test</a></td>
+        <td>Validate provisional AMQP settings.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-UploadAmqpCertificate.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fsettings%2Famqp%2Faction%2FupdateAmqpCertificate" class="dashAnchor">POST /admin/extension/settings/amqp/action/updateAmqpCertificate</a></td>
+        <td>Updates AMQP certificate.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-UploadAmqpTruststore.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fsettings%2Famqp%2Faction%2FupdateAmqpTruststore" class="dashAnchor">POST /admin/extension/settings/amqp/action/updateAmqpTruststore</a></td>
+        <td>Updates AMQP trust store.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-BlockingTaskSettings.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fsettings%2FblockingTask" class="dashAnchor">GET /admin/extension/settings/blockingTask</a></td>
+        <td>Retrieve system blocking task settings.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-BlockingTaskSettings.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2Fsettings%2FblockingTask" class="dashAnchor">PUT /admin/extension/settings/blockingTask</a></td>
+        <td>Update system blocking task settings.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-BlockingTaskOperations.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fsettings%2FblockingTask%2Foperations" class="dashAnchor">GET /admin/extension/settings/blockingTask/operations</a></td>
+        <td>Retrieve a list of operations that are configured as blocking tasks.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-BlockingTaskOperations.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2Fsettings%2FblockingTask%2Foperations" class="dashAnchor">PUT /admin/extension/settings/blockingTask/operations</a></td>
+        <td>Update the list of operations that are configured as blocking tasks.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-BrandingSettings.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fsettings%2Fbranding" class="dashAnchor">GET /admin/extension/settings/branding</a></td>
+        <td>Retrieve system branding settings.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-BrandingSettings.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2Fsettings%2Fbranding" class="dashAnchor">PUT /admin/extension/settings/branding</a></td>
+        <td>Update system branding settings.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-LibrarySettings.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fsettings%2Fcatalog" class="dashAnchor">GET /admin/extension/settings/catalog</a></td>
+        <td>Retrieve vCloud Director catalog setting details.</td>
+        <td>5.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-LibrarySettings.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2Fsettings%2Fcatalog" class="dashAnchor">PUT /admin/extension/settings/catalog</a></td>
+        <td>Update catalog settings details.</td>
+        <td>5.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-EmailSettings.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fsettings%2Femail" class="dashAnchor">GET /admin/extension/settings/email</a></td>
+        <td>Retrieve system email settings.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-EmailSettings.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2Fsettings%2Femail" class="dashAnchor">PUT /admin/extension/settings/email</a></td>
+        <td>Update system email settings.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-GeneralSettings-ExtensionView.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fsettings%2Fgeneral" class="dashAnchor">GET /admin/extension/settings/general</a></td>
+        <td>Retrieve other system settings.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-GeneralSettings-ExtensionView.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2Fsettings%2Fgeneral" class="dashAnchor">PUT /admin/extension/settings/general</a></td>
+        <td>Update other system settings.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-ResetVcTruststore.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fsettings%2Fgeneral%2Faction%2FresetVcTrustsore" class="dashAnchor">POST /admin/extension/settings/general/action/resetVcTrustsore</a></td>
+        <td>Resets vCenter trust store.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-UploadVcTruststore.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fsettings%2Fgeneral%2Faction%2FupdateVcTrustsore" class="dashAnchor">POST /admin/extension/settings/general/action/updateVcTrustsore</a></td>
+        <td>Updates vCenter trust store.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-KerberosSettings.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fsettings%2FkerberosSettings" class="dashAnchor">GET /admin/extension/settings/kerberosSettings</a></td>
+        <td>Retrieve system Kerberos settings.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-KerberosSettings.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2Fsettings%2FkerberosSettings" class="dashAnchor">PUT /admin/extension/settings/kerberosSettings</a></td>
+        <td>Update system Kerberos settings.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-LdapSettings.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fsettings%2FldapSettings" class="dashAnchor">GET /admin/extension/settings/ldapSettings</a></td>
+        <td>Retrieve system LDAP settings.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-LdapSettings.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2Fsettings%2FldapSettings" class="dashAnchor">PUT /admin/extension/settings/ldapSettings</a></td>
+        <td>Update system LDAP settings.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-ResetLdapSslCertificate-ExtensionView.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fsettings%2FldapSettings%2Faction%2FresetLdapCertificate" class="dashAnchor">POST /admin/extension/settings/ldapSettings/action/resetLdapCertificate</a></td>
+        <td>Resets system LDAP SSL certificate.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-ResetLdapKeystore-ExtensionView.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fsettings%2FldapSettings%2Faction%2FresetLdapKeyStore" class="dashAnchor">POST /admin/extension/settings/ldapSettings/action/resetLdapKeyStore</a></td>
+        <td>Resets system LDAP keystore.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-ResetSspiKeytab-ExtensionView.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fsettings%2FldapSettings%2Faction%2FresetLdapSspiKeytab" class="dashAnchor">POST /admin/extension/settings/ldapSettings/action/resetLdapSspiKeytab</a></td>
+        <td>Resets system LDAP SSPI key tab.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-UploadLdapSslCertificate-ExtensionView.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fsettings%2FldapSettings%2Faction%2FupdateLdapCertificate" class="dashAnchor">POST /admin/extension/settings/ldapSettings/action/updateLdapCertificate</a></td>
+        <td>Updates system LDAP SSL certificate.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-UploadLdapKeystore-ExtensionView.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fsettings%2FldapSettings%2Faction%2FupdateLdapKeyStore" class="dashAnchor">POST /admin/extension/settings/ldapSettings/action/updateLdapKeyStore</a></td>
+        <td>Updates system LDAP keystore.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-UploadSspiKeytab-ExtensionView.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2Fsettings%2FldapSettings%2Faction%2FupdateLdapSspiKeytab" class="dashAnchor">POST /admin/extension/settings/ldapSettings/action/updateLdapSspiKeytab</a></td>
+        <td>Updates system LDAP SSPI key tab.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-LicenseSpec.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fsettings%2Flicense" class="dashAnchor">GET /admin/extension/settings/license</a></td>
+        <td>Retrieve vCloud Director software license details.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-LicenseSpec.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2Fsettings%2Flicense" class="dashAnchor">PUT /admin/extension/settings/license</a></td>
+        <td>Update vCloud Director software license details.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-LookupServiceSettings.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fsettings%2FlookupService" class="dashAnchor">GET /admin/extension/settings/lookupService</a></td>
+        <td/>
+        <td/>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-LookupService.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2Fsettings%2FlookupService" class="dashAnchor">PUT /admin/extension/settings/lookupService</a></td>
+        <td>Register / unregister Lookup Service to / from vCD.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-NotificationsSettings.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fsettings%2Fnotifications" class="dashAnchor">GET /admin/extension/settings/notifications</a></td>
+        <td>Retrieve system AMQP notifications settings.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-NotificationsSettings.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2Fsettings%2Fnotifications" class="dashAnchor">PUT /admin/extension/settings/notifications</a></td>
+        <td>Update system AMQP notifications settings.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-SystemPasswordPolicySettings.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fsettings%2FpasswordPolicy" class="dashAnchor">GET /admin/extension/settings/passwordPolicy</a></td>
+        <td>Retrieve system password policy settings.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-SystemPasswordPolicySettings.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2Fsettings%2FpasswordPolicy" class="dashAnchor">PUT /admin/extension/settings/passwordPolicy</a></td>
+        <td>Update system password policy settings.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-StrandedItem.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FstrandedItem%2F%7Bid%7D" class="dashAnchor">GET /admin/extension/strandedItem/{id}</a></td>
+        <td>Gets the representation of a strandedItem.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/DELETE-StrandedItem.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Fextension%2FstrandedItem%2F%7Bid%7D" class="dashAnchor">DELETE /admin/extension/strandedItem/{id}</a></td>
+        <td>Removes stranded item.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-ForceDeleteStrandedItem.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2FstrandedItem%2F%7Bid%7D%2Faction%2FforceDelete" class="dashAnchor">POST /admin/extension/strandedItem/{id}/action/forceDelete</a></td>
+        <td>Removes stranded item and its children</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/DELETE-AllStrandedItems.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Fextension%2FstrandedItems" class="dashAnchor">DELETE /admin/extension/strandedItems</a></td>
+        <td>Removes all stranded items.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-StrandedItemsFromQuery.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FstrandedItems%2Fquery" class="dashAnchor">GET /admin/extension/strandedItems/query</a></td>
+        <td>Get list of all stranded items in the system by using REST API general QueryHandler.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-VAppsAllFromQuery.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fvapps%2Fquery" class="dashAnchor">GET /admin/extension/vapps/query</a></td>
+        <td>Get list of all vApps in the system by using REST API general QueryHandler.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-OrganizationVdcResourcePoolSet.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fvdc%2F%7Bid%7D%2FresourcePools" class="dashAnchor">GET /admin/extension/vdc/{id}/resourcePools</a></td>
+        <td>Retrieve resource pools associated with an organization VDC</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-VirtualCenter.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FvimServer%2F%7Bid%7D" class="dashAnchor">GET /admin/extension/vimServer/{id}</a></td>
+        <td>Retrieve the representation of a registered vCenter server.</td>
+        <td>0.9</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/PUT-VirtualCenter.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2FvimServer%2F%7Bid%7D" class="dashAnchor">PUT /admin/extension/vimServer/{id}</a></td>
+        <td>Update the representation of a registered vCenter server.</td>
+        <td>0.9</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-ForceVimServerReconnect.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2FvimServer%2F%7Bid%7D%2Faction%2Fforcevimserverreconnect" class="dashAnchor">POST /admin/extension/vimServer/{id}/action/forcevimserverreconnect</a></td>
+        <td>Force vCloud Director to reconnect to a registered vCenter server.</td>
+        <td>1.0</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-RefreshVCenter.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2FvimServer%2F%7Bid%7D%2Faction%2Frefresh" class="dashAnchor">POST /admin/extension/vimServer/{id}/action/refresh</a></td>
+        <td>Refresh vCenter server.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-RefreshStorageClasses.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2FvimServer%2F%7Bid%7D%2Faction%2FrefreshStorageProfiles" class="dashAnchor">POST /admin/extension/vimServer/{id}/action/refreshStorageProfiles</a></td>
+        <td>Refresh Storage Classes data from a registered vCenter server.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-UnregisterVimServer.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2FvimServer%2F%7Bid%7D%2Faction%2Funregister" class="dashAnchor">POST /admin/extension/vimServer/{id}/action/unregister</a></td>
+        <td>Unregister a vCenter server.</td>
+        <td>0.9</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-AttachedHosts.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FvimServer%2F%7Bid%7D%2FhostReferences" class="dashAnchor">GET /admin/extension/vimServer/{id}/hostReferences</a></td>
+        <td>Retrieve the list of ESX/ESXi hosts in the cloud.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-ImportMedia.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2FvimServer%2F%7Bid%7D%2FimportMedia" class="dashAnchor">POST /admin/extension/vimServer/{id}/importMedia</a></td>
+        <td>Import media from vCenter.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-ImportVmAsVApp.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2FvimServer%2F%7Bid%7D%2FimportVmAsVApp" class="dashAnchor">POST /admin/extension/vimServer/{id}/importVmAsVApp</a></td>
+        <td>Import a virtual machine from vCenter as a vCloud Director vApp.</td>
+        <td>1.0</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-ImportVmAsVAppTemplate.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2FvimServer%2F%7Bid%7D%2FimportVmAsVAppTemplate" class="dashAnchor">POST /admin/extension/vimServer/{id}/importVmAsVAppTemplate</a></td>
+        <td>Import a virtual machine from vCenter as a vCloud Director vApp template.</td>
+        <td>1.0</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-ImportVmIntoExistingVapp.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fextension%2FvimServer%2F%7Bid%7D%2FimportVmIntoExistingVApp" class="dashAnchor">POST /admin/extension/vimServer/{id}/importVmIntoExistingVApp</a></td>
+        <td>Import a virtual machine from vCenter into an existing vCloud Director
+ vApp.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-AvailableNetworks.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FvimServer%2F%7Bid%7D%2Fnetworks" class="dashAnchor">GET /admin/extension/vimServer/{id}/networks</a></td>
+        <td>Retrieve a list of available vCenter networks and portgroups.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-AvailableResourcePools.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FvimServer%2F%7Bid%7D%2FresourcePoolList" class="dashAnchor">GET /admin/extension/vimServer/{id}/resourcePoolList</a></td>
+        <td>Retrieve a list of unused resource pools from a vCenter server.</td>
+        <td>1.0</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-StorageProfiles.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FvimServer%2F%7Bid%7D%2FstorageProfiles" class="dashAnchor">GET /admin/extension/vimServer/{id}/storageProfiles</a></td>
+        <td>Retrieve all storage profiles in the VIM server</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-VmsInVirtualCenter.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FvimServer%2F%7Bid%7D%2FvmsList" class="dashAnchor">GET /admin/extension/vimServer/{id}/vmsList</a></td>
+        <td>Retreive a list of virtual machines that can be imported from a registered vCenter server.</td>
+        <td>1.0</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-VSphereWebClientUrl.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FvimServer%2F%7Bid%7D%2F%7BvimObjType%7D%2F%7BvimObjMoref%7D%2FvSphereWebClientUrl" class="dashAnchor">GET /admin/extension/vimServer/{id}/{vimObjType}/{vimObjMoref}/vSphereWebClientUrl</a></td>
+        <td>Retrieve the vSphere URL of an object.</td>
+        <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-VimServerRefrences.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FvimServerReferences" class="dashAnchor">GET /admin/extension/vimServerReferences</a></td>
+        <td>Retrieve a list of references to vCenter servers attached to the system.</td>
+        <td>1.0</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-VimServersFromQuery.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2FvimServerReferences%2Fquery" class="dashAnchor">GET /admin/extension/vimServerReferences/query</a></td>
+        <td>Get list of vSphere servers by using REST API general QueryHandler;
+ This is read only list of vim servers and is not bound to specific states.</td>
+        <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-VSMServer.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fextension%2Fvsm%2F%7Bid%7D" class="dashAnchor">GET /admin/extension/vsm/{id}</a></td>
+        <td>Retrieve vShield Manager configuration details, including administrator
+ credentials.</td>
+        <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/PUT-VsmManager.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fextension%2Fvsm%2F%7Bid%7D" class="dashAnchor">PUT /admin/extension/vsm/{id}</a></td>
+        <td>Update vShield Manager configuration details, including administrator
+ credentials.</td>
+        <td>5.1</td>
+    </tr>
+  </table>
+
+<br/>
+<br/>
+<br/>
+</body>
+</html>

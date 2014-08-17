@@ -1,0 +1,176 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>vCloud REST API - PublishExternalCatalogParams</title>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
+<!-- -->
+</head>
+<body onload="javascript:setupEventHandlers()">
+<br/>
+
+<h1>PublishExternalCatalogParamsType</h1>
+
+<dl>
+                        <dt>Element:</dt>
+            <dd>PublishExternalCatalogParams</dd>
+        <dt>Type:</dt>
+    <dd>PublishExternalCatalogParamsType</dd>
+    <dt>Namespace:</dt>
+    <dd><a href="http://www.vmware.com/vcloud/v1.5">http://www.vmware.com/vcloud/v1.5</a></dd>
+    <dt>Description:</dt>
+    <dd>
+                 Configuration parameters for a catalog that is published
+                 externally.
+            </dd>
+    <dt>Since:</dt>
+    <dd>5.5</dd>
+        <dt>Schema:</dt>
+    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/admin/vCloudEntities.xsd">vCloudEntities.xsd</a></dd>
+    <dt>Media type(s):</dt>
+    <dd>application/vnd.vmware.admin.publishExternalCatalogParams+xml<br/></dd>
+    <dt>Extends:</dt>
+    <dd><a href="../types/VCloudExtensibleType.html">VCloudExtensibleType</a></dd>
+
+    <dt>XML Representation:</dt>
+    <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">PublishExternalCatalogParams</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/v1.5</span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">IsPublishedExternally</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">IsPublishedExternally</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">catalogPublishedUrl</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">catalogPublishedUrl</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Password</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Password</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">IsCacheEnabled</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">IsCacheEnabled</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">PreserveIdentityInfoFlag</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">PreserveIdentityInfoFlag</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain"/><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">PublishExternalCatalogParams</span><span class="xml_tag_symbols">&gt;</span><br/>
+</dd>
+
+    
+        <a id="elements" name="elements"/>
+    <dt><p class="table-title">Elements</p></dt>
+    <dd>
+    <table cellspacing="0">
+      <tr>
+        <th>Element</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Modifiable</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+        <th>Description</th>
+      </tr>
+                      <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.5</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
+                                      <a name="IsPublishedExternally"/>
+                    <tr class="r0">
+                <td>IsPublishedExternally</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.5</td>
+                <td/>
+                <td>
+                                True enables external publication as configured
+                                by these parameters.
+                            </td>
+            </tr>
+                              <a name="catalogPublishedUrl"/>
+                    <tr class="r1">
+                <td>catalogPublishedUrl</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.5</td>
+                <td/>
+                <td>
+                                Read-only endpoint URL supplied by the server.
+                                External subscribers can connect to the catalog
+                                at this URL.
+                            </td>
+            </tr>
+                                      <a name="Password"/>
+                    <tr class="r0">
+                <td>Password</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.5</td>
+                <td/>
+                <td>
+                                 Password required when connecting to the
+                                 endpoint.
+                             </td>
+            </tr>
+                              <a name="IsCacheEnabled"/>
+                    <tr class="r1">
+                <td>IsCacheEnabled</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.5</td>
+                <td/>
+                <td>
+                                True enables content caching for this catalog.
+                                All items in the catalog are created and stored
+                                in transfer storage. If false, items are not
+                                placed in transfer storage until they are
+                                requested by a subscriber.
+                            </td>
+            </tr>
+                                      <a name="PreserveIdentityInfoFlag"/>
+                    <tr class="r0">
+                <td>PreserveIdentityInfoFlag</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.5</td>
+                <td/>
+                <td>
+                                True includes BIOS UUIDs and MAC addresses in the
+                                downloaded OVF package. If false, those information
+                                will be excluded.
+                            </td>
+            </tr>
+                  </table>
+    </dd>
+    
+    
+        <a id="operations" name="operations"/>
+    <dt><p class="table-title">Operations</p></dt>
+    <dd>
+    <table cellspacing="0">
+      <tr>
+        <th>CRUD</th>
+        <th>Operation</th>
+        <th>Description</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+      </tr>
+
+                      <tr class="r1">
+            <td nowrap="1">as input</td>
+            <td nowrap="1"><a href="../operations/POST-UpdateExternalLibraryPublishSettings.html">POST /admin/catalog/{id}/action/publishToExternalOrganizations</a></td>
+                        <td>Publish a catalog to external orgs.</td>
+            <td>5.5</td>
+            <td/>
+        </tr>
+          </table>
+    </dd>
+    
+</dl>
+
+<br/>
+<br/>
+<br/>
+</body>
+</html>

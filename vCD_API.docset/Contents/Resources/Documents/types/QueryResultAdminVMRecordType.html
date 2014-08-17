@@ -2,26 +2,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>vCloud REST API - AdminVMRecord</title>
-    <style>
-h4.feedbackheading
-{
-color: #F90;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 16px;
-font-weight: bold;
-line-height: 16px;
-padding: 10px 5px 10px 10px;
-margin-bottom:5px;
-border-bottom: 1px solid #A1C2E1;
-border-top: 1px solid #A1C2E1;
-}
-</style>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
 <!-- -->
 </head>
 <body onload="javascript:setupEventHandlers()">
-<div id="feedbackhover" class="feedbackhover"><a style="border:none;color:white;text-decoration:none" href="javascript:openFeedbackForm();">SEND US FEEDBACK!</a></div>
-
-
 <br/>
 
 <h1>QueryResultAdminVMRecordType</h1>
@@ -40,31 +26,30 @@ border-top: 1px solid #A1C2E1;
     <dt>Since:</dt>
     <dd>1.5</dd>
         <dt>Schema:</dt>
-    <dd><a href="../etc/1.5/schemas/vcloud/queryRecordView.xsd">queryRecordView.xsd</a></dd>
+    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/queryRecordView.xsd">queryRecordView.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
     <dd><a href="../types/QueryResultRecordType.html">QueryResultRecordType</a></dd>
 
     <dt>XML Representation:</dt>
-    <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">AdminVMRecord</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/v1.5</span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultRecordType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultRecordType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultRecordType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#catalogName" target="classFrame" title="catalogName">catalogName</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#container" target="classFrame" title="container">container</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#containerName" target="classFrame" title="containerName">containerName</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#datastoreName" target="classFrame" title="datastoreName">datastoreName</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#guestOs" target="classFrame" title="guestOs">guestOs</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#hardwareVersion" target="classFrame" title="hardwareVersion">hardwareVersion</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#hostName" target="classFrame" title="hostName">hostName</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#isDeleted" target="classFrame" title="isDeleted">isDeleted</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#isDeployed" target="classFrame" title="isDeployed">isDeployed</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_attribute_value">"</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#isPublished" target="classFrame" title="isPublished">isPublished</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#isVAppTemplate" target="classFrame" title="isVAppTemplate">isVAppTemplate</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#isVdcEnabled" target="classFrame" title="isVdcEnabled">isVdcEnabled</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#memoryMB" target="classFrame" title="memoryMB">memoryMB</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_attribute_value">"</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#moref" target="classFrame" title="moref">moref</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#networkName" target="classFrame" title="networkName">networkName</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#numberOfCpus" target="classFrame" title="numberOfCpus">numberOfCpus</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_attribute_value">"</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#org" target="classFrame" title="org">org</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#status" target="classFrame" title="status">status</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#storageProfileName" target="classFrame" title="storageProfileName">storageProfileName</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#vc" target="classFrame" title="vc">vc</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#vdc" target="classFrame" title="vdc">vdc</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#vmToolsVersion" target="classFrame" title="vmToolsVersion">vmToolsVersion</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/LinkType.html" target="classFrame" title="Link">Link</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
+    <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">AdminVMRecord</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/v1.5</span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultRecordType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultRecordType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultRecordType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#containerName" target="classFrame" title="containerName">containerName</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#container" target="classFrame" title="container">container</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#status" target="classFrame" title="status">status</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#vdc" target="classFrame" title="vdc">vdc</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#hostName" target="classFrame" title="hostName">hostName</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#isVAppTemplate" target="classFrame" title="isVAppTemplate">isVAppTemplate</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#isDeleted" target="classFrame" title="isDeleted">isDeleted</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#guestOs" target="classFrame" title="guestOs">guestOs</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#numberOfCpus" target="classFrame" title="numberOfCpus">numberOfCpus</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#memoryMB" target="classFrame" title="memoryMB">memoryMB</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#networkName" target="classFrame" title="networkName">networkName</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#isDeployed" target="classFrame" title="isDeployed">isDeployed</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_attribute_value">"</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#isPublished" target="classFrame" title="isPublished">isPublished</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#catalogName" target="classFrame" title="catalogName">catalogName</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#isVdcEnabled" target="classFrame" title="isVdcEnabled">isVdcEnabled</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#hardwareVersion" target="classFrame" title="hardwareVersion">hardwareVersion</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_attribute_value">"</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#vmToolsVersion" target="classFrame" title="vmToolsVersion">vmToolsVersion</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#datastoreName" target="classFrame" title="datastoreName">datastoreName</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#vc" target="classFrame" title="vc">vc</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#moref" target="classFrame" title="moref">moref</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#org" target="classFrame" title="org">org</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultAdminVMRecordType.html#storageProfileName" target="classFrame" title="storageProfileName">storageProfileName</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/LinkType.html" target="classFrame" title="Link">Link</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/LinkType.html#rel" target="classFrame" title="rel">rel</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/MetadataType.html" target="classFrame" title="Metadata">Metadata</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ResourceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ResourceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/LinkType.html" target="classFrame" title="Link">Link</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/LinkType.html" target="classFrame" title="Link">Link</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/LinkType.html#rel" target="classFrame" title="rel">rel</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/MetadataEntryType.html" target="classFrame" title="MetadataEntry">MetadataEntry</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ResourceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ResourceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/LinkType.html" target="classFrame" title="Link">Link</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/LinkType.html" target="classFrame" title="Link">Link</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/LinkType.html#rel" target="classFrame" title="rel">rel</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/MetadataDomainTagType.html" target="classFrame" title="Domain">Domain</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/MetadataDomainTagType.html#visibility" target="classFrame" title="visibility">visibility</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Key</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Key</span><span class="xml_tag_symbols">&gt;</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Value</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Value</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/MetadataTypedValue.html" target="classFrame" title="TypedValue">TypedValue</a></span><span class="xml_tag_symbols">/&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name"><a href="../types/MetadataEntryType.html" target="classFrame" title="MetadataEntry">MetadataEntry</a></span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name"><a href="../types/MetadataType.html" target="classFrame" title="Metadata">Metadata</a></span><span class="xml_tag_symbols">&gt;</span><br/>
@@ -83,7 +68,9 @@ border-top: 1px solid #A1C2E1;
         <th>Since</th>
         <th>Deprecated</th>
         <th>Description</th>
-      </tr>
+                    <th>Filter</th>
+            <th>Sort</th>
+              </tr>
                       <a name="href"/>
         <tr class="r1">
             <td>href</td>
@@ -95,7 +82,13 @@ border-top: 1px solid #A1C2E1;
             <td>
                     Contains the URI to the resource.
                 </td>
-        </tr>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
                               <a name="id"/>
         <tr class="r0">
             <td>id</td>
@@ -105,9 +98,17 @@ border-top: 1px solid #A1C2E1;
             <td>1.5</td>
             <td/>
             <td>
-                    Contains the vcd id of the resource.
+                    The resource identifier, expressed in URN format. The value
+                    of this attribute uniquely identifies the resource,
+                    persists for the life of the resource, and is never reused.
                 </td>
-        </tr>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
                       <a name="type"/>
         <tr class="r1">
             <td>type</td>
@@ -119,21 +120,51 @@ border-top: 1px solid #A1C2E1;
             <td>
                     Contains the type of the resource.
                 </td>
-        </tr>
-                              <a name="catalogName"/>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                              <a name="name"/>
         <tr class="r0">
-            <td>catalogName</td>
+            <td>name</td>
             <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
             <td>No</td>
             <td>none</td>
             <td>1.5</td>
             <td/>
             <td>
-                            Catalog name
+                            The name of this VM.
                         </td>
-        </tr>
-                      <a name="container"/>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                      <a name="containerName"/>
         <tr class="r1">
+            <td>containerName</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+            <td>No</td>
+            <td>none</td>
+            <td>1.5</td>
+            <td/>
+            <td>
+                            The name of the containing vApp or vApp template.
+                        </td>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                              <a name="container"/>
+        <tr class="r0">
             <td>container</td>
             <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
             <td>No</td>
@@ -143,31 +174,103 @@ border-top: 1px solid #A1C2E1;
             <td>
                             Vapp or Vapp template
                         </td>
-        </tr>
-                              <a name="containerName"/>
-        <tr class="r0">
-            <td>containerName</td>
-            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-            <td>No</td>
-            <td>none</td>
-            <td>1.5</td>
-            <td/>
-            <td>
-                            Vapp name or Vapp template name
-                        </td>
-        </tr>
-                      <a name="datastoreName"/>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                      <a name="status"/>
         <tr class="r1">
-            <td>datastoreName</td>
+            <td>status</td>
             <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
             <td>No</td>
             <td>none</td>
             <td>1.5</td>
             <td/>
             <td>
-                            Datastore name
+                            Status
                         </td>
-        </tr>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                              <a name="vdc"/>
+        <tr class="r0">
+            <td>vdc</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+            <td>No</td>
+            <td>none</td>
+            <td>1.5</td>
+            <td/>
+            <td>
+                            VDC reference or id
+                        </td>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                      <a name="hostName"/>
+        <tr class="r1">
+            <td>hostName</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+            <td>No</td>
+            <td>none</td>
+            <td>1.5</td>
+            <td/>
+            <td>
+                            ESXi host for this VM
+                        </td>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                              <a name="isVAppTemplate"/>
+        <tr class="r0">
+            <td>isVAppTemplate</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+            <td>No</td>
+            <td>none</td>
+            <td>1.5</td>
+            <td/>
+            <td>
+                            True if the VM belongs to a vApp template.
+                        </td>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                      <a name="isDeleted"/>
+        <tr class="r1">
+            <td>isDeleted</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+            <td>No</td>
+            <td>none</td>
+            <td>1.5</td>
+            <td/>
+            <td>
+                            True if this entity is deleted
+                        </td>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
                               <a name="guestOs"/>
         <tr class="r0">
             <td>guestOs</td>
@@ -179,91 +282,31 @@ border-top: 1px solid #A1C2E1;
             <td>
                             Guest operating system
                         </td>
-        </tr>
-                      <a name="hardwareVersion"/>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                      <a name="numberOfCpus"/>
         <tr class="r1">
-            <td>hardwareVersion</td>
+            <td>numberOfCpus</td>
             <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
             <td>No</td>
             <td>none</td>
             <td>1.5</td>
             <td/>
             <td>
-                            Hardware version
+                            Number of CPUs
                         </td>
-        </tr>
-                              <a name="hostName"/>
-        <tr class="r0">
-            <td>hostName</td>
-            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-            <td>No</td>
-            <td>none</td>
-            <td>1.5</td>
-            <td/>
-            <td>
-                            Host name
-                        </td>
-        </tr>
-                      <a name="isDeleted"/>
-        <tr class="r1">
-            <td>isDeleted</td>
-            <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-            <td>No</td>
-            <td>none</td>
-            <td>1.5</td>
-            <td/>
-            <td>
-                            Shows whether it is deleted
-                        </td>
-        </tr>
-                              <a name="isDeployed"/>
-        <tr class="r0">
-            <td>isDeployed</td>
-            <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-            <td>No</td>
-            <td>none</td>
-            <td>1.5</td>
-            <td/>
-            <td>
-                            Shows whether it is deployed
-                        </td>
-        </tr>
-                      <a name="isPublished"/>
-        <tr class="r1">
-            <td>isPublished</td>
-            <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-            <td>No</td>
-            <td>none</td>
-            <td>1.5</td>
-            <td/>
-            <td>
-                            Shows whether it is in published catalog
-                        </td>
-        </tr>
-                              <a name="isVAppTemplate"/>
-        <tr class="r0">
-            <td>isVAppTemplate</td>
-            <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-            <td>No</td>
-            <td>none</td>
-            <td>1.5</td>
-            <td/>
-            <td>
-                            Shows whether the VM belongs to VApp or VAppTemplate
-                        </td>
-        </tr>
-                      <a name="isVdcEnabled"/>
-        <tr class="r1">
-            <td>isVdcEnabled</td>
-            <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-            <td>No</td>
-            <td>none</td>
-            <td>1.5</td>
-            <td/>
-            <td>
-                            Shows whether vDC is enabled
-                        </td>
-        </tr>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
                               <a name="memoryMB"/>
         <tr class="r0">
             <td>memoryMB</td>
@@ -275,31 +318,13 @@ border-top: 1px solid #A1C2E1;
             <td>
                             Memory in MB
                         </td>
-        </tr>
-                      <a name="moref"/>
-        <tr class="r1">
-            <td>moref</td>
-            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-            <td>No</td>
-            <td>none</td>
-            <td>1.5</td>
-            <td/>
-            <td>
-                            Managed object reference
-                        </td>
-        </tr>
-                              <a name="name"/>
-        <tr class="r0">
-            <td>name</td>
-            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-            <td>No</td>
-            <td>none</td>
-            <td>1.5</td>
-            <td/>
-            <td>
-                            name
-                        </td>
-        </tr>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
                       <a name="networkName"/>
         <tr class="r1">
             <td>networkName</td>
@@ -311,19 +336,175 @@ border-top: 1px solid #A1C2E1;
             <td>
                             Network name
                         </td>
-        </tr>
-                              <a name="numberOfCpus"/>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                              <a name="isDeployed"/>
         <tr class="r0">
-            <td>numberOfCpus</td>
+            <td>isDeployed</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+            <td>No</td>
+            <td>none</td>
+            <td>1.5</td>
+            <td/>
+            <td>
+                            True if this entity is deployed
+                        </td>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                      <a name="isPublished"/>
+        <tr class="r1">
+            <td>isPublished</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+            <td>No</td>
+            <td>none</td>
+            <td>1.5</td>
+            <td/>
+            <td>
+                            True if this entity is in a published catalog
+                        </td>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                              <a name="catalogName"/>
+        <tr class="r0">
+            <td>catalogName</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+            <td>No</td>
+            <td>none</td>
+            <td>1.5</td>
+            <td/>
+            <td>
+                            Catalog name
+                        </td>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                      <a name="isVdcEnabled"/>
+        <tr class="r1">
+            <td>isVdcEnabled</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+            <td>No</td>
+            <td>none</td>
+            <td>1.5</td>
+            <td/>
+            <td>
+                            True if the containing VDC is enabled
+                        </td>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                              <a name="hardwareVersion"/>
+        <tr class="r0">
+            <td>hardwareVersion</td>
             <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
             <td>No</td>
             <td>none</td>
             <td>1.5</td>
             <td/>
             <td>
-                            Number of CPUs
+                            Hardware version
                         </td>
-        </tr>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                      <a name="vmToolsVersion"/>
+        <tr class="r1">
+            <td>vmToolsVersion</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+            <td>No</td>
+            <td>none</td>
+            <td>1.5</td>
+            <td/>
+            <td>
+                            VM tools version
+                        </td>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                              <a name="datastoreName"/>
+        <tr class="r0">
+            <td>datastoreName</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+            <td>No</td>
+            <td>none</td>
+            <td>1.5</td>
+            <td/>
+            <td>
+                            Datastore name
+                        </td>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                      <a name="vc"/>
+        <tr class="r1">
+            <td>vc</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+            <td>No</td>
+            <td>none</td>
+            <td>1.5</td>
+            <td/>
+            <td>
+                            Virtual center reference or id
+                        </td>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                              <a name="moref"/>
+        <tr class="r0">
+            <td>moref</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+            <td>No</td>
+            <td>none</td>
+            <td>1.5</td>
+            <td/>
+            <td>
+                            Managed object reference
+                        </td>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
                       <a name="org"/>
         <tr class="r1">
             <td>org</td>
@@ -335,21 +516,15 @@ border-top: 1px solid #A1C2E1;
             <td>
                             Organization reference or id
                         </td>
-        </tr>
-                              <a name="status"/>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                              <a name="storageProfileName"/>
         <tr class="r0">
-            <td>status</td>
-            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-            <td>No</td>
-            <td>none</td>
-            <td>1.5</td>
-            <td/>
-            <td>
-                            Status
-                        </td>
-        </tr>
-                      <a name="storageProfileName"/>
-        <tr class="r1">
             <td>storageProfileName</td>
             <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
             <td>No</td>
@@ -359,43 +534,13 @@ border-top: 1px solid #A1C2E1;
             <td>
                             Storage profile name
                         </td>
-        </tr>
-                              <a name="vc"/>
-        <tr class="r0">
-            <td>vc</td>
-            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-            <td>No</td>
-            <td>none</td>
-            <td>1.5</td>
-            <td/>
-            <td>
-                            Virtual center reference or id
-                        </td>
-        </tr>
-                      <a name="vdc"/>
-        <tr class="r1">
-            <td>vdc</td>
-            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-            <td>No</td>
-            <td>none</td>
-            <td>1.5</td>
-            <td/>
-            <td>
-                            vDC reference or id
-                        </td>
-        </tr>
-                              <a name="vmToolsVersion"/>
-        <tr class="r0">
-            <td>vmToolsVersion</td>
-            <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
-            <td>No</td>
-            <td>none</td>
-            <td>1.5</td>
-            <td/>
-            <td>
-                            VM tools version
-                        </td>
-        </tr>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
           </table>
     </dd>
     
@@ -421,7 +566,7 @@ border-top: 1px solid #A1C2E1;
                 <td>1.5</td>
                 <td/>
                 <td>
-                        Contains link to an operation associated with specific relation type.
+                        Contains a link to an operation associated with a specific relation type.
                     </td>
             </tr>
                                       <a name="Metadata"/>
@@ -442,10 +587,7 @@ border-top: 1px solid #A1C2E1;
 </dl>
 
 <br/>
-
 <br/>
-<script language="javascript">document.write(ID_Copyright);</script>
 <br/>
-<script language="javascript">document.write(ID_VersionInformation);</script>
 </body>
 </html>

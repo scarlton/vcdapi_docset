@@ -1,0 +1,270 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>vCloud REST API - VMWProviderVdcParams</title>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
+<!-- -->
+</head>
+<body onload="javascript:setupEventHandlers()">
+<br/>
+
+<h1>VMWProviderVdcParamsType</h1>
+
+<dl>
+                        <dt>Element:</dt>
+            <dd>VMWProviderVdcParams</dd>
+        <dt>Type:</dt>
+    <dd>VMWProviderVdcParamsType</dd>
+    <dt>Namespace:</dt>
+    <dd><a href="http://www.vmware.com/vcloud/extension/v1.5">http://www.vmware.com/vcloud/extension/v1.5</a></dd>
+    <dt>Description:</dt>
+    <dd>
+                Parameters to create or update a Provider vDC.
+            </dd>
+    <dt>Since:</dt>
+    <dd>5.1</dd>
+        <dt>Schema:</dt>
+    <dd><a href="file:///build/mts/release/bora-1323688/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
+    <dt>Media type(s):</dt>
+    <dd>application/vnd.vmware.admin.createProviderVdcParams+xml<br/></dd>
+    <dt>Extends:</dt>
+    <dd><a href="../types/ParamsType.html">ParamsType</a></dd>
+
+    <dt>XML Representation:</dt>
+    <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">VMWProviderVdcParams</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/extension/v1.5</span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns:vcloud_v1.5</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/v1.5</span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ParamsType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Description</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Description</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/VimObjectRefsType.html" target="classFrame" title="ResourcePoolRefs">ResourcePoolRefs</a></span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/VimObjectRefType.html" target="classFrame" title="VimObjectRef">VimObjectRef</a></span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/ReferenceType.html" target="classFrame" title="vcloud_v1.5:VimServerRef">vcloud_v1.5:VimServerRef</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">MoRef</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">MoRef</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">VimObjectType</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">VimObjectType</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name"><a href="../types/VimObjectRefType.html" target="classFrame" title="VimObjectRef">VimObjectRef</a></span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name"><a href="../types/VimObjectRefsType.html" target="classFrame" title="ResourcePoolRefs">ResourcePoolRefs</a></span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/ReferenceType.html" target="classFrame" title="vcloud_v1.5:VimServer">vcloud_v1.5:VimServer</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">HighestSupportedHardwareVersion</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">HighestSupportedHardwareVersion</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">IsEnabled</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">IsEnabled</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">StorageProfile</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">StorageProfile</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/HostObjectRefsType.html" target="classFrame" title="HostRefs">HostRefs</a></span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/HostObjectRefType.html" target="classFrame" title="HostObjectRef">HostObjectRef</a></span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/ReferenceType.html" target="classFrame" title="vcloud_v1.5:VimServerRef">vcloud_v1.5:VimServerRef</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">MoRef</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">MoRef</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">VimObjectType</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">VimObjectType</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Username</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Username</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Password</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Password</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name"><a href="../types/HostObjectRefType.html" target="classFrame" title="HostObjectRef">HostObjectRef</a></span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name"><a href="../types/HostObjectRefsType.html" target="classFrame" title="HostRefs">HostRefs</a></span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">DefaultPassword</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">DefaultPassword</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">DefaultUsername</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">DefaultUsername</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain"/><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">VMWProviderVdcParams</span><span class="xml_tag_symbols">&gt;</span><br/>
+</dd>
+
+        <a id="attributes" name="attributes"/>
+    <dt><p class="table-title">Attributes</p></dt>
+    <dd>
+    <table cellspacing="0">
+      <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Modifiable</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+        <th>Description</th>
+              </tr>
+                      <a name="name"/>
+        <tr class="r1">
+            <td>name</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+            <td>No</td>
+            <td>always</td>
+            <td>5.1</td>
+            <td/>
+            <td>
+                            Typically used to name or identify the subject of
+                            the request. For example, the name of the object
+                            being created or modified.
+                        </td>
+                    </tr>
+          </table>
+    </dd>
+    
+        <a id="elements" name="elements"/>
+    <dt><p class="table-title">Elements</p></dt>
+    <dd>
+    <table cellspacing="0">
+      <tr>
+        <th>Element</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Modifiable</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+        <th>Description</th>
+      </tr>
+                      <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
+                                      <a name="Description"/>
+                    <tr class="r0">
+                <td>Description</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Optional description.
+                            </td>
+            </tr>
+                              <a name="ResourcePoolRefs"/>
+                    <tr class="r1">
+                <td>ResourcePoolRefs</td>
+                <td><a href="../types/VimObjectRefsType.html">VimObjectRefsType</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Resource pools backing this provider vDC.
+                                You must specify a resource pool that
+                                is not used by (and is not the child of a
+                                resource pool used by) any other provider vDC.
+                            </td>
+            </tr>
+                                      <a name="VimServer"/>
+                    <tr class="r0">
+                <td>VimServer</td>
+                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                The vCenter server that provides the resource
+                                pools and datastores. A valid reference is
+                                required on create. On modify, this element is
+                                required for schema validation, but its
+                                contents cannot be changed.
+                            </td>
+            </tr>
+                              <a name="HighestSupportedHardwareVersion"/>
+                    <tr class="r1">
+                <td>HighestSupportedHardwareVersion</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                The highest supported virtual hardware version in the provider vDC.
+                                The two possible values are:
+                                  vmx-07 -- virtual hardware version 7.
+                                  vmx-08 -- virtual hardware version 8.
+                            </td>
+            </tr>
+                                      <a name="IsEnabled"/>
+                    <tr class="r0">
+                <td>IsEnabled</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Flag to show the enabled status of provider VDC.
+                            </td>
+            </tr>
+                              <a name="StorageProfile"/>
+                    <tr class="r1">
+                <td>StorageProfile</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Names of the storage profiles to add to this provider vDC.
+                            </td>
+            </tr>
+                                      <a name="HostRefs"/>
+                    <tr class="r0">
+                <td>HostRefs</td>
+                <td><a href="../types/HostObjectRefsType.html">HostObjectRefsType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                List of host which will be prepared.
+                            </td>
+            </tr>
+                              <a name="DefaultPassword"/>
+                    <tr class="r1">
+                <td>DefaultPassword</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                The default password which will be used for preparing hosts.
+                            </td>
+            </tr>
+                                      <a name="DefaultUsername"/>
+                    <tr class="r0">
+                <td>DefaultUsername</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                The default username which will be used for preparing hosts.
+                            </td>
+            </tr>
+                  </table>
+    </dd>
+    
+    
+        <a id="operations" name="operations"/>
+    <dt><p class="table-title">Operations</p></dt>
+    <dd>
+    <table cellspacing="0">
+      <tr>
+        <th>CRUD</th>
+        <th>Operation</th>
+        <th>Description</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+      </tr>
+
+                      <tr class="r1">
+            <td nowrap="1">as input</td>
+            <td nowrap="1"><a href="../operations/POST-CreateProviderVdcParams.html">POST /admin/extension/providervdcsparams</a></td>
+                        <td>Create a provider vDC.</td>
+            <td>5.1</td>
+            <td/>
+        </tr>
+          </table>
+    </dd>
+    
+</dl>
+
+<br/>
+<br/>
+<br/>
+</body>
+</html>

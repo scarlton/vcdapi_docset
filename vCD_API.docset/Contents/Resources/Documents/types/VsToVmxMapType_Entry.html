@@ -1,0 +1,97 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>vCloud REST API - VsToVmxMapType/Entry</title>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
+<!-- -->
+</head>
+<body onload="javascript:setupEventHandlers()">
+<br/>
+
+<h1>VsToVmxMapType/Entry</h1>
+
+<dl>
+        <dt>Type:</dt>
+    <dd>VsToVmxMapType/Entry</dd>
+    <dt>Namespace:</dt>
+    <dd><a href="http://www.vmware.com/vcloud/v1.5">http://www.vmware.com/vcloud/v1.5</a></dd>
+    <dt>Description:</dt>
+    <dd/>
+    <dt>Since:</dt>
+    <dd>5.5</dd>
+        <dt>Schema:</dt>
+    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/vApp.xsd">vApp.xsd</a></dd>
+    <dt>Media type(s):</dt>
+    <dd>None</dd>
+    <dt>Extends:</dt>
+    <dd><a href="http://www.w3.org/TR/xmlschema-0/#anyType">anyType</a></dd>
+
+    <dt>XML Representation:</dt>
+    <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">VsToVmxMapType/Entry</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/v1.5</span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/VsToVmxMapType_Entry.html#biosUuid" target="classFrame" title="biosUuid">biosUuid</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/VsToVmxMapType_Entry.html#datastorePath" target="classFrame" title="datastorePath">datastorePath</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/VsToVmxMapType_Entry.html#storageProfile" target="classFrame" title="storageProfile">storageProfile</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
+</dd>
+
+        <a id="attributes" name="attributes"/>
+    <dt><p class="table-title">Attributes</p></dt>
+    <dd>
+    <table cellspacing="0">
+      <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Modifiable</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+        <th>Description</th>
+              </tr>
+                      <a name="biosUuid"/>
+        <tr class="r1">
+            <td>biosUuid</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+            <td>No</td>
+            <td>always</td>
+            <td>5.5</td>
+            <td/>
+            <td>
+                                VM BIOS UUID as described in the OVF Virtual System
+                            </td>
+                    </tr>
+                              <a name="datastorePath"/>
+        <tr class="r0">
+            <td>datastorePath</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+            <td>No</td>
+            <td>always</td>
+            <td>5.5</td>
+            <td/>
+            <td>
+                                Datastore path of replicated VM's vmx file.
+                            </td>
+                    </tr>
+                      <a name="storageProfile"/>
+        <tr class="r1">
+            <td>storageProfile</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+            <td>No</td>
+            <td>always</td>
+            <td>5.5</td>
+            <td/>
+            <td>
+                                Destination storage profile to associate with VM. This must be a
+                                valid profile for the given datastore path.
+                            </td>
+                    </tr>
+          </table>
+    </dd>
+    
+    
+    
+    
+</dl>
+
+<br/>
+<br/>
+<br/>
+</body>
+</html>

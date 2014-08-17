@@ -2,26 +2,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>vCloud REST API - Session</title>
-    <style>
-h4.feedbackheading
-{
-color: #F90;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 16px;
-font-weight: bold;
-line-height: 16px;
-padding: 10px 5px 10px 10px;
-margin-bottom:5px;
-border-bottom: 1px solid #A1C2E1;
-border-top: 1px solid #A1C2E1;
-}
-</style>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
 <!-- -->
 </head>
 <body onload="javascript:setupEventHandlers()">
-<div id="feedbackhover" class="feedbackhover"><a style="border:none;color:white;text-decoration:none" href="javascript:openFeedbackForm();">SEND US FEEDBACK!</a></div>
-
-
 <br/>
 
 <h1>SessionType</h1>
@@ -40,15 +26,16 @@ border-top: 1px solid #A1C2E1;
     <dt>Since:</dt>
     <dd>1.5</dd>
         <dt>Schema:</dt>
-    <dd><a href="../etc/1.5/schemas/vcloud/session.xsd">session.xsd</a></dd>
+    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/session.xsd">session.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.vcloud.session+xml<br/></dd>
     <dt>Extends:</dt>
     <dd><a href="../types/ResourceType.html">ResourceType</a></dd>
 
     <dt>XML Representation:</dt>
-    <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Session</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/v1.5</span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ResourceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ResourceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/SessionType.html#org" target="classFrame" title="org">org</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/SessionType.html#user" target="classFrame" title="user">user</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/LinkType.html" target="classFrame" title="Link">Link</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
+    <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Session</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/v1.5</span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ResourceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ResourceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/SessionType.html#user" target="classFrame" title="user">user</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/SessionType.html#org" target="classFrame" title="org">org</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/SessionType.html#userId" target="classFrame" title="userId">userId</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/LinkType.html" target="classFrame" title="Link">Link</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/LinkType.html#rel" target="classFrame" title="rel">rel</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
 <span class="xml_plain"/><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Session</span><span class="xml_tag_symbols">&gt;</span><br/>
 </dd>
@@ -65,7 +52,7 @@ border-top: 1px solid #A1C2E1;
         <th>Since</th>
         <th>Deprecated</th>
         <th>Description</th>
-      </tr>
+              </tr>
                       <a name="href"/>
         <tr class="r1">
             <td>href</td>
@@ -77,7 +64,7 @@ border-top: 1px solid #A1C2E1;
             <td>
                             The URI of the entity.
                         </td>
-        </tr>
+                    </tr>
                               <a name="type"/>
         <tr class="r0">
             <td>type</td>
@@ -89,21 +76,9 @@ border-top: 1px solid #A1C2E1;
             <td>
                             The MIME type of the entity.
                         </td>
-        </tr>
-                      <a name="org"/>
+                    </tr>
+                      <a name="user"/>
         <tr class="r1">
-            <td>org</td>
-            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-            <td>No</td>
-            <td>none</td>
-            <td>1.5</td>
-            <td/>
-            <td>
-                            The name of the user's organization
-                        </td>
-        </tr>
-                              <a name="user"/>
-        <tr class="r0">
             <td>user</td>
             <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
             <td>No</td>
@@ -113,7 +88,31 @@ border-top: 1px solid #A1C2E1;
             <td>
                             The name of the user that owns the session
                         </td>
-        </tr>
+                    </tr>
+                              <a name="org"/>
+        <tr class="r0">
+            <td>org</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+            <td>No</td>
+            <td>none</td>
+            <td>1.5</td>
+            <td/>
+            <td>
+                            The name of the user's organization
+                        </td>
+                    </tr>
+                      <a name="userId"/>
+        <tr class="r1">
+            <td>userId</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+            <td>No</td>
+            <td>none</td>
+            <td>5.5</td>
+            <td/>
+            <td>
+                            The URN of the user entity
+                        </td>
+                    </tr>
           </table>
     </dd>
     
@@ -193,10 +192,7 @@ border-top: 1px solid #A1C2E1;
 </dl>
 
 <br/>
-
 <br/>
-<script language="javascript">document.write(ID_Copyright);</script>
 <br/>
-<script language="javascript">document.write(ID_VersionInformation);</script>
 </body>
 </html>

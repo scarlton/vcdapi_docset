@@ -1,0 +1,234 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>vCloud REST API - OrgGuestPersonalizationSettings</title>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
+<!-- -->
+</head>
+<body onload="javascript:setupEventHandlers()">
+<br/>
+
+<h1>OrgGuestPersonalizationSettingsType</h1>
+
+<dl>
+                        <dt>Element:</dt>
+            <dd>OrgGuestPersonalizationSettings</dd>
+        <dt>Type:</dt>
+    <dd>OrgGuestPersonalizationSettingsType</dd>
+    <dt>Namespace:</dt>
+    <dd><a href="http://www.vmware.com/vcloud/v1.5">http://www.vmware.com/vcloud/v1.5</a></dd>
+    <dt>Description:</dt>
+    <dd>
+                Represents default guest personalization settings for an
+                organization. These values are applied during guest
+                customization of virtual machines in this organization
+                if their GuestCustomizationSection specifies UseOrgSettings.
+            </dd>
+    <dt>Since:</dt>
+    <dd>5.1</dd>
+        <dt>Schema:</dt>
+    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/admin/vCloudEntities.xsd">vCloudEntities.xsd</a></dd>
+    <dt>Media type(s):</dt>
+    <dd>application/vnd.vmware.admin.guestPersonalizationSettings+xml<br/></dd>
+    <dt>Extends:</dt>
+    <dd><a href="../types/ResourceType.html">ResourceType</a></dd>
+
+    <dt>XML Representation:</dt>
+    <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">OrgGuestPersonalizationSettings</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/v1.5</span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ResourceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ResourceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/LinkType.html" target="classFrame" title="Link">Link</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/LinkType.html#rel" target="classFrame" title="rel">rel</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">DomainUsername</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">DomainUsername</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">DomainPassword</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">DomainPassword</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">DomainName</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">DomainName</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">AllowDomainSettings</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">AllowDomainSettings</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">AccountOrganizationalUnit</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">AccountOrganizationalUnit</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain"/><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">OrgGuestPersonalizationSettings</span><span class="xml_tag_symbols">&gt;</span><br/>
+</dd>
+
+        <a id="attributes" name="attributes"/>
+    <dt><p class="table-title">Attributes</p></dt>
+    <dd>
+    <table cellspacing="0">
+      <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Modifiable</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+        <th>Description</th>
+              </tr>
+                      <a name="href"/>
+        <tr class="r1">
+            <td>href</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#anyURI">anyURI</a></td>
+            <td>No</td>
+            <td>always</td>
+            <td>5.1</td>
+            <td/>
+            <td>
+                            The URI of the entity.
+                        </td>
+                    </tr>
+                              <a name="type"/>
+        <tr class="r0">
+            <td>type</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+            <td>No</td>
+            <td>always</td>
+            <td>5.1</td>
+            <td/>
+            <td>
+                            The MIME type of the entity.
+                        </td>
+                    </tr>
+          </table>
+    </dd>
+    
+        <a id="elements" name="elements"/>
+    <dt><p class="table-title">Elements</p></dt>
+    <dd>
+    <table cellspacing="0">
+      <tr>
+        <th>Element</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Modifiable</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+        <th>Description</th>
+      </tr>
+                      <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
+                                      <a name="Link"/>
+                    <tr class="r0">
+                <td>Link</td>
+                <td><a href="../types/LinkType.html">LinkType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                A reference to an entity or operation associated
+                                with this object.
+                            </td>
+            </tr>
+                              <a name="DomainUsername"/>
+                    <tr class="r1">
+                <td>DomainUsername</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Username of an administrator for the Windows
+                                domain specified in DomainName.
+                            </td>
+            </tr>
+                                      <a name="DomainPassword"/>
+                    <tr class="r0">
+                <td>DomainPassword</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Password for the user identified by
+                                DomainUsername.
+                            </td>
+            </tr>
+                              <a name="DomainName"/>
+                    <tr class="r1">
+                <td>DomainName</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Name of the domain for which DomainUsername has
+                                join rights
+                            </td>
+            </tr>
+                                      <a name="AllowDomainSettings"/>
+                    <tr class="r0">
+                <td>AllowDomainSettings</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                True if virtual machines in this organization
+                                can join a Windows domain.
+                            </td>
+            </tr>
+                              <a name="AccountOrganizationalUnit"/>
+                    <tr class="r1">
+                <td>AccountOrganizationalUnit</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Value of the organizational unit (OU) LDAP
+                                attribute for DomainUsername.
+                            </td>
+            </tr>
+                  </table>
+    </dd>
+    
+    
+        <a id="operations" name="operations"/>
+    <dt><p class="table-title">Operations</p></dt>
+    <dd>
+    <table cellspacing="0">
+      <tr>
+        <th>CRUD</th>
+        <th>Operation</th>
+        <th>Description</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+      </tr>
+
+                      <tr class="r1">
+            <td nowrap="1">read</td>
+            <td nowrap="1"><a href="../operations/GET-OrgGuestPersonalizationSettings.html">GET /admin/org/{id}/settings/guestPersonalizationSettings</a></td>
+                        <td>Retrieve organization defaults for guest personalization settings.</td>
+            <td>5.1</td>
+            <td/>
+        </tr>
+                              <tr class="r0">
+            <td nowrap="1">update</td>
+            <td nowrap="1"><a href="../operations/PUT-OrgGuestPersonalizationSettings.html">PUT /admin/org/{id}/settings/guestPersonalizationSettings</a></td>
+                        <td>Update organization defaults for guest personalization settings.</td>
+            <td>5.1</td>
+            <td/>
+        </tr>
+          </table>
+    </dd>
+    
+</dl>
+
+<br/>
+<br/>
+<br/>
+</body>
+</html>

@@ -5,12 +5,14 @@
     <key>CFBundleIdentifier</key>
     <string>vcd</string>
     <key>CFBundleName</key>
-    <string>VMware vCD</string>
+    <string>VMware vCD API</string>
     <key>DocSetPlatformFamily</key>
     <string>vcd</string>
     <key>isDashDocset</key>
     <true/>
     <key>dashIndexFilePath</key>
     <string>right-pane.html</string>
+    <key>DashDocSetFamily</key>
+    <string>dashtoc</string>
 </dict>
 </plist>

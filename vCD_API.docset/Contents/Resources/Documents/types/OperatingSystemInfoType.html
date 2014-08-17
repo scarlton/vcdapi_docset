@@ -1,0 +1,312 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>vCloud REST API - OperatingSystemInfoType</title>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
+<!-- -->
+</head>
+<body onload="javascript:setupEventHandlers()">
+<br/>
+
+<h1>OperatingSystemInfoType</h1>
+
+<dl>
+        <dt>Type:</dt>
+    <dd>OperatingSystemInfoType</dd>
+    <dt>Namespace:</dt>
+    <dd><a href="http://www.vmware.com/vcloud/v1.5">http://www.vmware.com/vcloud/v1.5</a></dd>
+    <dt>Description:</dt>
+    <dd>
+                Information about an individual operating system.
+            </dd>
+    <dt>Since:</dt>
+    <dd>5.1</dd>
+        <dt>Schema:</dt>
+    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/vms.xsd">vms.xsd</a></dd>
+    <dt>Media type(s):</dt>
+    <dd>None</dd>
+    <dt>Extends:</dt>
+    <dd><a href="../types/VCloudExtensibleType.html">VCloudExtensibleType</a></dd>
+
+    <dt>XML Representation:</dt>
+    <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">OperatingSystemInfoType</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/v1.5</span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">OperatingSystemId</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">OperatingSystemId</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">DefaultHardDiskAdapterType</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">DefaultHardDiskAdapterType</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">MinimumHardDiskSizeGigabytes</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">MinimumHardDiskSizeGigabytes</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">MinimumMemoryMegabytes</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">MinimumMemoryMegabytes</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Name</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Name</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">InternalName</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">InternalName</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Supported</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Supported</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">x64</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">x64</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">MaximumCpuCount</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">MaximumCpuCount</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">MinimumHardwareVersion</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">MinimumHardwareVersion</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">PersonalizationEnabled</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">PersonalizationEnabled</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">PersonalizationAuto</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">PersonalizationAuto</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">SysprepPackagingSupported</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">SysprepPackagingSupported</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">SupportsMemHotAdd</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">SupportsMemHotAdd</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">cimOsId</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">cimOsId</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">CimVersion</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">CimVersion</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">SupportedForCreate</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">SupportedForCreate</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain"/><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">OperatingSystemInfoType</span><span class="xml_tag_symbols">&gt;</span><br/>
+</dd>
+
+    
+        <a id="elements" name="elements"/>
+    <dt><p class="table-title">Elements</p></dt>
+    <dd>
+    <table cellspacing="0">
+      <tr>
+        <th>Element</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Modifiable</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+        <th>Description</th>
+      </tr>
+                      <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
+                                      <a name="OperatingSystemId"/>
+                    <tr class="r0">
+                <td>OperatingSystemId</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                The operating system identifier.
+                            </td>
+            </tr>
+                              <a name="DefaultHardDiskAdapterType"/>
+                    <tr class="r1">
+                <td>DefaultHardDiskAdapterType</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                 Default hard disk controller type for this
+                                 operating system.
+                            </td>
+            </tr>
+                                      <a name="MinimumHardDiskSizeGigabytes"/>
+                    <tr class="r0">
+                <td>MinimumHardDiskSizeGigabytes</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                The minimum size of the primary hard disk for
+                                this operating system, in gigabytes.
+                            </td>
+            </tr>
+                              <a name="MinimumMemoryMegabytes"/>
+                    <tr class="r1">
+                <td>MinimumMemoryMegabytes</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                The minimum amount of memory required to run
+                                this operating system, in megabytes.
+                            </td>
+            </tr>
+                                      <a name="Name"/>
+                    <tr class="r0">
+                <td>Name</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                               The name of the operating system.
+                            </td>
+            </tr>
+                              <a name="InternalName"/>
+                    <tr class="r1">
+                <td>InternalName</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                               An alternate identifier for this operating system.
+                            </td>
+            </tr>
+                                      <a name="Supported"/>
+                    <tr class="r0">
+                <td>Supported</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                               True if this operating system is supported for
+                               use in this organization.
+                            </td>
+            </tr>
+                              <a name="x64"/>
+                    <tr class="r1">
+                <td>x64</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                               True if this operating system is supported for
+                               use on 64-bit hardware.
+                            </td>
+            </tr>
+                                      <a name="MaximumCpuCount"/>
+                    <tr class="r0">
+                <td>MaximumCpuCount</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                               The maximum number of CPUs supported for use
+                               with this operating system.
+                            </td>
+            </tr>
+                              <a name="MinimumHardwareVersion"/>
+                    <tr class="r1">
+                <td>MinimumHardwareVersion</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                               The minimum VMware hardware version required to
+                               run this operating system.
+                            </td>
+            </tr>
+                                      <a name="PersonalizationEnabled"/>
+                    <tr class="r0">
+                <td>PersonalizationEnabled</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                               True if this operating system supports personalization.
+                            </td>
+            </tr>
+                              <a name="PersonalizationAuto"/>
+                    <tr class="r1">
+                <td>PersonalizationAuto</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                               True if this operating system supports automatic
+                               personalization.
+                            </td>
+            </tr>
+                                      <a name="SysprepPackagingSupported"/>
+                    <tr class="r0">
+                <td>SysprepPackagingSupported</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                               True if this operating system supports use of
+                               Microsoft sysprep packaging. (Windows family
+                               only.)
+                            </td>
+            </tr>
+                              <a name="SupportsMemHotAdd"/>
+                    <tr class="r1">
+                <td>SupportsMemHotAdd</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                True if this operating system allows you to add
+                                memory to a running system.
+                            </td>
+            </tr>
+                                      <a name="cimOsId"/>
+                    <tr class="r0">
+                <td>cimOsId</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                               Operating system identifier as specified by the
+                               DMTF common information model.
+                            </td>
+            </tr>
+                              <a name="CimVersion"/>
+                    <tr class="r1">
+                <td>CimVersion</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Operating system version as specified by the
+                                DMTF common information model.
+                            </td>
+            </tr>
+                                      <a name="SupportedForCreate"/>
+                    <tr class="r0">
+                <td>SupportedForCreate</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                True if this organizaion supports creation of
+                                new virtual machines with this OS type.
+                            </td>
+            </tr>
+                  </table>
+    </dd>
+    
+    
+    
+</dl>
+
+<br/>
+<br/>
+<br/>
+</body>
+</html>

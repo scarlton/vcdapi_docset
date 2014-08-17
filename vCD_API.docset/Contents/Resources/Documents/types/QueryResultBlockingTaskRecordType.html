@@ -2,26 +2,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>vCloud REST API - BlockingTaskRecord</title>
-    <style>
-h4.feedbackheading
-{
-color: #F90;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 16px;
-font-weight: bold;
-line-height: 16px;
-padding: 10px 5px 10px 10px;
-margin-bottom:5px;
-border-bottom: 1px solid #A1C2E1;
-border-top: 1px solid #A1C2E1;
-}
-</style>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
 <!-- -->
 </head>
 <body onload="javascript:setupEventHandlers()">
-<div id="feedbackhover" class="feedbackhover"><a style="border:none;color:white;text-decoration:none" href="javascript:openFeedbackForm();">SEND US FEEDBACK!</a></div>
-
-
 <br/>
 
 <h1>QueryResultBlockingTaskRecordType</h1>
@@ -40,28 +26,27 @@ border-top: 1px solid #A1C2E1;
     <dt>Since:</dt>
     <dd>1.5</dd>
         <dt>Schema:</dt>
-    <dd><a href="../etc/1.5/schemas/vcloud/queryRecordView.xsd">queryRecordView.xsd</a></dd>
+    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/queryRecordView.xsd">queryRecordView.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
     <dd><a href="../types/QueryResultRecordType.html">QueryResultRecordType</a></dd>
 
     <dt>XML Representation:</dt>
-    <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">BlockingTaskRecord</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/v1.5</span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultRecordType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultRecordType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultRecordType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#creationDate" target="classFrame" title="creationDate">creationDate</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#dateTime" target="classFrame" title="xs:dateTime">xs:dateTime</a></span><span class="xml_attribute_value">"</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#expirationTime" target="classFrame" title="expirationTime">expirationTime</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#dateTime" target="classFrame" title="xs:dateTime">xs:dateTime</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#hasOwner" target="classFrame" title="hasOwner">hasOwner</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#jobStatus" target="classFrame" title="jobStatus">jobStatus</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#operationName" target="classFrame" title="operationName">operationName</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#originatingOrg" target="classFrame" title="originatingOrg">originatingOrg</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#originatingOrgName" target="classFrame" title="originatingOrgName">originatingOrgName</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#owner" target="classFrame" title="owner">owner</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#ownerName" target="classFrame" title="ownerName">ownerName</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#status" target="classFrame" title="status">status</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#task" target="classFrame" title="task">task</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#timeoutAction" target="classFrame" title="timeoutAction">timeoutAction</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/LinkType.html" target="classFrame" title="Link">Link</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
+    <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">BlockingTaskRecord</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/v1.5</span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultRecordType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultRecordType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultRecordType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#status" target="classFrame" title="status">status</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#operationName" target="classFrame" title="operationName">operationName</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#owner" target="classFrame" title="owner">owner</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#ownerName" target="classFrame" title="ownerName">ownerName</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#originatingOrgName" target="classFrame" title="originatingOrgName">originatingOrgName</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#originatingOrg" target="classFrame" title="originatingOrg">originatingOrg</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#creationDate" target="classFrame" title="creationDate">creationDate</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#dateTime" target="classFrame" title="xs:dateTime">xs:dateTime</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#expirationTime" target="classFrame" title="expirationTime">expirationTime</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#dateTime" target="classFrame" title="xs:dateTime">xs:dateTime</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#timeoutAction" target="classFrame" title="timeoutAction">timeoutAction</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#task" target="classFrame" title="task">task</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#jobStatus" target="classFrame" title="jobStatus">jobStatus</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/QueryResultBlockingTaskRecordType.html#hasOwner" target="classFrame" title="hasOwner">hasOwner</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/LinkType.html" target="classFrame" title="Link">Link</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/LinkType.html#rel" target="classFrame" title="rel">rel</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/MetadataType.html" target="classFrame" title="Metadata">Metadata</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ResourceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ResourceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/LinkType.html" target="classFrame" title="Link">Link</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/LinkType.html" target="classFrame" title="Link">Link</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/LinkType.html#rel" target="classFrame" title="rel">rel</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/MetadataEntryType.html" target="classFrame" title="MetadataEntry">MetadataEntry</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ResourceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ResourceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/LinkType.html" target="classFrame" title="Link">Link</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/LinkType.html" target="classFrame" title="Link">Link</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/LinkType.html#rel" target="classFrame" title="rel">rel</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/MetadataDomainTagType.html" target="classFrame" title="Domain">Domain</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/MetadataDomainTagType.html#visibility" target="classFrame" title="visibility">visibility</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Key</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Key</span><span class="xml_tag_symbols">&gt;</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Value</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Value</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/MetadataTypedValue.html" target="classFrame" title="TypedValue">TypedValue</a></span><span class="xml_tag_symbols">/&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name"><a href="../types/MetadataEntryType.html" target="classFrame" title="MetadataEntry">MetadataEntry</a></span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name"><a href="../types/MetadataType.html" target="classFrame" title="Metadata">Metadata</a></span><span class="xml_tag_symbols">&gt;</span><br/>
@@ -80,7 +65,9 @@ border-top: 1px solid #A1C2E1;
         <th>Since</th>
         <th>Deprecated</th>
         <th>Description</th>
-      </tr>
+                    <th>Filter</th>
+            <th>Sort</th>
+              </tr>
                       <a name="href"/>
         <tr class="r1">
             <td>href</td>
@@ -92,7 +79,13 @@ border-top: 1px solid #A1C2E1;
             <td>
                     Contains the URI to the resource.
                 </td>
-        </tr>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
                               <a name="id"/>
         <tr class="r0">
             <td>id</td>
@@ -102,9 +95,17 @@ border-top: 1px solid #A1C2E1;
             <td>1.5</td>
             <td/>
             <td>
-                    Contains the vcd id of the resource.
+                    The resource identifier, expressed in URN format. The value
+                    of this attribute uniquely identifies the resource,
+                    persists for the life of the resource, and is never reused.
                 </td>
-        </tr>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
                       <a name="type"/>
         <tr class="r1">
             <td>type</td>
@@ -116,57 +117,33 @@ border-top: 1px solid #A1C2E1;
             <td>
                     Contains the type of the resource.
                 </td>
-        </tr>
-                              <a name="creationDate"/>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                              <a name="status"/>
         <tr class="r0">
-            <td>creationDate</td>
-            <td><a href="http://www.w3.org/TR/xmlschema-0/#dateTime">dateTime</a></td>
-            <td>No</td>
-            <td>none</td>
-            <td>1.5</td>
-            <td/>
-            <td>
-                            Creation date
-                        </td>
-        </tr>
-                      <a name="expirationTime"/>
-        <tr class="r1">
-            <td>expirationTime</td>
-            <td><a href="http://www.w3.org/TR/xmlschema-0/#dateTime">dateTime</a></td>
-            <td>No</td>
-            <td>none</td>
-            <td>1.5</td>
-            <td/>
-            <td>
-                            Expiration time
-                        </td>
-        </tr>
-                              <a name="hasOwner"/>
-        <tr class="r0">
-            <td>hasOwner</td>
-            <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-            <td>No</td>
-            <td>none</td>
-            <td>5.1</td>
-            <td/>
-            <td>
-                            Shows whether blocking task has owner
-                        </td>
-        </tr>
-                      <a name="jobStatus"/>
-        <tr class="r1">
-            <td>jobStatus</td>
+            <td>status</td>
             <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
             <td>No</td>
             <td>none</td>
             <td>1.5</td>
             <td/>
             <td>
-                            Job status
+                            Status
                         </td>
-        </tr>
-                              <a name="operationName"/>
-        <tr class="r0">
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                      <a name="operationName"/>
+        <tr class="r1">
             <td>operationName</td>
             <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
             <td>No</td>
@@ -176,19 +153,49 @@ border-top: 1px solid #A1C2E1;
             <td>
                             Operation name
                         </td>
-        </tr>
-                      <a name="originatingOrg"/>
-        <tr class="r1">
-            <td>originatingOrg</td>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                              <a name="owner"/>
+        <tr class="r0">
+            <td>owner</td>
             <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
             <td>No</td>
             <td>none</td>
             <td>1.5</td>
             <td/>
             <td>
-                            Organization reference or id
+                            Owner reference or id
                         </td>
-        </tr>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                      <a name="ownerName"/>
+        <tr class="r1">
+            <td>ownerName</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+            <td>No</td>
+            <td>none</td>
+            <td>1.5</td>
+            <td/>
+            <td>
+                            Owner name
+                        </td>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
                               <a name="originatingOrgName"/>
         <tr class="r0">
             <td>originatingOrgName</td>
@@ -200,57 +207,69 @@ border-top: 1px solid #A1C2E1;
             <td>
                             Originating organization name
                         </td>
-        </tr>
-                      <a name="owner"/>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                      <a name="originatingOrg"/>
         <tr class="r1">
-            <td>owner</td>
+            <td>originatingOrg</td>
             <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
             <td>No</td>
             <td>none</td>
             <td>1.5</td>
             <td/>
             <td>
-                            Owner reference or id
+                            Organization reference or id
                         </td>
-        </tr>
-                              <a name="ownerName"/>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                              <a name="creationDate"/>
         <tr class="r0">
-            <td>ownerName</td>
-            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+            <td>creationDate</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#dateTime">dateTime</a></td>
             <td>No</td>
             <td>none</td>
             <td>1.5</td>
             <td/>
             <td>
-                            Owner name
+                            Creation date
                         </td>
-        </tr>
-                      <a name="status"/>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                      <a name="expirationTime"/>
         <tr class="r1">
-            <td>status</td>
-            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+            <td>expirationTime</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#dateTime">dateTime</a></td>
             <td>No</td>
             <td>none</td>
             <td>1.5</td>
             <td/>
             <td>
-                            Status
+                            Expiration time
                         </td>
-        </tr>
-                              <a name="task"/>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                              <a name="timeoutAction"/>
         <tr class="r0">
-            <td>task</td>
-            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-            <td>No</td>
-            <td>none</td>
-            <td>1.5</td>
-            <td/>
-            <td>
-                            task reference or id
-                        </td>
-        </tr>
-                      <a name="timeoutAction"/>
-        <tr class="r1">
             <td>timeoutAction</td>
             <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
             <td>No</td>
@@ -260,7 +279,67 @@ border-top: 1px solid #A1C2E1;
             <td>
                             Time action
                         </td>
-        </tr>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                      <a name="task"/>
+        <tr class="r1">
+            <td>task</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+            <td>No</td>
+            <td>none</td>
+            <td>1.5</td>
+            <td/>
+            <td>
+                            task reference or id
+                        </td>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                              <a name="jobStatus"/>
+        <tr class="r0">
+            <td>jobStatus</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+            <td>No</td>
+            <td>none</td>
+            <td>1.5</td>
+            <td/>
+            <td>
+                            Job status
+                        </td>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
+                      <a name="hasOwner"/>
+        <tr class="r1">
+            <td>hasOwner</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+            <td>No</td>
+            <td>none</td>
+            <td>5.1</td>
+            <td/>
+            <td>
+                            True if this blocking task has an owner.
+                        </td>
+                            <td>
+                                            Yes
+                                    </td>
+                <td>
+                                            Yes
+                                    </td>
+                      </tr>
           </table>
     </dd>
     
@@ -286,7 +365,7 @@ border-top: 1px solid #A1C2E1;
                 <td>1.5</td>
                 <td/>
                 <td>
-                        Contains link to an operation associated with specific relation type.
+                        Contains a link to an operation associated with a specific relation type.
                     </td>
             </tr>
                                       <a name="Metadata"/>
@@ -307,10 +386,7 @@ border-top: 1px solid #A1C2E1;
 </dl>
 
 <br/>
-
 <br/>
-<script language="javascript">document.write(ID_Copyright);</script>
 <br/>
-<script language="javascript">document.write(ID_VersionInformation);</script>
 </body>
 </html>

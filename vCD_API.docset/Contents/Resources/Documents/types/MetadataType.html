@@ -2,26 +2,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>vCloud REST API - Metadata</title>
-    <style>
-h4.feedbackheading
-{
-color: #F90;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 16px;
-font-weight: bold;
-line-height: 16px;
-padding: 10px 5px 10px 10px;
-margin-bottom:5px;
-border-bottom: 1px solid #A1C2E1;
-border-top: 1px solid #A1C2E1;
-}
-</style>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
 <!-- -->
 </head>
 <body onload="javascript:setupEventHandlers()">
-<div id="feedbackhover" class="feedbackhover"><a style="border:none;color:white;text-decoration:none" href="javascript:openFeedbackForm();">SEND US FEEDBACK!</a></div>
-
-
 <br/>
 
 <h1>MetadataType</h1>
@@ -34,11 +20,13 @@ border-top: 1px solid #A1C2E1;
     <dt>Namespace:</dt>
     <dd><a href="http://www.vmware.com/vcloud/v1.5">http://www.vmware.com/vcloud/v1.5</a></dd>
     <dt>Description:</dt>
-    <dd/>
+    <dd>
+                       User-defined metadata associated with with an object.
+                    </dd>
     <dt>Since:</dt>
-    <dd/>
+    <dd>1.5</dd>
         <dt>Schema:</dt>
-    <dd><a href="../etc/1.5/schemas/vcloud/common.xsd">common.xsd</a></dd>
+    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/common.xsd">common.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.vcloud.metadata+xml<br/></dd>
     <dt>Extends:</dt>
@@ -46,14 +34,13 @@ border-top: 1px solid #A1C2E1;
 
     <dt>XML Representation:</dt>
     <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Metadata</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/v1.5</span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ResourceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ResourceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/LinkType.html" target="classFrame" title="Link">Link</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/LinkType.html" target="classFrame" title="Link">Link</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/LinkType.html#rel" target="classFrame" title="rel">rel</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/MetadataEntryType.html" target="classFrame" title="MetadataEntry">MetadataEntry</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ResourceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ResourceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/LinkType.html" target="classFrame" title="Link">Link</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/LinkType.html" target="classFrame" title="Link">Link</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/LinkType.html#rel" target="classFrame" title="rel">rel</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/MetadataDomainTagType.html" target="classFrame" title="Domain">Domain</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/MetadataDomainTagType.html#visibility" target="classFrame" title="visibility">visibility</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Key</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Key</span><span class="xml_tag_symbols">&gt;</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Value</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Value</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/MetadataTypedValue.html" target="classFrame" title="TypedValue">TypedValue</a></span><span class="xml_tag_symbols">/&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name"><a href="../types/MetadataEntryType.html" target="classFrame" title="MetadataEntry">MetadataEntry</a></span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain"/><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Metadata</span><span class="xml_tag_symbols">&gt;</span><br/>
@@ -71,31 +58,31 @@ border-top: 1px solid #A1C2E1;
         <th>Since</th>
         <th>Deprecated</th>
         <th>Description</th>
-      </tr>
+              </tr>
                       <a name="href"/>
         <tr class="r1">
             <td>href</td>
             <td><a href="http://www.w3.org/TR/xmlschema-0/#anyURI">anyURI</a></td>
             <td>No</td>
             <td>always</td>
-            <td/>
+            <td>1.5</td>
             <td/>
             <td>
                             The URI of the entity.
                         </td>
-        </tr>
+                    </tr>
                               <a name="type"/>
         <tr class="r0">
             <td>type</td>
             <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
             <td>No</td>
             <td>always</td>
-            <td/>
+            <td>1.5</td>
             <td/>
             <td>
                             The MIME type of the entity.
                         </td>
-        </tr>
+                    </tr>
           </table>
     </dd>
     
@@ -118,7 +105,7 @@ border-top: 1px solid #A1C2E1;
                 <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
                 <td>No</td>
                 <td>always</td>
-                <td/>
+                <td>1.5</td>
                 <td/>
                 <td>
                         An optional extension element that can contain an
@@ -132,7 +119,7 @@ border-top: 1px solid #A1C2E1;
                 <td><a href="../types/LinkType.html">LinkType</a></td>
                 <td>No</td>
                 <td>none</td>
-                <td/>
+                <td>1.5</td>
                 <td/>
                 <td>
                                 A reference to an entity or operation associated
@@ -144,10 +131,13 @@ border-top: 1px solid #A1C2E1;
                 <td>MetadataEntry</td>
                 <td><a href="../types/MetadataEntryType.html">MetadataEntryType</a></td>
                 <td>No</td>
+                <td>always</td>
+                <td>1.5</td>
                 <td/>
-                <td/>
-                <td/>
-                <td/>
+                <td>
+                            A single metadata entry, including access domain
+                            and visibility controls.
+                         </td>
             </tr>
                   </table>
     </dd>
@@ -374,10 +364,7 @@ border-top: 1px solid #A1C2E1;
 </dl>
 
 <br/>
-
 <br/>
-<script language="javascript">document.write(ID_Copyright);</script>
 <br/>
-<script language="javascript">document.write(ID_VersionInformation);</script>
 </body>
 </html>

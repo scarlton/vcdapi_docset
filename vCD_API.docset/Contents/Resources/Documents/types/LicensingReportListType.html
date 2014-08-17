@@ -2,26 +2,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>vCloud REST API - LicensingReports</title>
-    <style>
-h4.feedbackheading
-{
-color: #F90;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 16px;
-font-weight: bold;
-line-height: 16px;
-padding: 10px 5px 10px 10px;
-margin-bottom:5px;
-border-bottom: 1px solid #A1C2E1;
-border-top: 1px solid #A1C2E1;
-}
-</style>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
 <!-- -->
 </head>
 <body onload="javascript:setupEventHandlers()">
-<div id="feedbackhover" class="feedbackhover"><a style="border:none;color:white;text-decoration:none" href="javascript:openFeedbackForm();">SEND US FEEDBACK!</a></div>
-
-
 <br/>
 
 <h1>LicensingReportListType</h1>
@@ -39,16 +25,18 @@ border-top: 1px solid #A1C2E1;
             </dd>
     <dt>Since:</dt>
     <dd>1.0</dd>
+        <dt>Deprecated:</dt>
+    <dd>5.5</dd>
         <dt>Schema:</dt>
-    <dd><a href="../etc/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
+    <dd><a href="file:///build/mts/release/bora-1323688/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
     <dt>Media type(s):</dt>
-    <dd>application/vnd.vmware.admin.licensingReportList+xml<br/></dd>
+    <dd>None</dd>
     <dt>Extends:</dt>
     <dd><a href="http://www.w3.org/TR/xmlschema-0/#anyType">anyType</a></dd>
 
     <dt>XML Representation:</dt>
     <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">LicensingReports</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/extension/v1.5</span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns:vcloud_v1.5</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/v1.5</span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/LinkType.html" target="classFrame" title="vcloud_v1.5:Report">vcloud_v1.5:Report</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/LinkType.html" target="classFrame" title="vcloud_v1.5:Report">vcloud_v1.5:Report</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/LinkType.html#rel" target="classFrame" title="rel">rel</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
 <span class="xml_plain"/><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">LicensingReports</span><span class="xml_tag_symbols">&gt;</span><br/>
 </dd>
@@ -83,35 +71,11 @@ border-top: 1px solid #A1C2E1;
     </dd>
     
     
-        <a id="operations" name="operations"/>
-    <dt><p class="table-title">Operations</p></dt>
-    <dd>
-    <table cellspacing="0">
-      <tr>
-        <th>CRUD</th>
-        <th>Operation</th>
-        <th>Description</th>
-        <th>Since</th>
-        <th>Deprecated</th>
-      </tr>
-
-                      <tr class="r1">
-            <td nowrap="1">read</td>
-            <td nowrap="1"><a href="../operations/GET-LicensingReportList.html">GET /admin/extension/licensing/reports</a></td>
-                        <td>Retrieve a list of vCloud Director software license usage reports.</td>
-            <td>1.0</td>
-            <td/>
-        </tr>
-          </table>
-    </dd>
     
 </dl>
 
 <br/>
-
 <br/>
-<script language="javascript">document.write(ID_Copyright);</script>
 <br/>
-<script language="javascript">document.write(ID_VersionInformation);</script>
 </body>
 </html>

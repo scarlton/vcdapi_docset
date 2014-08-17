@@ -2,26 +2,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>vCloud REST API - PublishCatalogParams</title>
-    <style>
-h4.feedbackheading
-{
-color: #F90;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 16px;
-font-weight: bold;
-line-height: 16px;
-padding: 10px 5px 10px 10px;
-margin-bottom:5px;
-border-bottom: 1px solid #A1C2E1;
-border-top: 1px solid #A1C2E1;
-}
-</style>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
 <!-- -->
 </head>
 <body onload="javascript:setupEventHandlers()">
-<div id="feedbackhover" class="feedbackhover"><a style="border:none;color:white;text-decoration:none" href="javascript:openFeedbackForm();">SEND US FEEDBACK!</a></div>
-
-
 <br/>
 
 <h1>PublishCatalogParamsType</h1>
@@ -35,12 +21,13 @@ border-top: 1px solid #A1C2E1;
     <dd><a href="http://www.vmware.com/vcloud/v1.5">http://www.vmware.com/vcloud/v1.5</a></dd>
     <dt>Description:</dt>
     <dd>
-                Parameters required by a publish request.
+                Parameters required when sharing a catalog with other
+                organizations.
             </dd>
     <dt>Since:</dt>
     <dd>0.9</dd>
         <dt>Schema:</dt>
-    <dd><a href="../etc/1.5/schemas/vcloud/catalog.xsd">catalog.xsd</a></dd>
+    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/catalog.xsd">catalog.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.publishCatalogParams+xml<br/></dd>
     <dt>Extends:</dt>
@@ -89,8 +76,11 @@ border-top: 1px solid #A1C2E1;
                 <td>0.9</td>
                 <td/>
                 <td>
-                                A value of true publishes the catalog.
-                                A value of false unpublishes the catalog.
+                                A value of true makes this catalog available to
+                                the administrators in all other organizations
+                                in the system. A value of false revokes that
+                                availability. To share this catalog in your
+                                own organization, use controlAccess.
                             </td>
             </tr>
                   </table>
@@ -122,10 +112,7 @@ border-top: 1px solid #A1C2E1;
 </dl>
 
 <br/>
-
 <br/>
-<script language="javascript">document.write(ID_Copyright);</script>
 <br/>
-<script language="javascript">document.write(ID_VersionInformation);</script>
 </body>
 </html>

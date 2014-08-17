@@ -1,0 +1,130 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>vCloud REST API - Snapshot</title>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
+<!-- -->
+</head>
+<body onload="javascript:setupEventHandlers()">
+<br/>
+
+<h1>SnapshotType</h1>
+
+<dl>
+                        <dt>Element:</dt>
+            <dd>Snapshot</dd>
+        <dt>Type:</dt>
+    <dd>SnapshotType</dd>
+    <dt>Namespace:</dt>
+    <dd><a href="http://www.vmware.com/vcloud/v1.5">http://www.vmware.com/vcloud/v1.5</a></dd>
+    <dt>Description:</dt>
+    <dd>
+                Represents a virtual machine snapshot.
+            </dd>
+    <dt>Since:</dt>
+    <dd>5.1</dd>
+        <dt>Schema:</dt>
+    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/vApp.xsd">vApp.xsd</a></dd>
+    <dt>Media type(s):</dt>
+    <dd>None</dd>
+    <dt>Extends:</dt>
+    <dd><a href="../types/VCloudExtensibleType.html">VCloudExtensibleType</a></dd>
+
+    <dt>XML Representation:</dt>
+    <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Snapshot</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/v1.5</span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/SnapshotType.html#poweredOn" target="classFrame" title="poweredOn">poweredOn</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/SnapshotType.html#created" target="classFrame" title="created">created</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#dateTime" target="classFrame" title="xs:dateTime">xs:dateTime</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/SnapshotType.html#size" target="classFrame" title="size">size</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#long" target="classFrame" title="xs:long">xs:long</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
+</dd>
+
+        <a id="attributes" name="attributes"/>
+    <dt><p class="table-title">Attributes</p></dt>
+    <dd>
+    <table cellspacing="0">
+      <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Modifiable</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+        <th>Description</th>
+              </tr>
+                      <a name="poweredOn"/>
+        <tr class="r1">
+            <td>poweredOn</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+            <td>Yes</td>
+            <td>none</td>
+            <td>5.1</td>
+            <td/>
+            <td>
+                            True if the virtual machine was powered on when the
+                            snapshot was created.
+                        </td>
+                    </tr>
+                              <a name="created"/>
+        <tr class="r0">
+            <td>created</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#dateTime">dateTime</a></td>
+            <td>Yes</td>
+            <td>none</td>
+            <td>5.1</td>
+            <td/>
+            <td>
+                            Creation date/time of the snapshot.
+                        </td>
+                    </tr>
+                      <a name="size"/>
+        <tr class="r1">
+            <td>size</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#long">long</a></td>
+            <td>Yes</td>
+            <td>none</td>
+            <td>5.1</td>
+            <td/>
+            <td>
+                            Size of the snapshot.
+                        </td>
+                    </tr>
+          </table>
+    </dd>
+    
+        <a id="elements" name="elements"/>
+    <dt><p class="table-title">Elements</p></dt>
+    <dd>
+    <table cellspacing="0">
+      <tr>
+        <th>Element</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Modifiable</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+        <th>Description</th>
+      </tr>
+                      <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
+                  </table>
+    </dd>
+    
+    
+    
+</dl>
+
+<br/>
+<br/>
+<br/>
+</body>
+</html>

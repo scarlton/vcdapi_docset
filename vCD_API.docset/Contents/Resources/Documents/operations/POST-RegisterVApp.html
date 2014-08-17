@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>vCloud REST API - POST-RegisterVApp</title>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
+<!-- -->
+</head>
+<body onload="javascript:setupEventHandlers()">
+<br/>
+
+<h1>POST /admin/vdc/{id}/action/registerVApp</h1>
+
+<dl>
+    <dt>Operation:</dt>
+    <dd>POST /admin/vdc/{id}/action/registerVApp</dd>
+    <dt>Description:</dt>
+    <dd>Create a vApp based on a set of .vmx files and resource mappings</dd>
+    <dt>Since:</dt>
+    <dd>5.5</dd>
+        <dt>Input parameters</dt>
+    <dd>
+                <dl>
+            <dt>Consume media type(s):</dt>
+            <dd>application/vnd.vmware.admin.registerVAppParams+xml<br/></dd>
+            <dt>Input type:</dt>
+            <dd><a href="../types/RegisterVAppParamsType.html">RegisterVAppParamsType</a></dd>
+        </dl>
+    </dd>
+    <dt>Output parameters</dt>
+    <dd>
+                    VAppType
+<p>
+ The response includes a Task element. You can monitor the task to
+ to track the creation of the vApp.<br/><br/>
+                </p><dl>
+            <dt>Produce media type(s):</dt>
+            <dd>application/vnd.vmware.vcloud.task+xml<br/></dd>
+            <dt>Output type:</dt>
+            <dd><a href="../types/TaskType.html">TaskType</a></dd>
+        </dl>
+    </dd>
+    <dt>Examples</dt>
+    <a id="examples" name="examples"/>
+    <dd>
+    <dl>
+        </dl>
+    </dd>
+</dl>
+
+<br/>
+<br/>
+<br/>
+</body>
+</html>

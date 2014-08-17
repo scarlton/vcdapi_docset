@@ -1,0 +1,286 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>vCloud REST API Admin Queries</title>
+    <link rel="stylesheet" type="text/css" href="doc-style.css"/>
+
+<!-- -->
+</head>
+<body onload="javascript:setupEventHandlers()">
+<br/>
+
+<h1>vCloud REST API Admin Queries</h1>
+
+<h2 class="index">Admin Queries</h2>
+<br/>
+<p class="table-title">Admin Queries (9)</p>
+    <table cellspacing="0">
+      <tr>
+        <th>Type Name</th>
+        <th>Description</th>
+        <th>User</th>
+        <th>Admin</th>
+        <th>System</th>
+        <th>Format</th>
+        <th>Records Result</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+      </tr>
+              
+        <tr class="r1">
+            <td><a href="queries/allocatedExternalAddress.html" name="//apple_ref/cpp/Query/allocatedExternalAddress" class="dashAnchor">allocatedExternalAddress</a></td>
+            <td>
+                All allocated external IP addresses in your organization and the networks that use them.
+            </td>
+            <td>
+                            -
+                        </td>
+            <td>
+                            YES
+                        </td>
+            <td>
+                            -
+                        </td>
+            <td>
+                            records,idrecords
+                        </td>
+            <td>
+                                QueryResultRecords of (<a href="types/QueryResultAllocatedExternalAddressRecordType.html" name="//apple_ref/cpp/Query/AllocatedExternalAddressRecord" class="dashAnchor">AllocatedExternalAddressRecord</a>)
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                            5.1
+                        </td>
+        </tr>
+                      
+        <tr class="r0">
+            <td><a href="queries/edgeGateway.html" name="//apple_ref/cpp/Query/edgeGateway" class="dashAnchor">edgeGateway</a></td>
+            <td>
+                All Edge Gateways in your organization.
+            </td>
+            <td>
+                            -
+                        </td>
+            <td>
+                            YES
+                        </td>
+            <td>
+                            YES
+                        </td>
+            <td>
+                            All
+                        </td>
+            <td>
+                                QueryResultRecords of (<a href="types/QueryResultEdgeGatewayRecordType.html" name="//apple_ref/cpp/Query/EdgeGatewayRecord" class="dashAnchor">EdgeGatewayRecord</a>)
+            </td>
+            <td>
+                5.1
+            </td>
+            <td>
+                            -
+                        </td>
+        </tr>
+              
+        <tr class="r1">
+            <td><a href="queries/orgVdcNetwork.html" name="//apple_ref/cpp/Query/orgVdcNetwork" class="dashAnchor">orgVdcNetwork</a></td>
+            <td>
+                All organization VDC networks in your organization.
+            </td>
+            <td>
+                            -
+                        </td>
+            <td>
+                            YES
+                        </td>
+            <td>
+                            YES
+                        </td>
+            <td>
+                            All
+                        </td>
+            <td>
+                                QueryResultRecords of (<a href="types/QueryResultOrgVdcNetworkRecordType.html" name="//apple_ref/cpp/Query/OrgVdcNetworkRecord" class="dashAnchor">OrgVdcNetworkRecord</a>)
+            </td>
+            <td>
+                5.1
+            </td>
+            <td>
+                            -
+                        </td>
+        </tr>
+                      
+        <tr class="r0">
+            <td><a href="queries/organization.html" name="//apple_ref/cpp/Query/organization" class="dashAnchor">organization</a></td>
+            <td>
+                All organizations visible to you.
+            </td>
+            <td>
+                            -
+                        </td>
+            <td>
+                            YES
+                        </td>
+            <td>
+                            YES
+                        </td>
+            <td>
+                            All
+                        </td>
+            <td>
+                                QueryResultRecords of (<a href="types/QueryResultOrgRecordType.html" name="//apple_ref/cpp/Query/OrgRecord" class="dashAnchor">OrgRecord</a>)
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                            -
+                        </td>
+        </tr>
+              
+        <tr class="r1">
+            <td><a href="queries/right.html" name="//apple_ref/cpp/Query/right" class="dashAnchor">right</a></td>
+            <td>
+                All rights defined in the system.
+            </td>
+            <td>
+                            -
+                        </td>
+            <td>
+                            YES
+                        </td>
+            <td>
+                            YES
+                        </td>
+            <td>
+                            All
+                        </td>
+            <td>
+                                QueryResultRecords of (<a href="types/QueryResultRightRecordType.html" name="//apple_ref/cpp/Query/RightRecord" class="dashAnchor">RightRecord</a>)
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                            -
+                        </td>
+        </tr>
+                      
+        <tr class="r0">
+            <td><a href="queries/role.html" name="//apple_ref/cpp/Query/role" class="dashAnchor">role</a></td>
+            <td>
+                All roles defined in the system.
+            </td>
+            <td>
+                            -
+                        </td>
+            <td>
+                            YES
+                        </td>
+            <td>
+                            YES
+                        </td>
+            <td>
+                            All
+                        </td>
+            <td>
+                                QueryResultRecords of (<a href="types/QueryResultRoleRecordType.html" name="//apple_ref/cpp/Query/RoleRecord" class="dashAnchor">RoleRecord</a>)
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                            -
+                        </td>
+        </tr>
+              
+        <tr class="r1">
+            <td><a href="queries/strandedUser.html" name="//apple_ref/cpp/Query/strandedUser" class="dashAnchor">strandedUser</a></td>
+            <td>
+                All stranded users. When you delete an LDAP group, users who were imported from that group become stranded and cannot log in.
+            </td>
+            <td>
+                            -
+                        </td>
+            <td>
+                            YES
+                        </td>
+            <td>
+                            YES
+                        </td>
+            <td>
+                            All
+                        </td>
+            <td>
+                                QueryResultRecords of (<a href="types/QueryResultStrandedUserRecordType.html" name="//apple_ref/cpp/Query/StrandedUserRecord" class="dashAnchor">StrandedUserRecord</a>)
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                            -
+                        </td>
+        </tr>
+                      
+        <tr class="r0">
+            <td><a href="queries/vAppOrgNetworkRelation.html" name="//apple_ref/cpp/Query/vAppOrgNetworkRelation" class="dashAnchor">vAppOrgNetworkRelation</a></td>
+            <td>
+                vApps visible to you and their connections to organization networks.
+            </td>
+            <td>
+                            -
+                        </td>
+            <td>
+                            YES
+                        </td>
+            <td>
+                            YES
+                        </td>
+            <td>
+                            All
+                        </td>
+            <td>
+                                QueryResultRecords of (<a href="types/QueryResultVAppOrgNetworkRelationRecordType.html" name="//apple_ref/cpp/Query/VAppOrgNetworkRelationRecord" class="dashAnchor">VAppOrgNetworkRelationRecord</a>)
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                            5.1
+                        </td>
+        </tr>
+              
+        <tr class="r1">
+            <td><a href="queries/vAppOrgVdcNetworkRelation.html" name="//apple_ref/cpp/Query/vAppOrgVdcNetworkRelation" class="dashAnchor">vAppOrgVdcNetworkRelation</a></td>
+            <td>
+                vApps accessible to you and their connections to organization VDC networks.
+            </td>
+            <td>
+                            -
+                        </td>
+            <td>
+                            YES
+                        </td>
+            <td>
+                            YES
+                        </td>
+            <td>
+                            All
+                        </td>
+            <td>
+                                QueryResultRecords of (<a href="types/QueryResultVAppOrgVdcNetworkRelationRecordType.html" name="//apple_ref/cpp/Query/VAppOrgVdcNetworkRelationRecord" class="dashAnchor">VAppOrgVdcNetworkRelationRecord</a>)
+            </td>
+            <td>
+                5.1
+            </td>
+            <td>
+                            -
+                        </td>
+        </tr>
+          </table>
+   <br/>
+<br/>
+<br/>
+</body>
+</html>

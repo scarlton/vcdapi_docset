@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>vCloud REST API - PUT-LookupService</title>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
+<!-- -->
+</head>
+<body onload="javascript:setupEventHandlers()">
+<br/>
+
+<h1>PUT /admin/extension/settings/lookupService</h1>
+
+<dl>
+    <dt>Operation:</dt>
+    <dd>PUT /admin/extension/settings/lookupService</dd>
+    <dt>Description:</dt>
+    <dd>Register / unregister Lookup Service to / from vCD. In <code>LookupServiceParamsType</code>
+   1. If LookupServiceUrl is set and not empty, the action is for register lookup service.
+   2. If LookupServiceUrl is unset or empty, the action is for unregister lookup service.</dd>
+    <dt>Since:</dt>
+    <dd>5.1</dd>
+        <dt>Input parameters</dt>
+    <dd>
+                <dl>
+            <dt>Consume media type(s):</dt>
+            <dd>application/vnd.vmware.admin.lookupServiceParams+xml<br/></dd>
+            <dt>Input type:</dt>
+            <dd><a href="../types/LookupServiceParamsType.html">LookupServiceParamsType</a></dd>
+        </dl>
+    </dd>
+    <dt>Output parameters</dt>
+    <dd>
+                    AcceptedResponse<tasktype><br/><br/>
+                <dl>
+            <dt>Produce media type(s):</dt>
+            <dd>application/vnd.vmware.vcloud.task+xml<br/></dd>
+            <dt>Output type:</dt>
+            <dd><a href="../types/TaskType.html">TaskType</a></dd>
+        </dl>
+    </tasktype></dd>
+    <dt>Examples</dt>
+    <a id="examples" name="examples"/>
+    <dd>
+    <dl>
+        </dl>
+    </dd>
+</dl>
+
+<br/>
+<br/>
+<br/>
+</body>
+</html>

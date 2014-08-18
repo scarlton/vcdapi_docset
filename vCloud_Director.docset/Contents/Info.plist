@@ -5,7 +5,7 @@
     <key>CFBundleIdentifier</key>
     <string>vcd</string>
     <key>CFBundleName</key>
-    <string>VMware vCD API</string>
+    <string>vCloud Director API</string>
     <key>DocSetPlatformFamily</key>
     <string>vcd</string>
     <key>isDashDocset</key>

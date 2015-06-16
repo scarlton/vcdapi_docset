@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>1.5</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/admin/vCloudEntities.xsd">vCloudEntities.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/admin/vCloudEntities.xsd">vCloudEntities.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.catalog+xml<br/></dd>
     <dt>Extends:</dt>
@@ -181,72 +181,8 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="CatalogItems"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="Link"/>
-                    <tr class="r0">
-                <td>Link</td>
-                <td><a href="../types/LinkType.html">LinkType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                A reference to an entity or operation associated
-                                with this object.
-                            </td>
-            </tr>
-                              <a name="Description"/>
-                    <tr class="r1">
-                <td>Description</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                Optional description.
-                            </td>
-            </tr>
-                                      <a name="Tasks"/>
-                    <tr class="r0">
-                <td>Tasks</td>
-                <td><a href="../types/TasksInProgressType.html">TasksInProgressType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                A list of queued, running, or recently
-                                completed tasks associated with this entity.
-                            </td>
-            </tr>
-                              <a name="Owner"/>
-                    <tr class="r1">
-                <td>Owner</td>
-                <td><a href="../types/OwnerType.html">OwnerType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                Catalog owner.
-                            </td>
-            </tr>
-                                      <a name="CatalogItems"/>
-                    <tr class="r0">
                 <td>CatalogItems</td>
                 <td><a href="../types/CatalogItemsType.html">CatalogItemsType</a></td>
                 <td>No</td>
@@ -255,46 +191,6 @@
                 <td/>
                 <td>
                                 Container for CatalogItem elements.
-                            </td>
-            </tr>
-                              <a name="IsPublished"/>
-                    <tr class="r1">
-                <td>IsPublished</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                True if the catalog is shared with other
-                                organizations. This value is read-only
-                                in the user view. To modify it, an
-                                administrator must use the publish link in the
-                                admin view of the catalog.
-                            </td>
-            </tr>
-                                      <a name="DateCreated"/>
-                    <tr class="r0">
-                <td>DateCreated</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#dateTime">dateTime</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Creation date and time of the catalog.
-                            </td>
-            </tr>
-                              <a name="VersionNumber"/>
-                    <tr class="r1">
-                <td>VersionNumber</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#long">long</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>5.5</td>
-                <td/>
-                <td>
-                                Represents the current version number of the catalog.
                             </td>
             </tr>
                                       <a name="CatalogStorageProfiles"/>
@@ -311,6 +207,30 @@
                                 catalog.
                             </td>
             </tr>
+                              <a name="DateCreated"/>
+                    <tr class="r1">
+                <td>DateCreated</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#dateTime">dateTime</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Creation date and time of the catalog.
+                            </td>
+            </tr>
+                                      <a name="Description"/>
+                    <tr class="r0">
+                <td>Description</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                Optional description.
+                            </td>
+            </tr>
                               <a name="ExternalCatalogSubscriptionParams"/>
                     <tr class="r1">
                 <td>ExternalCatalogSubscriptionParams</td>
@@ -324,8 +244,49 @@
                                 an external subscription.
                             </td>
             </tr>
-                                      <a name="PublishExternalCatalogParams"/>
+                                      <a name="IsPublished"/>
                     <tr class="r0">
+                <td>IsPublished</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                True if the catalog is shared with other
+                                organizations. This value is read-only
+                                in the user view. To modify it, an
+                                administrator must use the publish link in the
+                                admin view of the catalog.
+                            </td>
+            </tr>
+                              <a name="Link"/>
+                    <tr class="r1">
+                <td>Link</td>
+                <td><a href="../types/LinkType.html">LinkType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                A reference to an entity or operation associated
+                                with this object.
+                            </td>
+            </tr>
+                                      <a name="Owner"/>
+                    <tr class="r0">
+                <td>Owner</td>
+                <td><a href="../types/OwnerType.html">OwnerType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                Catalog owner.
+                            </td>
+            </tr>
+                              <a name="PublishExternalCatalogParams"/>
+                    <tr class="r1">
                 <td>PublishExternalCatalogParams</td>
                 <td><a href="../types/PublishExternalCatalogParamsType.html">PublishExternalCatalogParamsType</a></td>
                 <td>No</td>
@@ -335,6 +296,45 @@
                 <td>
                                 Configuration parameters for a catalog that is
                                 published externally.
+                            </td>
+            </tr>
+                                      <a name="Tasks"/>
+                    <tr class="r0">
+                <td>Tasks</td>
+                <td><a href="../types/TasksInProgressType.html">TasksInProgressType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                A list of queued, running, or recently
+                                completed tasks associated with this entity.
+                            </td>
+            </tr>
+                              <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
+                                      <a name="VersionNumber"/>
+                    <tr class="r0">
+                <td>VersionNumber</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#long">long</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.5</td>
+                <td/>
+                <td>
+                                Represents the current version number of the catalog.
                             </td>
             </tr>
                   </table>
@@ -408,6 +408,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

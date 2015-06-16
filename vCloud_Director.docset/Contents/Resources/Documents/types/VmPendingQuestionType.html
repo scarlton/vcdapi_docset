@@ -27,7 +27,7 @@
     <dt>Since:</dt>
     <dd>0.9</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/vApp.xsd">vApp.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/vApp.xsd">vApp.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.vcloud.vmPendingQuestion+xml<br/></dd>
     <dt>Extends:</dt>
@@ -99,19 +99,17 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="Choices"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
+                <td>Choices</td>
+                <td><a href="../types/VmQuestionAnswerChoiceType.html">VmQuestionAnswerChoiceType</a></td>
+                <td>Yes</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
+                                Choices of answers to the question.
+                            </td>
             </tr>
                                       <a name="Link"/>
                     <tr class="r0">
@@ -150,17 +148,19 @@
                                 Question ID of this question.
                             </td>
             </tr>
-                              <a name="Choices"/>
+                              <a name="VCloudExtension"/>
                     <tr class="r1">
-                <td>Choices</td>
-                <td><a href="../types/VmQuestionAnswerChoiceType.html">VmQuestionAnswerChoiceType</a></td>
-                <td>Yes</td>
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                                Choices of answers to the question.
-                            </td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                   </table>
     </dd>
@@ -198,6 +198,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

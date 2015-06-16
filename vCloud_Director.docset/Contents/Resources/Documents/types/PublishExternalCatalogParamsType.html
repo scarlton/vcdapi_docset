@@ -27,7 +27,7 @@
     <dt>Since:</dt>
     <dd>5.5</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/admin/vCloudEntities.xsd">vCloudEntities.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/admin/vCloudEntities.xsd">vCloudEntities.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.publishExternalCatalogParams+xml<br/></dd>
     <dt>Extends:</dt>
@@ -57,61 +57,7 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
-                    <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.5</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="IsPublishedExternally"/>
-                    <tr class="r0">
-                <td>IsPublishedExternally</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.5</td>
-                <td/>
-                <td>
-                                True enables external publication as configured
-                                by these parameters.
-                            </td>
-            </tr>
-                              <a name="catalogPublishedUrl"/>
-                    <tr class="r1">
-                <td>catalogPublishedUrl</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.5</td>
-                <td/>
-                <td>
-                                Read-only endpoint URL supplied by the server.
-                                External subscribers can connect to the catalog
-                                at this URL.
-                            </td>
-            </tr>
-                                      <a name="Password"/>
-                    <tr class="r0">
-                <td>Password</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.5</td>
-                <td/>
-                <td>
-                                 Password required when connecting to the
-                                 endpoint.
-                             </td>
-            </tr>
-                              <a name="IsCacheEnabled"/>
+                      <a name="IsCacheEnabled"/>
                     <tr class="r1">
                 <td>IsCacheEnabled</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
@@ -127,6 +73,32 @@
                                 requested by a subscriber.
                             </td>
             </tr>
+                                      <a name="IsPublishedExternally"/>
+                    <tr class="r0">
+                <td>IsPublishedExternally</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.5</td>
+                <td/>
+                <td>
+                                True enables external publication as configured
+                                by these parameters.
+                            </td>
+            </tr>
+                              <a name="Password"/>
+                    <tr class="r1">
+                <td>Password</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.5</td>
+                <td/>
+                <td>
+                                 Password required when connecting to the
+                                 endpoint.
+                             </td>
+            </tr>
                                       <a name="PreserveIdentityInfoFlag"/>
                     <tr class="r0">
                 <td>PreserveIdentityInfoFlag</td>
@@ -139,6 +111,34 @@
                                 True includes BIOS UUIDs and MAC addresses in the
                                 downloaded OVF package. If false, those information
                                 will be excluded.
+                            </td>
+            </tr>
+                              <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.5</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
+                                      <a name="catalogPublishedUrl"/>
+                    <tr class="r0">
+                <td>catalogPublishedUrl</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.5</td>
+                <td/>
+                <td>
+                                Read-only endpoint URL supplied by the server.
+                                External subscribers can connect to the catalog
+                                at this URL.
                             </td>
             </tr>
                   </table>
@@ -170,6 +170,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

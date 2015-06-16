@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>0.9</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/admin/providerVdc.xsd">providerVdc.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/admin/providerVdc.xsd">providerVdc.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.providervdc+xml<br/></dd>
     <dt>Extends:</dt>
@@ -209,72 +209,8 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="AvailableNetworks"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="Link"/>
-                    <tr class="r0">
-                <td>Link</td>
-                <td><a href="../types/LinkType.html">LinkType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                A reference to an entity or operation associated
-                                with this object.
-                            </td>
-            </tr>
-                              <a name="Description"/>
-                    <tr class="r1">
-                <td>Description</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                Optional description.
-                            </td>
-            </tr>
-                                      <a name="Tasks"/>
-                    <tr class="r0">
-                <td>Tasks</td>
-                <td><a href="../types/TasksInProgressType.html">TasksInProgressType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                A list of queued, running, or recently
-                                completed tasks associated with this entity.
-                            </td>
-            </tr>
-                              <a name="ComputeCapacity"/>
-                    <tr class="r1">
-                <td>ComputeCapacity</td>
-                <td><a href="../types/RootComputeCapacityType.html">RootComputeCapacityType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                Read-only indicator of CPU and memory capacity.
-                            </td>
-            </tr>
-                                      <a name="AvailableNetworks"/>
-                    <tr class="r0">
                 <td>AvailableNetworks</td>
                 <td><a href="../types/AvailableNetworksType.html">AvailableNetworksType</a></td>
                 <td>No</td>
@@ -283,19 +219,6 @@
                 <td/>
                 <td>
                                 Read-only list of available networks.
-                            </td>
-            </tr>
-                              <a name="StorageProfiles"/>
-                    <tr class="r1">
-                <td>StorageProfiles</td>
-                <td><a href="../types/ProviderVdcStorageProfilesType.html">ProviderVdcStorageProfilesType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Container for references to vSphere storage
-                                profiles available to this Provider vDC.
                             </td>
             </tr>
                                       <a name="Capabilities"/>
@@ -311,21 +234,32 @@
                                 supported by this Provider vDC.
                             </td>
             </tr>
-                              <a name="Vdcs"/>
+                              <a name="ComputeCapacity"/>
                     <tr class="r1">
-                <td>Vdcs</td>
-                <td><a href="../types/VdcsType.html">VdcsType</a></td>
+                <td>ComputeCapacity</td>
+                <td><a href="../types/RootComputeCapacityType.html">RootComputeCapacityType</a></td>
                 <td>No</td>
-                <td/>
+                <td>none</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                             Read-only list of organization vDCs backed by
-                             this Provider vDC.
+                                Read-only indicator of CPU and memory capacity.
                             </td>
             </tr>
-                                      <a name="IsEnabled"/>
+                                      <a name="Description"/>
                     <tr class="r0">
+                <td>Description</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                Optional description.
+                            </td>
+            </tr>
+                              <a name="IsEnabled"/>
+                    <tr class="r1">
                 <td>IsEnabled</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
                 <td>No</td>
@@ -336,6 +270,19 @@
                                 True if this Provider vDC is enabled and can
                                 provide resources to organization vDCs. A
                                 Provider vDC is always enabled on creation.
+                            </td>
+            </tr>
+                                      <a name="Link"/>
+                    <tr class="r0">
+                <td>Link</td>
+                <td><a href="../types/LinkType.html">LinkType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                A reference to an entity or operation associated
+                                with this object.
                             </td>
             </tr>
                               <a name="NetworkPoolReferences"/>
@@ -349,6 +296,59 @@
                 <td>
                                 Read-only list of network pools used by this
                                 Provider vDC.
+                            </td>
+            </tr>
+                                      <a name="StorageProfiles"/>
+                    <tr class="r0">
+                <td>StorageProfiles</td>
+                <td><a href="../types/ProviderVdcStorageProfilesType.html">ProviderVdcStorageProfilesType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Container for references to vSphere storage
+                                profiles available to this Provider vDC.
+                            </td>
+            </tr>
+                              <a name="Tasks"/>
+                    <tr class="r1">
+                <td>Tasks</td>
+                <td><a href="../types/TasksInProgressType.html">TasksInProgressType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                A list of queued, running, or recently
+                                completed tasks associated with this entity.
+                            </td>
+            </tr>
+                                      <a name="VCloudExtension"/>
+                    <tr class="r0">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
+                              <a name="Vdcs"/>
+                    <tr class="r1">
+                <td>Vdcs</td>
+                <td><a href="../types/VdcsType.html">VdcsType</a></td>
+                <td>No</td>
+                <td/>
+                <td>0.9</td>
+                <td/>
+                <td>
+                             Read-only list of organization vDCs backed by
+                             this Provider vDC.
                             </td>
             </tr>
                   </table>
@@ -380,6 +380,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

@@ -24,7 +24,7 @@
     <dt>Since:</dt>
     <dd>5.1</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/vms.xsd">vms.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/vms.xsd">vms.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -66,34 +66,21 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="CimVersion"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="OperatingSystemId"/>
-                    <tr class="r0">
-                <td>OperatingSystemId</td>
+                <td>CimVersion</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
-                <td>No</td>
+                <td>Yes</td>
                 <td>none</td>
                 <td>5.1</td>
                 <td/>
                 <td>
-                                The operating system identifier.
+                                Operating system version as specified by the
+                                DMTF common information model.
                             </td>
             </tr>
-                              <a name="DefaultHardDiskAdapterType"/>
-                    <tr class="r1">
+                                      <a name="DefaultHardDiskAdapterType"/>
+                    <tr class="r0">
                 <td>DefaultHardDiskAdapterType</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
                 <td>Yes</td>
@@ -105,8 +92,33 @@
                                  operating system.
                             </td>
             </tr>
-                                      <a name="MinimumHardDiskSizeGigabytes"/>
+                              <a name="InternalName"/>
+                    <tr class="r1">
+                <td>InternalName</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                               An alternate identifier for this operating system.
+                            </td>
+            </tr>
+                                      <a name="MaximumCpuCount"/>
                     <tr class="r0">
+                <td>MaximumCpuCount</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                               The maximum number of CPUs supported for use
+                               with this operating system.
+                            </td>
+            </tr>
+                              <a name="MinimumHardDiskSizeGigabytes"/>
+                    <tr class="r1">
                 <td>MinimumHardDiskSizeGigabytes</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
                 <td>Yes</td>
@@ -116,6 +128,19 @@
                 <td>
                                 The minimum size of the primary hard disk for
                                 this operating system, in gigabytes.
+                            </td>
+            </tr>
+                                      <a name="MinimumHardwareVersion"/>
+                    <tr class="r0">
+                <td>MinimumHardwareVersion</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                               The minimum VMware hardware version required to
+                               run this operating system.
                             </td>
             </tr>
                               <a name="MinimumMemoryMegabytes"/>
@@ -143,16 +168,41 @@
                                The name of the operating system.
                             </td>
             </tr>
-                              <a name="InternalName"/>
+                              <a name="OperatingSystemId"/>
                     <tr class="r1">
-                <td>InternalName</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>OperatingSystemId</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                The operating system identifier.
+                            </td>
+            </tr>
+                                      <a name="PersonalizationAuto"/>
+                    <tr class="r0">
+                <td>PersonalizationAuto</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
                 <td>Yes</td>
                 <td>none</td>
                 <td>5.1</td>
                 <td/>
                 <td>
-                               An alternate identifier for this operating system.
+                               True if this operating system supports automatic
+                               personalization.
+                            </td>
+            </tr>
+                              <a name="PersonalizationEnabled"/>
+                    <tr class="r1">
+                <td>PersonalizationEnabled</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                               True if this operating system supports personalization.
                             </td>
             </tr>
                                       <a name="Supported"/>
@@ -168,72 +218,34 @@
                                use in this organization.
                             </td>
             </tr>
-                              <a name="x64"/>
+                              <a name="SupportedForCreate"/>
                     <tr class="r1">
-                <td>x64</td>
+                <td>SupportedForCreate</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
                 <td>Yes</td>
                 <td>none</td>
                 <td>5.1</td>
                 <td/>
                 <td>
-                               True if this operating system is supported for
-                               use on 64-bit hardware.
+                                True if this organizaion supports creation of
+                                new virtual machines with this OS type.
                             </td>
             </tr>
-                                      <a name="MaximumCpuCount"/>
+                                      <a name="SupportsMemHotAdd"/>
                     <tr class="r0">
-                <td>MaximumCpuCount</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
-                <td>Yes</td>
-                <td>none</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                               The maximum number of CPUs supported for use
-                               with this operating system.
-                            </td>
-            </tr>
-                              <a name="MinimumHardwareVersion"/>
-                    <tr class="r1">
-                <td>MinimumHardwareVersion</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                               The minimum VMware hardware version required to
-                               run this operating system.
-                            </td>
-            </tr>
-                                      <a name="PersonalizationEnabled"/>
-                    <tr class="r0">
-                <td>PersonalizationEnabled</td>
+                <td>SupportsMemHotAdd</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
                 <td>Yes</td>
                 <td>none</td>
                 <td>5.1</td>
                 <td/>
                 <td>
-                               True if this operating system supports personalization.
+                                True if this operating system allows you to add
+                                memory to a running system.
                             </td>
             </tr>
-                              <a name="PersonalizationAuto"/>
+                              <a name="SysprepPackagingSupported"/>
                     <tr class="r1">
-                <td>PersonalizationAuto</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>Yes</td>
-                <td>none</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                               True if this operating system supports automatic
-                               personalization.
-                            </td>
-            </tr>
-                                      <a name="SysprepPackagingSupported"/>
-                    <tr class="r0">
                 <td>SysprepPackagingSupported</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
                 <td>Yes</td>
@@ -246,21 +258,22 @@
                                only.)
                             </td>
             </tr>
-                              <a name="SupportsMemHotAdd"/>
-                    <tr class="r1">
-                <td>SupportsMemHotAdd</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>Yes</td>
-                <td>none</td>
+                                      <a name="VCloudExtension"/>
+                    <tr class="r0">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
                 <td>5.1</td>
                 <td/>
                 <td>
-                                True if this operating system allows you to add
-                                memory to a running system.
-                            </td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
-                                      <a name="cimOsId"/>
-                    <tr class="r0">
+                              <a name="cimOsId"/>
+                    <tr class="r1">
                 <td>cimOsId</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
                 <td>Yes</td>
@@ -272,30 +285,17 @@
                                DMTF common information model.
                             </td>
             </tr>
-                              <a name="CimVersion"/>
-                    <tr class="r1">
-                <td>CimVersion</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
-                <td>Yes</td>
-                <td>none</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Operating system version as specified by the
-                                DMTF common information model.
-                            </td>
-            </tr>
-                                      <a name="SupportedForCreate"/>
+                                      <a name="x64"/>
                     <tr class="r0">
-                <td>SupportedForCreate</td>
+                <td>x64</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
                 <td>Yes</td>
                 <td>none</td>
                 <td>5.1</td>
                 <td/>
                 <td>
-                                True if this organizaion supports creation of
-                                new virtual machines with this OS type.
+                               True if this operating system is supported for
+                               use on 64-bit hardware.
                             </td>
             </tr>
                   </table>
@@ -306,6 +306,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

@@ -39,6 +39,7 @@ class ContentPipeline(object):
         "//head/link[not(@href='doc-style.css') and not(@href='../doc-style.css') and not(@href='../xml-style.css')]",
         "//head/style",
         "//table[@class='header-footer']",
+        "//div[@class='help_breadcrumbs']",
         "id('feedbackhover')",
         "id('ratingTop')",
         "id('ratingBottom')",

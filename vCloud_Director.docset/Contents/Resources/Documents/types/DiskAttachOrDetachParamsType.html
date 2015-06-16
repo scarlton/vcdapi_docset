@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>5.1</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/disk.xsd">disk.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/disk.xsd">disk.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.vcloud.diskAttachOrDetachParams+xml<br/></dd>
     <dt>Extends:</dt>
@@ -54,33 +54,7 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
-                    <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="Disk"/>
-                    <tr class="r0">
-                <td>Disk</td>
-                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                A reference to the disk to attach or detach.
-                            </td>
-            </tr>
-                              <a name="BusNumber"/>
+                      <a name="BusNumber"/>
                     <tr class="r1">
                 <td>BusNumber</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
@@ -95,8 +69,20 @@
                                 bus.
                             </td>
             </tr>
-                                      <a name="UnitNumber"/>
+                                      <a name="Disk"/>
                     <tr class="r0">
+                <td>Disk</td>
+                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                A reference to the disk to attach or detach.
+                            </td>
+            </tr>
+                              <a name="UnitNumber"/>
+                    <tr class="r1">
                 <td>UnitNumber</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
                 <td>No</td>
@@ -108,6 +94,20 @@
                                 BusNumber. Ignored if BusNumber is empty or
                                 missing.
                             </td>
+            </tr>
+                                      <a name="VCloudExtension"/>
+                    <tr class="r0">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                   </table>
     </dd>
@@ -145,6 +145,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

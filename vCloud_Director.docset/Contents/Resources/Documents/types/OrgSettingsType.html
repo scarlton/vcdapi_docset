@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>0.9</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/admin/vCloudEntities.xsd">vCloudEntities.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/admin/vCloudEntities.xsd">vCloudEntities.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.orgSettings+xml<br/></dd>
     <dt>Extends:</dt>
@@ -137,6 +137,7 @@
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/LinkType.html#rel" target="classFrame" title="rel">rel</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">SAMLMetadata</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">SAMLMetadata</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Enabled</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Enabled</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">CertificateExpiration</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#dateTime" target="classFrame" title="xs:dateTime">xs:dateTime</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">CertificateExpiration</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name"><a href="../types/OrgFederationSettingsType.html" target="classFrame" title="OrgFederationSettings">OrgFederationSettings</a></span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain"/><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">OrgSettings</span><span class="xml_tag_symbols">&gt;</span><br/>
 </dd>
@@ -194,22 +195,8 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="Link"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="Link"/>
-                    <tr class="r0">
                 <td>Link</td>
                 <td><a href="../types/LinkType.html">LinkType</a></td>
                 <td>No</td>
@@ -221,8 +208,32 @@
                                 with this object.
                             </td>
             </tr>
-                              <a name="OrgGeneralSettings"/>
+                                      <a name="OrgEmailSettings"/>
+                    <tr class="r0">
+                <td>OrgEmailSettings</td>
+                <td><a href="../types/OrgEmailSettingsType.html">OrgEmailSettingsType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                Represents the email settings for this organization.
+                            </td>
+            </tr>
+                              <a name="OrgFederationSettings"/>
                     <tr class="r1">
+                <td>OrgFederationSettings</td>
+                <td><a href="../types/OrgFederationSettingsType.html">OrgFederationSettingsType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Represents federated identity settings for this organization.
+                            </td>
+            </tr>
+                                      <a name="OrgGeneralSettings"/>
+                    <tr class="r0">
                 <td>OrgGeneralSettings</td>
                 <td><a href="../types/OrgGeneralSettingsType.html">OrgGeneralSettingsType</a></td>
                 <td>No</td>
@@ -231,6 +242,44 @@
                 <td/>
                 <td>
                                 Represents general settings for this organization.
+                            </td>
+            </tr>
+                              <a name="OrgLdapSettings"/>
+                    <tr class="r1">
+                <td>OrgLdapSettings</td>
+                <td><a href="../types/OrgLdapSettingsType.html">OrgLdapSettingsType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                Represents the hostname and connection details for
+                                this organization's primary LDAP service.
+                            </td>
+            </tr>
+                                      <a name="OrgOperationLimitsSettings"/>
+                    <tr class="r0">
+                <td>OrgOperationLimitsSettings</td>
+                <td><a href="../types/OrgOperationLimitsSettingsType.html">OrgOperationLimitsSettingsType</a></td>
+                <td>No</td>
+                <td/>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Represents operation limits settings for this organization.
+                            </td>
+            </tr>
+                              <a name="OrgPasswordPolicySettings"/>
+                    <tr class="r1">
+                <td>OrgPasswordPolicySettings</td>
+                <td><a href="../types/OrgPasswordPolicySettingsType.html">OrgPasswordPolicySettingsType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                Represents the password policy settings for this
+                                organization.
                             </td>
             </tr>
                                       <a name="VAppLeaseSettings"/>
@@ -260,67 +309,19 @@
                                 this organization. Storage lease default is 30 days.
                             </td>
             </tr>
-                                      <a name="OrgLdapSettings"/>
+                                      <a name="VCloudExtension"/>
                     <tr class="r0">
-                <td>OrgLdapSettings</td>
-                <td><a href="../types/OrgLdapSettingsType.html">OrgLdapSettingsType</a></td>
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                                Represents the hostname and connection details for
-                                this organization's primary LDAP service.
-                            </td>
-            </tr>
-                              <a name="OrgEmailSettings"/>
-                    <tr class="r1">
-                <td>OrgEmailSettings</td>
-                <td><a href="../types/OrgEmailSettingsType.html">OrgEmailSettingsType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                Represents the email settings for this organization.
-                            </td>
-            </tr>
-                                      <a name="OrgPasswordPolicySettings"/>
-                    <tr class="r0">
-                <td>OrgPasswordPolicySettings</td>
-                <td><a href="../types/OrgPasswordPolicySettingsType.html">OrgPasswordPolicySettingsType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                Represents the password policy settings for this
-                                organization.
-                            </td>
-            </tr>
-                              <a name="OrgOperationLimitsSettings"/>
-                    <tr class="r1">
-                <td>OrgOperationLimitsSettings</td>
-                <td><a href="../types/OrgOperationLimitsSettingsType.html">OrgOperationLimitsSettingsType</a></td>
-                <td>No</td>
-                <td/>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Represents operation limits settings for this organization.
-                            </td>
-            </tr>
-                                      <a name="OrgFederationSettings"/>
-                    <tr class="r0">
-                <td>OrgFederationSettings</td>
-                <td><a href="../types/OrgFederationSettingsType.html">OrgFederationSettingsType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Represents federated identity settings for this organization.
-                            </td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                   </table>
     </dd>
@@ -354,40 +355,47 @@
         </tr>
                       <tr class="r1">
             <td nowrap="1">action</td>
+            <td nowrap="1"><a href="../operations/POST-RegenerateFederationCertificate.html">POST /admin/org/{id}/settings/federation/action/regenerateFederationCertificate</a></td>
+                        <td>Regenerates the certificates used to establish trust between an organization and its identity provider</td>
+            <td>5.6</td>
+            <td/>
+        </tr>
+                              <tr class="r0">
+            <td nowrap="1">action</td>
             <td nowrap="1"><a href="../operations/POST-ResetLdapSslCertificate.html">POST /admin/org/{id}/settings/ldap/action/resetLdapCertificate</a></td>
                         <td>Resets organization LDAP SSL certificate.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">action</td>
             <td nowrap="1"><a href="../operations/POST-ResetLdapKeystore.html">POST /admin/org/{id}/settings/ldap/action/resetLdapKeyStore</a></td>
                         <td>Resets organization LDAP keystore.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">action</td>
             <td nowrap="1"><a href="../operations/POST-ResetSspiKeytab.html">POST /admin/org/{id}/settings/ldap/action/resetLdapSspiKeytab</a></td>
                         <td>Resets organization LDAP SSPI keytab.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">action</td>
             <td nowrap="1"><a href="../operations/POST-UploadLdapSslCertificate.html">POST /admin/org/{id}/settings/ldap/action/updateLdapCertificate</a></td>
                         <td>Updates organization LDAP SSL certificate.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">action</td>
             <td nowrap="1"><a href="../operations/POST-UploadLdapKeystore.html">POST /admin/org/{id}/settings/ldap/action/updateLdapKeyStore</a></td>
                         <td>Updates organization LDAP keystore.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">action</td>
             <td nowrap="1"><a href="../operations/POST-UploadSspiKeytab.html">POST /admin/org/{id}/settings/ldap/action/updateLdapSspiKeytab</a></td>
                         <td>Updates organization LDAP SSPI keytab.</td>
@@ -400,6 +408,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>0.9</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/admin/vCloudEntities.xsd">vCloudEntities.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/admin/vCloudEntities.xsd">vCloudEntities.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -56,19 +56,17 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="Host"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
+                <td>Host</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
+                                Hostname of the SMTP server.
+                            </td>
             </tr>
                                       <a name="IsUseAuthentication"/>
                     <tr class="r0">
@@ -82,16 +80,20 @@
                                 True if the SMTP server requires authentication.
                             </td>
             </tr>
-                              <a name="Host"/>
+                              <a name="Password"/>
                     <tr class="r1">
-                <td>Host</td>
+                <td>Password</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>Yes</td>
+                <td>No</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                                Hostname of the SMTP server.
+                                Password for the user identified by Username. This value
+                                is never returned by GET. It is inspected on create and modify.
+                                On modify, the absence of this element indicates that
+                                the password should not be changed.
+                                Required if IsUseAuthentication is true.
                             </td>
             </tr>
                                       <a name="Port"/>
@@ -119,21 +121,19 @@
                                 (Required if IsUseAuthentication is True).
                             </td>
             </tr>
-                                      <a name="Password"/>
+                                      <a name="VCloudExtension"/>
                     <tr class="r0">
-                <td>Password</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                                Password for the user identified by Username. This value
-                                is never returned by GET. It is inspected on create and modify.
-                                On modify, the absence of this element indicates that
-                                the password should not be changed.
-                                Required if IsUseAuthentication is true.
-                            </td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                   </table>
     </dd>
@@ -143,6 +143,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

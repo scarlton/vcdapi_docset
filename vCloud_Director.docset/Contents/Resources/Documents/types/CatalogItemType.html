@@ -27,7 +27,7 @@
     <dt>Since:</dt>
     <dd>0.9</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/catalogItem.xsd">catalogItem.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/catalogItem.xsd">catalogItem.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.vcloud.catalogItem+xml<br/></dd>
     <dt>Extends:</dt>
@@ -170,19 +170,41 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="DateCreated"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>DateCreated</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#dateTime">dateTime</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Creation date and time of the catalog item.
+                            </td>
+            </tr>
+                                      <a name="Description"/>
+                    <tr class="r0">
+                <td>Description</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
+                                Optional description.
+                            </td>
+            </tr>
+                              <a name="Entity"/>
+                    <tr class="r1">
+                <td>Entity</td>
+                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                A reference to a VAppTemplate or Media object.
+                            </td>
             </tr>
                                       <a name="Link"/>
                     <tr class="r0">
@@ -197,16 +219,19 @@
                                 with this object.
                             </td>
             </tr>
-                              <a name="Description"/>
+                              <a name="Property"/>
                     <tr class="r1">
-                <td>Description</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Property</td>
+                <td><a href="../types/PropertyType.html">PropertyType</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>0.9</td>
-                <td/>
+                <td>1.5</td>
                 <td>
-                                Optional description.
+                                User-specified key/value pair. This element has
+                                been superseded by the Metadata element, which
+                                is the preferred way to specify key/value pairs
+                                for objects.
                             </td>
             </tr>
                                       <a name="Tasks"/>
@@ -222,44 +247,19 @@
                                 completed tasks associated with this entity.
                             </td>
             </tr>
-                              <a name="Entity"/>
+                              <a name="VCloudExtension"/>
                     <tr class="r1">
-                <td>Entity</td>
-                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
-                <td>Yes</td>
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                                A reference to a VAppTemplate or Media object.
-                            </td>
-            </tr>
-                                      <a name="Property"/>
-                    <tr class="r0">
-                <td>Property</td>
-                <td><a href="../types/PropertyType.html">PropertyType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td>1.5</td>
-                <td>
-                                User-specified key/value pair. This element has
-                                been superseded by the Metadata element, which
-                                is the preferred way to specify key/value pairs
-                                for objects.
-                            </td>
-            </tr>
-                              <a name="DateCreated"/>
-                    <tr class="r1">
-                <td>DateCreated</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#dateTime">dateTime</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Creation date and time of the catalog item.
-                            </td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                                       <a name="VersionNumber"/>
                     <tr class="r0">
@@ -330,6 +330,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

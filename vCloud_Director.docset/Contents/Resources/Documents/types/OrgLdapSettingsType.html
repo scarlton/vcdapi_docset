@@ -28,7 +28,7 @@
         <dt>Deprecated:</dt>
     <dd>5.1</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/admin/vCloudEntities.xsd">vCloudEntities.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/admin/vCloudEntities.xsd">vCloudEntities.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.organizationLdapSettings+xml<br/></dd>
     <dt>Extends:</dt>
@@ -131,22 +131,35 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="CustomOrgLdapSettings"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>CustomOrgLdapSettings</td>
+                <td><a href="../types/CustomOrgLdapSettingsType.html">CustomOrgLdapSettingsType</a></td>
                 <td>No</td>
                 <td>always</td>
-                <td>1.5</td>
+                <td>1.0</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
+                                If OrgLdapMode is CUSTOM, this element defines
+                                the hostname and connection details for the
+                                organization's LDAP service.
+                            </td>
             </tr>
-                                      <a name="Link"/>
+                                      <a name="CustomUsersOu"/>
                     <tr class="r0">
+                <td>CustomUsersOu</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                If OrgLdapMode is SYSTEM, specifies an LDAP attribute=value
+                                pair to use for OU (organizational unit).
+                            </td>
+            </tr>
+                              <a name="Link"/>
+                    <tr class="r1">
                 <td>Link</td>
                 <td><a href="../types/LinkType.html">LinkType</a></td>
                 <td>No</td>
@@ -158,8 +171,8 @@
                                 with this object.
                             </td>
             </tr>
-                              <a name="OrgLdapMode"/>
-                    <tr class="r1">
+                                      <a name="OrgLdapMode"/>
+                    <tr class="r0">
                 <td>OrgLdapMode</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
@@ -178,32 +191,19 @@
                                 service specified in CustomOrgLdapSettings.)
                            </td>
             </tr>
-                                      <a name="CustomUsersOu"/>
-                    <tr class="r0">
-                <td>CustomUsersOu</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                If OrgLdapMode is SYSTEM, specifies an LDAP attribute=value
-                                pair to use for OU (organizational unit).
-                            </td>
-            </tr>
-                              <a name="CustomOrgLdapSettings"/>
+                              <a name="VCloudExtension"/>
                     <tr class="r1">
-                <td>CustomOrgLdapSettings</td>
-                <td><a href="../types/CustomOrgLdapSettingsType.html">CustomOrgLdapSettingsType</a></td>
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
                 <td>No</td>
                 <td>always</td>
-                <td>1.0</td>
+                <td>1.5</td>
                 <td/>
                 <td>
-                                If OrgLdapMode is CUSTOM, this element defines
-                                the hostname and connection details for the
-                                organization's LDAP service.
-                            </td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                   </table>
     </dd>
@@ -283,6 +283,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>0.9</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/common.xsd">common.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/common.xsd">common.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.vcloud.controlAccess+xml<br/></dd>
     <dt>Extends:</dt>
@@ -59,35 +59,22 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="AccessSettings"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>AccessSettings</td>
+                <td><a href="../types/AccessSettingsType.html">AccessSettingsType</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="IsSharedToEveryone"/>
-                    <tr class="r0">
-                <td>IsSharedToEveryone</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                If true, the resource is shared with everyone
-                                in the organization. Defaults to false.
+                                The access settings to be applied if
+                                IsSharedToEveryone is false. Required on create
+                                and modify if IsSharedToEveryone is false.
                             </td>
             </tr>
-                              <a name="EveryoneAccessLevel"/>
-                    <tr class="r1">
+                                      <a name="EveryoneAccessLevel"/>
+                    <tr class="r0">
                 <td>EveryoneAccessLevel</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
@@ -104,19 +91,32 @@
                                 ReadOnly
                             </td>
             </tr>
-                                      <a name="AccessSettings"/>
+                              <a name="IsSharedToEveryone"/>
+                    <tr class="r1">
+                <td>IsSharedToEveryone</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                If true, the resource is shared with everyone
+                                in the organization. Defaults to false.
+                            </td>
+            </tr>
+                                      <a name="VCloudExtension"/>
                     <tr class="r0">
-                <td>AccessSettings</td>
-                <td><a href="../types/AccessSettingsType.html">AccessSettingsType</a></td>
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                                The access settings to be applied if
-                                IsSharedToEveryone is false. Required on create
-                                and modify if IsSharedToEveryone is false.
-                            </td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                   </table>
     </dd>
@@ -168,6 +168,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>0.9</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/admin/user.xsd">user.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/admin/user.xsd">user.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.right+xml<br/></dd>
     <dt>Extends:</dt>
@@ -156,19 +156,41 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="BundleKey"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>BundleKey</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Key used for name localization.
+                            </td>
+            </tr>
+                                      <a name="Category"/>
+                    <tr class="r0">
+                <td>Category</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                Assigns a category to the right.
+                            </td>
+            </tr>
+                              <a name="Description"/>
+                    <tr class="r1">
+                <td>Description</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
+                                Optional description.
+                            </td>
             </tr>
                                       <a name="Link"/>
                     <tr class="r0">
@@ -183,16 +205,16 @@
                                 with this object.
                             </td>
             </tr>
-                              <a name="Description"/>
+                              <a name="ServiceNamespace"/>
                     <tr class="r1">
-                <td>Description</td>
+                <td>ServiceNamespace</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
-                <td>always</td>
-                <td>0.9</td>
+                <td>none</td>
+                <td>5.1</td>
                 <td/>
                 <td>
-                                Optional description.
+                                Namespace of the external service that created the right.
                             </td>
             </tr>
                                       <a name="Tasks"/>
@@ -208,41 +230,19 @@
                                 completed tasks associated with this entity.
                             </td>
             </tr>
-                              <a name="Category"/>
+                              <a name="VCloudExtension"/>
                     <tr class="r1">
-                <td>Category</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>Yes</td>
-                <td>none</td>
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                                Assigns a category to the right.
-                            </td>
-            </tr>
-                                      <a name="BundleKey"/>
-                    <tr class="r0">
-                <td>BundleKey</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Key used for name localization.
-                            </td>
-            </tr>
-                              <a name="ServiceNamespace"/>
-                    <tr class="r1">
-                <td>ServiceNamespace</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Namespace of the external service that created the right.
-                            </td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                   </table>
     </dd>
@@ -294,6 +294,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

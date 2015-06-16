@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>5.1</dd>
         <dt>Schema:</dt>
-    <dd><a href="file:///build/mts/release/bora-1323688/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
+    <dd><a href="file:///build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.createProviderVdcParams+xml<br/></dd>
     <dt>Extends:</dt>
@@ -103,115 +103,7 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
-                    <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="Description"/>
-                    <tr class="r0">
-                <td>Description</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Optional description.
-                            </td>
-            </tr>
-                              <a name="ResourcePoolRefs"/>
-                    <tr class="r1">
-                <td>ResourcePoolRefs</td>
-                <td><a href="../types/VimObjectRefsType.html">VimObjectRefsType</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Resource pools backing this provider vDC.
-                                You must specify a resource pool that
-                                is not used by (and is not the child of a
-                                resource pool used by) any other provider vDC.
-                            </td>
-            </tr>
-                                      <a name="VimServer"/>
-                    <tr class="r0">
-                <td>VimServer</td>
-                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                The vCenter server that provides the resource
-                                pools and datastores. A valid reference is
-                                required on create. On modify, this element is
-                                required for schema validation, but its
-                                contents cannot be changed.
-                            </td>
-            </tr>
-                              <a name="HighestSupportedHardwareVersion"/>
-                    <tr class="r1">
-                <td>HighestSupportedHardwareVersion</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                The highest supported virtual hardware version in the provider vDC.
-                                The two possible values are:
-                                  vmx-07 -- virtual hardware version 7.
-                                  vmx-08 -- virtual hardware version 8.
-                            </td>
-            </tr>
-                                      <a name="IsEnabled"/>
-                    <tr class="r0">
-                <td>IsEnabled</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Flag to show the enabled status of provider VDC.
-                            </td>
-            </tr>
-                              <a name="StorageProfile"/>
-                    <tr class="r1">
-                <td>StorageProfile</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>Yes</td>
-                <td>none</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Names of the storage profiles to add to this provider vDC.
-                            </td>
-            </tr>
-                                      <a name="HostRefs"/>
-                    <tr class="r0">
-                <td>HostRefs</td>
-                <td><a href="../types/HostObjectRefsType.html">HostObjectRefsType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                List of host which will be prepared.
-                            </td>
-            </tr>
-                              <a name="DefaultPassword"/>
+                      <a name="DefaultPassword"/>
                     <tr class="r1">
                 <td>DefaultPassword</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
@@ -233,6 +125,114 @@
                 <td/>
                 <td>
                                 The default username which will be used for preparing hosts.
+                            </td>
+            </tr>
+                              <a name="Description"/>
+                    <tr class="r1">
+                <td>Description</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Optional description.
+                            </td>
+            </tr>
+                                      <a name="HighestSupportedHardwareVersion"/>
+                    <tr class="r0">
+                <td>HighestSupportedHardwareVersion</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                The highest supported virtual hardware version in the provider vDC.
+                                The two possible values are:
+                                  vmx-07 -- virtual hardware version 7.
+                                  vmx-08 -- virtual hardware version 8.
+                            </td>
+            </tr>
+                              <a name="HostRefs"/>
+                    <tr class="r1">
+                <td>HostRefs</td>
+                <td><a href="../types/HostObjectRefsType.html">HostObjectRefsType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                List of host which will be prepared.
+                            </td>
+            </tr>
+                                      <a name="IsEnabled"/>
+                    <tr class="r0">
+                <td>IsEnabled</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Flag to show the enabled status of provider VDC.
+                            </td>
+            </tr>
+                              <a name="ResourcePoolRefs"/>
+                    <tr class="r1">
+                <td>ResourcePoolRefs</td>
+                <td><a href="../types/VimObjectRefsType.html">VimObjectRefsType</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Resource pools backing this provider vDC.
+                                You must specify a resource pool that
+                                is not used by (and is not the child of a
+                                resource pool used by) any other provider vDC.
+                            </td>
+            </tr>
+                                      <a name="StorageProfile"/>
+                    <tr class="r0">
+                <td>StorageProfile</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Names of the storage profiles to add to this provider vDC.
+                            </td>
+            </tr>
+                              <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
+                                      <a name="VimServer"/>
+                    <tr class="r0">
+                <td>VimServer</td>
+                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                The vCenter server that provides the resource
+                                pools and datastores. A valid reference is
+                                required on create. On modify, this element is
+                                required for schema validation, but its
+                                contents cannot be changed.
                             </td>
             </tr>
                   </table>
@@ -264,6 +264,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

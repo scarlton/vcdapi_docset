@@ -22,7 +22,7 @@
     <dt>Since:</dt>
     <dd/>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/network.xsd">network.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/network.xsd">network.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -52,8 +52,68 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="GatewayInterface"/>
                     <tr class="r1">
+                <td>GatewayInterface</td>
+                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Gateway interface to which static route is bound.
+                            </td>
+            </tr>
+                                      <a name="Interface"/>
+                    <tr class="r0">
+                <td>Interface</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                Interface to use for static routing. Internal and External are the supported values.
+                            </td>
+            </tr>
+                              <a name="Name"/>
+                    <tr class="r1">
+                <td>Name</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                Name for the static route.
+                            </td>
+            </tr>
+                                      <a name="Network"/>
+                    <tr class="r0">
+                <td>Network</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                Network specification in CIDR.
+                            </td>
+            </tr>
+                              <a name="NextHopIp"/>
+                    <tr class="r1">
+                <td>NextHopIp</td>
+                <td><a href="../types/IpAddressType.html">IpAddressType</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                IP Address of Next Hop router/gateway.
+                            </td>
+            </tr>
+                                      <a name="VCloudExtension"/>
+                    <tr class="r0">
                 <td>VCloudExtension</td>
                 <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
                 <td>No</td>
@@ -66,66 +126,6 @@
                         related to extension services.
                     </td>
             </tr>
-                                      <a name="Name"/>
-                    <tr class="r0">
-                <td>Name</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                Name for the static route.
-                            </td>
-            </tr>
-                              <a name="Network"/>
-                    <tr class="r1">
-                <td>Network</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                Network specification in CIDR.
-                            </td>
-            </tr>
-                                      <a name="NextHopIp"/>
-                    <tr class="r0">
-                <td>NextHopIp</td>
-                <td><a href="../types/IpAddressType.html">IpAddressType</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                IP Address of Next Hop router/gateway.
-                            </td>
-            </tr>
-                              <a name="Interface"/>
-                    <tr class="r1">
-                <td>Interface</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                Interface to use for static routing. Internal and External are the supported values.
-                            </td>
-            </tr>
-                                      <a name="GatewayInterface"/>
-                    <tr class="r0">
-                <td>GatewayInterface</td>
-                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Gateway interface to which static route is bound.
-                            </td>
-            </tr>
                   </table>
     </dd>
     
@@ -134,6 +134,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

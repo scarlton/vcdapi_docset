@@ -25,7 +25,7 @@
     <dt>Since:</dt>
     <dd>0.9</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/network.xsd">network.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/network.xsd">network.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -53,36 +53,7 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
-                    <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="MappingMode"/>
-                    <tr class="r0">
-                <td>MappingMode</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                One of:
-                                automatic (map IP addresses automatically),
-                                manual (map IP addresses manually using
-                                ExternalIpAddress and InternalIpAddress)
-                            </td>
-            </tr>
-                              <a name="ExternalIpAddress"/>
+                      <a name="ExternalIpAddress"/>
                     <tr class="r1">
                 <td>ExternalIpAddress</td>
                 <td><a href="../types/IpAddressType.html">IpAddressType</a></td>
@@ -106,6 +77,35 @@
                                 Internal IP address to map.
                             </td>
             </tr>
+                              <a name="MappingMode"/>
+                    <tr class="r1">
+                <td>MappingMode</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                One of:
+                                automatic (map IP addresses automatically),
+                                manual (map IP addresses manually using
+                                ExternalIpAddress and InternalIpAddress)
+                            </td>
+            </tr>
+                                      <a name="VCloudExtension"/>
+                    <tr class="r0">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
                   </table>
     </dd>
     
@@ -114,6 +114,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

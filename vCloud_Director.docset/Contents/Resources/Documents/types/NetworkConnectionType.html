@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>0.9</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/vApp.xsd">vApp.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/vApp.xsd">vApp.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -96,47 +96,8 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="ExternalIpAddress"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="NetworkConnectionIndex"/>
-                    <tr class="r0">
-                <td>NetworkConnectionIndex</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                Virtual slot number associated with this NIC.
-                                First slot number is 0.
-                            </td>
-            </tr>
-                              <a name="IpAddress"/>
-                    <tr class="r1">
-                <td>IpAddress</td>
-                <td><a href="../types/IpAddressType.html">IpAddressType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                IP address assigned to this NIC.
-                            </td>
-            </tr>
-                                      <a name="ExternalIpAddress"/>
-                    <tr class="r0">
                 <td>ExternalIpAddress</td>
                 <td><a href="../types/IpAddressType.html">IpAddressType</a></td>
                 <td>No</td>
@@ -149,33 +110,16 @@
                                 assigned to this NIC appears here.
                             </td>
             </tr>
-                              <a name="IsConnected"/>
-                    <tr class="r1">
-                <td>IsConnected</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                If the virtual machine is undeployed, this value specifies
-                                whether the NIC should be connected upon
-                                deployment. If the virtual machine is deployed, this value
-                                reports the current status of this NIC's
-                                connection, and can be updated to change that
-                                connection status.
-                            </td>
-            </tr>
-                                      <a name="MACAddress"/>
+                                      <a name="IpAddress"/>
                     <tr class="r0">
-                <td>MACAddress</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>IpAddress</td>
+                <td><a href="../types/IpAddressType.html">IpAddressType</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                                MAC address associated with the NIC.
+                                IP address assigned to this NIC.
                             </td>
             </tr>
                               <a name="IpAddressAllocationMode"/>
@@ -198,6 +142,62 @@
                                 <b>NONE</b> (No IP addressing mode specified.)
                             </td>
             </tr>
+                                      <a name="IsConnected"/>
+                    <tr class="r0">
+                <td>IsConnected</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                If the virtual machine is undeployed, this value specifies
+                                whether the NIC should be connected upon
+                                deployment. If the virtual machine is deployed, this value
+                                reports the current status of this NIC's
+                                connection, and can be updated to change that
+                                connection status.
+                            </td>
+            </tr>
+                              <a name="MACAddress"/>
+                    <tr class="r1">
+                <td>MACAddress</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                MAC address associated with the NIC.
+                            </td>
+            </tr>
+                                      <a name="NetworkConnectionIndex"/>
+                    <tr class="r0">
+                <td>NetworkConnectionIndex</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                Virtual slot number associated with this NIC.
+                                First slot number is 0.
+                            </td>
+            </tr>
+                              <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
                   </table>
     </dd>
     
@@ -206,6 +206,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

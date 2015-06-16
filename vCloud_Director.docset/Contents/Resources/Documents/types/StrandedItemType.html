@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>5.1</dd>
         <dt>Schema:</dt>
-    <dd><a href="file:///build/mts/release/bora-1323688/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
+    <dd><a href="file:///build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.strandedItem+xml<br/></dd>
     <dt>Extends:</dt>
@@ -167,35 +167,20 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="DeletionDate"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="Link"/>
-                    <tr class="r0">
-                <td>Link</td>
-                <td><a href="../types/LinkType.html">LinkType</a></td>
+                <td>DeletionDate</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#dateTime">dateTime</a></td>
                 <td>No</td>
                 <td>none</td>
                 <td>5.1</td>
                 <td/>
                 <td>
-                                A reference to an entity or operation associated
-                                with this object.
+                                 Date when the object was deleted from vCD.
                             </td>
             </tr>
-                              <a name="Description"/>
-                    <tr class="r1">
+                                      <a name="Description"/>
+                    <tr class="r0">
                 <td>Description</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
@@ -204,19 +189,6 @@
                 <td/>
                 <td>
                                 Optional description.
-                            </td>
-            </tr>
-                                      <a name="Tasks"/>
-                    <tr class="r0">
-                <td>Tasks</td>
-                <td><a href="../types/TasksInProgressType.html">TasksInProgressType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                A list of queued, running, or recently
-                                completed tasks associated with this entity.
                             </td>
             </tr>
                               <a name="EntityType"/>
@@ -231,20 +203,8 @@
                                 The type of the stranded item.
                             </td>
             </tr>
-                                      <a name="DeletionDate"/>
+                                      <a name="ErrorMessage"/>
                     <tr class="r0">
-                <td>DeletionDate</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#dateTime">dateTime</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                 Date when the object was deleted from vCD.
-                            </td>
-            </tr>
-                              <a name="ErrorMessage"/>
-                    <tr class="r1">
                 <td>ErrorMessage</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
@@ -253,6 +213,19 @@
                 <td/>
                 <td>
                                 The reason why the deletion failed.
+                            </td>
+            </tr>
+                              <a name="Link"/>
+                    <tr class="r1">
+                <td>Link</td>
+                <td><a href="../types/LinkType.html">LinkType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                A reference to an entity or operation associated
+                                with this object.
                             </td>
             </tr>
                                       <a name="Parent"/>
@@ -278,6 +251,33 @@
                 <td>
                                 A collection of stranded item VimObjects.
                             </td>
+            </tr>
+                                      <a name="Tasks"/>
+                    <tr class="r0">
+                <td>Tasks</td>
+                <td><a href="../types/TasksInProgressType.html">TasksInProgressType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                A list of queued, running, or recently
+                                completed tasks associated with this entity.
+                            </td>
+            </tr>
+                              <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                   </table>
     </dd>
@@ -315,6 +315,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

@@ -24,7 +24,7 @@
     <dt>Since:</dt>
     <dd>5.1</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/network.xsd">network.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/network.xsd">network.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -88,46 +88,8 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="Description"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="Id"/>
-                    <tr class="r0">
-                <td>Id</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                            Load balancer pool id.
-                        </td>
-            </tr>
-                              <a name="Name"/>
-                    <tr class="r1">
-                <td>Name</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                            Load balancer pool name.
-                        </td>
-            </tr>
-                                      <a name="Description"/>
-                    <tr class="r0">
                 <td>Description</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
@@ -136,42 +98,6 @@
                 <td/>
                 <td>
                             Load balancer pool description.
-                        </td>
-            </tr>
-                              <a name="ServicePort"/>
-                    <tr class="r1">
-                <td>ServicePort</td>
-                <td><a href="../types/LBPoolServicePortType.html">LBPoolServicePortType</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                            Load balancer pool service port.
-                        </td>
-            </tr>
-                                      <a name="Member"/>
-                    <tr class="r0">
-                <td>Member</td>
-                <td><a href="../types/LBPoolMemberType.html">LBPoolMemberType</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                            Load balancer pool member.
-                        </td>
-            </tr>
-                              <a name="Operational"/>
-                    <tr class="r1">
-                <td>Operational</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                            True if the load balancer pool is operational.
                         </td>
             </tr>
                                       <a name="ErrorDetails"/>
@@ -186,6 +112,80 @@
                             Error details for this pool.
                         </td>
             </tr>
+                              <a name="Id"/>
+                    <tr class="r1">
+                <td>Id</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                            Load balancer pool id.
+                        </td>
+            </tr>
+                                      <a name="Member"/>
+                    <tr class="r0">
+                <td>Member</td>
+                <td><a href="../types/LBPoolMemberType.html">LBPoolMemberType</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                            Load balancer pool member.
+                        </td>
+            </tr>
+                              <a name="Name"/>
+                    <tr class="r1">
+                <td>Name</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                            Load balancer pool name.
+                        </td>
+            </tr>
+                                      <a name="Operational"/>
+                    <tr class="r0">
+                <td>Operational</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                            True if the load balancer pool is operational.
+                        </td>
+            </tr>
+                              <a name="ServicePort"/>
+                    <tr class="r1">
+                <td>ServicePort</td>
+                <td><a href="../types/LBPoolServicePortType.html">LBPoolServicePortType</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                            Load balancer pool service port.
+                        </td>
+            </tr>
+                                      <a name="VCloudExtension"/>
+                    <tr class="r0">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
                   </table>
     </dd>
     
@@ -194,6 +194,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

@@ -1,0 +1,58 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>vCloud REST API - POST-GetVmCurrentUsageAllMetrics</title>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
+<!-- -->
+</head>
+<body onload="javascript:setupEventHandlers()">
+<br/>
+
+<h1>POST /vApp/{id}/metrics/current</h1>
+
+<dl>
+    <dt>Operation:</dt>
+    <dd>POST /vApp/{id}/metrics/current</dd>
+    <dt>Description:</dt>
+    <dd>Gets the current usage for VM metrics according to the provided spec object. <p>
+
+ The spec object can contain a collection of wildcard-style metric name patterns
+ to fine-tune the list of returned metrics.</p></dd>
+    <dt>Since:</dt>
+    <dd/>
+        <dt>Input parameters</dt>
+    <dd>
+                    controls which metrics to retrieve<br/><br/>
+                <dl>
+            <dt>Consume media type(s):</dt>
+            <dd>application/vnd.vmware.vcloud.metrics.currentUsageSpec+xml<br/></dd>
+            <dt>Input type:</dt>
+            <dd><a href="../types/CurrentUsageSpecType.html">CurrentUsageSpecType</a></dd>
+        </dl>
+    </dd>
+    <dt>Output parameters</dt>
+    <dd>
+                    a {@link CurrentUsageType} instance of metrics for the specified VM<br/><br/>
+                <dl>
+            <dt>Produce media type(s):</dt>
+            <dd>application/vnd.vmware.vcloud.metrics.currentUsage+xml<br/></dd>
+            <dt>Output type:</dt>
+            <dd><a href="../types/CurrentUsageType.html">CurrentUsageType</a></dd>
+        </dl>
+    </dd>
+    <dt>Examples</dt>
+    <a id="examples" name="examples"/>
+    <dd>
+    <dl>
+        </dl>
+    </dd>
+</dl>
+
+<br/>
+
+<br/>
+<br/>
+</body>
+</html>

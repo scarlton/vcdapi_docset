@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>5.1</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/extension/services.xsd">services.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/services.xsd">services.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.service+xml<br/></dd>
     <dt>Extends:</dt>
@@ -348,144 +348,17 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="ApiDefinitions"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>ApiDefinitions</td>
+                <td><a href="../types/AdminApiDefinitionsType.html">AdminApiDefinitionsType</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>5.1</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="Link"/>
-                    <tr class="r0">
-                <td>Link</td>
-                <td><a href="../types/LinkType.html">LinkType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                A reference to an entity or operation associated
-                                with this object.
-                            </td>
-            </tr>
-                              <a name="Description"/>
-                    <tr class="r1">
-                <td>Description</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Optional description.
-                            </td>
-            </tr>
-                                      <a name="Tasks"/>
-                    <tr class="r0">
-                <td>Tasks</td>
-                <td><a href="../types/TasksInProgressType.html">TasksInProgressType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                A list of queued, running, or recently
-                                completed tasks associated with this entity.
-                            </td>
-            </tr>
-                              <a name="Namespace"/>
-                    <tr class="r1">
-                <td>Namespace</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>Yes</td>
-                <td>create</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Extension service namespace. Must be unique
-                                among all registered services.
-                            </td>
-            </tr>
-                                      <a name="Enabled"/>
-                    <tr class="r0">
-                <td>Enabled</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                True if this extension service is enabled.
-                            </td>
-            </tr>
-                              <a name="AuthorizationEnabled"/>
-                    <tr class="r1">
-                <td>AuthorizationEnabled</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                True if this service participates in the vCloud API REST
-                                authorization framework for extension services.
-                            </td>
-            </tr>
-                                      <a name="RoutingKey"/>
-                    <tr class="r0">
-                <td>RoutingKey</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                AMQP routing key for this extension service.
-                            </td>
-            </tr>
-                              <a name="Priority"/>
-                    <tr class="r1">
-                <td>Priority</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Extension service priority. An integer between 0-100.
-                                A value of 50 denotes a neutral priority.
-                            </td>
-            </tr>
-                                      <a name="Exchange"/>
-                    <tr class="r0">
-                <td>Exchange</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                AMQP exchange that messages for this extension
-                                service are published to.
-                            </td>
-            </tr>
-                              <a name="Vendor"/>
-                    <tr class="r1">
-                <td>Vendor</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Extension service vendor name.
+                               Container for values used to specify an API
+                               defined by an extension service.
                             </td>
             </tr>
                                       <a name="ApiFilters"/>
@@ -501,8 +374,122 @@
                                extension service.
                             </td>
             </tr>
-                              <a name="ServiceLinks"/>
+                              <a name="AuthorizationEnabled"/>
                     <tr class="r1">
+                <td>AuthorizationEnabled</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                True if this service participates in the vCloud API REST
+                                authorization framework for extension services.
+                            </td>
+            </tr>
+                                      <a name="Description"/>
+                    <tr class="r0">
+                <td>Description</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Optional description.
+                            </td>
+            </tr>
+                              <a name="Enabled"/>
+                    <tr class="r1">
+                <td>Enabled</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                True if this extension service is enabled.
+                            </td>
+            </tr>
+                                      <a name="Exchange"/>
+                    <tr class="r0">
+                <td>Exchange</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                AMQP exchange that messages for this extension
+                                service are published to.
+                            </td>
+            </tr>
+                              <a name="Link"/>
+                    <tr class="r1">
+                <td>Link</td>
+                <td><a href="../types/LinkType.html">LinkType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                A reference to an entity or operation associated
+                                with this object.
+                            </td>
+            </tr>
+                                      <a name="Namespace"/>
+                    <tr class="r0">
+                <td>Namespace</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
+                <td>create</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Extension service namespace. Must be unique
+                                among all registered services.
+                            </td>
+            </tr>
+                              <a name="Priority"/>
+                    <tr class="r1">
+                <td>Priority</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Extension service priority. An integer between 0-100.
+                                A value of 50 denotes a neutral priority.
+                            </td>
+            </tr>
+                                      <a name="ResourceClasses"/>
+                    <tr class="r0">
+                <td>ResourceClasses</td>
+                <td><a href="../types/ResourceClassesType.html">ResourceClassesType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                               Container for values that define extension
+                               service resource classes.
+                            </td>
+            </tr>
+                              <a name="RoutingKey"/>
+                    <tr class="r1">
+                <td>RoutingKey</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                AMQP routing key for this extension service.
+                            </td>
+            </tr>
+                                      <a name="ServiceLinks"/>
+                    <tr class="r0">
                 <td>ServiceLinks</td>
                 <td><a href="../types/AdminServiceLinksType.html">AdminServiceLinksType</a></td>
                 <td>No</td>
@@ -514,30 +501,43 @@
                                by an extension service.
                             </td>
             </tr>
-                                      <a name="ApiDefinitions"/>
-                    <tr class="r0">
-                <td>ApiDefinitions</td>
-                <td><a href="../types/AdminApiDefinitionsType.html">AdminApiDefinitionsType</a></td>
+                              <a name="Tasks"/>
+                    <tr class="r1">
+                <td>Tasks</td>
+                <td><a href="../types/TasksInProgressType.html">TasksInProgressType</a></td>
                 <td>No</td>
-                <td>always</td>
+                <td>none</td>
                 <td>5.1</td>
                 <td/>
                 <td>
-                               Container for values used to specify an API
-                               defined by an extension service.
+                                A list of queued, running, or recently
+                                completed tasks associated with this entity.
                             </td>
             </tr>
-                              <a name="ResourceClasses"/>
-                    <tr class="r1">
-                <td>ResourceClasses</td>
-                <td><a href="../types/ResourceClassesType.html">ResourceClassesType</a></td>
+                                      <a name="VCloudExtension"/>
+                    <tr class="r0">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>5.1</td>
                 <td/>
                 <td>
-                               Container for values that define extension
-                               service resource classes.
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
+                              <a name="Vendor"/>
+                    <tr class="r1">
+                <td>Vendor</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Extension service vendor name.
                             </td>
             </tr>
                   </table>
@@ -597,6 +597,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

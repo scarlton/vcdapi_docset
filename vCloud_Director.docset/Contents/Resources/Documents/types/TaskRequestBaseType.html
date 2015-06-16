@@ -24,7 +24,7 @@
     <dt>Since:</dt>
     <dd>1.5</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/admin/blockingExtensions.xsd">blockingExtensions.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/admin/blockingExtensions.xsd">blockingExtensions.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -203,19 +203,17 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="Description"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>Description</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>1.5</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
+                                Optional description.
+                            </td>
             </tr>
                                       <a name="Link"/>
                     <tr class="r0">
@@ -228,31 +226,6 @@
                 <td>
                                 A reference to an entity or operation associated
                                 with this object.
-                            </td>
-            </tr>
-                              <a name="Description"/>
-                    <tr class="r1">
-                <td>Description</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                Optional description.
-                            </td>
-            </tr>
-                                      <a name="Tasks"/>
-                    <tr class="r0">
-                <td>Tasks</td>
-                <td><a href="../types/TasksInProgressType.html">TasksInProgressType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                A list of queued, running, or recently
-                                completed tasks associated with this entity.
                             </td>
             </tr>
                               <a name="Organization"/>
@@ -268,6 +241,31 @@
                                 runs.
                             </td>
             </tr>
+                                      <a name="TaskOwner"/>
+                    <tr class="r0">
+                <td>TaskOwner</td>
+                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                The owner of the blocking task.
+                            </td>
+            </tr>
+                              <a name="Tasks"/>
+                    <tr class="r1">
+                <td>Tasks</td>
+                <td><a href="../types/TasksInProgressType.html">TasksInProgressType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                A list of queued, running, or recently
+                                completed tasks associated with this entity.
+                            </td>
+            </tr>
                                       <a name="User"/>
                     <tr class="r0">
                 <td>User</td>
@@ -280,17 +278,19 @@
                                 The user who triggered the blocking task.
                             </td>
             </tr>
-                              <a name="TaskOwner"/>
+                              <a name="VCloudExtension"/>
                     <tr class="r1">
-                <td>TaskOwner</td>
-                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
                 <td>No</td>
-                <td>none</td>
+                <td>always</td>
                 <td>1.5</td>
                 <td/>
                 <td>
-                                The owner of the blocking task.
-                            </td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                   </table>
     </dd>
@@ -300,6 +300,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

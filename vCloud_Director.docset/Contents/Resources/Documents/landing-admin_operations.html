@@ -5,15 +5,15 @@
     <link rel="stylesheet" type="text/css" href="doc-style.css"/>
 
 <!-- -->
-</head>
+</head><style>div.feedbackhover { display: none!important; padding:0; visibility:hidden}span.st_sharethis { display: none!important; padding:0; visibility:hidden}</style>
 <body onload="javascript:setupEventHandlers()">
 <br/>
 
-<h1>vCloud REST API Admin Operations</h1>
+<h1>vCloud Director REST API Admin Operations</h1>
 
 <h2 class="index">Admin Operations</h2>
 <br/>
-<p class="table-title">Admin Operations (157)</p>
+<p class="table-title">Admin Operations (160)</p>
 <table cellspacing="0">
   <tr>
       <th>Operation</th>
@@ -67,7 +67,7 @@
         <td>1.5</td>
     </tr>
               <tr class="r0">
-        <td nowrap="1"><a href="operations/GET-CatalogMetadataItem-metadata.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fcatalog%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">GET /admin/catalog/{id}/metadata/{domain}/{key}</a></td>
+        <td nowrap="1"><a href="operations/GET-CatalogMetadataItem-metadata-AdminView.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fcatalog%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">GET /admin/catalog/{id}/metadata/{domain}/{key}</a></td>
         <td>Retrieve the value of the specified key in the specified domain from catalog metadata.</td>
         <td>5.1</td>
     </tr>
@@ -83,7 +83,7 @@
         <td>5.1</td>
     </tr>
           <tr class="r1">
-        <td nowrap="1"><a href="operations/GET-CatalogMetadataItem-metadata-AdminView.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fcatalog%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">GET /admin/catalog/{id}/metadata/{key}</a></td>
+        <td nowrap="1"><a href="operations/GET-CatalogMetadataItem-metadata.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fcatalog%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">GET /admin/catalog/{id}/metadata/{key}</a></td>
         <td>Retrieve the value of the specified key from catalog metadata.</td>
         <td>1.5</td>
     </tr>
@@ -149,21 +149,26 @@
         <td>5.1</td>
     </tr>
               <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-Event.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fevent%2F%7Bid%7D" class="dashAnchor">GET /admin/event/{id}</a></td>
+        <td>Returns event with specified ID.</td>
+        <td>5.6</td>
+    </tr>
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-Group.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fgroup%2F%7Bid%7D" class="dashAnchor">GET /admin/group/{id}</a></td>
         <td>Retrieve a group.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/PUT-Group.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fgroup%2F%7Bid%7D" class="dashAnchor">PUT /admin/group/{id}</a></td>
         <td>Update the name or description of a group.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/DELETE-Group.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Fgroup%2F%7Bid%7D" class="dashAnchor">DELETE /admin/group/{id}</a></td>
         <td>Deletes a group.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-GroupsFromQuery.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fgroups%2Fquery" class="dashAnchor">GET /admin/groups/query</a></td>
         <td>Retrieves a list of groups for organization the org admin belongs to
  by using REST API general QueryHandler;
@@ -171,194 +176,199 @@
  If filter is provided it will be applied to the corresponding result set.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-ExternalOrOrgNetwork.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fnetwork%2F%7Bid%7D" class="dashAnchor">GET /admin/network/{id}</a></td>
         <td>Retrieve an administrative view of a network.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/PUT-OrgVdcNetwork.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fnetwork%2F%7Bid%7D" class="dashAnchor">PUT /admin/network/{id}</a></td>
         <td>Update an organization network.</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/DELETE-Network.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Fnetwork%2F%7Bid%7D" class="dashAnchor">DELETE /admin/network/{id}</a></td>
         <td>Delete a network.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-ResetNetwork.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fnetwork%2F%7Bid%7D%2Faction%2Freset" class="dashAnchor">POST /admin/network/{id}/action/reset</a></td>
         <td>Reset networking services on a network.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-SyncSyslogSettingsOfNetwork.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fnetwork%2F%7Bid%7D%2Faction%2FsyncSyslogServerSettings" class="dashAnchor">POST /admin/network/{id}/action/syncSyslogServerSettings</a></td>
         <td>Synchronize syslog server settings for a network.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-AllocatedIpAddresses-AdminView.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fnetwork%2F%7Bid%7D%2FallocatedAddresses" class="dashAnchor">GET /admin/network/{id}/allocatedAddresses</a></td>
         <td>Retrieve the list of IP addresses allocated to the network.</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-NetworkMetadata-AdminView.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fnetwork%2F%7Bid%7D%2Fmetadata" class="dashAnchor">GET /admin/network/{id}/metadata</a></td>
         <td>Retrieve metadata associated with the network.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-UpdateNetworkMetadata.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fnetwork%2F%7Bid%7D%2Fmetadata" class="dashAnchor">POST /admin/network/{id}/metadata</a></td>
         <td>Merge the metadata provided in the request with existing metadata.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
-        <td nowrap="1"><a href="operations/GET-NetworkMetadataItem-metadata-AdminView.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fnetwork%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">GET /admin/network/{id}/metadata/{domain}/{key}</a></td>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-NetworkMetadataItem-metadata.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fnetwork%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">GET /admin/network/{id}/metadata/{domain}/{key}</a></td>
         <td>Retrieve the value of the specified key in the specified domain from network metadata.</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/PUT-NetworkMetadataItem-metadata.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fnetwork%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">PUT /admin/network/{id}/metadata/{domain}/{key}</a></td>
         <td>Set the value for the specified metadata key in the specified domain to the value provided,
  overwriting any existing value.</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/DELETE-NetworkMetadataItem-metadata.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Fnetwork%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">DELETE /admin/network/{id}/metadata/{domain}/{key}</a></td>
         <td>Delete the specified key in the specified domain and its value from network metadata.</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
-        <td nowrap="1"><a href="operations/GET-NetworkMetadataItem-metadata.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fnetwork%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">GET /admin/network/{id}/metadata/{key}</a></td>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-NetworkMetadataItem-metadata-AdminView.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fnetwork%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">GET /admin/network/{id}/metadata/{key}</a></td>
         <td>Retrieve the value of the specified key from network metadata.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-NetworkMetadataItem-metadata.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fnetwork%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">PUT /admin/network/{id}/metadata/{key}</a></td>
         <td>Set the value for the specified metadata key to the value provided,
  overwriting any existing value.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/DELETE-NetworkMetadataItem-metadata.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Fnetwork%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">DELETE /admin/network/{id}/metadata/{key}</a></td>
         <td>Delete the specified key and its value from network metadata.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-Organization-AdminView.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Forg%2F%7Bid%7D" class="dashAnchor">GET /admin/org/{id}</a></td>
         <td>Retrieve an administrative view of an organization.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/PUT-Organization.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Forg%2F%7Bid%7D" class="dashAnchor">PUT /admin/org/{id}</a></td>
         <td>Update an organization network.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/DELETE-Organization.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Forg%2F%7Bid%7D" class="dashAnchor">DELETE /admin/org/{id}</a></td>
         <td>Delete an organization.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-DisableOrg.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Forg%2F%7Bid%7D%2Faction%2Fdisable" class="dashAnchor">POST /admin/org/{id}/action/disable</a></td>
         <td>Disable an organization.</td>
         <td>1.0</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-EnableOrg.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Forg%2F%7Bid%7D%2Faction%2Fenable" class="dashAnchor">POST /admin/org/{id}/action/enable</a></td>
         <td>Enable an organization.</td>
         <td>1.0</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-CreateCatalog.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Forg%2F%7Bid%7D%2Fcatalogs" class="dashAnchor">POST /admin/org/{id}/catalogs</a></td>
         <td>Create a catalog.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-PostEvent.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Forg%2F%7Bid%7D%2Fevents" class="dashAnchor">POST /admin/org/{id}/events</a></td>
         <td>Post an external event to the system.</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-ImportGroup.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Forg%2F%7Bid%7D%2Fgroups" class="dashAnchor">POST /admin/org/{id}/groups</a></td>
         <td>Import a group from the LDAP directory service.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-OrganizationMetadata-AdminView.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Forg%2F%7Bid%7D%2Fmetadata" class="dashAnchor">GET /admin/org/{id}/metadata</a></td>
         <td>Retrieve metadata associated with the organization.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-UpdateOrganizationMetadata.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Forg%2F%7Bid%7D%2Fmetadata" class="dashAnchor">POST /admin/org/{id}/metadata</a></td>
         <td>Merge the metadata provided in the request with existing metadata.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-OrganizationMetadataItem-metadata-AdminView.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Forg%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">GET /admin/org/{id}/metadata/{domain}/{key}</a></td>
         <td>Retrieve the value of the specified key in the specified domain from organization metadata .</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/PUT-OrganizationMetadataItem-metadata.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Forg%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">PUT /admin/org/{id}/metadata/{domain}/{key}</a></td>
         <td>Set the value for the specified metadata key in the specified domain to the value provided,
  overwriting any existing value.</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/DELETE-OrganizationMetadataItem-metadata.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Forg%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">DELETE /admin/org/{id}/metadata/{domain}/{key}</a></td>
         <td>Delete the specified key in the specified domain and its value from organization metadata.</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-OrganizationMetadataItem-metadata.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Forg%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">GET /admin/org/{id}/metadata/{key}</a></td>
         <td>Retrieve the value of the specified key from organization metadata.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-OrganizationMetadataItem-metadata.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Forg%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">PUT /admin/org/{id}/metadata/{key}</a></td>
         <td>Set the value for the specified metadata key to the value provided,
  overwriting any existing value.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/DELETE-OrganizationMetadataItem-metadata.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Forg%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">DELETE /admin/org/{id}/metadata/{key}</a></td>
         <td>Delete the specified key and its value from organization metadata.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-CreateOrgNetwork.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Forg%2F%7Bid%7D%2Fnetworks" class="dashAnchor">POST /admin/org/{id}/networks</a></td>
         <td>Create an organization network.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-OrgSettings.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Forg%2F%7Bid%7D%2Fsettings" class="dashAnchor">GET /admin/org/{id}/settings</a></td>
         <td>Retrieve settings for this organization.</td>
         <td/>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-OrgSettings.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Forg%2F%7Bid%7D%2Fsettings" class="dashAnchor">PUT /admin/org/{id}/settings</a></td>
         <td>Updates settings for this organization.</td>
         <td/>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-OrgEmailSettings.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Forg%2F%7Bid%7D%2Fsettings%2Femail" class="dashAnchor">GET /admin/org/{id}/settings/email</a></td>
         <td>Retrieve organization email settings.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-OrgEmailSettings.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Forg%2F%7Bid%7D%2Fsettings%2Femail" class="dashAnchor">PUT /admin/org/{id}/settings/email</a></td>
         <td>Update organization email settings.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-FederationSettings.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Forg%2F%7Bid%7D%2Fsettings%2Ffederation" class="dashAnchor">GET /admin/org/{id}/settings/federation</a></td>
         <td>Retrieve other organization settings.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-FederationSettings.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Forg%2F%7Bid%7D%2Fsettings%2Ffederation" class="dashAnchor">PUT /admin/org/{id}/settings/federation</a></td>
         <td>Update other organization settings.</td>
         <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-RegenerateFederationCertificate.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Forg%2F%7Bid%7D%2Fsettings%2Ffederation%2Faction%2FregenerateFederationCertificate" class="dashAnchor">POST /admin/org/{id}/settings/federation/action/regenerateFederationCertificate</a></td>
+        <td>Regenerates the certificates used to establish trust between an organization and its identity provider</td>
+        <td>5.6</td>
     </tr>
           <tr class="r1">
         <td nowrap="1"><a href="operations/GET-GeneralSettings.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Forg%2F%7Bid%7D%2Fsettings%2Fgeneral" class="dashAnchor">GET /admin/org/{id}/settings/general</a></td>
@@ -467,7 +477,7 @@
     </tr>
               <tr class="r0">
         <td nowrap="1"><a href="operations/POST-CreateVdc.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Forg%2F%7Bid%7D%2Fvdcs" class="dashAnchor">POST /admin/org/{id}/vdcs</a></td>
-        <td>Create an organization vDC.</td>
+        <td>Create an organization VDC.</td>
         <td>0.9</td>
     </tr>
           <tr class="r1">
@@ -656,21 +666,26 @@
         <td>0.9</td>
     </tr>
               <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-TakeOwnership.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fuser%2F%7Bid%7D%2Faction%2FtakeOwnership" class="dashAnchor">POST /admin/user/{id}/action/takeOwnership</a></td>
+        <td>Transfer ownership of this user's vApps, media, and catalogs to the caller.</td>
+        <td>5.6</td>
+    </tr>
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-UnlockUser.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fuser%2F%7Bid%7D%2Faction%2Funlock" class="dashAnchor">POST /admin/user/{id}/action/unlock</a></td>
         <td>Unlock a user.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-QueryUserPrivileges.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fuser%2F%7Bid%7D%2FentityRights" class="dashAnchor">POST /admin/user/{id}/entityRights</a></td>
         <td>Queries user privileges on a set of entities</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-QueryUserGrantedRights.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fuser%2F%7Bid%7D%2FgrantedRights" class="dashAnchor">GET /admin/user/{id}/grantedRights</a></td>
         <td>Queries user granted privileges</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-UsersFromQuery-query.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fusers%2Fquery" class="dashAnchor">GET /admin/users/query</a></td>
         <td>Retrieves a list of users for organization the org admin belongs to
  by using REST API general QueryHandler;
@@ -678,156 +693,156 @@
  If filter is provided it will be applied to the corresponding result set.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-Vdc-AdminView.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fvdc%2F%7Bid%7D" class="dashAnchor">GET /admin/vdc/{id}</a></td>
         <td>Retrieve the admin view of an organization vDC.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/PUT-Vdc.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fvdc%2F%7Bid%7D" class="dashAnchor">PUT /admin/vdc/{id}</a></td>
         <td>Modify an organization vDC.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/DELETE-Vdc.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Fvdc%2F%7Bid%7D" class="dashAnchor">DELETE /admin/vdc/{id}</a></td>
         <td>Delete an organization vDC.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-DisableVdc.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fvdc%2F%7Bid%7D%2Faction%2Fdisable" class="dashAnchor">POST /admin/vdc/{id}/action/disable</a></td>
         <td>Disable an organization vDC.</td>
         <td>1.0</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-EnableVdc.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fvdc%2F%7Bid%7D%2Faction%2Fenable" class="dashAnchor">POST /admin/vdc/{id}/action/enable</a></td>
         <td>Enable an organization vDC.</td>
         <td>1.0</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-RegisterVApp.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fvdc%2F%7Bid%7D%2Faction%2FregisterVApp" class="dashAnchor">POST /admin/vdc/{id}/action/registerVApp</a></td>
         <td>Create a vApp based on a set of .vmx files and resource mappings</td>
         <td>5.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-OrgVdcGateways.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fvdc%2F%7Bid%7D%2FedgeGateways" class="dashAnchor">GET /admin/vdc/{id}/edgeGateways</a></td>
         <td>List all gateways for this Org vDC.</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-CreateEdgeGateway.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fvdc%2F%7Bid%7D%2FedgeGateways" class="dashAnchor">POST /admin/vdc/{id}/edgeGateways</a></td>
         <td>Create an edge gateway.</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-VdcMetadata-AdminView.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fvdc%2F%7Bid%7D%2Fmetadata" class="dashAnchor">GET /admin/vdc/{id}/metadata</a></td>
         <td>Retrieve metadata associated with the virtual datacenter.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-UpdateVdcMetadata.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fvdc%2F%7Bid%7D%2Fmetadata" class="dashAnchor">POST /admin/vdc/{id}/metadata</a></td>
         <td>Merge the metadata provided in the request with existing metadata.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-VdcMetadataItem-metadata.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fvdc%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">GET /admin/vdc/{id}/metadata/{domain}/{key}</a></td>
         <td>Retrieve the value of the specified key in the specified domain from virtual datacenter metadata.</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/PUT-VdcMetadataItem-metadata.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fvdc%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">PUT /admin/vdc/{id}/metadata/{domain}/{key}</a></td>
         <td>Set the value for the specified metadata key in the specified domain to the value provided,
  overwriting any existing value.</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/DELETE-VdcMetadataItem-metadata.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Fvdc%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">DELETE /admin/vdc/{id}/metadata/{domain}/{key}</a></td>
         <td>Delete the specified key in the specified domain and its value from virtual datacenter metadata.</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-VdcMetadataItem-metadata-AdminView.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fvdc%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">GET /admin/vdc/{id}/metadata/{key}</a></td>
         <td>Retrieve the value of the specified key from virtual datacenter metadata.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-VdcMetadataItem-metadata.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2Fvdc%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">PUT /admin/vdc/{id}/metadata/{key}</a></td>
         <td>Set the value for the specified metadata key to the value provided,
  overwriting any existing value.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/DELETE-VdcMetadataItem-metadata.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2Fvdc%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">DELETE /admin/vdc/{id}/metadata/{key}</a></td>
         <td>Delete the specified key and its value from virtual datacenter metadata.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-OrgVdcNetworks.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fvdc%2F%7Bid%7D%2Fnetworks" class="dashAnchor">GET /admin/vdc/{id}/networks</a></td>
         <td>List all networks for this Org vDC.</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-CreateOrgVdcNetwork.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fvdc%2F%7Bid%7D%2Fnetworks" class="dashAnchor">POST /admin/vdc/{id}/networks</a></td>
         <td>Create an Org vDC network.</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-UpdateVdcStorageClasses.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2Fvdc%2F%7Bid%7D%2FvdcStorageProfiles" class="dashAnchor">POST /admin/vdc/{id}/vdcStorageProfiles</a></td>
         <td>Add or remove virtual datacenter storage classes.</td>
         <td/>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-VdcStorageProfile.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2FvdcStorageProfile%2F%7Bid%7D" class="dashAnchor">GET /admin/vdcStorageProfile/{id}</a></td>
         <td>Returns the representation of a vDC storage profile</td>
         <td/>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-VdcStorageProfile.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2FvdcStorageProfile%2F%7Bid%7D" class="dashAnchor">PUT /admin/vdcStorageProfile/{id}</a></td>
         <td>Updates a single storage profile with user supplied data</td>
         <td/>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-VdcStorageClassMetadata-AdminView.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2FvdcStorageProfile%2F%7Bid%7D%2Fmetadata" class="dashAnchor">GET /admin/vdcStorageProfile/{id}/metadata</a></td>
         <td>Retrieve metadata associated with the vDC storage profile.</td>
         <td/>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-UpdateVdcStorageClassMetadata.html" name="//apple_ref/cpp/Function/POST%20%2Fadmin%2FvdcStorageProfile%2F%7Bid%7D%2Fmetadata" class="dashAnchor">POST /admin/vdcStorageProfile/{id}/metadata</a></td>
         <td>Merge the metadata provided in the request with existing metadata.</td>
         <td/>
     </tr>
-          <tr class="r1">
-        <td nowrap="1"><a href="operations/GET-VdcStorageClassMetadataItem-metadata.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2FvdcStorageProfile%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">GET /admin/vdcStorageProfile/{id}/metadata/{domain}/{key}</a></td>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-VdcStorageClassMetadataItem-metadata-AdminView.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2FvdcStorageProfile%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">GET /admin/vdcStorageProfile/{id}/metadata/{domain}/{key}</a></td>
         <td>Retrieve the value of the specified key from vDC storage profile metadata.</td>
         <td/>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-VdcStorageClassMetadataItem-metadata.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2FvdcStorageProfile%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">PUT /admin/vdcStorageProfile/{id}/metadata/{domain}/{key}</a></td>
         <td>Set the value for the specified metadata key to the value provided,
  overwriting any existing value.</td>
         <td/>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/DELETE-VdcStorageClassMetadataItem-metadata.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2FvdcStorageProfile%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">DELETE /admin/vdcStorageProfile/{id}/metadata/{domain}/{key}</a></td>
         <td>Delete the specified key and its value from vDC storage profile metadata.</td>
         <td/>
     </tr>
-              <tr class="r0">
-        <td nowrap="1"><a href="operations/GET-VdcStorageClassMetadataItem-metadata-AdminView.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2FvdcStorageProfile%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">GET /admin/vdcStorageProfile/{id}/metadata/{key}</a></td>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-VdcStorageClassMetadataItem-metadata.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2FvdcStorageProfile%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">GET /admin/vdcStorageProfile/{id}/metadata/{key}</a></td>
         <td>Retrieve the value of the specified key from vDC storage profile metadata.</td>
         <td/>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/PUT-VdcStorageClassMetadataItem-metadata.html" name="//apple_ref/cpp/Function/PUT%20%2Fadmin%2FvdcStorageProfile%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">PUT /admin/vdcStorageProfile/{id}/metadata/{key}</a></td>
         <td>Set the value for the specified metadata key to the value provided,
  overwriting any existing value.</td>
         <td/>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/DELETE-VdcStorageClassMetadataItem-metadata.html" name="//apple_ref/cpp/Function/DELETE%20%2Fadmin%2FvdcStorageProfile%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">DELETE /admin/vdcStorageProfile/{id}/metadata/{key}</a></td>
         <td>Delete the specified key and its value from vDC storage profile metadata.</td>
         <td/>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-RightsFromQuery-query.html" name="//apple_ref/cpp/Function/GET%20%2Fadmin%2Fvdcs%2Fquery" class="dashAnchor">GET /admin/vdcs/query</a></td>
         <td>Retrieves a list of vdcs in the organization;
 
@@ -837,6 +852,7 @@
   </table>
 
 <br/>
+
 <br/>
 <br/>
 </body>

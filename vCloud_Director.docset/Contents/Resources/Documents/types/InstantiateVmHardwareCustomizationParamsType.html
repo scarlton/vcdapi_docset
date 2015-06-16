@@ -24,7 +24,7 @@
     <dt>Since:</dt>
     <dd>5.5</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/vApp.xsd">vApp.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/vApp.xsd">vApp.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -55,19 +55,44 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="CoresPerSocket"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>CoresPerSocket</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>5.5</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
+                                Specifies the distribution of the total number of CPUs over a number
+                                of virtual sockets. The number of vCPUs must be evenly divisible by
+                                the number of cores per socket. The minimum value is 1.
+                            </td>
+            </tr>
+                                      <a name="Disk"/>
+                    <tr class="r0">
+                <td>Disk</td>
+                <td><a href="../types/InstantiateVmHardwareCustomizationParamsType_Disk.html">InstantiateVmHardwareCustomizationParamsType/Disk</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.5</td>
+                <td/>
+                <td>
+                                Parameters of a single disk in the virtual machine.
+                            </td>
+            </tr>
+                              <a name="MemorySize"/>
+                    <tr class="r1">
+                <td>MemorySize</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#long">long</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.5</td>
+                <td/>
+                <td>
+                                The amount of virtual machine memory in megabytes. Must be a
+                                multiple of four. Minimum size is four megabytes.
+                            </td>
             </tr>
                                       <a name="NumberOfCpus"/>
                     <tr class="r0">
@@ -84,44 +109,19 @@
                                 divisible by the number of cores per socket. The minimum value is 1.
                             </td>
             </tr>
-                              <a name="CoresPerSocket"/>
+                              <a name="VCloudExtension"/>
                     <tr class="r1">
-                <td>CoresPerSocket</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>5.5</td>
                 <td/>
                 <td>
-                                Specifies the distribution of the total number of CPUs over a number
-                                of virtual sockets. The number of vCPUs must be evenly divisible by
-                                the number of cores per socket. The minimum value is 1.
-                            </td>
-            </tr>
-                                      <a name="MemorySize"/>
-                    <tr class="r0">
-                <td>MemorySize</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#long">long</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.5</td>
-                <td/>
-                <td>
-                                The amount of virtual machine memory in megabytes. Must be a
-                                multiple of four. Minimum size is four megabytes.
-                            </td>
-            </tr>
-                              <a name="Disk"/>
-                    <tr class="r1">
-                <td>Disk</td>
-                <td><a href="../types/InstantiateVmHardwareCustomizationParamsType_Disk.html">InstantiateVmHardwareCustomizationParamsType/Disk</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.5</td>
-                <td/>
-                <td>
-                                Parameters of a single disk in the virtual machine.
-                            </td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                   </table>
     </dd>
@@ -131,6 +131,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

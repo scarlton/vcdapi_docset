@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>1.0</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/vApp.xsd">vApp.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/vApp.xsd">vApp.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.vcloud.guestCustomizationSection+xml<br/></dd>
     <dt>Extends:</dt>
@@ -109,16 +109,75 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="Enabled"/>
+                      <a name="AdminAutoLogonCount"/>
                     <tr class="r1">
-                <td>Enabled</td>
+                <td>AdminAutoLogonCount</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.5</td>
+                <td/>
+                <td>
+                                Number of times administrator can automatically
+                                log into this virtual machine.
+                                In case AdminAutoLogon is set to True, this
+                                value should be between 1 and 100. Otherwise, it
+                                should be 0.
+                            </td>
+            </tr>
+                                      <a name="AdminAutoLogonEnabled"/>
+                    <tr class="r0">
+                <td>AdminAutoLogonEnabled</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.5</td>
+                <td/>
+                <td>
+                                True if guest administrator should automatically
+                                log into this virtual machine.
+                            </td>
+            </tr>
+                              <a name="AdminPassword"/>
+                    <tr class="r1">
+                <td>AdminPassword</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                True if the  administrator password for this
+                                virtual machine should be set to this string.
+                                (AdminPasswordAuto must be false.)
+                            </td>
+            </tr>
+                                      <a name="AdminPasswordAuto"/>
+                    <tr class="r0">
+                <td>AdminPasswordAuto</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>1.0</td>
                 <td/>
                 <td>
-                                True if guest customization is enabled.
+                                True if the  administrator password for this
+                                virtual machine should be automatically
+                                generated.
+                            </td>
+            </tr>
+                              <a name="AdminPasswordEnabled"/>
+                    <tr class="r1">
+                <td>AdminPasswordEnabled</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                True if guest customization can modify
+                                administrator password settings for this
+                                virtual machine.
                             </td>
             </tr>
                                       <a name="ChangeSid"/>
@@ -134,178 +193,17 @@
                                 SID of this virtual machine.
                             </td>
             </tr>
-                              <a name="VirtualMachineId"/>
+                              <a name="ComputerName"/>
                     <tr class="r1">
-                <td>VirtualMachineId</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                Virtual machine ID to apply.
-                            </td>
-            </tr>
-                                      <a name="JoinDomainEnabled"/>
-                    <tr class="r0">
-                <td>JoinDomainEnabled</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                True if this virtual machine can join a Windows
-                                Domain.
-                            </td>
-            </tr>
-                              <a name="UseOrgSettings"/>
-                    <tr class="r1">
-                <td>UseOrgSettings</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                True if customization should use organization
-                                settings (OrgGuestPersonalizationSettings)
-                                when joining a Windows Domain.
-                            </td>
-            </tr>
-                                      <a name="DomainName"/>
-                    <tr class="r0">
-                <td>DomainName</td>
+                <td>ComputerName</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>1.0</td>
                 <td/>
                 <td>
-                                The name of the Windows Domain to join.
-                            </td>
-            </tr>
-                              <a name="DomainUserName"/>
-                    <tr class="r1">
-                <td>DomainUserName</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                User name to specify when joining a Windows
-                                Domain.
-                            </td>
-            </tr>
-                                      <a name="DomainUserPassword"/>
-                    <tr class="r0">
-                <td>DomainUserPassword</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                               Password to use with DomainUserName.
-                            </td>
-            </tr>
-                              <a name="MachineObjectOU"/>
-                    <tr class="r1">
-                <td>MachineObjectOU</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                The name of the Windows Domain Organizational
-                                Unit (OU) in which the computer account for this
-                                virtual machine will be created.
-                            </td>
-            </tr>
-                                      <a name="AdminPasswordEnabled"/>
-                    <tr class="r0">
-                <td>AdminPasswordEnabled</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                True if guest customization can modify
-                                administrator password settings for this
-                                virtual machine.
-                            </td>
-            </tr>
-                              <a name="AdminPasswordAuto"/>
-                    <tr class="r1">
-                <td>AdminPasswordAuto</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                True if the  administrator password for this
-                                virtual machine should be automatically
-                                generated.
-                            </td>
-            </tr>
-                                      <a name="AdminPassword"/>
-                    <tr class="r0">
-                <td>AdminPassword</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                True if the  administrator password for this
-                                virtual machine should be set to this string.
-                                (AdminPasswordAuto must be false.)
-                            </td>
-            </tr>
-                              <a name="AdminAutoLogonEnabled"/>
-                    <tr class="r1">
-                <td>AdminAutoLogonEnabled</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.5</td>
-                <td/>
-                <td>
-                                True if guest administrator should automatically
-                                log into this virtual machine.
-                            </td>
-            </tr>
-                                      <a name="AdminAutoLogonCount"/>
-                    <tr class="r0">
-                <td>AdminAutoLogonCount</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.5</td>
-                <td/>
-                <td>
-                                Number of times administrator can automatically
-                                log into this virtual machine.
-                                In case AdminAutoLogon is set to True, this
-                                value should be between 1 and 100. Otherwise, it
-                                should be 0.
-                            </td>
-            </tr>
-                              <a name="ResetPasswordRequired"/>
-                    <tr class="r1">
-                <td>ResetPasswordRequired</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                True if the  administrator password for this
-                                virtual machine must be reset after first use.
+                                Computer name to assign to this virtual
+                                machine.
                             </td>
             </tr>
                                       <a name="CustomizationScript"/>
@@ -325,17 +223,66 @@
                                 xxxx is the character number.
                             </td>
             </tr>
-                              <a name="ComputerName"/>
+                              <a name="DomainName"/>
                     <tr class="r1">
-                <td>ComputerName</td>
+                <td>DomainName</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>1.0</td>
                 <td/>
                 <td>
-                                Computer name to assign to this virtual
-                                machine.
+                                The name of the Windows Domain to join.
+                            </td>
+            </tr>
+                                      <a name="DomainUserName"/>
+                    <tr class="r0">
+                <td>DomainUserName</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                User name to specify when joining a Windows
+                                Domain.
+                            </td>
+            </tr>
+                              <a name="DomainUserPassword"/>
+                    <tr class="r1">
+                <td>DomainUserPassword</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                               Password to use with DomainUserName.
+                            </td>
+            </tr>
+                                      <a name="Enabled"/>
+                    <tr class="r0">
+                <td>Enabled</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                True if guest customization is enabled.
+                            </td>
+            </tr>
+                              <a name="JoinDomainEnabled"/>
+                    <tr class="r1">
+                <td>JoinDomainEnabled</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                True if this virtual machine can join a Windows
+                                Domain.
                             </td>
             </tr>
                                       <a name="Link"/>
@@ -348,6 +295,59 @@
                 <td/>
                 <td>
                                 A link to an operation on this section.
+                            </td>
+            </tr>
+                              <a name="MachineObjectOU"/>
+                    <tr class="r1">
+                <td>MachineObjectOU</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                The name of the Windows Domain Organizational
+                                Unit (OU) in which the computer account for this
+                                virtual machine will be created.
+                            </td>
+            </tr>
+                                      <a name="ResetPasswordRequired"/>
+                    <tr class="r0">
+                <td>ResetPasswordRequired</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                True if the  administrator password for this
+                                virtual machine must be reset after first use.
+                            </td>
+            </tr>
+                              <a name="UseOrgSettings"/>
+                    <tr class="r1">
+                <td>UseOrgSettings</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                True if customization should use organization
+                                settings (OrgGuestPersonalizationSettings)
+                                when joining a Windows Domain.
+                            </td>
+            </tr>
+                                      <a name="VirtualMachineId"/>
+                    <tr class="r0">
+                <td>VirtualMachineId</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                Virtual machine ID to apply.
                             </td>
             </tr>
                   </table>
@@ -400,6 +400,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

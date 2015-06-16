@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>1.5</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/extension/settings.xsd">settings.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/settings.xsd">settings.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.blockingTaskSettings+xml<br/></dd>
     <dt>Extends:</dt>
@@ -99,19 +99,18 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="BlockingTaskOperations"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
+                <td>BlockingTaskOperations</td>
+                <td><a href="../types/TaskOperationListType.html">TaskOperationListType</a></td>
+                <td>Yes</td>
                 <td>always</td>
                 <td>1.5</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
+                                Task operations which are enabled for blocking.
+                                If this element is empty or not supplied no operations will block.
+                            </td>
             </tr>
                                       <a name="Link"/>
                     <tr class="r0">
@@ -145,21 +144,8 @@
                                 status and task status are set to ERROR.)
                             </td>
             </tr>
-                                      <a name="BlockingTaskOperations"/>
+                                      <a name="TimeoutInMilliseconds"/>
                     <tr class="r0">
-                <td>BlockingTaskOperations</td>
-                <td><a href="../types/TaskOperationListType.html">TaskOperationListType</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                Task operations which are enabled for blocking.
-                                If this element is empty or not supplied no operations will block.
-                            </td>
-            </tr>
-                              <a name="TimeoutInMilliseconds"/>
-                    <tr class="r1">
                 <td>TimeoutInMilliseconds</td>
                 <td><a href="../types/BlockingTaskSettingsType_TimeoutInMilliseconds.html">BlockingTaskSettingsType/TimeoutInMilliseconds</a></td>
                 <td>Yes</td>
@@ -170,6 +156,20 @@
                                 Value in milliseconds that defines how long to wait for a blocking
                                 task to be processed before triggering automatic timeout policy.
                             </td>
+            </tr>
+                              <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                   </table>
     </dd>
@@ -207,6 +207,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

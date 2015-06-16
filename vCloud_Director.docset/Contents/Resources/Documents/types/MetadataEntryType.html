@@ -22,7 +22,7 @@
     <dt>Since:</dt>
     <dd/>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/common.xsd">common.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/common.xsd">common.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -91,34 +91,7 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
-                    <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td/>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="Link"/>
-                    <tr class="r0">
-                <td>Link</td>
-                <td><a href="../types/LinkType.html">LinkType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td/>
-                <td/>
-                <td>
-                                A reference to an entity or operation associated
-                                with this object.
-                            </td>
-            </tr>
-                              <a name="Domain"/>
+                      <a name="Domain"/>
                     <tr class="r1">
                 <td>Domain</td>
                 <td><a href="../types/MetadataDomainTagType.html">MetadataDomainTagType</a></td>
@@ -127,9 +100,9 @@
                 <td>5.1</td>
                 <td/>
                 <td>
-                                One of:<br/>
-                                GENERAL<br/>
-                                SYSTEM
+                               A value of SYSTEM places this MetadataEntry in
+                               the SYSTEM domain. Omit or leave empty to place
+                               this MetadataEntry in the GENERAL domain.
                             </td>
             </tr>
                                       <a name="Key"/>
@@ -145,8 +118,21 @@
                               UTF-8 characters.
                            </td>
             </tr>
-                              <a name="TypedValue"/>
+                              <a name="Link"/>
                     <tr class="r1">
+                <td>Link</td>
+                <td><a href="../types/LinkType.html">LinkType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td/>
+                <td/>
+                <td>
+                                A reference to an entity or operation associated
+                                with this object.
+                            </td>
+            </tr>
+                                      <a name="TypedValue"/>
+                    <tr class="r0">
                 <td>TypedValue</td>
                 <td><a href="../types/MetadataTypedValue.html">MetadataTypedValue</a></td>
                 <td>Yes</td>
@@ -161,6 +147,20 @@
                                MetadataDateTimeValue
                            </td>
             </tr>
+                              <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td/>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
                   </table>
     </dd>
     
@@ -169,6 +169,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

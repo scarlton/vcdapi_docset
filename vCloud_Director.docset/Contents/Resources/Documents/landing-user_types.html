@@ -5,15 +5,15 @@
     <link rel="stylesheet" type="text/css" href="doc-style.css"/>
 
 <!-- -->
-</head>
+</head><style>div.feedbackhover { display: none!important; padding:0; visibility:hidden}span.st_sharethis { display: none!important; padding:0; visibility:hidden}</style>
 <body onload="javascript:setupEventHandlers()">
 <br/>
 
-<h1>vCloud REST API User Types</h1>
+<h1>vCloud Director REST API User Types</h1>
 
 <h2 class="index">User Types</h2>
 <br/>
-<p class="table-title">User Types (289)</p>
+<p class="table-title">User Types (305)</p>
 <table cellspacing="0">
   <tr>
       <th>Type</th>
@@ -22,46 +22,60 @@
   </tr>
 
           <tr class="r1">
+        <td nowrap="1"><a href="types/AbsoluteTimeType.html" name="//apple_ref/cpp/Type/AbsoluteTimeType" class="dashAnchor">AbsoluteTimeType</a></td>
+        <td>
+                Specifies an absolute time in UTC
+            </td>
+        <td>5.6</td>
+    </tr>
+              <tr class="r0">
         <td nowrap="1"><a href="types/AbstractVAppType.html" name="//apple_ref/cpp/Type/AbstractVAppType" class="dashAnchor">AbstractVAppType</a></td>
         <td>
                 Represents a base type for VAppType and VmType.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/AccessSettingType.html" name="//apple_ref/cpp/Type/AccessSettingType" class="dashAnchor">AccessSettingType</a></td>
         <td>
                 Controls access to the resource.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="types/AccessSettingsType.html" name="//apple_ref/cpp/Type/AccessSettingsType" class="dashAnchor">AccessSettingsType</a></td>
         <td>
                 A list of access settings for a resource.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/AllocatedIpAddressType.html" name="//apple_ref/cpp/Type/AllocatedIpAddressType" class="dashAnchor">AllocatedIpAddressType</a></td>
         <td>
                 Represents an information for allocated IP address
             </td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="types/AllocatedIpAddressesType.html" name="//apple_ref/cpp/Type/AllocatedIpAddressesType" class="dashAnchor">AllocatedIpAddressesType</a></td>
         <td>A list of information for allocated IP addresses.</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/ApiDefinitionType.html" name="//apple_ref/cpp/Type/ApiDefinitionType" class="dashAnchor">ApiDefinitionType</a></td>
         <td>
                 Representation of an API definition accessible by all authenticated users.</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="types/ApiExtensibilityType.html" name="//apple_ref/cpp/Type/ApiExtensibilityType" class="dashAnchor">ApiExtensibilityType</a></td>
         <td>
                 Lists links to API extensibility operations and entities.</td>
         <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="types/AuditEventType.html" name="//apple_ref/cpp/Type/AuditEventType" class="dashAnchor">AuditEventType</a></td>
+        <td>
+                Audit event
+            </td>
+        <td>5.6</td>
     </tr>
               <tr class="r0">
         <td nowrap="1"><a href="types/AvailableNetworksType.html" name="//apple_ref/cpp/Type/AvailableNetworksType" class="dashAnchor">AvailableNetworksType</a></td>
@@ -185,6 +199,20 @@
         <td>5.1</td>
     </tr>
               <tr class="r0">
+        <td nowrap="1"><a href="types/CurrentUsageSpecType.html" name="//apple_ref/cpp/Type/CurrentUsageSpecType" class="dashAnchor">CurrentUsageSpecType</a></td>
+        <td>
+                Specifies which current usage metrics to retrieve
+            </td>
+        <td>5.6</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="types/CurrentUsageType.html" name="//apple_ref/cpp/Type/CurrentUsageType" class="dashAnchor">CurrentUsageType</a></td>
+        <td>
+                A collection of simple metrics representing real time usage statistics
+            </td>
+        <td>5.6</td>
+    </tr>
+              <tr class="r0">
         <td nowrap="1"><a href="types/CustomizationSectionType.html" name="//apple_ref/cpp/Type/CustomizationSectionType" class="dashAnchor">CustomizationSectionType</a></td>
         <td>
                 Represents a vApp template customization settings.</td>
@@ -256,6 +284,17 @@
         <td>
                 The standard error message type used in the vCloud REST API.</td>
         <td>0.9</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="types/EventPropertiesType.html" name="//apple_ref/cpp/Type/EventPropertiesType" class="dashAnchor">EventPropertiesType</a></td>
+        <td>
+                List of event-specific properties.</td>
+        <td>5.6</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="types/EventPropertiesType_EventProperty.html" name="//apple_ref/cpp/Type/EventPropertiesType%2FEventProperty" class="dashAnchor">EventPropertiesType/EventProperty</a></td>
+        <td/>
+        <td/>
     </tr>
               <tr class="r0">
         <td nowrap="1"><a href="types/EventType.html" name="//apple_ref/cpp/Type/EventType" class="dashAnchor">EventType</a></td>
@@ -394,6 +433,20 @@
         <td>
                 Represents a guest customization settings.</td>
         <td>1.0</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="types/HistoricUsageSpecType.html" name="//apple_ref/cpp/Type/HistoricUsageSpecType" class="dashAnchor">HistoricUsageSpecType</a></td>
+        <td>
+                Specifies which historic usage metrics to retrieve
+            </td>
+        <td>5.6</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="types/HistoricUsageType.html" name="//apple_ref/cpp/Type/HistoricUsageType" class="dashAnchor">HistoricUsageType</a></td>
+        <td>
+                A collection of time-based metrics representing historic usage statistics
+            </td>
+        <td>5.6</td>
     </tr>
           <tr class="r1">
         <td nowrap="1"><a href="types/IdentifiableResourceType.html" name="//apple_ref/cpp/Type/IdentifiableResourceType" class="dashAnchor">IdentifiableResourceType</a></td>
@@ -647,10 +700,8 @@
               <tr class="r0">
         <td nowrap="1"><a href="types/MetadataDomainTagType.html" name="//apple_ref/cpp/Type/MetadataDomainTagType" class="dashAnchor">MetadataDomainTagType</a></td>
         <td>
-                One of:<br/>
-                GENERAL<br/>
-                SYSTEM
-            </td>
+                A value of SYSTEM places this MetadataEntry in the SYSTEM 
+                domain.</td>
         <td>5.1</td>
     </tr>
           <tr class="r1">
@@ -1291,72 +1342,78 @@
         <td>1.5</td>
     </tr>
           <tr class="r1">
+        <td nowrap="1"><a href="types/QueryResultToCloudTunnelRecordType.html" name="//apple_ref/cpp/Type/QueryResultToCloudTunnelRecordType" class="dashAnchor">QueryResultToCloudTunnelRecordType</a></td>
+        <td>
+                Type for a single toCloudTunnel query result in records format.</td>
+        <td>5.6</td>
+    </tr>
+              <tr class="r0">
         <td nowrap="1"><a href="types/QueryResultType.html" name="//apple_ref/cpp/Type/QueryResultType" class="dashAnchor">QueryResultType</a></td>
         <td>
                 Container type for query results in records format.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/QueryResultUserRecordType.html" name="//apple_ref/cpp/Type/QueryResultUserRecordType" class="dashAnchor">QueryResultUserRecordType</a></td>
         <td>
                 Type for a single user query result in records format.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="types/QueryResultVAppNetworkRecordType.html" name="//apple_ref/cpp/Type/QueryResultVAppNetworkRecordType" class="dashAnchor">QueryResultVAppNetworkRecordType</a></td>
         <td>
                 Type for a single vAppNetwork query result in records format.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/QueryResultVAppOrgNetworkRelationRecordType.html" name="//apple_ref/cpp/Type/QueryResultVAppOrgNetworkRelationRecordType" class="dashAnchor">QueryResultVAppOrgNetworkRelationRecordType</a></td>
         <td>
                 Type for a single vAppOrgNetworkRelation query result in records format.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="types/QueryResultVAppOrgVdcNetworkRelationRecordType.html" name="//apple_ref/cpp/Type/QueryResultVAppOrgVdcNetworkRelationRecordType" class="dashAnchor">QueryResultVAppOrgVdcNetworkRelationRecordType</a></td>
         <td>
                 Type for a single vAppOrgVdcNetworkRelation query result in records format.</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/QueryResultVAppRecordType.html" name="//apple_ref/cpp/Type/QueryResultVAppRecordType" class="dashAnchor">QueryResultVAppRecordType</a></td>
         <td>
                 Type for a single vApp query result in records format.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="types/QueryResultVAppTemplateRecordType.html" name="//apple_ref/cpp/Type/QueryResultVAppTemplateRecordType" class="dashAnchor">QueryResultVAppTemplateRecordType</a></td>
         <td>
                 Type for a single vAppTemplate query result in records format.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/QueryResultVMRecordType.html" name="//apple_ref/cpp/Type/QueryResultVMRecordType" class="dashAnchor">QueryResultVMRecordType</a></td>
         <td>
                 Type for a single vm query result in records format.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="types/QueryResultVMWProviderVdcRecordType.html" name="//apple_ref/cpp/Type/QueryResultVMWProviderVdcRecordType" class="dashAnchor">QueryResultVMWProviderVdcRecordType</a></td>
         <td>
                 Type for a single providerVdc query result in records format.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/QueryResultVirtualCenterRecordType.html" name="//apple_ref/cpp/Type/QueryResultVirtualCenterRecordType" class="dashAnchor">QueryResultVirtualCenterRecordType</a></td>
         <td>
                 Type for a single virtualCenter query result in records format.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="types/QueryResultVmDiskRelationRecordType.html" name="//apple_ref/cpp/Type/QueryResultVmDiskRelationRecordType" class="dashAnchor">QueryResultVmDiskRelationRecordType</a></td>
         <td>
                 Type for a single vmDiskRelation query result in records format.</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/RasdItemsListType.html" name="//apple_ref/cpp/Type/RasdItemsListType" class="dashAnchor">RasdItemsListType</a></td>
         <td>
                 Represents a list of RASD items specifying a group of related
@@ -1364,29 +1421,36 @@
                 virtual machine.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="types/RecomposeVAppParamsType.html" name="//apple_ref/cpp/Type/RecomposeVAppParamsType" class="dashAnchor">RecomposeVAppParamsType</a></td>
         <td>
                 Parameters for a recompose vApp request.</td>
         <td>1.0</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/ReferenceType.html" name="//apple_ref/cpp/Type/ReferenceType" class="dashAnchor">ReferenceType</a></td>
         <td>
                 A reference to a resource.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="types/ReferencesType.html" name="//apple_ref/cpp/Type/ReferencesType" class="dashAnchor">ReferencesType</a></td>
         <td>
                Container for query results returned in references format.</td>
         <td/>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/RegisterVAppParamsType.html" name="//apple_ref/cpp/Type/RegisterVAppParamsType" class="dashAnchor">RegisterVAppParamsType</a></td>
         <td>
                 Represents vApp registration parameters.</td>
         <td>5.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="types/RelativeTimeType.html" name="//apple_ref/cpp/Type/RelativeTimeType" class="dashAnchor">RelativeTimeType</a></td>
+        <td>
+                Specifies an earlier time relative to the current time
+            </td>
+        <td>5.6</td>
     </tr>
           <tr class="r1">
         <td nowrap="1"><a href="types/RelocateParamsType.html" name="//apple_ref/cpp/Type/RelocateParamsType" class="dashAnchor">RelocateParamsType</a></td>
@@ -1443,22 +1507,36 @@
         <td/>
     </tr>
               <tr class="r0">
+        <td nowrap="1"><a href="types/SampleType.html" name="//apple_ref/cpp/Type/SampleType" class="dashAnchor">SampleType</a></td>
+        <td>
+                Represents a data point in a metric series
+            </td>
+        <td>5.6</td>
+    </tr>
+          <tr class="r1">
         <td nowrap="1"><a href="types/ScreenTicketType.html" name="//apple_ref/cpp/Type/ScreenTicketType" class="dashAnchor">ScreenTicketType</a></td>
         <td>
                 The ticket for accessing the console of a VM.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="types/ServiceType.html" name="//apple_ref/cpp/Type/ServiceType" class="dashAnchor">ServiceType</a></td>
         <td>
                 Public representation of an external service.</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/SessionType.html" name="//apple_ref/cpp/Type/SessionType" class="dashAnchor">SessionType</a></td>
         <td>
                 Represents a vCloud Session.</td>
         <td>1.5</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="types/SimpleMetricType.html" name="//apple_ref/cpp/Type/SimpleMetricType" class="dashAnchor">SimpleMetricType</a></td>
+        <td>
+                A simple scalar metric value
+            </td>
+        <td>5.6</td>
     </tr>
           <tr class="r1">
         <td nowrap="1"><a href="types/SnapshotSectionType.html" name="//apple_ref/cpp/Type/SnapshotSectionType" class="dashAnchor">SnapshotSectionType</a></td>
@@ -1584,138 +1662,163 @@
         <td>0.9</td>
     </tr>
           <tr class="r1">
+        <td nowrap="1"><a href="types/TimeSeriesMetricType.html" name="//apple_ref/cpp/Type/TimeSeriesMetricType" class="dashAnchor">TimeSeriesMetricType</a></td>
+        <td>
+                A sequence of metric values measured at specified times
+            </td>
+        <td>5.6</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="types/TimeType.html" name="//apple_ref/cpp/Type/TimeType" class="dashAnchor">TimeType</a></td>
+        <td/>
+        <td/>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="types/TimeUnitType.html" name="//apple_ref/cpp/Type/TimeUnitType" class="dashAnchor">TimeUnitType</a></td>
+        <td>
+                An enumeration of time units that can be used to define a relative time
+            </td>
+        <td>5.6</td>
+    </tr>
+              <tr class="r0">
         <td nowrap="1"><a href="types/TrustStoreUpdateParamsType.html" name="//apple_ref/cpp/Type/TrustStoreUpdateParamsType" class="dashAnchor">TrustStoreUpdateParamsType</a></td>
         <td>
                 Parameters for updating the truststore.</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/TrustStoreUploadSocketType.html" name="//apple_ref/cpp/Type/TrustStoreUploadSocketType" class="dashAnchor">TrustStoreUploadSocketType</a></td>
         <td>
                 Upload socket for the truststore.</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="types/UndeployVAppParamsType.html" name="//apple_ref/cpp/Type/UndeployVAppParamsType" class="dashAnchor">UndeployVAppParamsType</a></td>
         <td>
                 Parameters to an undeploy vApp request.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/UploadVAppTemplateParamsType.html" name="//apple_ref/cpp/Type/UploadVAppTemplateParamsType" class="dashAnchor">UploadVAppTemplateParamsType</a></td>
         <td>
                 Parameters for an uploadVappTemplate request.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="types/VAppChildrenType.html" name="//apple_ref/cpp/Type/VAppChildrenType" class="dashAnchor">VAppChildrenType</a></td>
         <td>
                 Container for virtual machines included in this vApp.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/VAppCreationParamsType.html" name="//apple_ref/cpp/Type/VAppCreationParamsType" class="dashAnchor">VAppCreationParamsType</a></td>
         <td>
                 Represents vApp creation parameters.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="types/VAppNetworkConfigurationType.html" name="//apple_ref/cpp/Type/VAppNetworkConfigurationType" class="dashAnchor">VAppNetworkConfigurationType</a></td>
         <td>
                 Represents a vApp network configuration.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/VAppNetworkType.html" name="//apple_ref/cpp/Type/VAppNetworkType" class="dashAnchor">VAppNetworkType</a></td>
         <td>
                 Represents a vApp network.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="types/VAppTemplateChildrenType.html" name="//apple_ref/cpp/Type/VAppTemplateChildrenType" class="dashAnchor">VAppTemplateChildrenType</a></td>
         <td>
                 Container for virtual machines included in this vApp template.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/VAppTemplateType.html" name="//apple_ref/cpp/Type/VAppTemplateType" class="dashAnchor">VAppTemplateType</a></td>
         <td>
                 Represents a vApp template.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="types/VAppType.html" name="//apple_ref/cpp/Type/VAppType" class="dashAnchor">VAppType</a></td>
         <td>
                 Represents a vApp.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/VCloudExtensibleType.html" name="//apple_ref/cpp/Type/VCloudExtensibleType" class="dashAnchor">VCloudExtensibleType</a></td>
         <td>
                 A base abstract type for all complex types that support extensions.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="types/VCloudExtensionType.html" name="//apple_ref/cpp/Type/VCloudExtensionType" class="dashAnchor">VCloudExtensionType</a></td>
         <td>
                 General purpose extension element.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/VdcStorageProfileType.html" name="//apple_ref/cpp/Type/VdcStorageProfileType" class="dashAnchor">VdcStorageProfileType</a></td>
         <td>
                 Represents a storage profile in an organization vDC.</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="types/VdcStorageProfilesType.html" name="//apple_ref/cpp/Type/VdcStorageProfilesType" class="dashAnchor">VdcStorageProfilesType</a></td>
         <td>
                 Container for references to storage profiles associated with a vDC.</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/VdcType.html" name="//apple_ref/cpp/Type/VdcType" class="dashAnchor">VdcType</a></td>
         <td>
                 Represents the user view of an organization vDC.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="types/VdcsType.html" name="//apple_ref/cpp/Type/VdcsType" class="dashAnchor">VdcsType</a></td>
         <td>
                 Represents a list of references to vDCs.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/VendorServicesType.html" name="//apple_ref/cpp/Type/VendorServicesType" class="dashAnchor">VendorServicesType</a></td>
         <td>
                 Vendor services available for service insertion on networks or edge gateways.</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="types/VendorTemplateAttributesType.html" name="//apple_ref/cpp/Type/VendorTemplateAttributesType" class="dashAnchor">VendorTemplateAttributesType</a></td>
         <td>
                 Information about vendor template attributes
             </td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/VendorTemplateType.html" name="//apple_ref/cpp/Type/VendorTemplateType" class="dashAnchor">VendorTemplateType</a></td>
         <td>
                 Information about a vendor service template.</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="types/VersionsType_v1.5.html" name="//apple_ref/cpp/Type/VersionsType%20%28v1.5%29" class="dashAnchor">VersionsType (v1.5)</a></td>
         <td>
                 Represents a list of API versions supported by an ApiVendor.</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="types/VmCapabilitiesType.html" name="//apple_ref/cpp/Type/VmCapabilitiesType" class="dashAnchor">VmCapabilitiesType</a></td>
         <td>
                 Allows you to specify certain capabilities of this virtual
                 machine.</td>
         <td>5.1</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="types/VmGeneralParamsType.html" name="//apple_ref/cpp/Type/VmGeneralParamsType" class="dashAnchor">VmGeneralParamsType</a></td>
+        <td>
+                A set of overrides to source VM properties to apply to target VM during copying.</td>
+        <td>5.6</td>
     </tr>
           <tr class="r1">
         <td nowrap="1"><a href="types/VmPendingQuestionType.html" name="//apple_ref/cpp/Type/VmPendingQuestionType" class="dashAnchor">VmPendingQuestionType</a></td>
@@ -1789,6 +1892,7 @@
   </table>
 
 <br/>
+
 <br/>
 <br/>
 </body>

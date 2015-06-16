@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>1.5</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/extension/settings.xsd">settings.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/settings.xsd">settings.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.emailSettings+xml<br/></dd>
     <dt>Extends:</dt>
@@ -106,19 +106,44 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="AlertEmailTo"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>AlertEmailTo</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>1.5</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
+                                A comma-separated list of email addresses to
+                                send alert messages to.
+                            </td>
+            </tr>
+                                      <a name="AlertEmailToAllAdmins"/>
+                    <tr class="r0">
+                <td>AlertEmailToAllAdmins</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                True if alert emails should be sent to to all
+                                system administrators.
+                            </td>
+            </tr>
+                              <a name="EmailSubjectPrefix"/>
+                    <tr class="r1">
+                <td>EmailSubjectPrefix</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                The prefix used in the email subject line for all email notifications
+                                and alerts from the system.
+                            </td>
             </tr>
                                       <a name="Link"/>
                     <tr class="r0">
@@ -145,47 +170,8 @@
                                 Sender email address in an email notification or alert.
                             </td>
             </tr>
-                                      <a name="EmailSubjectPrefix"/>
+                                      <a name="SmtpSettings"/>
                     <tr class="r0">
-                <td>EmailSubjectPrefix</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                The prefix used in the email subject line for all email notifications
-                                and alerts from the system.
-                            </td>
-            </tr>
-                              <a name="AlertEmailToAllAdmins"/>
-                    <tr class="r1">
-                <td>AlertEmailToAllAdmins</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                True if alert emails should be sent to to all
-                                system administrators.
-                            </td>
-            </tr>
-                                      <a name="AlertEmailTo"/>
-                    <tr class="r0">
-                <td>AlertEmailTo</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                A comma-separated list of email addresses to
-                                send alert messages to.
-                            </td>
-            </tr>
-                              <a name="SmtpSettings"/>
-                    <tr class="r1">
                 <td>SmtpSettings</td>
                 <td><a href="../types/SmtpSettingsType.html">SmtpSettingsType</a></td>
                 <td>Yes</td>
@@ -195,6 +181,20 @@
                 <td>
                                 The SMTP server for email notifications and alerts.
                             </td>
+            </tr>
+                              <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                   </table>
     </dd>
@@ -232,6 +232,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

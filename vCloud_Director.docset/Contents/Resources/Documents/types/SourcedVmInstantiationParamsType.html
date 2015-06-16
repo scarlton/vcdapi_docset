@@ -19,12 +19,15 @@
     <dd><a href="http://www.vmware.com/vcloud/v1.5">http://www.vmware.com/vcloud/v1.5</a></dd>
     <dt>Description:</dt>
     <dd>
-                Represents instantiation parameters.
+                Represents instantiation parameters. Deprecated in favor of
+                SourcedCompositionItemParamType
             </dd>
     <dt>Since:</dt>
     <dd>5.1</dd>
+        <dt>Deprecated:</dt>
+    <dd>5.6</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/vApp.xsd">vApp.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/vApp.xsd">vApp.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -62,47 +65,19 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="HardwareCustomization"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>HardwareCustomization</td>
+                <td><a href="../types/InstantiateVmHardwareCustomizationParamsType.html">InstantiateVmHardwareCustomizationParamsType</a></td>
                 <td>No</td>
                 <td>always</td>
-                <td>5.1</td>
+                <td>5.5</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="Source"/>
-                    <tr class="r0">
-                <td>Source</td>
-                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                A reference to a source Vm.
-                            </td>
-            </tr>
-                              <a name="StorageProfile"/>
-                    <tr class="r1">
-                <td>StorageProfile</td>
-                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                A reference to a storage profile to be used for
-                                this object. The specified storage profile must
-                                exist in the organization vDC that contains the
-                                object. If not specified, the default storage
-                                profile for the vDC is used.
-                            </td>
+                            Specification of common hardware parameters that
+                            should be applied to the VM upon instantiation. This only applies when
+                            instantiating a vApp template and is otherwise ignored.
+                        </td>
             </tr>
                                       <a name="LocalityParams"/>
                     <tr class="r0">
@@ -120,19 +95,47 @@
                                efficient use of the disk.
                            </td>
             </tr>
-                              <a name="HardwareCustomization"/>
+                              <a name="Source"/>
                     <tr class="r1">
-                <td>HardwareCustomization</td>
-                <td><a href="../types/InstantiateVmHardwareCustomizationParamsType.html">InstantiateVmHardwareCustomizationParamsType</a></td>
-                <td>No</td>
+                <td>Source</td>
+                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
+                <td>Yes</td>
                 <td>always</td>
-                <td>5.5</td>
+                <td>5.1</td>
                 <td/>
                 <td>
-                            Specification of common hardware parameters that
-                            should be applied to the VM upon instantiation. This only applies when
-                            instantiating a vApp template and is otherwise ignored.
-                        </td>
+                                A reference to a source Vm.
+                            </td>
+            </tr>
+                                      <a name="StorageProfile"/>
+                    <tr class="r0">
+                <td>StorageProfile</td>
+                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                A reference to a storage profile to be used for
+                                this object. The specified storage profile must
+                                exist in the organization vDC that contains the
+                                object. If not specified, the default storage
+                                profile for the vDC is used.
+                            </td>
+            </tr>
+                              <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                   </table>
     </dd>
@@ -142,6 +145,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

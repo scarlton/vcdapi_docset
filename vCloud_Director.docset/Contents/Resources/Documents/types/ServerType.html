@@ -25,7 +25,7 @@
     <dt>Since:</dt>
     <dd>0.9</dd>
         <dt>Schema:</dt>
-    <dd><a href="file:///build/mts/release/bora-1323688/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
+    <dd><a href="file:///build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -155,19 +155,17 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="Description"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>Description</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
+                                Optional description.
+                            </td>
             </tr>
                                       <a name="Link"/>
                     <tr class="r0">
@@ -182,16 +180,16 @@
                                 with this object.
                             </td>
             </tr>
-                              <a name="Description"/>
+                              <a name="Password"/>
                     <tr class="r1">
-                <td>Description</td>
+                <td>Password</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                                Optional description.
+                                Cleartext password to connect to the server.
                             </td>
             </tr>
                                       <a name="Tasks"/>
@@ -207,30 +205,6 @@
                                 completed tasks associated with this entity.
                             </td>
             </tr>
-                              <a name="Username"/>
-                    <tr class="r1">
-                <td>Username</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                User name to connect to the server.
-                            </td>
-            </tr>
-                                      <a name="Password"/>
-                    <tr class="r0">
-                <td>Password</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                Cleartext password to connect to the server.
-                            </td>
-            </tr>
                               <a name="Url"/>
                     <tr class="r1">
                 <td>Url</td>
@@ -243,6 +217,32 @@
                                 URL of the server.
                             </td>
             </tr>
+                                      <a name="Username"/>
+                    <tr class="r0">
+                <td>Username</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                User name to connect to the server.
+                            </td>
+            </tr>
+                              <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
                   </table>
     </dd>
     
@@ -251,6 +251,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>0.9</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/admin/user.xsd">user.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/admin/user.xsd">user.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.role+xml<br/></dd>
     <dt>Extends:</dt>
@@ -156,19 +156,17 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="Description"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>Description</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
+                                Optional description.
+                            </td>
             </tr>
                                       <a name="Link"/>
                     <tr class="r0">
@@ -183,16 +181,17 @@
                                 with this object.
                             </td>
             </tr>
-                              <a name="Description"/>
+                              <a name="RightReferences"/>
                     <tr class="r1">
-                <td>Description</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>RightReferences</td>
+                <td><a href="../types/RightReferencesType.html">RightReferencesType</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                                Optional description.
+                                Container for references to the rights
+                                assigned to this role.
                             </td>
             </tr>
                                       <a name="Tasks"/>
@@ -208,18 +207,19 @@
                                 completed tasks associated with this entity.
                             </td>
             </tr>
-                              <a name="RightReferences"/>
+                              <a name="VCloudExtension"/>
                     <tr class="r1">
-                <td>RightReferences</td>
-                <td><a href="../types/RightReferencesType.html">RightReferencesType</a></td>
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                                Container for references to the rights
-                                assigned to this role.
-                            </td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                   </table>
     </dd>
@@ -271,6 +271,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

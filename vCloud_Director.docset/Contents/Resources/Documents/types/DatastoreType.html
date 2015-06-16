@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>1.5</dd>
         <dt>Schema:</dt>
-    <dd><a href="file:///build/mts/release/bora-1323688/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
+    <dd><a href="file:///build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.datastore+xml<br/></dd>
     <dt>Extends:</dt>
@@ -185,31 +185,28 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="Busy"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="Link"/>
-                    <tr class="r0">
-                <td>Link</td>
-                <td><a href="../types/LinkType.html">LinkType</a></td>
+                <td>Busy</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
                 <td>No</td>
                 <td>none</td>
                 <td>1.5</td>
                 <td/>
                 <td>
-                                A reference to an entity or operation associated
-                                with this object.
+                                Indicates whether the datastore is busy.
+                            </td>
+            </tr>
+                                      <a name="DatastoreFsType"/>
+                    <tr class="r0">
+                <td>DatastoreFsType</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                Filesystem type of the datastore.
                             </td>
             </tr>
                               <a name="Description"/>
@@ -222,6 +219,129 @@
                 <td/>
                 <td>
                                 Optional description.
+                            </td>
+            </tr>
+                                      <a name="Enabled"/>
+                    <tr class="r0">
+                <td>Enabled</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td/>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                Indicates whether the datastore is enabled.
+                            </td>
+            </tr>
+                              <a name="Link"/>
+                    <tr class="r1">
+                <td>Link</td>
+                <td><a href="../types/LinkType.html">LinkType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                A reference to an entity or operation associated
+                                with this object.
+                            </td>
+            </tr>
+                                      <a name="Members"/>
+                    <tr class="r0">
+                <td>Members</td>
+                <td><a href="../types/VimObjectRefsType.html">VimObjectRefsType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                               Member datastores of a datastore cluster. Standalone datastore has empty collection.
+                            </td>
+            </tr>
+                              <a name="MountDirectory"/>
+                    <tr class="r1">
+                <td>MountDirectory</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                Datastore mountpoint.
+                            </td>
+            </tr>
+                                      <a name="MountHost"/>
+                    <tr class="r0">
+                <td>MountHost</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                Datastore mount host.
+                            </td>
+            </tr>
+                              <a name="ProvisionedSpaceGb"/>
+                    <tr class="r1">
+                <td>ProvisionedSpaceGb</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#double">double</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                Provisioned capacity, in GB, of the datastore.
+                            </td>
+            </tr>
+                                      <a name="ProvisionedSpaceMb"/>
+                    <tr class="r0">
+                <td>ProvisionedSpaceMb</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#double">double</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                Provisioned capacity, in MB, of the datastore.
+                            </td>
+            </tr>
+                              <a name="RequestedStorageGb"/>
+                    <tr class="r1">
+                <td>RequestedStorageGb</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#double">double</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                Requested storage, in GB, for all the vCloud
+                                Director VMs on the datastore.
+                            </td>
+            </tr>
+                                      <a name="RequestedStorageMb"/>
+                    <tr class="r0">
+                <td>RequestedStorageMb</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#double">double</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                Requested storage, in MB, for all the vCloud
+                                Director VMs on the datastore.
+                            </td>
+            </tr>
+                              <a name="SystemMessages"/>
+                    <tr class="r1">
+                <td>SystemMessages</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                System messages for the datastore.
                             </td>
             </tr>
                                       <a name="Tasks"/>
@@ -237,69 +357,8 @@
                                 completed tasks associated with this entity.
                             </td>
             </tr>
-                              <a name="VimObjectRef"/>
+                              <a name="ThresholdRedGb"/>
                     <tr class="r1">
-                <td>VimObjectRef</td>
-                <td><a href="../types/VimObjectRefType.html">VimObjectRefType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                The VIM object reference to this datastore.
-                            </td>
-            </tr>
-                                      <a name="Enabled"/>
-                    <tr class="r0">
-                <td>Enabled</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>No</td>
-                <td/>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                Indicates whether the datastore is enabled.
-                            </td>
-            </tr>
-                              <a name="Busy"/>
-                    <tr class="r1">
-                <td>Busy</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                Indicates whether the datastore is busy.
-                            </td>
-            </tr>
-                                      <a name="VAAIForFpEnabled"/>
-                    <tr class="r0">
-                <td>VAAIForFpEnabled</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Indicates whether the VAAI native snapshots for Fast Provisioning is enabled.
-                            </td>
-            </tr>
-                              <a name="ThresholdYellowGb"/>
-                    <tr class="r1">
-                <td>ThresholdYellowGb</td>
-                <td><a href="../types/DatastoreType_ThresholdYellowGb.html">DatastoreType/ThresholdYellowGb</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                Minimum free space, in GB, to trigger a yellow
-                                status for the datastore.
-                            </td>
-            </tr>
-                                      <a name="ThresholdRedGb"/>
-                    <tr class="r0">
                 <td>ThresholdRedGb</td>
                 <td><a href="../types/DatastoreType_ThresholdRedGb.html">DatastoreType/ThresholdRedGb</a></td>
                 <td>Yes</td>
@@ -311,76 +370,17 @@
                                 status for the datastore.
                             </td>
             </tr>
-                              <a name="SystemMessages"/>
-                    <tr class="r1">
-                <td>SystemMessages</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                System messages for the datastore.
-                            </td>
-            </tr>
-                                      <a name="DatastoreFsType"/>
+                                      <a name="ThresholdYellowGb"/>
                     <tr class="r0">
-                <td>DatastoreFsType</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>none</td>
+                <td>ThresholdYellowGb</td>
+                <td><a href="../types/DatastoreType_ThresholdYellowGb.html">DatastoreType/ThresholdYellowGb</a></td>
+                <td>Yes</td>
+                <td>always</td>
                 <td>1.5</td>
                 <td/>
                 <td>
-                                Filesystem type of the datastore.
-                            </td>
-            </tr>
-                              <a name="VcDisplayName"/>
-                    <tr class="r1">
-                <td>VcDisplayName</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                vCenter display name of the datastore.
-                            </td>
-            </tr>
-                                      <a name="MountHost"/>
-                    <tr class="r0">
-                <td>MountHost</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                Datastore mount host.
-                            </td>
-            </tr>
-                              <a name="MountDirectory"/>
-                    <tr class="r1">
-                <td>MountDirectory</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                Datastore mountpoint.
-                            </td>
-            </tr>
-                                      <a name="TotalCapacityMb"/>
-                    <tr class="r0">
-                <td>TotalCapacityMb</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#double">double</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                Total capacity, in MB, of the datastore.
+                                Minimum free space, in GB, to trigger a yellow
+                                status for the datastore.
                             </td>
             </tr>
                               <a name="TotalCapacityGb"/>
@@ -395,16 +395,16 @@
                                  Total capacity, in GB, of the datastore.
                             </td>
             </tr>
-                                      <a name="UsedCapacityMb"/>
+                                      <a name="TotalCapacityMb"/>
                     <tr class="r0">
-                <td>UsedCapacityMb</td>
+                <td>TotalCapacityMb</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#double">double</a></td>
                 <td>No</td>
                 <td>none</td>
                 <td>1.5</td>
                 <td/>
                 <td>
-                                 Used capacity, in MB, of the datastore.
+                                Total capacity, in MB, of the datastore.
                             </td>
             </tr>
                               <a name="UsedCapacityGb"/>
@@ -419,8 +419,20 @@
                                Used capacity, in GB, of the datastore.
                             </td>
             </tr>
-                                      <a name="UsedCapacityPercent"/>
+                                      <a name="UsedCapacityMb"/>
                     <tr class="r0">
+                <td>UsedCapacityMb</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#double">double</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                 Used capacity, in MB, of the datastore.
+                            </td>
+            </tr>
+                              <a name="UsedCapacityPercent"/>
+                    <tr class="r1">
                 <td>UsedCapacityPercent</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#double">double</a></td>
                 <td>No</td>
@@ -431,58 +443,58 @@
                               Used capacity of the datastore, as a percentage.
                             </td>
             </tr>
-                              <a name="ProvisionedSpaceMb"/>
-                    <tr class="r1">
-                <td>ProvisionedSpaceMb</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#double">double</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                Provisioned capacity, in MB, of the datastore.
-                            </td>
-            </tr>
-                                      <a name="ProvisionedSpaceGb"/>
+                                      <a name="VAAIForFpEnabled"/>
                     <tr class="r0">
-                <td>ProvisionedSpaceGb</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#double">double</a></td>
+                <td>VAAIForFpEnabled</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
                 <td>No</td>
-                <td>none</td>
-                <td>1.5</td>
+                <td>always</td>
+                <td>5.1</td>
                 <td/>
                 <td>
-                                Provisioned capacity, in GB, of the datastore.
+                                Indicates whether the VAAI native snapshots for Fast Provisioning is enabled.
                             </td>
             </tr>
-                              <a name="RequestedStorageMb"/>
+                              <a name="VCloudExtension"/>
                     <tr class="r1">
-                <td>RequestedStorageMb</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#double">double</a></td>
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
                 <td>No</td>
-                <td>none</td>
+                <td>always</td>
                 <td>1.5</td>
                 <td/>
                 <td>
-                                Requested storage, in MB, for all the vCloud
-                                Director VMs on the datastore.
-                            </td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
-                                      <a name="RequestedStorageGb"/>
+                                      <a name="VcDisplayName"/>
                     <tr class="r0">
-                <td>RequestedStorageGb</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#double">double</a></td>
+                <td>VcDisplayName</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
                 <td>none</td>
                 <td>1.5</td>
                 <td/>
                 <td>
-                                Requested storage, in GB, for all the vCloud
-                                Director VMs on the datastore.
+                                vCenter display name of the datastore.
                             </td>
             </tr>
-                              <a name="vimPropertyPageUrl"/>
+                              <a name="VimObjectRef"/>
                     <tr class="r1">
+                <td>VimObjectRef</td>
+                <td><a href="../types/VimObjectRefType.html">VimObjectRefType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                The VIM object reference to this datastore.
+                            </td>
+            </tr>
+                                      <a name="vimPropertyPageUrl"/>
+                    <tr class="r0">
                 <td>vimPropertyPageUrl</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
@@ -491,18 +503,6 @@
                 <td/>
                 <td>
                                URL to the VIM property page of the datastore host.
-                            </td>
-            </tr>
-                                      <a name="Members"/>
-                    <tr class="r0">
-                <td>Members</td>
-                <td><a href="../types/VimObjectRefsType.html">VimObjectRefsType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                               Member datastores of a datastore cluster. Standalone datastore has empty collection.
                             </td>
             </tr>
                   </table>
@@ -556,6 +556,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

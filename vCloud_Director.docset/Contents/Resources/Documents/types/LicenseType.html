@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>1.5</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/extension/settings.xsd">settings.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/settings.xsd">settings.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.licenseSettings+xml<br/></dd>
     <dt>Extends:</dt>
@@ -113,43 +113,42 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="ExpirationDate"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="Link"/>
-                    <tr class="r0">
-                <td>Link</td>
-                <td><a href="../types/LinkType.html">LinkType</a></td>
+                <td>ExpirationDate</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#dateTime">dateTime</a></td>
                 <td>No</td>
                 <td>none</td>
                 <td>1.5</td>
                 <td/>
                 <td>
-                                A reference to an entity or operation associated
-                                with this object.
+                                The expiration date for this serial number. This is a read only field.
+                                for the API client. The license manager will set this field appropriately.
                             </td>
             </tr>
-                              <a name="SerialNumber"/>
-                    <tr class="r1">
-                <td>SerialNumber</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>Yes</td>
-                <td>always</td>
+                                      <a name="Expired"/>
+                    <tr class="r0">
+                <td>Expired</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>none</td>
                 <td>1.5</td>
                 <td/>
                 <td>
-                                The site wide serial number string.
+                                Flag indicating whether the provided serial number has expired. This is a
+                                read-only field for the API. The license manager will set this flag appropriately.
+                            </td>
+            </tr>
+                              <a name="LicenseMetricsInfo"/>
+                    <tr class="r1">
+                <td>LicenseMetricsInfo</td>
+                <td><a href="../types/LicenseMetricsInfoType.html">LicenseMetricsInfoType</a></td>
+                <td>No</td>
+                <td/>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                Report of License usage metrics.
                             </td>
             </tr>
                                       <a name="LicensedVMCount"/>
@@ -164,43 +163,17 @@
                                 The number of VMs this product is licensed for.
                             </td>
             </tr>
-                              <a name="ExpirationDate"/>
+                              <a name="Link"/>
                     <tr class="r1">
-                <td>ExpirationDate</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#dateTime">dateTime</a></td>
+                <td>Link</td>
+                <td><a href="../types/LinkType.html">LinkType</a></td>
                 <td>No</td>
                 <td>none</td>
                 <td>1.5</td>
                 <td/>
                 <td>
-                                The expiration date for this serial number. This is a read only field.
-                                for the API client. The license manager will set this field appropriately.
-                            </td>
-            </tr>
-                                      <a name="ValidSerial"/>
-                    <tr class="r0">
-                <td>ValidSerial</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                Flag indicating whether the provided serial is valid. This is a read only
-                                field for the API client. The license manager will set this flag appropriately.
-                            </td>
-            </tr>
-                              <a name="Expired"/>
-                    <tr class="r1">
-                <td>Expired</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                Flag indicating whether the provided serial number has expired. This is a
-                                read-only field for the API. The license manager will set this flag appropriately.
+                                A reference to an entity or operation associated
+                                with this object.
                             </td>
             </tr>
                                       <a name="Persisted"/>
@@ -232,8 +205,20 @@
                                 read-only field for the API. The license manager will set this flag appropriately.
                             </td>
             </tr>
-                                      <a name="SubscribingToRemoteSitesFeature"/>
+                                      <a name="SerialNumber"/>
                     <tr class="r0">
+                <td>SerialNumber</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                The site wide serial number string.
+                            </td>
+            </tr>
+                              <a name="SubscribingToRemoteSitesFeature"/>
+                    <tr class="r1">
                 <td>SubscribingToRemoteSitesFeature</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
                 <td>No</td>
@@ -245,16 +230,31 @@
                                 read-only field for the API. The license manager will set this flag appropriately.
                             </td>
             </tr>
-                              <a name="LicenseMetricsInfo"/>
-                    <tr class="r1">
-                <td>LicenseMetricsInfo</td>
-                <td><a href="../types/LicenseMetricsInfoType.html">LicenseMetricsInfoType</a></td>
+                                      <a name="VCloudExtension"/>
+                    <tr class="r0">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
                 <td>No</td>
-                <td/>
+                <td>always</td>
                 <td>1.5</td>
                 <td/>
                 <td>
-                                Report of License usage metrics.
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
+                              <a name="ValidSerial"/>
+                    <tr class="r1">
+                <td>ValidSerial</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                Flag indicating whether the provided serial is valid. This is a read only
+                                field for the API client. The license manager will set this flag appropriately.
                             </td>
             </tr>
                   </table>
@@ -293,6 +293,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

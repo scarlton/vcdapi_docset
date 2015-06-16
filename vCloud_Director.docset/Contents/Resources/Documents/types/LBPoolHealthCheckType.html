@@ -24,7 +24,7 @@
     <dt>Since:</dt>
     <dd>5.1</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/network.xsd">network.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/network.xsd">network.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -55,46 +55,8 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="HealthThreshold"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="Mode"/>
-                    <tr class="r0">
-                <td>Mode</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                            Load balancer service port health check mode. One of: TCP, HTTP, SSL.
-                        </td>
-            </tr>
-                              <a name="Uri"/>
-                    <tr class="r1">
-                <td>Uri</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                            Load balancer service port health check URI.
-                        </td>
-            </tr>
-                                      <a name="HealthThreshold"/>
-                    <tr class="r0">
                 <td>HealthThreshold</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
@@ -103,18 +65,6 @@
                 <td/>
                 <td>
                             Health threshold for this service port.
-                        </td>
-            </tr>
-                              <a name="UnhealthThreshold"/>
-                    <tr class="r1">
-                <td>UnhealthThreshold</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                            Unhealth check port for this profile.
                         </td>
             </tr>
                                       <a name="Interval"/>
@@ -129,8 +79,20 @@
                             Interval between health checks.
                         </td>
             </tr>
-                              <a name="Timeout"/>
+                              <a name="Mode"/>
                     <tr class="r1">
+                <td>Mode</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                            Load balancer service port health check mode. One of: TCP, HTTP, SSL.
+                        </td>
+            </tr>
+                                      <a name="Timeout"/>
+                    <tr class="r0">
                 <td>Timeout</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
@@ -141,6 +103,44 @@
                             Health check timeout.
                         </td>
             </tr>
+                              <a name="UnhealthThreshold"/>
+                    <tr class="r1">
+                <td>UnhealthThreshold</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                            Unhealth check port for this profile.
+                        </td>
+            </tr>
+                                      <a name="Uri"/>
+                    <tr class="r0">
+                <td>Uri</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                            Load balancer service port health check URI.
+                        </td>
+            </tr>
+                              <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
                   </table>
     </dd>
     
@@ -149,6 +149,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

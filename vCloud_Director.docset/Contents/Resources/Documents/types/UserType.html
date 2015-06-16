@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>0.9</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/admin/user.xsd">user.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/admin/user.xsd">user.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.user+xml<br/></dd>
     <dt>Extends:</dt>
@@ -174,35 +174,45 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="AlertEmail"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>AlertEmail</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
+                                True if this user should get alert email.
+                            </td>
             </tr>
-                                      <a name="Link"/>
+                                      <a name="AlertEmailPrefix"/>
                     <tr class="r0">
-                <td>Link</td>
-                <td><a href="../types/LinkType.html">LinkType</a></td>
+                <td>AlertEmailPrefix</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
-                <td>none</td>
+                <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                                A reference to an entity or operation associated
-                                with this object.
+                                String to prepend to alert message Subject line.
                             </td>
             </tr>
-                              <a name="Description"/>
+                              <a name="DeployedVmQuota"/>
                     <tr class="r1">
+                <td>DeployedVmQuota</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                Quota of vApps that this user can deploy concurrently.
+                                A value of 0 specifies an unlimited quota.
+                            </td>
+            </tr>
+                                      <a name="Description"/>
+                    <tr class="r0">
                 <td>Description</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
@@ -213,33 +223,8 @@
                                 Optional description.
                             </td>
             </tr>
-                                      <a name="Tasks"/>
-                    <tr class="r0">
-                <td>Tasks</td>
-                <td><a href="../types/TasksInProgressType.html">TasksInProgressType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                A list of queued, running, or recently
-                                completed tasks associated with this entity.
-                            </td>
-            </tr>
-                              <a name="FullName"/>
+                              <a name="EmailAddress"/>
                     <tr class="r1">
-                <td>FullName</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                Full name of the user.
-                            </td>
-            </tr>
-                                      <a name="EmailAddress"/>
-                    <tr class="r0">
                 <td>EmailAddress</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
@@ -250,43 +235,29 @@
                                 Email address of the user.
                             </td>
             </tr>
-                              <a name="Telephone"/>
-                    <tr class="r1">
-                <td>Telephone</td>
+                                      <a name="FullName"/>
+                    <tr class="r0">
+                <td>FullName</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                                Telephone number of the user.
+                                Full name of the user.
                             </td>
             </tr>
-                                      <a name="IsEnabled"/>
-                    <tr class="r0">
-                <td>IsEnabled</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                True if the user is enabled and can log in.
-                            </td>
-            </tr>
-                              <a name="IsLocked"/>
+                              <a name="GroupReferences"/>
                     <tr class="r1">
-                <td>IsLocked</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>GroupReferences</td>
+                <td><a href="../types/GroupsListType.html">GroupsListType</a></td>
                 <td>No</td>
-                <td>always</td>
+                <td>none</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                                True if the user account has been locked due to
-                                too many invalid login attempts. A locked user account can be
-                                re-enabled by updating the user with this flag set to false.
-                                Only the system can set the value to true.
+                                Container for references to groups of which
+                                this user is a member.
                             </td>
             </tr>
                                       <a name="IM"/>
@@ -301,22 +272,8 @@
                                 User's instant messaging address.
                             </td>
             </tr>
-                              <a name="NameInSource"/>
+                              <a name="IsAlertEnabled"/>
                     <tr class="r1">
-                <td>NameInSource</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                User name as retrieved from, and in the
-                                encoding used by, the specified identity
-                                prvider.
-                            </td>
-            </tr>
-                                      <a name="IsAlertEnabled"/>
-                    <tr class="r0">
                 <td>IsAlertEnabled</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
                 <td>No</td>
@@ -327,32 +284,32 @@
                                 True if alerts are enabled for the user.
                             </td>
             </tr>
-                              <a name="AlertEmailPrefix"/>
-                    <tr class="r1">
-                <td>AlertEmailPrefix</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                String to prepend to alert message Subject line.
-                            </td>
-            </tr>
-                                      <a name="AlertEmail"/>
+                                      <a name="IsDefaultCached"/>
                     <tr class="r0">
-                <td>AlertEmail</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>IsDefaultCached</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                                True if this user should get alert email.
+                                True if this user is cached by default.
                             </td>
             </tr>
-                              <a name="IsExternal"/>
+                              <a name="IsEnabled"/>
                     <tr class="r1">
+                <td>IsEnabled</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                True if the user is enabled and can log in.
+                            </td>
+            </tr>
+                                      <a name="IsExternal"/>
+                    <tr class="r0">
                 <td>IsExternal</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
                 <td>No</td>
@@ -366,6 +323,75 @@
                                 ProviderType is SAML. On retrieval,
                                 indicates whether the user is local or
                                 imported.
+                            </td>
+            </tr>
+                              <a name="IsGroupRole"/>
+                    <tr class="r1">
+                <td>IsGroupRole</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                True if this user has a group role.
+                            </td>
+            </tr>
+                                      <a name="IsLocked"/>
+                    <tr class="r0">
+                <td>IsLocked</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                True if the user account has been locked due to
+                                too many invalid login attempts. A locked user account can be
+                                re-enabled by updating the user with this flag set to false.
+                                Only the system can set the value to true.
+                            </td>
+            </tr>
+                              <a name="Link"/>
+                    <tr class="r1">
+                <td>Link</td>
+                <td><a href="../types/LinkType.html">LinkType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                A reference to an entity or operation associated
+                                with this object.
+                            </td>
+            </tr>
+                                      <a name="NameInSource"/>
+                    <tr class="r0">
+                <td>NameInSource</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                User name as retrieved from, and in the
+                                encoding used by, the specified identity
+                                prvider.
+                            </td>
+            </tr>
+                              <a name="Password"/>
+                    <tr class="r1">
+                <td>Password</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                The user's password. This value is never returned by
+                                GET. It is inspected on create and modify. On modify,
+                                the absence of this element indicates that the password
+                                should not be changed.
                             </td>
             </tr>
                                       <a name="ProviderType"/>
@@ -386,56 +412,6 @@
                                 <b>INTEGRATED</b>.
                             </td>
             </tr>
-                              <a name="IsDefaultCached"/>
-                    <tr class="r1">
-                <td>IsDefaultCached</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                True if this user is cached by default.
-                            </td>
-            </tr>
-                                      <a name="IsGroupRole"/>
-                    <tr class="r0">
-                <td>IsGroupRole</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                True if this user has a group role.
-                            </td>
-            </tr>
-                              <a name="StoredVmQuota"/>
-                    <tr class="r1">
-                <td>StoredVmQuota</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                Quota of vApps that this user can store. A value of
-                                0 specifies an unlimited quota.
-                            </td>
-            </tr>
-                                      <a name="DeployedVmQuota"/>
-                    <tr class="r0">
-                <td>DeployedVmQuota</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                Quota of vApps that this user can deploy concurrently.
-                                A value of 0 specifies an unlimited quota.
-                            </td>
-            </tr>
                               <a name="Role"/>
                     <tr class="r1">
                 <td>Role</td>
@@ -450,33 +426,57 @@
                                 exactly one Role element.
                             </td>
             </tr>
-                                      <a name="Password"/>
+                                      <a name="StoredVmQuota"/>
                     <tr class="r0">
-                <td>Password</td>
+                <td>StoredVmQuota</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                Quota of vApps that this user can store. A value of
+                                0 specifies an unlimited quota.
+                            </td>
+            </tr>
+                              <a name="Tasks"/>
+                    <tr class="r1">
+                <td>Tasks</td>
+                <td><a href="../types/TasksInProgressType.html">TasksInProgressType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                A list of queued, running, or recently
+                                completed tasks associated with this entity.
+                            </td>
+            </tr>
+                                      <a name="Telephone"/>
+                    <tr class="r0">
+                <td>Telephone</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                                The user's password. This value is never returned by
-                                GET. It is inspected on create and modify. On modify,
-                                the absence of this element indicates that the password
-                                should not be changed.
+                                Telephone number of the user.
                             </td>
             </tr>
-                              <a name="GroupReferences"/>
+                              <a name="VCloudExtension"/>
                     <tr class="r1">
-                <td>GroupReferences</td>
-                <td><a href="../types/GroupsListType.html">GroupsListType</a></td>
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
                 <td>No</td>
-                <td>none</td>
+                <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                                Container for references to groups of which
-                                this user is a member.
-                            </td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                   </table>
     </dd>
@@ -524,12 +524,19 @@
         </tr>
                       <tr class="r1">
             <td nowrap="1">action</td>
+            <td nowrap="1"><a href="../operations/POST-TakeOwnership.html">POST /admin/user/{id}/action/takeOwnership</a></td>
+                        <td>Transfer ownership of this user's vApps, media, and catalogs to the caller.</td>
+            <td>5.6</td>
+            <td/>
+        </tr>
+                              <tr class="r0">
+            <td nowrap="1">action</td>
             <td nowrap="1"><a href="../operations/POST-UnlockUser.html">POST /admin/user/{id}/action/unlock</a></td>
                         <td>Unlock a user.</td>
             <td>1.5</td>
             <td>Since Version 5.1</td>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">action</td>
             <td nowrap="1"><a href="../operations/POST-QueryUserPrivileges.html">POST /admin/user/{id}/entityRights</a></td>
                         <td>Queries user privileges on a set of entities</td>
@@ -542,6 +549,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

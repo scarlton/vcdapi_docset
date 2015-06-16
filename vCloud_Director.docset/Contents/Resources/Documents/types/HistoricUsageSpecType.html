@@ -1,0 +1,145 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>vCloud REST API - HistoricUsageSpec</title>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
+<!-- -->
+</head>
+<body onload="javascript:setupEventHandlers()">
+<br/>
+
+<h1>HistoricUsageSpecType</h1>
+
+<dl>
+                        <dt>Element:</dt>
+            <dd>HistoricUsageSpec</dd>
+        <dt>Type:</dt>
+    <dd>HistoricUsageSpecType</dd>
+    <dt>Namespace:</dt>
+    <dd><a href="http://www.vmware.com/vcloud/v1.5">http://www.vmware.com/vcloud/v1.5</a></dd>
+    <dt>Description:</dt>
+    <dd>
+                Specifies which historic usage metrics to retrieve
+            </dd>
+    <dt>Since:</dt>
+    <dd>5.6</dd>
+        <dt>Schema:</dt>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/metrics.xsd">metrics.xsd</a></dd>
+    <dt>Media type(s):</dt>
+    <dd>application/vnd.vmware.vcloud.metrics.historicUsageSpec+xml<br/></dd>
+    <dt>Extends:</dt>
+    <dd><a href="http://www.w3.org/TR/xmlschema-0/#anyType">anyType</a></dd>
+
+    <dt>XML Representation:</dt>
+    <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">HistoricUsageSpec</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/v1.5</span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/AbsoluteTimeType.html" target="classFrame" title="AbsoluteStartTime">AbsoluteStartTime</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/AbsoluteTimeType.html#time" target="classFrame" title="time">time</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#dateTime" target="classFrame" title="xs:dateTime">xs:dateTime</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/RelativeTimeType.html" target="classFrame" title="RelativeStartTime">RelativeStartTime</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/RelativeTimeType.html#interval" target="classFrame" title="interval">interval</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#short" target="classFrame" title="xs:short">xs:short</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/RelativeTimeType.html#unit" target="classFrame" title="unit">unit</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="../types/TimeUnitType.html" target="classFrame" title="TimeUnitType">TimeUnitType</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/AbsoluteTimeType.html" target="classFrame" title="AbsoluteEndTime">AbsoluteEndTime</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/AbsoluteTimeType.html#time" target="classFrame" title="time">time</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#dateTime" target="classFrame" title="xs:dateTime">xs:dateTime</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/RelativeTimeType.html" target="classFrame" title="RelativeEndTime">RelativeEndTime</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/RelativeTimeType.html#interval" target="classFrame" title="interval">interval</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#short" target="classFrame" title="xs:short">xs:short</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/RelativeTimeType.html#unit" target="classFrame" title="unit">unit</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="../types/TimeUnitType.html" target="classFrame" title="TimeUnitType">TimeUnitType</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">MetricPattern</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">MetricPattern</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain"/><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">HistoricUsageSpec</span><span class="xml_tag_symbols">&gt;</span><br/>
+</dd>
+
+    
+        <a id="elements" name="elements"/>
+    <dt><p class="table-title">Elements</p></dt>
+    <dd>
+    <table cellspacing="0">
+      <tr>
+        <th>Element</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Modifiable</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+        <th>Description</th>
+      </tr>
+                      <a name="AbsoluteEndTime"/>
+                    <tr class="r1">
+                <td>AbsoluteEndTime</td>
+                <td><a href="../types/AbsoluteTimeType.html">AbsoluteTimeType</a></td>
+                <td>Yes</td>
+                <td/>
+                <td>5.6</td>
+                <td/>
+                <td/>
+            </tr>
+                                      <a name="AbsoluteStartTime"/>
+                    <tr class="r0">
+                <td>AbsoluteStartTime</td>
+                <td><a href="../types/AbsoluteTimeType.html">AbsoluteTimeType</a></td>
+                <td>Yes</td>
+                <td/>
+                <td>5.6</td>
+                <td/>
+                <td/>
+            </tr>
+                              <a name="MetricPattern"/>
+                    <tr class="r1">
+                <td>MetricPattern</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td/>
+                <td>5.6</td>
+                <td/>
+                <td>
+                        A metric name pattern.  Asterisk matches any character or group of
+                        characters in a metric name.
+                    </td>
+            </tr>
+                                      <a name="RelativeEndTime"/>
+                    <tr class="r0">
+                <td>RelativeEndTime</td>
+                <td><a href="../types/RelativeTimeType.html">RelativeTimeType</a></td>
+                <td>Yes</td>
+                <td/>
+                <td>5.6</td>
+                <td/>
+                <td/>
+            </tr>
+                              <a name="RelativeStartTime"/>
+                    <tr class="r1">
+                <td>RelativeStartTime</td>
+                <td><a href="../types/RelativeTimeType.html">RelativeTimeType</a></td>
+                <td>Yes</td>
+                <td/>
+                <td>5.6</td>
+                <td/>
+                <td/>
+            </tr>
+                  </table>
+    </dd>
+    
+    
+        <a id="operations" name="operations"/>
+    <dt><p class="table-title">Operations</p></dt>
+    <dd>
+    <table cellspacing="0">
+      <tr>
+        <th>CRUD</th>
+        <th>Operation</th>
+        <th>Description</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+      </tr>
+
+                      <tr class="r1">
+            <td nowrap="1">as input</td>
+            <td nowrap="1"><a href="../operations/POST-GetVmHistoricUsageAllMetrics.html">POST /vApp/{id}/metrics/historic</a></td>
+                        <td>Gets the historic usage for VM metrics according to the provided spec object.</td>
+            <td/>
+            <td/>
+        </tr>
+          </table>
+    </dd>
+    
+</dl>
+
+<br/>
+
+<br/>
+<br/>
+</body>
+</html>

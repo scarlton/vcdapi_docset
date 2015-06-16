@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>1.5</dd>
         <dt>Schema:</dt>
-    <dd><a href="file:///build/mts/release/bora-1323688/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
+    <dd><a href="file:///build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.importVmIntoExistingVAppParams+xml<br/></dd>
     <dt>Extends:</dt>
@@ -86,58 +86,7 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
-                    <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="VmName"/>
-                    <tr class="r0">
-                <td>VmName</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                Name to be used for imported VM.
-                            </td>
-            </tr>
-                              <a name="VmDescription"/>
-                    <tr class="r1">
-                <td>VmDescription</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                Description to be used for imported VM.
-                            </td>
-            </tr>
-                                      <a name="VAppScopedLocalId"/>
-                    <tr class="r0">
-                <td>VAppScopedLocalId</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                vApp scoped local id to be used for imported
-                                VM.
-                            </td>
-            </tr>
-                              <a name="ComputerName"/>
+                      <a name="ComputerName"/>
                     <tr class="r1">
                 <td>ComputerName</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
@@ -149,17 +98,44 @@
                                 Computer name to be used for imported VM.
                             </td>
             </tr>
-                                      <a name="VmMoRef"/>
+                                      <a name="VApp"/>
                     <tr class="r0">
-                <td>VmMoRef</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>VApp</td>
+                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
                 <td>Yes</td>
                 <td>always</td>
                 <td>1.5</td>
                 <td/>
                 <td>
-                                 Managed object reference of VM to import.
+                                vApp to hold imported VM.
                             </td>
+            </tr>
+                              <a name="VAppScopedLocalId"/>
+                    <tr class="r1">
+                <td>VAppScopedLocalId</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                vApp scoped local id to be used for imported
+                                VM.
+                            </td>
+            </tr>
+                                      <a name="VCloudExtension"/>
+                    <tr class="r0">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                               <a name="VdcStorageProfile"/>
                     <tr class="r1">
@@ -173,16 +149,40 @@
                                 Reference to a vDC storage profile for imported VM.
                             </td>
             </tr>
-                                      <a name="VApp"/>
+                                      <a name="VmDescription"/>
                     <tr class="r0">
-                <td>VApp</td>
-                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
+                <td>VmDescription</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                Description to be used for imported VM.
+                            </td>
+            </tr>
+                              <a name="VmMoRef"/>
+                    <tr class="r1">
+                <td>VmMoRef</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>Yes</td>
                 <td>always</td>
                 <td>1.5</td>
                 <td/>
                 <td>
-                                vApp to hold imported VM.
+                                 Managed object reference of VM to import.
+                            </td>
+            </tr>
+                                      <a name="VmName"/>
+                    <tr class="r0">
+                <td>VmName</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                Name to be used for imported VM.
                             </td>
             </tr>
                   </table>
@@ -215,6 +215,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

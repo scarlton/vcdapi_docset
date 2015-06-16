@@ -24,7 +24,7 @@
     <dt>Since:</dt>
     <dd>5.1</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/network.xsd">network.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/network.xsd">network.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -52,19 +52,19 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="IpType"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
+                <td>IpType</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
                 <td>always</td>
                 <td>5.1</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
+                                The value can be one of:-
+                                assigned: assigned internal IP be automatically choosen.
+                                NAT: NATed external IP will be automatically choosen.
+                            </td>
             </tr>
                                       <a name="VAppScopedVmId"/>
                     <tr class="r0">
@@ -79,8 +79,22 @@
                                 applies.
                             </td>
             </tr>
-                              <a name="VmNicId"/>
+                              <a name="VCloudExtension"/>
                     <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
+                                      <a name="VmNicId"/>
+                    <tr class="r0">
                 <td>VmNicId</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
                 <td>Yes</td>
@@ -91,20 +105,6 @@
                                 VM NIC ID to which this rule applies.
                             </td>
             </tr>
-                                      <a name="IpType"/>
-                    <tr class="r0">
-                <td>IpType</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                The value can be one of:-
-                                assigned: assigned internal IP be automatically choosen.
-                                NAT: NATed external IP will be automatically choosen.
-                            </td>
-            </tr>
                   </table>
     </dd>
     
@@ -113,6 +113,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

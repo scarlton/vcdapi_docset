@@ -21,13 +21,12 @@
     <dd>
                Represents locality parameters. Locality parameters provide a
                hint that may help the placement engine optimize placement of
-               a Vm and an independent a Disk so that the Vm can make
-               efficient use of the disk.
+               a VM with respect to another VM or an independent disk.
             </dd>
     <dt>Since:</dt>
     <dd>5.1</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/vApp.xsd">vApp.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/vApp.xsd">vApp.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -53,8 +52,20 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="ResourceEntity"/>
                     <tr class="r1">
+                <td>ResourceEntity</td>
+                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Reference to a Disk, or a VM.
+                            </td>
+            </tr>
+                                      <a name="VCloudExtension"/>
+                    <tr class="r0">
                 <td>VCloudExtension</td>
                 <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
                 <td>No</td>
@@ -67,18 +78,6 @@
                         related to extension services.
                     </td>
             </tr>
-                                      <a name="ResourceEntity"/>
-                    <tr class="r0">
-                <td>ResourceEntity</td>
-                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Reference to a Disk.
-                            </td>
-            </tr>
                   </table>
     </dd>
     
@@ -87,6 +86,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

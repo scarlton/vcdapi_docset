@@ -24,7 +24,7 @@
     <dt>Since:</dt>
     <dd>1.5</dd>
         <dt>Schema:</dt>
-    <dd><a href="file:///build/mts/release/bora-1323688/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
+    <dd><a href="file:///build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -110,19 +110,17 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="Enabled"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
+                <td>Enabled</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>Yes</td>
+                <td/>
                 <td>1.5</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
+                                Resource pool enabled status
+                            </td>
             </tr>
                                       <a name="Link"/>
                     <tr class="r0">
@@ -137,20 +135,8 @@
                                 with this object.
                             </td>
             </tr>
-                              <a name="ResourcePoolVimObjectRef"/>
+                              <a name="ResourcePoolRef"/>
                     <tr class="r1">
-                <td>ResourcePoolVimObjectRef</td>
-                <td><a href="../types/VimObjectRefType.html">VimObjectRefType</a></td>
-                <td>Yes</td>
-                <td/>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                Vim object reference to resource pool
-                            </td>
-            </tr>
-                                      <a name="ResourcePoolRef"/>
-                    <tr class="r0">
                 <td>ResourcePoolRef</td>
                 <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
                 <td>Yes</td>
@@ -161,17 +147,31 @@
                                 Reference to resource pool
                             </td>
             </tr>
-                              <a name="Enabled"/>
-                    <tr class="r1">
-                <td>Enabled</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                                      <a name="ResourcePoolVimObjectRef"/>
+                    <tr class="r0">
+                <td>ResourcePoolVimObjectRef</td>
+                <td><a href="../types/VimObjectRefType.html">VimObjectRefType</a></td>
                 <td>Yes</td>
                 <td/>
                 <td>1.5</td>
                 <td/>
                 <td>
-                                Resource pool enabled status
+                                Vim object reference to resource pool
                             </td>
+            </tr>
+                              <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                   </table>
     </dd>
@@ -181,6 +181,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

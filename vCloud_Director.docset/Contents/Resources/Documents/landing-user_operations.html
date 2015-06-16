@@ -5,15 +5,15 @@
     <link rel="stylesheet" type="text/css" href="doc-style.css"/>
 
 <!-- -->
-</head>
+</head><style>div.feedbackhover { display: none!important; padding:0; visibility:hidden}span.st_sharethis { display: none!important; padding:0; visibility:hidden}</style>
 <body onload="javascript:setupEventHandlers()">
 <br/>
 
-<h1>vCloud REST API User Operations</h1>
+<h1>vCloud Director REST API User Operations</h1>
 
 <h2 class="index">User Operations</h2>
 <br/>
-<p class="table-title">User Operations (224)</p>
+<p class="table-title">User Operations (244)</p>
 <table cellspacing="0">
   <tr>
       <th>Operation</th>
@@ -250,17 +250,12 @@
         <td/>
     </tr>
           <tr class="r1">
-        <td nowrap="1"><a href="operations/GET-LoginGet.html" name="//apple_ref/cpp/Function/GET%20%2Flogin" class="dashAnchor">GET /login</a></td>
-        <td>Login with HTTP GET request.<br/>(same as POST, implemented for convenience)
-<br/>
- The request body must contain a MIME Base64 encoding of your
- credentials in the form:
- <p>
- <i>user</i>@<i>organization</i>:<i>password</i></p></td>
+        <td nowrap="1"><a href="operations/GET-Login.html" name="//apple_ref/cpp/Function/GET%20%2Flogin" class="dashAnchor">GET /login</a></td>
+        <td>Login with HTTP GET request.</td>
         <td>0.9</td>
     </tr>
               <tr class="r0">
-        <td nowrap="1"><a href="operations/POST-Login-login.html" name="//apple_ref/cpp/Function/POST%20%2Flogin" class="dashAnchor">POST /login</a></td>
+        <td nowrap="1"><a href="operations/POST-LoginGet.html" name="//apple_ref/cpp/Function/POST%20%2Flogin" class="dashAnchor">POST /login</a></td>
         <td>Login with HTTP POST request.</td>
         <td>0.9</td>
     </tr>
@@ -404,87 +399,92 @@
         <td>1.5</td>
     </tr>
               <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-ServerStatus.html" name="//apple_ref/cpp/Function/GET%20%2Fserver_status" class="dashAnchor">GET /server_status</a></td>
+        <td>Always returns HTTP 200</td>
+        <td/>
+    </tr>
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-QueryResult.html" name="//apple_ref/cpp/Function/GET%20%2Fservice" class="dashAnchor">GET /service</a></td>
         <td/>
         <td/>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-Service.html" name="//apple_ref/cpp/Function/GET%20%2Fservice%2F%7Bid%7D" class="dashAnchor">GET /service/{id}</a></td>
         <td/>
         <td/>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-ApiDefinitions-service-service.html" name="//apple_ref/cpp/Function/GET%20%2Fservice%2F%7Bid%7D%2Fapidefinitions" class="dashAnchor">GET /service/{id}/apidefinitions</a></td>
         <td/>
         <td/>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-CurrentSession.html" name="//apple_ref/cpp/Function/GET%20%2Fsession" class="dashAnchor">GET /session</a></td>
         <td>Retrieve a representation of the current session.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/DELETE-Logout.html" name="//apple_ref/cpp/Function/DELETE%20%2Fsession" class="dashAnchor">DELETE /session</a></td>
         <td/>
         <td/>
     </tr>
-          <tr class="r1">
-        <td nowrap="1"><a href="operations/POST-Login-sessions.html" name="//apple_ref/cpp/Function/POST%20%2Fsessions" class="dashAnchor">POST /sessions</a></td>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-Login.html" name="//apple_ref/cpp/Function/POST%20%2Fsessions" class="dashAnchor">POST /sessions</a></td>
         <td>Log in and create a Session object.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-ShadowVm.html" name="//apple_ref/cpp/Function/GET%20%2FshadowVm%2F%7Bid%7D" class="dashAnchor">GET /shadowVm/{id}</a></td>
         <td>Retrieve a shadow VM.</td>
         <td/>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/DELETE-ShadowVm.html" name="//apple_ref/cpp/Function/DELETE%20%2FshadowVm%2F%7Bid%7D" class="dashAnchor">DELETE /shadowVm/{id}</a></td>
         <td>Deletes shadow VM.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-SupportedSystemsInfo.html" name="//apple_ref/cpp/Function/GET%20%2FsupportedSystemsInfo" class="dashAnchor">GET /supportedSystemsInfo</a></td>
         <td/>
         <td/>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-Task.html" name="//apple_ref/cpp/Function/GET%20%2Ftask%2F%7Bid%7D" class="dashAnchor">GET /task/{id}</a></td>
         <td>Retrieve a task.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-Task.html" name="//apple_ref/cpp/Function/PUT%20%2Ftask%2F%7Bid%7D" class="dashAnchor">PUT /task/{id}</a></td>
         <td>Update a task.</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-CancelTask.html" name="//apple_ref/cpp/Function/POST%20%2Ftask%2F%7Bid%7D%2Faction%2Fcancel" class="dashAnchor">POST /task/{id}/action/cancel</a></td>
         <td>Cancel a task.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-TaskList.html" name="//apple_ref/cpp/Function/GET%20%2FtasksList%2F%7Bid%7D" class="dashAnchor">GET /tasksList/{id}</a></td>
         <td>Retrieve a list of this organization's queued, running, or recently
  completed tasks.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-CreateTask.html" name="//apple_ref/cpp/Function/POST%20%2FtasksList%2F%7Bid%7D" class="dashAnchor">POST /tasksList/{id}</a></td>
         <td>Post an external task to this organization.</td>
         <td/>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-Schema-schema.html" name="//apple_ref/cpp/Function/GET%20%2Fv1.5%2Fschema%2F%7BschemaFileName%7D" class="dashAnchor">GET /v1.5/schema/{schemaFileName}</a></td>
         <td>Retrieve the specified schema definition file from the server.</td>
         <td/>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/PUT-Vm.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2Fvm-%7Bid%7D" class="dashAnchor">PUT /vApp/vm-{id}</a></td>
         <td>Modify the name or description of a VM.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-ReconfigureVm.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2Fvm-%7Bid%7D%2Faction%2FreconfigureVm" class="dashAnchor">POST /vApp/vm-{id}/action/reconfigureVm</a></td>
         <td>Updates Vm name, Description, and any or all of the following sections.<br/>
  <ul>
@@ -496,40 +496,45 @@
  Sections not included in the request body will not be updated.</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-VApp.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D" class="dashAnchor">GET /vApp/{id}</a></td>
         <td>Retrieve a vApp or VM.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-VAppNameAndDescription.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D" class="dashAnchor">PUT /vApp/{id}</a></td>
         <td>Modify the name or description of a vApp.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/DELETE-VApp.html" name="//apple_ref/cpp/Function/DELETE%20%2FvApp%2F%7Bid%7D" class="dashAnchor">DELETE /vApp/{id}</a></td>
         <td>Delete a vApp or VM.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-CheckVmCompliance.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Faction%2FcheckCompliance" class="dashAnchor">POST /vApp/{id}/action/checkCompliance</a></td>
         <td>Perform storage profile compliance check on a VM.</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-ConsolidateVm-vApp.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Faction%2Fconsolidate" class="dashAnchor">POST /vApp/{id}/action/consolidate</a></td>
         <td>Consolidate VM snapshots.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-ControlAccess-vApp.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Faction%2FcontrolAccess" class="dashAnchor">POST /vApp/{id}/action/controlAccess</a></td>
         <td>Update access control information for a vApp.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-CreateSnapshot.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Faction%2FcreateSnapshot" class="dashAnchor">POST /vApp/{id}/action/createSnapshot</a></td>
         <td>Creates new snapshot of a virtual machine or of all the virtual machines in a vApp.</td>
         <td>5.1</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-ForceCustomization.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Faction%2FcustomizeAtNextPowerOn" class="dashAnchor">POST /vApp/{id}/action/customizeAtNextPowerOn</a></td>
+        <td>Force guest customization on next power on.</td>
+        <td>5.6</td>
     </tr>
               <tr class="r0">
         <td nowrap="1"><a href="operations/POST-DeployVApp.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Faction%2Fdeploy" class="dashAnchor">POST /vApp/{id}/action/deploy</a></td>
@@ -574,7 +579,7 @@
               <tr class="r0">
         <td nowrap="1"><a href="operations/POST-InstallVMwareTools.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Faction%2FinstallVMwareTools" class="dashAnchor">POST /vApp/{id}/action/installVMwareTools</a></td>
         <td>Install VMware Tools on a running VM.</td>
-        <td>v1.5</td>
+        <td>1.5</td>
     </tr>
           <tr class="r1">
         <td nowrap="1"><a href="operations/POST-RecomposeVApp.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Faction%2FrecomposeVApp" class="dashAnchor">POST /vApp/{id}/action/recomposeVApp</a></td>
@@ -582,490 +587,583 @@
         <td>1.0</td>
     </tr>
               <tr class="r0">
+        <td nowrap="1"><a href="operations/POST-ReloadFromVc.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Faction%2FreloadFromVc" class="dashAnchor">POST /vApp/{id}/action/reloadFromVc</a></td>
+        <td>Reloads VM state from VC.</td>
+        <td>5.6</td>
+    </tr>
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-RelocateVm-vApp.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Faction%2Frelocate" class="dashAnchor">POST /vApp/{id}/action/relocate</a></td>
         <td>Relocate a VM to a different datastore.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-RemoveAllSnapshots.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Faction%2FremoveAllSnapshots" class="dashAnchor">POST /vApp/{id}/action/removeAllSnapshots</a></td>
         <td>Removes all user created snapshots for a vApp or virtual machine.</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-RevertSnapshot.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Faction%2FrevertToCurrentSnapshot" class="dashAnchor">POST /vApp/{id}/action/revertToCurrentSnapshot</a></td>
         <td>Reverts a vApp or virtual machine to the current snapshot, if any.</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-UndeployVApp.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Faction%2Fundeploy" class="dashAnchor">POST /vApp/{id}/action/undeploy</a></td>
         <td>Undeploy a vApp/VM.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-UpgradeHwVersion.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Faction%2FupgradeHardwareVersion" class="dashAnchor">POST /vApp/{id}/action/upgradeHardwareVersion</a></td>
         <td>Upgrade the virtual hardware version of a VM to the highest supported
  virtual hardware version of the vDC that contains it.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-VmComplianceResults.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FcomplianceResult" class="dashAnchor">GET /vApp/{id}/complianceResult</a></td>
         <td/>
         <td/>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-ControlAccessParams-vApp.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FcontrolAccess" class="dashAnchor">GET /vApp/{id}/controlAccess</a></td>
         <td>Retrieve access control information for a vApp.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-AttachDisk.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Fdisk%2Faction%2Fattach" class="dashAnchor">POST /vApp/{id}/disk/action/attach</a></td>
         <td>Attach a disk to a VM.</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-DetachDisk.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Fdisk%2Faction%2Fdetach" class="dashAnchor">POST /vApp/{id}/disk/action/detach</a></td>
         <td>Detach a disk from a VM.</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-GuestCustomizationSystemSection-vApp.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FguestCustomizationSection" class="dashAnchor">GET /vApp/{id}/guestCustomizationSection</a></td>
         <td>Retrieves the guest customization section of a VM.</td>
         <td>1.0</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-GuestCustomizationSection-vApp.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2FguestCustomizationSection" class="dashAnchor">PUT /vApp/{id}/guestCustomizationSection</a></td>
         <td>Updates the guest customization section of a VM.</td>
         <td>1.0</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-LeaseSettingsSection-vApp.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FleaseSettingsSection" class="dashAnchor">GET /vApp/{id}/leaseSettingsSection</a></td>
         <td>Retrieves the lease settings section of a vApp or vApp template</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-LeaseSettingsSection-vApp.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2FleaseSettingsSection" class="dashAnchor">PUT /vApp/{id}/leaseSettingsSection</a></td>
         <td>Updates the lease settings section of a vApp or vApp template.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-EjectCdRom.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Fmedia%2Faction%2FejectMedia" class="dashAnchor">POST /vApp/{id}/media/action/ejectMedia</a></td>
         <td>Eject virtual media.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-InsertCdRom.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Fmedia%2Faction%2FinsertMedia" class="dashAnchor">POST /vApp/{id}/media/action/insertMedia</a></td>
         <td>Insert virtual media.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-VAppMetadata.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2Fmetadata" class="dashAnchor">GET /vApp/{id}/metadata</a></td>
         <td>Retrieve metadata associated with the vApp or VM.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-UpdateVAppMetadata.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Fmetadata" class="dashAnchor">POST /vApp/{id}/metadata</a></td>
         <td>Merge the metadata provided in the request with existing metadata.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-VAppMetadataItem-metadata.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">GET /vApp/{id}/metadata/{domain}/{key}</a></td>
         <td>Retrieve the value of the specified key from vApp or VM metadata.</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-VAppMetadataItem-metadata.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">PUT /vApp/{id}/metadata/{domain}/{key}</a></td>
         <td>Set the value for the specified metadata key to the value provided,
  overwriting any existing value.</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/DELETE-VAppMetadataItem-metadata.html" name="//apple_ref/cpp/Function/DELETE%20%2FvApp%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">DELETE /vApp/{id}/metadata/{domain}/{key}</a></td>
         <td>Delete the specified key and its value from vApp or VM metadata.</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-VAppMetadataItem-metadata.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">GET /vApp/{id}/metadata/{key}</a></td>
         <td>Retrieve the value of the specified key from vApp or VM metadata.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/PUT-VAppMetadataItem-metadata.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">PUT /vApp/{id}/metadata/{key}</a></td>
         <td>Set the value for the specified metadata key to the value provided,
  overwriting any existing value.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/DELETE-VAppMetadataItem-metadata.html" name="//apple_ref/cpp/Function/DELETE%20%2FvApp%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">DELETE /vApp/{id}/metadata/{key}</a></td>
         <td>Delete the specified key and its value from vApp or VM metadata.</td>
         <td>1.5</td>
     </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-VmCurrentUsageAllMetrics.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2Fmetrics%2Fcurrent" class="dashAnchor">GET /vApp/{id}/metrics/current</a></td>
+        <td>Gets the current usage for all available VM metrics.</td>
+        <td/>
+    </tr>
           <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-GetVmCurrentUsageAllMetrics.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Fmetrics%2Fcurrent" class="dashAnchor">POST /vApp/{id}/metrics/current</a></td>
+        <td>Gets the current usage for VM metrics according to the provided spec object.</td>
+        <td/>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-VmHistoricUsageAllMetrics.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2Fmetrics%2Fhistoric" class="dashAnchor">GET /vApp/{id}/metrics/historic</a></td>
+        <td>Gets the past 24 hours worth of samples for all available VM metrics.</td>
+        <td/>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/POST-GetVmHistoricUsageAllMetrics.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Fmetrics%2Fhistoric" class="dashAnchor">POST /vApp/{id}/metrics/historic</a></td>
+        <td>Gets the historic usage for VM metrics according to the provided spec object.</td>
+        <td/>
+    </tr>
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-NetworkConfigSection-vApp.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FnetworkConfigSection" class="dashAnchor">GET /vApp/{id}/networkConfigSection</a></td>
         <td>Retrieve the network config section of a vApp or vApp template.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-NetworkConfigSection-vApp.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2FnetworkConfigSection" class="dashAnchor">PUT /vApp/{id}/networkConfigSection</a></td>
         <td>Update the network config section of a vApp.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-NetworkConnectionSystemSection-vApp.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FnetworkConnectionSection" class="dashAnchor">GET /vApp/{id}/networkConnectionSection</a></td>
         <td>Retrieve the network connection section of a VM.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-NetworkConnectionSystemSection-vApp.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2FnetworkConnectionSection" class="dashAnchor">PUT /vApp/{id}/networkConnectionSection</a></td>
         <td>Update the network connection section of a VM.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-NetworkSection-vApp.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FnetworkSection" class="dashAnchor">GET /vApp/{id}/networkSection</a></td>
         <td>Retrieve the network section of a vApp or vApp template.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-OperatingSystemSection.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FoperatingSystemSection" class="dashAnchor">GET /vApp/{id}/operatingSystemSection</a></td>
         <td>Retrieve the operating system section of a VM.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/PUT-OperatingSystemSection.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2FoperatingSystemSection" class="dashAnchor">PUT /vApp/{id}/operatingSystemSection</a></td>
         <td>Update the operating system section of a VM.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-VAppOvfDescriptor.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2Fovf" class="dashAnchor">GET /vApp/{id}/ovf</a></td>
         <td>Retrieve the OVF descriptor of a vApp directly.</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-VAppOwner.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2Fowner" class="dashAnchor">GET /vApp/{id}/owner</a></td>
         <td>Retrieve the owner of a vApp.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-ChangeVAppOwner.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2Fowner" class="dashAnchor">PUT /vApp/{id}/owner</a></td>
         <td>Change the owner of a vApp.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-PowerOffVApp.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Fpower%2Faction%2FpowerOff" class="dashAnchor">POST /vApp/{id}/power/action/powerOff</a></td>
         <td>Power off a vApp or VM.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-PowerOnVApp.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Fpower%2Faction%2FpowerOn" class="dashAnchor">POST /vApp/{id}/power/action/powerOn</a></td>
         <td>Power on a vApp or VM.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-RebootVApp.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Fpower%2Faction%2Freboot" class="dashAnchor">POST /vApp/{id}/power/action/reboot</a></td>
         <td>Reboot a vApp or VM.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-ResetVApp.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Fpower%2Faction%2Freset" class="dashAnchor">POST /vApp/{id}/power/action/reset</a></td>
         <td>Reset a vApp or VM.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-ShutdownVApp.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Fpower%2Faction%2Fshutdown" class="dashAnchor">POST /vApp/{id}/power/action/shutdown</a></td>
         <td>Shut down a vApp or VM.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-SuspendVApp.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Fpower%2Faction%2Fsuspend" class="dashAnchor">POST /vApp/{id}/power/action/suspend</a></td>
         <td>Suspend a vApp or VM.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-ProductSections-vApp.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FproductSections" class="dashAnchor">GET /vApp/{id}/productSections</a></td>
         <td>Retrieve a list of ProductSection elements from a vApp template, vApp,
  or VM.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-ProductSections.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2FproductSections" class="dashAnchor">PUT /vApp/{id}/productSections</a></td>
         <td>Update all ProductSection elements in a vApp template, vApp, or VM.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-VmPendingQuestion.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2Fquestion" class="dashAnchor">GET /vApp/{id}/question</a></td>
         <td>Retrieve a question being asked by a VM.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-AnswerVmPendingQuestion.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Fquestion%2Faction%2Fanswer" class="dashAnchor">POST /vApp/{id}/question/action/answer</a></td>
         <td>Answer a question being asked by a VM.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-RuntimeInfoSectionType.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FruntimeInfoSection" class="dashAnchor">GET /vApp/{id}/runtimeInfoSection</a></td>
         <td>Retrieve the runtime info section of a VM.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-Thumbnail.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2Fscreen" class="dashAnchor">GET /vApp/{id}/screen</a></td>
         <td>Retrieves a thumbnail image of a VM console.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-AcquireMksTicket.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Fscreen%2Faction%2FacquireMksTicket" class="dashAnchor">POST /vApp/{id}/screen/action/acquireMksTicket</a></td>
         <td>Retrieve a mks ticket that you can use to gain access to
  the console of a running VM.</td>
         <td>5.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-AcquireTicket.html" name="//apple_ref/cpp/Function/POST%20%2FvApp%2F%7Bid%7D%2Fscreen%2Faction%2FacquireTicket" class="dashAnchor">POST /vApp/{id}/screen/action/acquireTicket</a></td>
         <td>Retrieve a screen ticket that you can use with the VMRC browser plug-in
  to gain access to the console of a running VM.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-SnapshotSection.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FsnapshotSection" class="dashAnchor">GET /vApp/{id}/snapshotSection</a></td>
         <td>Retrieve SnapshotSection element for a vApp or VM.</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-StartupSection.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FstartupSection" class="dashAnchor">GET /vApp/{id}/startupSection</a></td>
         <td>Retrieve the startup section of a vApp.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/PUT-StartupSection.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2FstartupSection" class="dashAnchor">PUT /vApp/{id}/startupSection</a></td>
         <td>Update the startup section of a vApp.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
-        <td nowrap="1"><a href="operations/GET-VirtualHardwareSection.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection" class="dashAnchor">GET /vApp/{id}/virtualHardwareSection</a></td>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-VirtualHardwareSection-vApp.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection" class="dashAnchor">GET /vApp/{id}/virtualHardwareSection</a></td>
         <td>Retrieve the virtual hardware section of a VM.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
-        <td nowrap="1"><a href="operations/PUT-VirtualHardwareSection.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection" class="dashAnchor">PUT /vApp/{id}/virtualHardwareSection</a></td>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-VirtualHardwareSection-vApp.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection" class="dashAnchor">PUT /vApp/{id}/virtualHardwareSection</a></td>
         <td>Update the virtual hardware section of a VM.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
-        <td nowrap="1"><a href="operations/GET-CpuRasdItem.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2Fcpu" class="dashAnchor">GET /vApp/{id}/virtualHardwareSection/cpu</a></td>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-CpuRasdItem-vApp.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2Fcpu" class="dashAnchor">GET /vApp/{id}/virtualHardwareSection/cpu</a></td>
         <td>Retrieve the RASD item that specifies CPU properties of a VM.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
-        <td nowrap="1"><a href="operations/PUT-Cpu.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2Fcpu" class="dashAnchor">PUT /vApp/{id}/virtualHardwareSection/cpu</a></td>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-Cpu-vApp.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2Fcpu" class="dashAnchor">PUT /vApp/{id}/virtualHardwareSection/cpu</a></td>
         <td>Update the RASD item that specifies CPU properties of a VM.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
-        <td nowrap="1"><a href="operations/GET-DisksRasdItemsList.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2Fdisks" class="dashAnchor">GET /vApp/{id}/virtualHardwareSection/disks</a></td>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-DisksRasdItemsList-vApp.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2Fdisks" class="dashAnchor">GET /vApp/{id}/virtualHardwareSection/disks</a></td>
         <td>Retrieve all RASD items that specify hard disk and hard disk
  controller properties of a VM.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
-        <td nowrap="1"><a href="operations/PUT-Disks.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2Fdisks" class="dashAnchor">PUT /vApp/{id}/virtualHardwareSection/disks</a></td>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-Disks-vApp.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2Fdisks" class="dashAnchor">PUT /vApp/{id}/virtualHardwareSection/disks</a></td>
         <td>Update all RASD items that specify hard disk and hard disk
  controller properties of a VM.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
-        <td nowrap="1"><a href="operations/GET-MediaDrivesRasdItemsList.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2Fmedia" class="dashAnchor">GET /vApp/{id}/virtualHardwareSection/media</a></td>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-MediaDrivesRasdItemsList-vApp.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2Fmedia" class="dashAnchor">GET /vApp/{id}/virtualHardwareSection/media</a></td>
         <td>Retrieve all RASD items that specify CD-ROM, DVD, and floppy disk
  device and controller properties of a VM.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
-        <td nowrap="1"><a href="operations/GET-MemoryRasdItem.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2Fmemory" class="dashAnchor">GET /vApp/{id}/virtualHardwareSection/memory</a></td>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-MemoryRasdItem-vApp.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2Fmemory" class="dashAnchor">GET /vApp/{id}/virtualHardwareSection/memory</a></td>
         <td>Retrieve the RASD item that specifies memory properties of a VM.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
-        <td nowrap="1"><a href="operations/PUT-Memory.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2Fmemory" class="dashAnchor">PUT /vApp/{id}/virtualHardwareSection/memory</a></td>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/PUT-Memory-vApp.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2Fmemory" class="dashAnchor">PUT /vApp/{id}/virtualHardwareSection/memory</a></td>
         <td>Update the RASD item that specifies memory properties of a VM.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
-        <td nowrap="1"><a href="operations/GET-NetworkCardsItemsList.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2FnetworkCards" class="dashAnchor">GET /vApp/{id}/virtualHardwareSection/networkCards</a></td>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-NetworkCardsItemsList-vApp.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2FnetworkCards" class="dashAnchor">GET /vApp/{id}/virtualHardwareSection/networkCards</a></td>
         <td>Retrieve all RASD items that specify network card properties of a VM.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
-        <td nowrap="1"><a href="operations/PUT-NetworkCards.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2FnetworkCards" class="dashAnchor">PUT /vApp/{id}/virtualHardwareSection/networkCards</a></td>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/PUT-NetworkCards-vApp.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2FnetworkCards" class="dashAnchor">PUT /vApp/{id}/virtualHardwareSection/networkCards</a></td>
         <td>Update all RASD items that specify network card properties of a VM.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
-        <td nowrap="1"><a href="operations/GET-SerialPortsItemsList.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2FserialPorts" class="dashAnchor">GET /vApp/{id}/virtualHardwareSection/serialPorts</a></td>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-SerialPortsItemsList-vApp.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2FserialPorts" class="dashAnchor">GET /vApp/{id}/virtualHardwareSection/serialPorts</a></td>
         <td>Retrieve all RASD items that specify serial port properties of a VM.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
-        <td nowrap="1"><a href="operations/PUT-SerialPorts.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2FserialPorts" class="dashAnchor">PUT /vApp/{id}/virtualHardwareSection/serialPorts</a></td>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/PUT-SerialPorts-vApp.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2FvirtualHardwareSection%2FserialPorts" class="dashAnchor">PUT /vApp/{id}/virtualHardwareSection/serialPorts</a></td>
         <td>Modifies all RASD items that specify serial port properties of a VM.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-VmCapabilities.html" name="//apple_ref/cpp/Function/GET%20%2FvApp%2F%7Bid%7D%2FvmCapabilities" class="dashAnchor">GET /vApp/{id}/vmCapabilities</a></td>
         <td>Gets {@link VmCapabilitiesType} for the VM identified by id.</td>
         <td/>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-VmCapabilities.html" name="//apple_ref/cpp/Function/PUT%20%2FvApp%2F%7Bid%7D%2FvmCapabilities" class="dashAnchor">PUT /vApp/{id}/vmCapabilities</a></td>
         <td>Updates VM's {@link VmCapabilities}</td>
         <td/>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-VAppTemplate.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplate%2F%7Bid%7D" class="dashAnchor">GET /vAppTemplate/{id}</a></td>
         <td>Retrieve a vApp template.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-VAppTemplate.html" name="//apple_ref/cpp/Function/PUT%20%2FvAppTemplate%2F%7Bid%7D" class="dashAnchor">PUT /vAppTemplate/{id}</a></td>
         <td>Update the name, description and gold master of a vApp template.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/DELETE-VAppTemplate.html" name="//apple_ref/cpp/Function/DELETE%20%2FvAppTemplate%2F%7Bid%7D" class="dashAnchor">DELETE /vAppTemplate/{id}</a></td>
         <td>Delete a vApp template.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-ConsolidateVm-vAppTemplate.html" name="//apple_ref/cpp/Function/POST%20%2FvAppTemplate%2F%7Bid%7D%2Faction%2Fconsolidate" class="dashAnchor">POST /vAppTemplate/{id}/action/consolidate</a></td>
         <td>Consolidate VM snapshots.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-DisableVAppTemplateDownload.html" name="//apple_ref/cpp/Function/POST%20%2FvAppTemplate%2F%7Bid%7D%2Faction%2FdisableDownload" class="dashAnchor">POST /vAppTemplate/{id}/action/disableDownload</a></td>
         <td>Disable a vApp template for download.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-EnableVAppTemplateDownload.html" name="//apple_ref/cpp/Function/POST%20%2FvAppTemplate%2F%7Bid%7D%2Faction%2FenableDownload" class="dashAnchor">POST /vAppTemplate/{id}/action/enableDownload</a></td>
         <td>Enable a vApp template for download</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/POST-RelocateVm-vAppTemplate.html" name="//apple_ref/cpp/Function/POST%20%2FvAppTemplate%2F%7Bid%7D%2Faction%2Frelocate" class="dashAnchor">POST /vAppTemplate/{id}/action/relocate</a></td>
         <td>Relocate a VM to a different datastore.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-VAppTemplateCustomizationSystemSection.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplate%2F%7Bid%7D%2FcustomizationSection" class="dashAnchor">GET /vAppTemplate/{id}/customizationSection</a></td>
         <td>Retrieve the customization section of a vApp template.</td>
         <td>1.0</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-GuestCustomizationSystemSection-vAppTemplate.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplate%2F%7Bid%7D%2FguestCustomizationSection" class="dashAnchor">GET /vAppTemplate/{id}/guestCustomizationSection</a></td>
         <td>Retrieves the guest customization section of a VM.</td>
         <td>1.0</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-GuestCustomizationSection-vAppTemplate.html" name="//apple_ref/cpp/Function/PUT%20%2FvAppTemplate%2F%7Bid%7D%2FguestCustomizationSection" class="dashAnchor">PUT /vAppTemplate/{id}/guestCustomizationSection</a></td>
         <td>Updates the guest customization section of a VM.</td>
         <td>1.0</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-LeaseSettingsSection-vAppTemplate.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplate%2F%7Bid%7D%2FleaseSettingsSection" class="dashAnchor">GET /vAppTemplate/{id}/leaseSettingsSection</a></td>
         <td>Retrieves the lease settings section of a vApp or vApp template</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-LeaseSettingsSection-vAppTemplate.html" name="//apple_ref/cpp/Function/PUT%20%2FvAppTemplate%2F%7Bid%7D%2FleaseSettingsSection" class="dashAnchor">PUT /vAppTemplate/{id}/leaseSettingsSection</a></td>
         <td>Updates the lease settings section of a vApp or vApp template.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-VAppTemplateMetadata.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplate%2F%7Bid%7D%2Fmetadata" class="dashAnchor">GET /vAppTemplate/{id}/metadata</a></td>
         <td>Retrieve metadata associated with the vApp template or VM.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/POST-UpdateVAppTemplateMetadata.html" name="//apple_ref/cpp/Function/POST%20%2FvAppTemplate%2F%7Bid%7D%2Fmetadata" class="dashAnchor">POST /vAppTemplate/{id}/metadata</a></td>
         <td>Merge the metadata provided in the request with existing metadata.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-VAppTemplateMetadataItem-metadata.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplate%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">GET /vAppTemplate/{id}/metadata/{domain}/{key}</a></td>
         <td>Retrieve the value of the specified key in the specified domain from vApp template or VM
  metadata.</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-VAppTemplateMetadataItem-metadata.html" name="//apple_ref/cpp/Function/PUT%20%2FvAppTemplate%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">PUT /vAppTemplate/{id}/metadata/{domain}/{key}</a></td>
         <td>Set the value for the specified metadata key in the specified domain to the value provided,
  overwriting any existing value.</td>
         <td>5.1</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/DELETE-VAppTemplateMetadataItem-metadata.html" name="//apple_ref/cpp/Function/DELETE%20%2FvAppTemplate%2F%7Bid%7D%2Fmetadata%2F%7Bdomain%7D%2F%7Bkey%7D" class="dashAnchor">DELETE /vAppTemplate/{id}/metadata/{domain}/{key}</a></td>
         <td>Delete the specified key in the specified domain and its value from vApp template or VM
  metadata.</td>
         <td>5.1</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-VAppTemplateMetadataItem-metadata.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplate%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">GET /vAppTemplate/{id}/metadata/{key}</a></td>
         <td>Retrieve the value of the specified key from vApp template or VM
  metadata.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/PUT-VAppTemplateMetadataItem-metadata.html" name="//apple_ref/cpp/Function/PUT%20%2FvAppTemplate%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">PUT /vAppTemplate/{id}/metadata/{key}</a></td>
         <td>Set the value for the specified metadata key to the value provided,
  overwriting any existing value.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/DELETE-VAppTemplateMetadataItem-metadata.html" name="//apple_ref/cpp/Function/DELETE%20%2FvAppTemplate%2F%7Bid%7D%2Fmetadata%2F%7Bkey%7D" class="dashAnchor">DELETE /vAppTemplate/{id}/metadata/{key}</a></td>
         <td>Delete the specified key and its value from vApp template or VM
  metadata.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-NetworkConfigSection-vAppTemplate.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplate%2F%7Bid%7D%2FnetworkConfigSection" class="dashAnchor">GET /vAppTemplate/{id}/networkConfigSection</a></td>
         <td>Retrieve the network config section of a vApp or vApp template.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-NetworkConfigSection-vAppTemplate.html" name="//apple_ref/cpp/Function/PUT%20%2FvAppTemplate%2F%7Bid%7D%2FnetworkConfigSection" class="dashAnchor">PUT /vAppTemplate/{id}/networkConfigSection</a></td>
         <td>Update the network config section of a vApp.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-NetworkConnectionSystemSection-vAppTemplate.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplate%2F%7Bid%7D%2FnetworkConnectionSection" class="dashAnchor">GET /vAppTemplate/{id}/networkConnectionSection</a></td>
         <td>Retrieve the network connection section of a VM.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/PUT-NetworkConnectionSystemSection-vAppTemplate.html" name="//apple_ref/cpp/Function/PUT%20%2FvAppTemplate%2F%7Bid%7D%2FnetworkConnectionSection" class="dashAnchor">PUT /vAppTemplate/{id}/networkConnectionSection</a></td>
         <td>Update the network connection section of a VM.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-NetworkSection-vAppTemplate.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplate%2F%7Bid%7D%2FnetworkSection" class="dashAnchor">GET /vAppTemplate/{id}/networkSection</a></td>
         <td>Retrieve the network section of a vApp or vApp template.</td>
         <td>0.9</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-VAppTemplateOvfDescriptor.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplate%2F%7Bid%7D%2Fovf" class="dashAnchor">GET /vAppTemplate/{id}/ovf</a></td>
         <td>Retrieve the OVF descriptor of a vApp template.</td>
         <td>0.9</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-VAppTemplateOwner.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplate%2F%7Bid%7D%2Fowner" class="dashAnchor">GET /vAppTemplate/{id}/owner</a></td>
         <td>Retrieve the owner of a vApp template.</td>
         <td>1.5</td>
     </tr>
-              <tr class="r0">
+          <tr class="r1">
         <td nowrap="1"><a href="operations/GET-ProductSections-vAppTemplate.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplate%2F%7Bid%7D%2FproductSections" class="dashAnchor">GET /vAppTemplate/{id}/productSections</a></td>
         <td>Retrieve a list of ProductSection elements from a vApp template, vApp,
  or VM.</td>
         <td>1.5</td>
     </tr>
-          <tr class="r1">
+              <tr class="r0">
         <td nowrap="1"><a href="operations/GET-ShadowVms.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplate%2F%7Bid%7D%2FshadowVms" class="dashAnchor">GET /vAppTemplate/{id}/shadowVms</a></td>
         <td/>
         <td/>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-VirtualHardwareSection-vAppTemplate.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplate%2F%7Bid%7D%2FvirtualHardwareSection" class="dashAnchor">GET /vAppTemplate/{id}/virtualHardwareSection</a></td>
+        <td>Retrieve the virtual hardware section of a VM.</td>
+        <td>0.9</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-VirtualHardwareSection-vAppTemplate.html" name="//apple_ref/cpp/Function/PUT%20%2FvAppTemplate%2F%7Bid%7D%2FvirtualHardwareSection" class="dashAnchor">PUT /vAppTemplate/{id}/virtualHardwareSection</a></td>
+        <td>Update the virtual hardware section of a VM.</td>
+        <td>0.9</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-CpuRasdItem-vAppTemplate.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplate%2F%7Bid%7D%2FvirtualHardwareSection%2Fcpu" class="dashAnchor">GET /vAppTemplate/{id}/virtualHardwareSection/cpu</a></td>
+        <td>Retrieve the RASD item that specifies CPU properties of a VM.</td>
+        <td>0.9</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-Cpu-vAppTemplate.html" name="//apple_ref/cpp/Function/PUT%20%2FvAppTemplate%2F%7Bid%7D%2FvirtualHardwareSection%2Fcpu" class="dashAnchor">PUT /vAppTemplate/{id}/virtualHardwareSection/cpu</a></td>
+        <td>Update the RASD item that specifies CPU properties of a VM.</td>
+        <td>0.9</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-DisksRasdItemsList-vAppTemplate.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplate%2F%7Bid%7D%2FvirtualHardwareSection%2Fdisks" class="dashAnchor">GET /vAppTemplate/{id}/virtualHardwareSection/disks</a></td>
+        <td>Retrieve all RASD items that specify hard disk and hard disk
+ controller properties of a VM.</td>
+        <td>0.9</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/PUT-Disks-vAppTemplate.html" name="//apple_ref/cpp/Function/PUT%20%2FvAppTemplate%2F%7Bid%7D%2FvirtualHardwareSection%2Fdisks" class="dashAnchor">PUT /vAppTemplate/{id}/virtualHardwareSection/disks</a></td>
+        <td>Update all RASD items that specify hard disk and hard disk
+ controller properties of a VM.</td>
+        <td>0.9</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/GET-MediaDrivesRasdItemsList-vAppTemplate.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplate%2F%7Bid%7D%2FvirtualHardwareSection%2Fmedia" class="dashAnchor">GET /vAppTemplate/{id}/virtualHardwareSection/media</a></td>
+        <td>Retrieve all RASD items that specify CD-ROM, DVD, and floppy disk
+ device and controller properties of a VM.</td>
+        <td>0.9</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-MemoryRasdItem-vAppTemplate.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplate%2F%7Bid%7D%2FvirtualHardwareSection%2Fmemory" class="dashAnchor">GET /vAppTemplate/{id}/virtualHardwareSection/memory</a></td>
+        <td>Retrieve the RASD item that specifies memory properties of a VM.</td>
+        <td>0.9</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/PUT-Memory-vAppTemplate.html" name="//apple_ref/cpp/Function/PUT%20%2FvAppTemplate%2F%7Bid%7D%2FvirtualHardwareSection%2Fmemory" class="dashAnchor">PUT /vAppTemplate/{id}/virtualHardwareSection/memory</a></td>
+        <td>Update the RASD item that specifies memory properties of a VM.</td>
+        <td>0.9</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-NetworkCardsItemsList-vAppTemplate.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplate%2F%7Bid%7D%2FvirtualHardwareSection%2FnetworkCards" class="dashAnchor">GET /vAppTemplate/{id}/virtualHardwareSection/networkCards</a></td>
+        <td>Retrieve all RASD items that specify network card properties of a VM.</td>
+        <td>0.9</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/PUT-NetworkCards-vAppTemplate.html" name="//apple_ref/cpp/Function/PUT%20%2FvAppTemplate%2F%7Bid%7D%2FvirtualHardwareSection%2FnetworkCards" class="dashAnchor">PUT /vAppTemplate/{id}/virtualHardwareSection/networkCards</a></td>
+        <td>Update all RASD items that specify network card properties of a VM.</td>
+        <td>0.9</td>
+    </tr>
+              <tr class="r0">
+        <td nowrap="1"><a href="operations/GET-SerialPortsItemsList-vAppTemplate.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplate%2F%7Bid%7D%2FvirtualHardwareSection%2FserialPorts" class="dashAnchor">GET /vAppTemplate/{id}/virtualHardwareSection/serialPorts</a></td>
+        <td>Retrieve all RASD items that specify serial port properties of a VM.</td>
+        <td>1.5</td>
+    </tr>
+          <tr class="r1">
+        <td nowrap="1"><a href="operations/PUT-SerialPorts-vAppTemplate.html" name="//apple_ref/cpp/Function/PUT%20%2FvAppTemplate%2F%7Bid%7D%2FvirtualHardwareSection%2FserialPorts" class="dashAnchor">PUT /vAppTemplate/{id}/virtualHardwareSection/serialPorts</a></td>
+        <td>Modifies all RASD items that specify serial port properties of a VM.</td>
+        <td>1.5</td>
     </tr>
               <tr class="r0">
         <td nowrap="1"><a href="operations/GET-VAppTemplatesFromQuery.html" name="//apple_ref/cpp/Function/GET%20%2FvAppTemplates%2Fquery" class="dashAnchor">GET /vAppTemplates/query</a></td>
@@ -1191,6 +1289,7 @@
   </table>
 
 <br/>
+
 <br/>
 <br/>
 </body>

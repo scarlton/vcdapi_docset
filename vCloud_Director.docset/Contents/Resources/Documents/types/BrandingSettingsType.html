@@ -27,7 +27,7 @@
     <dt>Since:</dt>
     <dd>1.5</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/extension/settings.xsd">settings.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/settings.xsd">settings.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.brandingSettings+xml<br/></dd>
     <dt>Extends:</dt>
@@ -102,35 +102,21 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="AboutCompanyUrl"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>AboutCompanyUrl</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>1.5</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="Link"/>
-                    <tr class="r0">
-                <td>Link</td>
-                <td><a href="../types/LinkType.html">LinkType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                A reference to an entity or operation associated
-                                with this object.
+                                A URL to a site that provides additional
+                                information about your company.
                             </td>
             </tr>
-                              <a name="CompanyName"/>
-                    <tr class="r1">
+                                      <a name="CompanyName"/>
+                    <tr class="r0">
                 <td>CompanyName</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>Yes</td>
@@ -140,43 +126,6 @@
                 <td>
                                 Text to display in the vCloud Director Web
                                 console header and footer.
-                            </td>
-            </tr>
-                                      <a name="LoginPageCustomizationTheme"/>
-                    <tr class="r0">
-                <td>LoginPageCustomizationTheme</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#hexBinary">hexBinary</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Allows setting a login page custom theme. See the online help for more information.
-                            </td>
-            </tr>
-                              <a name="Theme"/>
-                    <tr class="r1">
-                <td>Theme</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td>5.1</td>
-                <td>
-                                Deprecated. Use PreviewCustomTheme and
-                                FinalCustomTheme instead.
-                            </td>
-            </tr>
-                                      <a name="PreviewCustomTheme"/>
-                    <tr class="r0">
-                <td>PreviewCustomTheme</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#hexBinary">hexBinary</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Allows setting a custom theme. See the online help for more information.
                             </td>
             </tr>
                               <a name="FinalCustomTheme"/>
@@ -193,32 +142,57 @@
                                 theme.
                             </td>
             </tr>
-                                      <a name="AboutCompanyUrl"/>
+                                      <a name="ForgotUserNameOrPasswordURL"/>
                     <tr class="r0">
-                <td>AboutCompanyUrl</td>
+                <td>ForgotUserNameOrPasswordURL</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>1.5</td>
                 <td/>
                 <td>
-                                A URL to a site that provides additional
-                                information about your company.
+                                A URL to a site that allows a user of your
+                                company's vCloud Director service to
+                                recover a forgotten user name or password.
+                                This URL will be used for the Forgot Password
+                                link on the vCloud Director Web console Login page.
+                               </td>
+            </tr>
+                              <a name="Link"/>
+                    <tr class="r1">
+                <td>Link</td>
+                <td><a href="../types/LinkType.html">LinkType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                A reference to an entity or operation associated
+                                with this object.
                             </td>
             </tr>
-                              <a name="SupportUrl"/>
-                    <tr class="r1">
-                <td>SupportUrl</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                                      <a name="LoginPageCustomizationTheme"/>
+                    <tr class="r0">
+                <td>LoginPageCustomizationTheme</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#hexBinary">hexBinary</a></td>
                 <td>No</td>
                 <td>always</td>
-                <td>1.5</td>
+                <td>5.1</td>
                 <td/>
                 <td>
-                                A URL to a site that provides support
-                                information from your company. This URL will be
-                                used for the Support link in the the vCloud
-                                Director Web console Help menu.
+                                Allows setting a login page custom theme. See the online help for more information.
+                            </td>
+            </tr>
+                              <a name="PreviewCustomTheme"/>
+                    <tr class="r1">
+                <td>PreviewCustomTheme</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#hexBinary">hexBinary</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Allows setting a custom theme. See the online help for more information.
                             </td>
             </tr>
                                       <a name="SignUpUrl"/>
@@ -236,21 +210,47 @@
                                 link on the vCloud Director Web console Login page.
                             </td>
             </tr>
-                              <a name="ForgotUserNameOrPasswordURL"/>
+                              <a name="SupportUrl"/>
                     <tr class="r1">
-                <td>ForgotUserNameOrPasswordURL</td>
+                <td>SupportUrl</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>1.5</td>
                 <td/>
                 <td>
-                                A URL to a site that allows a user of your
-                                company's vCloud Director service to
-                                recover a forgotten user name or password.
-                                This URL will be used for the Forgot Password
-                                link on the vCloud Director Web console Login page.
-                               </td>
+                                A URL to a site that provides support
+                                information from your company. This URL will be
+                                used for the Support link in the the vCloud
+                                Director Web console Help menu.
+                            </td>
+            </tr>
+                                      <a name="Theme"/>
+                    <tr class="r0">
+                <td>Theme</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.5</td>
+                <td>5.1</td>
+                <td>
+                                Deprecated. Use PreviewCustomTheme and
+                                FinalCustomTheme instead.
+                            </td>
+            </tr>
+                              <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                   </table>
     </dd>
@@ -288,6 +288,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

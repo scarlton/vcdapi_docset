@@ -27,7 +27,7 @@
     <dt>Since:</dt>
     <dd>5.1</dd>
         <dt>Schema:</dt>
-    <dd><a href="file:///build/mts/release/bora-1323688/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
+    <dd><a href="file:///build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.updateProviderVdcStorageProfiles+xml<br/></dd>
     <dt>Extends:</dt>
@@ -84,19 +84,17 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="AddStorageProfile"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>AddStorageProfile</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>5.1</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
+                                Name of the storage profile to add to the Provider vDC.
+                            </td>
             </tr>
                                       <a name="Description"/>
                     <tr class="r0">
@@ -110,20 +108,8 @@
                                 Optional description.
                             </td>
             </tr>
-                              <a name="AddStorageProfile"/>
+                              <a name="RemoveStorageProfile"/>
                     <tr class="r1">
-                <td>AddStorageProfile</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Name of the storage profile to add to the Provider vDC.
-                            </td>
-            </tr>
-                                      <a name="RemoveStorageProfile"/>
-                    <tr class="r0">
                 <td>RemoveStorageProfile</td>
                 <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
                 <td>No</td>
@@ -133,6 +119,20 @@
                 <td>
                                 A reference to the Provider vDC storage profile to remove from the Provider vDC.
                             </td>
+            </tr>
+                                      <a name="VCloudExtension"/>
+                    <tr class="r0">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                   </table>
     </dd>
@@ -163,6 +163,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>5.1</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/extension/services.xsd">services.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/services.xsd">services.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.resourceClass+xml<br/></dd>
     <dt>Extends:</dt>
@@ -254,19 +254,17 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="Description"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>Description</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>5.1</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
+                                Optional description.
+                            </td>
             </tr>
                                       <a name="Link"/>
                     <tr class="r0">
@@ -281,31 +279,6 @@
                                 with this object.
                             </td>
             </tr>
-                              <a name="Description"/>
-                    <tr class="r1">
-                <td>Description</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Optional description.
-                            </td>
-            </tr>
-                                      <a name="Tasks"/>
-                    <tr class="r0">
-                <td>Tasks</td>
-                <td><a href="../types/TasksInProgressType.html">TasksInProgressType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                A list of queued, running, or recently
-                                completed tasks associated with this entity.
-                            </td>
-            </tr>
                               <a name="MimeType"/>
                     <tr class="r1">
                 <td>MimeType</td>
@@ -318,6 +291,57 @@
                                 The MIME type for extension service resources
                                 of this resource class. Must be 
             </td></tr>
+                                      <a name="Nid"/>
+                    <tr class="r0">
+                <td>Nid</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                               The Namespace Identifier for resources of this
+                               type, as specified in RFC2141. Must be 
+            </td></tr>
+                              <a name="ResourceClassActions"/>
+                    <tr class="r1">
+                <td>ResourceClassActions</td>
+                <td><a href="../types/ResourceClassActionsType.html">ResourceClassActionsType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                               Container for values used to create resource
+                               class actions defined for this resource class.
+                            </td>
+            </tr>
+                                      <a name="ServiceResources"/>
+                    <tr class="r0">
+                <td>ServiceResources</td>
+                <td><a href="../types/ServiceResourcesType.html">ServiceResourcesType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                               Container for values used to create service
+                               resources defined by this extension service.
+                            </td>
+            </tr>
+                              <a name="Tasks"/>
+                    <tr class="r1">
+                <td>Tasks</td>
+                <td><a href="../types/TasksInProgressType.html">TasksInProgressType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                A list of queued, running, or recently
+                                completed tasks associated with this entity.
+                            </td>
+            </tr>
                                       <a name="UrlTemplate"/>
                     <tr class="r0">
                 <td>UrlTemplate</td>
@@ -336,20 +360,8 @@
                                {resourceId} the UUID portion of the resource
                                id. Must be 
             </td></tr>
-                              <a name="Nid"/>
+                              <a name="UrnPattern"/>
                     <tr class="r1">
-                <td>Nid</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                               The Namespace Identifier for resources of this
-                               type, as specified in RFC2141. Must be 
-            </td></tr>
-                                      <a name="UrnPattern"/>
-                    <tr class="r0">
                 <td>UrnPattern</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
@@ -363,31 +375,19 @@
                                (?&amp;ltid&amp;gt) matches the resource identifier.
                                Must be 
             </td></tr>
-                              <a name="ServiceResources"/>
-                    <tr class="r1">
-                <td>ServiceResources</td>
-                <td><a href="../types/ServiceResourcesType.html">ServiceResourcesType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                               Container for values used to create service
-                               resources defined by this extension service.
-                            </td>
-            </tr>
-                                      <a name="ResourceClassActions"/>
+                                      <a name="VCloudExtension"/>
                     <tr class="r0">
-                <td>ResourceClassActions</td>
-                <td><a href="../types/ResourceClassActionsType.html">ResourceClassActionsType</a></td>
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>5.1</td>
                 <td/>
                 <td>
-                               Container for values used to create resource
-                               class actions defined for this resource class.
-                            </td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                   </table>
     </dd>
@@ -432,6 +432,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

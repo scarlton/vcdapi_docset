@@ -23,7 +23,7 @@ ITEM_PIPELINES = {
 
 
 DOMAIN = "http://pubs.vmware.com"
-BASE_PATH = "/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/"
+BASE_PATH = "/vcd-56/topic/com.vmware.vcloud.api.reference.doc_56/doc/"
 INITIAL_REFERRER = DOMAIN + BASE_PATH + "index.html"
 
 DOCSET_DB_PATH = 'vCloud_Director.docset/Contents/Resources'

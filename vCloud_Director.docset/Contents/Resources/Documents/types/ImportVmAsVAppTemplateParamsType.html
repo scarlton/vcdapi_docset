@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>1.0</dd>
         <dt>Schema:</dt>
-    <dd><a href="file:///build/mts/release/bora-1323688/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
+    <dd><a href="file:///build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.importVmAsVAppTemplateParams+xml<br/></dd>
     <dt>Extends:</dt>
@@ -113,22 +113,33 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="Catalog"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>Catalog</td>
+                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>1.0</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
+                                Catalog in which the imported vApp template
+                                will be listed.
+                            </td>
             </tr>
-                                      <a name="Description"/>
+                                      <a name="ComputerName"/>
                     <tr class="r0">
+                <td>ComputerName</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                Computer name to be used for imported VM.
+                            </td>
+            </tr>
+                              <a name="Description"/>
+                    <tr class="r1">
                 <td>Description</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
@@ -137,18 +148,6 @@
                 <td/>
                 <td>
                                 Optional description.
-                            </td>
-            </tr>
-                              <a name="VmName"/>
-                    <tr class="r1">
-                <td>VmName</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                Name to be used for imported VM.
                             </td>
             </tr>
                                       <a name="VAppScopedLocalId"/>
@@ -163,16 +162,42 @@
                                 vApp scoped local id to be used for imported VM.
                             </td>
             </tr>
-                              <a name="ComputerName"/>
+                              <a name="VCloudExtension"/>
                     <tr class="r1">
-                <td>ComputerName</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>1.0</td>
                 <td/>
                 <td>
-                                Computer name to be used for imported VM.
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
+                                      <a name="Vdc"/>
+                    <tr class="r0">
+                <td>Vdc</td>
+                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                Target vDC for imported vApp template.
+                            </td>
+            </tr>
+                              <a name="VdcStorageProfile"/>
+                    <tr class="r1">
+                <td>VdcStorageProfile</td>
+                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Storage profile to be specified in the vApp template created by this import.
                             </td>
             </tr>
                                       <a name="VmMoRef"/>
@@ -187,41 +212,16 @@
                                 Managed object reference of VM to import.
                             </td>
             </tr>
-                              <a name="Vdc"/>
+                              <a name="VmName"/>
                     <tr class="r1">
-                <td>Vdc</td>
-                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                Target vDC for imported vApp template.
-                            </td>
-            </tr>
-                                      <a name="VdcStorageProfile"/>
-                    <tr class="r0">
-                <td>VdcStorageProfile</td>
-                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                Storage profile to be specified in the vApp template created by this import.
-                            </td>
-            </tr>
-                              <a name="Catalog"/>
-                    <tr class="r1">
-                <td>Catalog</td>
-                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
+                <td>VmName</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>1.0</td>
                 <td/>
                 <td>
-                                Catalog in which the imported vApp template
-                                will be listed.
+                                Name to be used for imported VM.
                             </td>
             </tr>
                   </table>
@@ -253,6 +253,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>1.5</dd>
         <dt>Schema:</dt>
-    <dd><a href="file:///build/mts/release/bora-1323688/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
+    <dd><a href="file:///build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.importMediaParams+xml<br/></dd>
     <dt>Extends:</dt>
@@ -99,34 +99,21 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="Catalog"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>Catalog</td>
+                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
                 <td>No</td>
                 <td>always</td>
-                <td>1.5</td>
+                <td>1.0</td>
                 <td/>
                 <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="Description"/>
-                    <tr class="r0">
-                <td>Description</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                Optional description.
+                                The catalog in which the imported media will be
+                                listed.
                             </td>
             </tr>
-                              <a name="DatastoreMoRef"/>
-                    <tr class="r1">
+                                      <a name="DatastoreMoRef"/>
+                    <tr class="r0">
                 <td>DatastoreMoRef</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>Yes</td>
@@ -135,6 +122,18 @@
                 <td/>
                 <td>
                                 Managed object reference of the datastore from which media file will be imported.
+                            </td>
+            </tr>
+                              <a name="Description"/>
+                    <tr class="r1">
+                <td>Description</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                Optional description.
                             </td>
             </tr>
                                       <a name="SourcePath"/>
@@ -149,8 +148,22 @@
                                 A full path to media file on the datastore.
                             </td>
             </tr>
-                              <a name="Vdc"/>
+                              <a name="VCloudExtension"/>
                     <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.5</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
+                                      <a name="Vdc"/>
+                    <tr class="r0">
                 <td>Vdc</td>
                 <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
                 <td>Yes</td>
@@ -159,19 +172,6 @@
                 <td/>
                 <td>
                                 The vDC into which the media will be imported.
-                            </td>
-            </tr>
-                                      <a name="Catalog"/>
-                    <tr class="r0">
-                <td>Catalog</td>
-                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                The catalog in which the imported media will be
-                                listed.
                             </td>
             </tr>
                               <a name="VdcStorageProfile"/>
@@ -215,6 +215,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

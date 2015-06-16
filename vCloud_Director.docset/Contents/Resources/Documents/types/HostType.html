@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>1.0</dd>
         <dt>Schema:</dt>
-    <dd><a href="file:///build/mts/release/bora-1323688/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
+    <dd><a href="file:///build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.host+xml<br/></dd>
     <dt>Extends:</dt>
@@ -169,72 +169,8 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="Available"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="Link"/>
-                    <tr class="r0">
-                <td>Link</td>
-                <td><a href="../types/LinkType.html">LinkType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                A reference to an entity or operation associated
-                                with this object.
-                            </td>
-            </tr>
-                              <a name="Description"/>
-                    <tr class="r1">
-                <td>Description</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                Optional description.
-                            </td>
-            </tr>
-                                      <a name="Tasks"/>
-                    <tr class="r0">
-                <td>Tasks</td>
-                <td><a href="../types/TasksInProgressType.html">TasksInProgressType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                A list of queued, running, or recently
-                                completed tasks associated with this entity.
-                            </td>
-            </tr>
-                              <a name="Ready"/>
-                    <tr class="r1">
-                <td>Ready</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>Yes</td>
-                <td>none</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                Indicates whether the host is ready for use.
-                            </td>
-            </tr>
-                                      <a name="Available"/>
-                    <tr class="r0">
                 <td>Available</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
                 <td>Yes</td>
@@ -243,18 +179,6 @@
                 <td/>
                 <td>
                                 Indicates whether the host is available.
-                            </td>
-            </tr>
-                              <a name="Enabled"/>
-                    <tr class="r1">
-                <td>Enabled</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
-                <td>Yes</td>
-                <td>none</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                Indicated whether the host is enabled for use.
                             </td>
             </tr>
                                       <a name="Busy"/>
@@ -269,17 +193,16 @@
                                 Indicates whether the host is busy.
                             </td>
             </tr>
-                              <a name="EnableHostForHostSpanning"/>
+                              <a name="CpuTotal"/>
                     <tr class="r1">
-                <td>EnableHostForHostSpanning</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>CpuTotal</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#long">long</a></td>
                 <td>Yes</td>
                 <td>none</td>
                 <td>1.0</td>
                 <td/>
                 <td>
-                                Indicates whether the host is enabled for host
-                                spanning.
+                                The total CPU power measured in MHz.
                             </td>
             </tr>
                                       <a name="CpuType"/>
@@ -294,64 +217,41 @@
                                 The CPU type of the host.
                             </td>
             </tr>
-                              <a name="NumOfCpusPackages"/>
+                              <a name="Description"/>
                     <tr class="r1">
-                <td>NumOfCpusPackages</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
-                <td>Yes</td>
-                <td>none</td>
+                <td>Description</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
                 <td>1.0</td>
                 <td/>
                 <td>
-                                How many hardware CPUs the host has.
+                                Optional description.
                             </td>
             </tr>
-                                      <a name="NumOfCpusLogical"/>
+                                      <a name="EnableHostForHostSpanning"/>
                     <tr class="r0">
-                <td>NumOfCpusLogical</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>EnableHostForHostSpanning</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
                 <td>Yes</td>
                 <td>none</td>
                 <td>1.0</td>
                 <td/>
                 <td>
-                                How many logical CPUs the host has.
+                                Indicates whether the host is enabled for host
+                                spanning.
                             </td>
             </tr>
-                              <a name="CpuTotal"/>
+                              <a name="Enabled"/>
                     <tr class="r1">
-                <td>CpuTotal</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#long">long</a></td>
+                <td>Enabled</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
                 <td>Yes</td>
                 <td>none</td>
                 <td>1.0</td>
                 <td/>
                 <td>
-                                The total CPU power measured in MHz.
-                            </td>
-            </tr>
-                                      <a name="MemUsed"/>
-                    <tr class="r0">
-                <td>MemUsed</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#double">double</a></td>
-                <td>Yes</td>
-                <td>none</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                The used memory in the host.
-                            </td>
-            </tr>
-                              <a name="MemTotal"/>
-                    <tr class="r1">
-                <td>MemTotal</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#double">double</a></td>
-                <td>Yes</td>
-                <td>none</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                The total memory in the host.
+                                Indicated whether the host is enabled for use.
                             </td>
             </tr>
                                       <a name="HostOsName"/>
@@ -378,6 +278,79 @@
                                 OS version of the host.
                             </td>
             </tr>
+                                      <a name="Link"/>
+                    <tr class="r0">
+                <td>Link</td>
+                <td><a href="../types/LinkType.html">LinkType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                A reference to an entity or operation associated
+                                with this object.
+                            </td>
+            </tr>
+                              <a name="MemTotal"/>
+                    <tr class="r1">
+                <td>MemTotal</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#double">double</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                The total memory in the host.
+                            </td>
+            </tr>
+                                      <a name="MemUsed"/>
+                    <tr class="r0">
+                <td>MemUsed</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#double">double</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                The used memory in the host.
+                            </td>
+            </tr>
+                              <a name="NumOfCpusLogical"/>
+                    <tr class="r1">
+                <td>NumOfCpusLogical</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                How many logical CPUs the host has.
+                            </td>
+            </tr>
+                                      <a name="NumOfCpusPackages"/>
+                    <tr class="r0">
+                <td>NumOfCpusPackages</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                How many hardware CPUs the host has.
+                            </td>
+            </tr>
+                              <a name="Ready"/>
+                    <tr class="r1">
+                <td>Ready</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>Yes</td>
+                <td>none</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                Indicates whether the host is ready for use.
+                            </td>
+            </tr>
                                       <a name="SystemMessages"/>
                     <tr class="r0">
                 <td>SystemMessages</td>
@@ -389,6 +362,33 @@
                 <td>
                                 System messages of the host.
                             </td>
+            </tr>
+                              <a name="Tasks"/>
+                    <tr class="r1">
+                <td>Tasks</td>
+                <td><a href="../types/TasksInProgressType.html">TasksInProgressType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                A list of queued, running, or recently
+                                completed tasks associated with this entity.
+                            </td>
+            </tr>
+                                      <a name="VCloudExtension"/>
+                    <tr class="r0">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                               <a name="VimPropertyPageUrl"/>
                     <tr class="r1">
@@ -443,6 +443,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>5.1</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/vendorServices.xsd">vendorServices.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/vendorServices.xsd">vendorServices.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -55,30 +55,28 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="Category"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="Name"/>
-                    <tr class="r0">
-                <td>Name</td>
+                <td>Category</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>Yes</td>
                 <td>none</td>
                 <td>5.1</td>
                 <td/>
                 <td>
-                                Name of the network service that has been inserted. This is required.
+                                Category of the network service that has been inserted. Allowed values are 'VDS' and 'EDGE'
+                            </td>
+            </tr>
+                                      <a name="CategoryType"/>
+                    <tr class="r0">
+                <td>CategoryType</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                Category type of the network service. This is optional.
                             </td>
             </tr>
                               <a name="Id"/>
@@ -93,29 +91,31 @@
                                 ID of the network service that has been inserted. This is required.
                             </td>
             </tr>
-                                      <a name="Category"/>
+                                      <a name="Name"/>
                     <tr class="r0">
-                <td>Category</td>
+                <td>Name</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>Yes</td>
                 <td>none</td>
                 <td>5.1</td>
                 <td/>
                 <td>
-                                Category of the network service that has been inserted. Allowed values are 'VDS' and 'EDGE'
+                                Name of the network service that has been inserted. This is required.
                             </td>
             </tr>
-                              <a name="CategoryType"/>
+                              <a name="VCloudExtension"/>
                     <tr class="r1">
-                <td>CategoryType</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
                 <td>No</td>
-                <td>none</td>
+                <td>always</td>
                 <td>5.1</td>
                 <td/>
                 <td>
-                                Category type of the network service. This is optional.
-                            </td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                   </table>
     </dd>
@@ -125,6 +125,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

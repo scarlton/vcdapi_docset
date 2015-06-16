@@ -24,7 +24,7 @@
     <dt>Since:</dt>
     <dd>1.5</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/extension/settings.xsd">settings.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/settings.xsd">settings.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -96,22 +96,8 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="Link"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.5</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="Link"/>
-                    <tr class="r0">
                 <td>Link</td>
                 <td><a href="../types/LinkType.html">LinkType</a></td>
                 <td>No</td>
@@ -121,6 +107,42 @@
                 <td>
                                 A reference to an entity or operation associated
                                 with this object.
+                            </td>
+            </tr>
+                                      <a name="Password"/>
+                    <tr class="r0">
+                <td>Password</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td/>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                SMTP admin password. 128 characters or less.
+                            </td>
+            </tr>
+                              <a name="SmtpServerName"/>
+                    <tr class="r1">
+                <td>SmtpServerName</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td/>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                SMTP server hostname.
+                            </td>
+            </tr>
+                                      <a name="SmtpServerPort"/>
+                    <tr class="r0">
+                <td>SmtpServerPort</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>No</td>
+                <td/>
+                <td>1.5</td>
+                <td/>
+                <td>
+                                SMTP server port.
                             </td>
             </tr>
                               <a name="UseAuthentication"/>
@@ -136,29 +158,31 @@
                                 flag is set to true, caller must provide user name and password.
                             </td>
             </tr>
-                                      <a name="SmtpServerName"/>
+                                      <a name="UserName"/>
                     <tr class="r0">
-                <td>SmtpServerName</td>
+                <td>UserName</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
                 <td/>
                 <td>1.5</td>
                 <td/>
                 <td>
-                                SMTP server hostname.
+                                SMTP admin user name. 128 characters or less.
                             </td>
             </tr>
-                              <a name="SmtpServerPort"/>
+                              <a name="VCloudExtension"/>
                     <tr class="r1">
-                <td>SmtpServerPort</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
                 <td>No</td>
-                <td/>
+                <td>always</td>
                 <td>1.5</td>
                 <td/>
                 <td>
-                                SMTP server port.
-                            </td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                                       <a name="ssl"/>
                     <tr class="r0">
@@ -173,30 +197,6 @@
                                 connection.
                             </td>
             </tr>
-                              <a name="UserName"/>
-                    <tr class="r1">
-                <td>UserName</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td/>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                SMTP admin user name. 128 characters or less.
-                            </td>
-            </tr>
-                                      <a name="Password"/>
-                    <tr class="r0">
-                <td>Password</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td/>
-                <td>1.5</td>
-                <td/>
-                <td>
-                                SMTP admin password. 128 characters or less.
-                            </td>
-            </tr>
                   </table>
     </dd>
     
@@ -205,6 +205,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

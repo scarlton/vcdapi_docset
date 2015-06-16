@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>0.9</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/vApp.xsd">vApp.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/vApp.xsd">vApp.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.vcloud.vApp+xml<br/></dd>
     <dt>Extends:</dt>
@@ -295,94 +295,17 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="Children"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="Link"/>
-                    <tr class="r0">
-                <td>Link</td>
-                <td><a href="../types/LinkType.html">LinkType</a></td>
+                <td>Children</td>
+                <td><a href="../types/VAppChildrenType.html">VAppChildrenType</a></td>
                 <td>No</td>
                 <td>none</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                                A reference to an entity or operation associated
-                                with this object.
-                            </td>
-            </tr>
-                              <a name="Description"/>
-                    <tr class="r1">
-                <td>Description</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                Optional description.
-                            </td>
-            </tr>
-                                      <a name="Tasks"/>
-                    <tr class="r0">
-                <td>Tasks</td>
-                <td><a href="../types/TasksInProgressType.html">TasksInProgressType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                A list of queued, running, or recently
-                                completed tasks associated with this entity.
-                            </td>
-            </tr>
-                              <a name="Files"/>
-                    <tr class="r1">
-                <td>Files</td>
-                <td><a href="../types/FilesListType.html">FilesListType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                Represents a list of files to be transferred
-                                (uploaded or downloaded). Each File in the list
-                                is part of the ResourceEntity.
-                            </td>
-            </tr>
-                                      <a name="VAppParent"/>
-                    <tr class="r0">
-                <td>VAppParent</td>
-                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                Reserved. Unimplemented.
-                            </td>
-            </tr>
-                              <a name="Section"/>
-                    <tr class="r1">
-                <td>Section</td>
-                <td><a href="http://schemas.dmtf.org/ovf/envelope/1">Section_Type</a></td>
-                <td>No</td>
-                <td/>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                An OVF Section with additional custom attributes.
+                                Container for virtual machines included in this
+                                vApp.
                             </td>
             </tr>
                                       <a name="DateCreated"/>
@@ -397,6 +320,58 @@
                                  Creation date/time of the vApp.
                              </td>
             </tr>
+                              <a name="Description"/>
+                    <tr class="r1">
+                <td>Description</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                Optional description.
+                            </td>
+            </tr>
+                                      <a name="Files"/>
+                    <tr class="r0">
+                <td>Files</td>
+                <td><a href="../types/FilesListType.html">FilesListType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                Represents a list of files to be transferred
+                                (uploaded or downloaded). Each File in the list
+                                is part of the ResourceEntity.
+                            </td>
+            </tr>
+                              <a name="InMaintenanceMode"/>
+                    <tr class="r1">
+                <td>InMaintenanceMode</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td/>
+                <td>0.9</td>
+                <td/>
+                <td>
+                             True if this vApp is in maintenance mode. Prevents
+                             users from changing vApp metadata.
+                          </td>
+            </tr>
+                                      <a name="Link"/>
+                    <tr class="r0">
+                <td>Link</td>
+                <td><a href="../types/LinkType.html">LinkType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                A reference to an entity or operation associated
+                                with this object.
+                            </td>
+            </tr>
                               <a name="Owner"/>
                     <tr class="r1">
                 <td>Owner</td>
@@ -409,31 +384,56 @@
                                 vApp owner.
                             </td>
             </tr>
-                                      <a name="InMaintenanceMode"/>
+                                      <a name="Section"/>
                     <tr class="r0">
-                <td>InMaintenanceMode</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>Section</td>
+                <td><a href="http://schemas.dmtf.org/ovf/envelope/1">Section_Type</a></td>
                 <td>No</td>
                 <td/>
                 <td>0.9</td>
                 <td/>
                 <td>
-                             True if this vApp is in maintenance mode. Prevents
-                             users from changing vApp metadata.
-                          </td>
+                                An OVF Section with additional custom attributes.
+                            </td>
             </tr>
-                              <a name="Children"/>
+                              <a name="Tasks"/>
                     <tr class="r1">
-                <td>Children</td>
-                <td><a href="../types/VAppChildrenType.html">VAppChildrenType</a></td>
+                <td>Tasks</td>
+                <td><a href="../types/TasksInProgressType.html">TasksInProgressType</a></td>
                 <td>No</td>
                 <td>none</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                                Container for virtual machines included in this
-                                vApp.
+                                A list of queued, running, or recently
+                                completed tasks associated with this entity.
                             </td>
+            </tr>
+                                      <a name="VAppParent"/>
+                    <tr class="r0">
+                <td>VAppParent</td>
+                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                Reserved. Unimplemented.
+                            </td>
+            </tr>
+                              <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
             </tr>
                   </table>
     </dd>
@@ -499,6 +499,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

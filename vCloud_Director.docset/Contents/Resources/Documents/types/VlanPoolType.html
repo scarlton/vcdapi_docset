@@ -24,7 +24,7 @@
     <dt>Since:</dt>
     <dd>1.0</dd>
         <dt>Schema:</dt>
-    <dd><a href="file:///build/mts/release/bora-1323688/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
+    <dd><a href="file:///build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -201,34 +201,7 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
-                    <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="Link"/>
-                    <tr class="r0">
-                <td>Link</td>
-                <td><a href="../types/LinkType.html">LinkType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                A reference to an entity or operation associated
-                                with this object.
-                            </td>
-            </tr>
-                              <a name="Description"/>
+                      <a name="Description"/>
                     <tr class="r1">
                 <td>Description</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
@@ -240,21 +213,8 @@
                                 Optional description.
                             </td>
             </tr>
-                                      <a name="Tasks"/>
+                                      <a name="Files"/>
                     <tr class="r0">
-                <td>Tasks</td>
-                <td><a href="../types/TasksInProgressType.html">TasksInProgressType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                A list of queued, running, or recently
-                                completed tasks associated with this entity.
-                            </td>
-            </tr>
-                              <a name="Files"/>
-                    <tr class="r1">
                 <td>Files</td>
                 <td><a href="../types/FilesListType.html">FilesListType</a></td>
                 <td>No</td>
@@ -267,28 +227,42 @@
                                 is part of the ResourceEntity.
                             </td>
             </tr>
-                                      <a name="VlanRange"/>
-                    <tr class="r0">
-                <td>VlanRange</td>
-                <td><a href="../types/NumericRangeType.html">NumericRangeType</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>1.0</td>
-                <td/>
-                <td>
-                                VLAN range used for this pool.
-                            </td>
-            </tr>
-                              <a name="VimSwitchRef"/>
+                              <a name="Link"/>
                     <tr class="r1">
-                <td>VimSwitchRef</td>
-                <td><a href="../types/VimObjectRefType.html">VimObjectRefType</a></td>
+                <td>Link</td>
+                <td><a href="../types/LinkType.html">LinkType</a></td>
                 <td>No</td>
                 <td>none</td>
                 <td>1.0</td>
                 <td/>
                 <td>
-                                Reference to the vSphere switch which is used for this pool.
+                                A reference to an entity or operation associated
+                                with this object.
+                            </td>
+            </tr>
+                                      <a name="PromiscuousMode"/>
+                    <tr class="r0">
+                <td>PromiscuousMode</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>No</td>
+                <td/>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                Internal use only.
+                            </td>
+            </tr>
+                              <a name="Tasks"/>
+                    <tr class="r1">
+                <td>Tasks</td>
+                <td><a href="../types/TasksInProgressType.html">TasksInProgressType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                A list of queued, running, or recently
+                                completed tasks associated with this entity.
                             </td>
             </tr>
                                       <a name="UsedNetworksCount"/>
@@ -303,16 +277,42 @@
                                 This is a read-only indication of how many networks in this pool are in use.
                             </td>
             </tr>
-                              <a name="PromiscuousMode"/>
+                              <a name="VCloudExtension"/>
                     <tr class="r1">
-                <td>PromiscuousMode</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
                 <td>No</td>
-                <td/>
+                <td>always</td>
                 <td>1.0</td>
                 <td/>
                 <td>
-                                Internal use only.
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
+                                      <a name="VimSwitchRef"/>
+                    <tr class="r0">
+                <td>VimSwitchRef</td>
+                <td><a href="../types/VimObjectRefType.html">VimObjectRefType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                Reference to the vSphere switch which is used for this pool.
+                            </td>
+            </tr>
+                              <a name="VlanRange"/>
+                    <tr class="r1">
+                <td>VlanRange</td>
+                <td><a href="../types/NumericRangeType.html">NumericRangeType</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>1.0</td>
+                <td/>
+                <td>
+                                VLAN range used for this pool.
                             </td>
             </tr>
                   </table>
@@ -323,6 +323,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

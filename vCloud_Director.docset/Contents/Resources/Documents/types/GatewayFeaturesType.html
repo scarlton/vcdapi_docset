@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>5.1</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/network.xsd">network.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/network.xsd">network.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.admin.edgeGatewayServiceConfiguration+xml<br/></dd>
     <dt>Extends:</dt>
@@ -54,23 +54,22 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
-                    <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="NetworkService"/>
-                                    <tr class="r0">
+                      <a name="NetworkService"/>
+                                    <tr class="r1">
                                         
+                    <td>FirewallService</td>
+                    <td><a href="../types/FirewallServiceType.html">FirewallServiceType</a></td>
+                    <td>No</td>
+                    <td>always</td>
+                    <td>5.1</td>
+                    <td/>
+                    <td>Substitute for NetworkService.
+                    
+                Firewall service settings
+            </td>
+                </tr>
+                            <tr class="r1">
+                                                            
                     <td>GatewayDhcpService</td>
                     <td><a href="../types/GatewayDhcpServiceType.html">GatewayDhcpServiceType</a></td>
                     <td>No</td>
@@ -80,6 +79,19 @@
                     <td>Substitute for NetworkService.
                     
                 Gateway DHCP service settings
+            </td>
+                </tr>
+                            <tr class="r0">
+                                        
+                    <td>GatewayIpsecVpnService</td>
+                    <td><a href="../types/GatewayIpsecVpnServiceType.html">GatewayIpsecVpnServiceType</a></td>
+                    <td>No</td>
+                    <td>always</td>
+                    <td>5.1</td>
+                    <td/>
+                    <td>Substitute for NetworkService.
+                    
+                Gateway Ipsec VPN service settings
             </td>
                 </tr>
                             <tr class="r1">
@@ -97,19 +109,6 @@
                 </tr>
                             <tr class="r0">
                                         
-                    <td>StaticRoutingService</td>
-                    <td><a href="../types/StaticRoutingServiceType.html">StaticRoutingServiceType</a></td>
-                    <td>No</td>
-                    <td>always</td>
-                    <td>5.1</td>
-                    <td/>
-                    <td>Substitute for NetworkService.
-                    
-                Static Routing service settings
-            </td>
-                </tr>
-                            <tr class="r1">
-                                                            
                     <td>NatService</td>
                     <td><a href="../types/NatServiceType.html">NatServiceType</a></td>
                     <td>No</td>
@@ -121,33 +120,34 @@
                 NAT service settings
             </td>
                 </tr>
-                            <tr class="r0">
-                                        
-                    <td>FirewallService</td>
-                    <td><a href="../types/FirewallServiceType.html">FirewallServiceType</a></td>
-                    <td>No</td>
-                    <td>always</td>
-                    <td>5.1</td>
-                    <td/>
-                    <td>Substitute for NetworkService.
-                    
-                Firewall service settings
-            </td>
-                </tr>
                             <tr class="r1">
                                                             
-                    <td>GatewayIpsecVpnService</td>
-                    <td><a href="../types/GatewayIpsecVpnServiceType.html">GatewayIpsecVpnServiceType</a></td>
+                    <td>StaticRoutingService</td>
+                    <td><a href="../types/StaticRoutingServiceType.html">StaticRoutingServiceType</a></td>
                     <td>No</td>
                     <td>always</td>
                     <td>5.1</td>
                     <td/>
                     <td>Substitute for NetworkService.
                     
-                Gateway Ipsec VPN service settings
+                Static Routing service settings
             </td>
                 </tr>
-                              </table>
+                                                  <a name="VCloudExtension"/>
+                    <tr class="r0">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
+                  </table>
     </dd>
     
     
@@ -176,6 +176,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

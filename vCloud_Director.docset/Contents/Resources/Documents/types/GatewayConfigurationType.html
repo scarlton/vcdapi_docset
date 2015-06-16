@@ -24,7 +24,7 @@
     <dt>Since:</dt>
     <dd>5.1</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/network.xsd">network.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/network.xsd">network.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -81,22 +81,8 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="BackwardCompatibilityMode"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="BackwardCompatibilityMode"/>
-                    <tr class="r0">
                 <td>BackwardCompatibilityMode</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
                 <td>No</td>
@@ -110,6 +96,18 @@
                             direction in firewall rules. Also, for firewall rules to allow
                             NAT traffic the filter is applied on the original IP addresses.
                             Once set to true cannot be reverted back to false.
+                        </td>
+            </tr>
+                                      <a name="EdgeGatewayServiceConfiguration"/>
+                    <tr class="r0">
+                <td>EdgeGatewayServiceConfiguration</td>
+                <td><a href="../types/GatewayFeaturesType.html">GatewayFeaturesType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                            Represents Gateway Features.
                         </td>
             </tr>
                               <a name="GatewayBackingConfig"/>
@@ -136,20 +134,8 @@
                             List of Gateway interfaces.
                         </td>
             </tr>
-                              <a name="EdgeGatewayServiceConfiguration"/>
+                              <a name="HaEnabled"/>
                     <tr class="r1">
-                <td>EdgeGatewayServiceConfiguration</td>
-                <td><a href="../types/GatewayFeaturesType.html">GatewayFeaturesType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                            Represents Gateway Features.
-                        </td>
-            </tr>
-                                      <a name="HaEnabled"/>
-                    <tr class="r0">
                 <td>HaEnabled</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
                 <td>No</td>
@@ -160,8 +146,8 @@
                             True if this gateway is highly available. (Requires two vShield edge VMs.)
                         </td>
             </tr>
-                              <a name="UseDefaultRouteForDnsRelay"/>
-                    <tr class="r1">
+                                      <a name="UseDefaultRouteForDnsRelay"/>
+                    <tr class="r0">
                 <td>UseDefaultRouteForDnsRelay</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
                 <td>No</td>
@@ -173,6 +159,20 @@
                             for default route should be used as the DNS relay.
                         </td>
             </tr>
+                              <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
                   </table>
     </dd>
     
@@ -181,6 +181,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>5.1</dd>
         <dt>Schema:</dt>
-    <dd><a href="file:///build/mts/release/bora-1323688/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
+    <dd><a href="file:///build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/vmwextensions.xsd">vmwextensions.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -89,43 +89,16 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="DataStoreRefs"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="MoRef"/>
-                    <tr class="r0">
-                <td>MoRef</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>DataStoreRefs</td>
+                <td><a href="../types/VimObjectRefsType.html">VimObjectRefsType</a></td>
                 <td>No</td>
                 <td>none</td>
                 <td>5.1</td>
                 <td/>
                 <td>
-                                The vSphere managed object reference of the
-                                storage profile.
-                            </td>
-            </tr>
-                              <a name="VimObjectType"/>
-                    <tr class="r1">
-                <td>VimObjectType</td>
-                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                The vSphere type of the object.
+                                vSphere datastores that support this storage profile.
                             </td>
             </tr>
                                       <a name="FreeStorageMb"/>
@@ -140,8 +113,21 @@
                                 Free storage in MB of this storage profile.
                             </td>
             </tr>
-                              <a name="TotalStorageMb"/>
+                              <a name="MoRef"/>
                     <tr class="r1">
+                <td>MoRef</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                The vSphere managed object reference of the
+                                storage profile.
+                            </td>
+            </tr>
+                                      <a name="TotalStorageMb"/>
+                    <tr class="r0">
                 <td>TotalStorageMb</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#double">double</a></td>
                 <td>No</td>
@@ -152,16 +138,30 @@
                                 Total storage in MB of this storage profile.
                             </td>
             </tr>
-                                      <a name="DataStoreRefs"/>
+                              <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
+                                      <a name="VimObjectType"/>
                     <tr class="r0">
-                <td>DataStoreRefs</td>
-                <td><a href="../types/VimObjectRefsType.html">VimObjectRefsType</a></td>
+                <td>VimObjectType</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
                 <td>none</td>
                 <td>5.1</td>
                 <td/>
                 <td>
-                                vSphere datastores that support this storage profile.
+                                The vSphere type of the object.
                             </td>
             </tr>
                   </table>
@@ -172,6 +172,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

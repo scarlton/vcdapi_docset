@@ -26,7 +26,7 @@
     <dt>Since:</dt>
     <dd>0.9</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/network.xsd">network.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/network.xsd">network.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -100,22 +100,8 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="BackwardCompatibilityMode"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="BackwardCompatibilityMode"/>
-                    <tr class="r0">
                 <td>BackwardCompatibilityMode</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
                 <td>No</td>
@@ -131,28 +117,16 @@
                                 Once set to true cannot be reverted back to false.
                             </td>
             </tr>
-                              <a name="IpScopes"/>
-                    <tr class="r1">
-                <td>IpScopes</td>
-                <td><a href="../types/IpScopesType.html">IpScopesType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                                A list of IP scopes for the network.
-                            </td>
-            </tr>
-                                      <a name="ParentNetwork"/>
+                                      <a name="Features"/>
                     <tr class="r0">
-                <td>ParentNetwork</td>
-                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
+                <td>Features</td>
+                <td><a href="../types/NetworkFeaturesType.html">NetworkFeaturesType</a></td>
                 <td>No</td>
                 <td>always</td>
                 <td>0.9</td>
                 <td/>
                 <td>
-                                Contains reference to parent network.
+                                Network features like DHCP, firewall and NAT rules.
                             </td>
             </tr>
                               <a name="FenceMode"/>
@@ -174,6 +148,30 @@
                                 NAT service)
                             </td>
             </tr>
+                                      <a name="IpScopes"/>
+                    <tr class="r0">
+                <td>IpScopes</td>
+                <td><a href="../types/IpScopesType.html">IpScopesType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                                A list of IP scopes for the network.
+                            </td>
+            </tr>
+                              <a name="ParentNetwork"/>
+                    <tr class="r1">
+                <td>ParentNetwork</td>
+                <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                Contains reference to parent network.
+                            </td>
+            </tr>
                                       <a name="RetainNetInfoAcrossDeployments"/>
                     <tr class="r0">
                 <td>RetainNetInfoAcrossDeployments</td>
@@ -185,30 +183,6 @@
                 <td>
                                 Specifies whether the network resources such as IP/MAC of router
                                 will be retained across deployments. Default is false.
-                            </td>
-            </tr>
-                              <a name="Features"/>
-                    <tr class="r1">
-                <td>Features</td>
-                <td><a href="../types/NetworkFeaturesType.html">NetworkFeaturesType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                Network features like DHCP, firewall and NAT rules.
-                            </td>
-            </tr>
-                                      <a name="SyslogServerSettings"/>
-                    <tr class="r0">
-                <td>SyslogServerSettings</td>
-                <td><a href="../types/SyslogServerSettingsType.html">SyslogServerSettingsType</a></td>
-                <td>No</td>
-                <td>none</td>
-                <td>0.9</td>
-                <td/>
-                <td>
-                                Syslog server settings for the network.
                             </td>
             </tr>
                               <a name="RouterInfo"/>
@@ -223,6 +197,32 @@
                                 Specifies router information.
                             </td>
             </tr>
+                                      <a name="SyslogServerSettings"/>
+                    <tr class="r0">
+                <td>SyslogServerSettings</td>
+                <td><a href="../types/SyslogServerSettingsType.html">SyslogServerSettingsType</a></td>
+                <td>No</td>
+                <td>none</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                                Syslog server settings for the network.
+                            </td>
+            </tr>
+                              <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>0.9</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
                   </table>
     </dd>
     
@@ -231,6 +231,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

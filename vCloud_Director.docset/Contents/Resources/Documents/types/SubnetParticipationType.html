@@ -24,7 +24,7 @@
     <dt>Since:</dt>
     <dd>5.1</dd>
         <dt>Schema:</dt>
-    <dd><a href="http://pubs.vmware.com/vcd-55/topic/com.vmware.vcloud.api.reference.doc_55/doc/etc/1.5/schemas/vcloud/network.xsd">network.xsd</a></dd>
+    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/network.xsd">network.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -58,22 +58,8 @@
         <th>Deprecated</th>
         <th>Description</th>
       </tr>
-                      <a name="VCloudExtension"/>
+                      <a name="Gateway"/>
                     <tr class="r1">
-                <td>VCloudExtension</td>
-                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
-                <td>No</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                        An optional extension element that can contain an
-                        arbitrary number of elements and attributes. Not
-                        related to extension services.
-                    </td>
-            </tr>
-                                      <a name="Gateway"/>
-                    <tr class="r0">
                 <td>Gateway</td>
                 <td><a href="../types/IpAddressType.html">IpAddressType</a></td>
                 <td>Yes</td>
@@ -82,18 +68,6 @@
                 <td/>
                 <td>
                             Gateway for subnet
-                        </td>
-            </tr>
-                              <a name="Netmask"/>
-                    <tr class="r1">
-                <td>Netmask</td>
-                <td><a href="../types/IpAddressType.html">IpAddressType</a></td>
-                <td>Yes</td>
-                <td>always</td>
-                <td>5.1</td>
-                <td/>
-                <td>
-                            Nestmask for the subnet
                         </td>
             </tr>
                                       <a name="IpAddress"/>
@@ -120,6 +94,32 @@
                             Range of IP addresses available for external interfaces.
                         </td>
             </tr>
+                                      <a name="Netmask"/>
+                    <tr class="r0">
+                <td>Netmask</td>
+                <td><a href="../types/IpAddressType.html">IpAddressType</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                            Nestmask for the subnet
+                        </td>
+            </tr>
+                              <a name="VCloudExtension"/>
+                    <tr class="r1">
+                <td>VCloudExtension</td>
+                <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.1</td>
+                <td/>
+                <td>
+                        An optional extension element that can contain an
+                        arbitrary number of elements and attributes. Not
+                        related to extension services.
+                    </td>
+            </tr>
                   </table>
     </dd>
     
@@ -128,6 +128,7 @@
 </dl>
 
 <br/>
+
 <br/>
 <br/>
 </body>

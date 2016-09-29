@@ -1,0 +1,139 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>vCloud API - VdcStorageProfileIopsSettingsType</title>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
+<!-- -->
+</head>
+<body onload="javascript:setupEventHandlers()">
+<br/>
+
+<h1>VdcStorageProfileIopsSettingsType</h1>
+
+<dl>
+        <dt>Type:</dt>
+    <dd>VdcStorageProfileIopsSettingsType</dd>
+    <dt>Namespace:</dt>
+    <dd><a href="http://www.vmware.com/vcloud/v1.5">http://www.vmware.com/vcloud/v1.5</a></dd>
+    <dt>Description:</dt>
+    <dd>
+                Grouping of IOPs related settings associated with a particular VdcStorageProfile, i.e. a particular
+                Vdc + StorageProfile pairing.
+            </dd>
+    <dt>Since:</dt>
+    <dd>9.0</dd>
+            <dt>Schema:</dt>
+    <dd><a href="file:/build/mts/release/bora-3879706/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/vdcStorageProfile.xsd">vdcStorageProfile.xsd</a></dd>
+    <dt>Media type(s):</dt>
+    <dd>None</dd>
+    <dt>Extends:</dt>
+    <dd><a href="http://www.w3.org/TR/xmlschema-0/#anyType">anyType</a></dd>
+
+    <dt>XML Representation:</dt>
+    <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">VdcStorageProfileIopsSettingsType</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/v1.5</span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Enabled</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Enabled</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">DiskIopsMax</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#long" target="classFrame" title="xs:long">xs:long</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">DiskIopsMax</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">DiskIopsDefault</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#long" target="classFrame" title="xs:long">xs:long</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">DiskIopsDefault</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">StorageProfileIopsLimit</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#long" target="classFrame" title="xs:long">xs:long</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">StorageProfileIopsLimit</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">DiskIopsPerGbMax</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#long" target="classFrame" title="xs:long">xs:long</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">DiskIopsPerGbMax</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain"/><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">VdcStorageProfileIopsSettingsType</span><span class="xml_tag_symbols">&gt;</span><br/>
+</dd>
+
+    
+        <a id="elements" name="elements"/>
+    <dt><p class="table-title">Elements</p></dt>
+    <dd>
+    <table cellspacing="0">
+      <tr>
+        <th>Element</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Modifiable</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+        <th>Description</th>
+      </tr>
+                      <a name="DiskIopsDefault"/>
+                    <tr class="r1">
+                <td>DiskIopsDefault</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#long">long</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>9.0</td>
+                <td/>
+                <td>
+                        This value is applied when provisioning a disk that does not specify vcloud:iops.
+                        Value must be in the range 1-Integer.MAX_VALUE. If DiskIopsPerGbMax is greater
+                        than 0 and if (diskSize * DiskIopsPerGbMax) less than DiskIopsDefault, then the
+                        default iops for the disk will be set as (diskSize * DiskIopsPerGbMax).
+                    </td>
+            </tr>
+                                      <a name="DiskIopsMax"/>
+                    <tr class="r0">
+                <td>DiskIopsMax</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#long">long</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>9.0</td>
+                <td/>
+                <td>
+                        The maximum IOPS value that this storage profile is permitted to deliver.
+                        Value must be in the range 0-Integer.MAX_VALUE, and if greater than 0,
+                        cannot be less than the value of DiskIopsDefault. Value of 0 means this
+                        max setting is is disabled and there is no max disk IOPS restriction.
+                    </td>
+            </tr>
+                              <a name="DiskIopsPerGbMax"/>
+                    <tr class="r1">
+                <td>DiskIopsPerGbMax</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#long">long</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>17.0</td>
+                <td/>
+                <td>
+                        The maximum disk IOPs per GB value that this storage profile is
+                        permitted to deliver.
+                        A value of 0 means there is no perGB IOPS restriction.
+                    </td>
+            </tr>
+                                      <a name="Enabled"/>
+                    <tr class="r0">
+                <td>Enabled</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>Yes</td>
+                <td>always</td>
+                <td>9.0</td>
+                <td/>
+                <td>
+                        True if this storage profile is IOPs-based placement enabled.
+                    </td>
+            </tr>
+                              <a name="StorageProfileIopsLimit"/>
+                    <tr class="r1">
+                <td>StorageProfileIopsLimit</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#long">long</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>9.0</td>
+                <td/>
+                <td>
+                        Maximum number of IOPs that can be allocated for this profile.
+                        A value of 0 is understood to mean "maximum possible."
+                    </td>
+            </tr>
+                  </table>
+    </dd>
+    
+    
+    
+</dl>
+
+<br/>
+
+<br/>
+<br/>
+</body>
+</html>

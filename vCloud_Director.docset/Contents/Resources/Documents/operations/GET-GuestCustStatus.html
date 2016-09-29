@@ -1,0 +1,62 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>vCloud API - GET-GuestCustStatus</title>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
+<!-- -->
+</head>
+<body onload="javascript:setupEventHandlers()">
+<br/>
+
+<h1>GET /vApp/{id}/guestcustomizationstatus</h1>
+
+<dl>
+    <dt>Operation:</dt>
+    <dd>GET /vApp/{id}/guestcustomizationstatus</dd>
+    <dt>Description:</dt>
+    <dd>Retrieve status of guest customization for that VM
+  Following are the possible status
+  0 - PENDING_GC      : Guest Customization is either not started or in progress.
+    This is set whenever a VM need customization.
+  1 - PENDING_REBOOT  : GC is successful, but reboot is pending.
+    This is set when vCloud receives "guestinfo.gc.status" as successful
+  2 - PENDING_POST_GC : Reboot has happened, waiting for post gc script to complete.
+    This is set when tools running status comes as "Running" based on conditions 1 &amp; 2
+  3 - COMPLETE        : GC is complete.</dd>
+    <dt>Since:</dt>
+    <dd>13.0</dd>
+                <dt>Input parameters</dt>
+    <dd>
+                <dl>
+            <dt>Consume media type(s):</dt>
+            <dd>None</dd>
+            <dt>Input type:</dt>
+            <dd>None</dd>
+        </dl>
+    </dd>
+    <dt>Output parameters</dt>
+    <dd>
+                    VmCheckPGCType<br/><br/>
+                <dl>
+            <dt>Produce media type(s):</dt>
+            <dd>application/vnd.vmware.vcloud.guestCustomizationStatusSection+xml<br/></dd>
+            <dt>Output type:</dt>
+            <dd><a href="http://www.vmware.com/vcloud/v1.5">GuestCustomizationStatusSectionType</a></dd>
+        </dl>
+    </dd>
+    <dt>Examples</dt>
+    <a id="examples" name="examples"/>
+    <dd>
+    <dl>
+        </dl>
+    </dd>
+</dl>
+
+<br/>
+
+<br/>
+<br/>
+</body>
+</html>

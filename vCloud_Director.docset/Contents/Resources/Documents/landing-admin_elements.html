@@ -1,218 +1,276 @@
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>vCloud REST API Admin Elements</title>
-    <link rel="stylesheet" type="text/css" href="doc-style.css"/>
-
+<html>&#13;
+<head>&#13;
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>&#13;
+    <title>vCloud API Admin Elements</title>&#13;
+    <link rel="stylesheet" type="text/css" href="doc-style.css"/>&#13;
 <!-- -->
-</head><style>div.feedbackhover { display: none!important; padding:0; visibility:hidden}span.st_sharethis { display: none!important; padding:0; visibility:hidden}</style>
+</head>&#13;
 <body onload="javascript:setupEventHandlers()">
-<br/>
-
-<h1>vCloud Director REST API Admin Elements</h1>
-
-<h2 class="index">Admin Elements</h2>
-<br/>
-<p class="table-title">Admin Elements (30)</p>
-<table cellspacing="0">
-  <tr>
-      <th>Element</th>
-      <th>Description</th>
-      <th>Since</th>
-  </tr>
-
-                          <tr class="r1">
-        <td nowrap="1"><a href="types/AdminCatalogType.html" name="//apple_ref/cpp/Element/AdminCatalog" class="dashAnchor">AdminCatalog</a></td>
-        <td>
-                Represents the admin view of a catalog.</td>
-        <td>1.5</td>
-    </tr>
-                              <tr class="r0">
-        <td nowrap="1"><a href="types/AdminOrgType.html" name="//apple_ref/cpp/Element/AdminOrg" class="dashAnchor">AdminOrg</a></td>
-        <td>
-                Represents the admin view of an organization.</td>
-        <td>0.9</td>
-    </tr>
-                          <tr class="r1">
-        <td nowrap="1"><a href="types/AdminVdcType.html" name="//apple_ref/cpp/Element/AdminVdc" class="dashAnchor">AdminVdc</a></td>
-        <td>
-                Represents the admin view of an organization vDC.</td>
-        <td>0.9</td>
-    </tr>
-                              <tr class="r0">
-        <td nowrap="1"><a href="types/AdminVdcStorageProfileType.html" name="//apple_ref/cpp/Element/AdminVdcStorageProfile" class="dashAnchor">AdminVdcStorageProfile</a></td>
-        <td>
-                Represents a storage profile in an organization vDC.</td>
-        <td>5.1</td>
-    </tr>
-                          <tr class="r1">
-        <td nowrap="1"><a href="types/CreateVdcParamsType.html" name="//apple_ref/cpp/Element/CreateVdcParams" class="dashAnchor">CreateVdcParams</a></td>
-        <td>
-                Parameters for creating an organization vDC.</td>
-        <td>5.1</td>
-    </tr>
-                              <tr class="r0">
-        <td nowrap="1"><a href="types/ExternalCatalogSubscriptionParamsType.html" name="//apple_ref/cpp/Element/ExternalCatalogSubscriptionParams" class="dashAnchor">ExternalCatalogSubscriptionParams</a></td>
-        <td>
-                Configuration parameters for a catalog that has an external
-                subscription.</td>
-        <td>5.5</td>
-    </tr>
-                          <tr class="r1">
-        <td nowrap="1"><a href="types/ExternalNetworkType.html" name="//apple_ref/cpp/Element/ExternalNetwork" class="dashAnchor">ExternalNetwork</a></td>
-        <td>
-                Represents the admin view of an external network.</td>
-        <td>1.0</td>
-    </tr>
-                              <tr class="r0">
-        <td nowrap="1"><a href="types/OrgGeneralSettingsType.html" name="//apple_ref/cpp/Element/GeneralOrgSettings" class="dashAnchor">GeneralOrgSettings</a></td>
-        <td>
-                Represents general settings for an organization.</td>
-        <td>1.5</td>
-    </tr>
-                          <tr class="r1">
-        <td nowrap="1"><a href="types/GroupType.html" name="//apple_ref/cpp/Element/Group" class="dashAnchor">Group</a></td>
-        <td>
-                Represents a group in this organization.</td>
-        <td>0.9</td>
-    </tr>
-                              <tr class="r0">
-        <td nowrap="1"><a href="types/OrgEmailSettingsType.html" name="//apple_ref/cpp/Element/OrgEmailSettings" class="dashAnchor">OrgEmailSettings</a></td>
-        <td>
-                Represents the email settings for an organization.</td>
-        <td>0.9</td>
-    </tr>
-                          <tr class="r1">
-        <td nowrap="1"><a href="types/OrgFederationSettingsType.html" name="//apple_ref/cpp/Element/OrgFederationSettings" class="dashAnchor">OrgFederationSettings</a></td>
-        <td>
-                Represents federation settings for identity federation.</td>
-        <td>5.1</td>
-    </tr>
-                              <tr class="r0">
-        <td nowrap="1"><a href="types/OrgGuestPersonalizationSettingsType.html" name="//apple_ref/cpp/Element/OrgGuestPersonalizationSettings" class="dashAnchor">OrgGuestPersonalizationSettings</a></td>
-        <td>
-                Represents default guest personalization settings for an
-                organization.</td>
-        <td>5.1</td>
-    </tr>
-                          <tr class="r1">
-        <td nowrap="1"><a href="types/OrgLdapSettingsType.html" name="//apple_ref/cpp/Element/OrgLdapSettings" class="dashAnchor">OrgLdapSettings</a></td>
-        <td>
-                Represents LDAP connection settings for this organization.</td>
-        <td>1.5</td>
-    </tr>
-                              <tr class="r0">
-        <td nowrap="1"><a href="types/OrgOperationLimitsSettingsType.html" name="//apple_ref/cpp/Element/OrgOperationLimitsSettings" class="dashAnchor">OrgOperationLimitsSettings</a></td>
-        <td>
-                Represents operation limits settings for an organization.</td>
-        <td>5.1</td>
-    </tr>
-                          <tr class="r1">
-        <td nowrap="1"><a href="types/OrgPasswordPolicySettingsType.html" name="//apple_ref/cpp/Element/OrgPasswordPolicySettings" class="dashAnchor">OrgPasswordPolicySettings</a></td>
-        <td>
-                Represents password policy settings for this organization.</td>
-        <td>1.5</td>
-    </tr>
-                              <tr class="r0">
-        <td nowrap="1"><a href="types/OrgSettingsType.html" name="//apple_ref/cpp/Element/OrgSettings" class="dashAnchor">OrgSettings</a></td>
-        <td>
-                Container for this organization's settings.</td>
-        <td>1.5</td>
-    </tr>
-                          <tr class="r1">
-        <td nowrap="1"><a href="types/OrgVAppTemplateLeaseSettingsType.html" name="//apple_ref/cpp/Element/OrgVAppTemplateLeaseSettings" class="dashAnchor">OrgVAppTemplateLeaseSettings</a></td>
-        <td>
-                Represents default vAppTemplate lease policies for this
-                organization.</td>
-        <td>1.5</td>
-    </tr>
-                              <tr class="r0">
-        <td nowrap="1"><a href="types/OrgsType.html" name="//apple_ref/cpp/Element/Orgs" class="dashAnchor">Orgs</a></td>
-        <td>
-                Represents a list of organizations.</td>
-        <td>5.5</td>
-    </tr>
-                          <tr class="r1">
-        <td nowrap="1"><a href="types/ProviderVdcType.html" name="//apple_ref/cpp/Element/ProviderVdc" class="dashAnchor">ProviderVdc</a></td>
-        <td>
-                Represents a Provider vDC.</td>
-        <td>0.9</td>
-    </tr>
-                              <tr class="r0">
-        <td nowrap="1"><a href="types/ProviderVdcStorageProfileType.html" name="//apple_ref/cpp/Element/ProviderVdcStorageProfile" class="dashAnchor">ProviderVdcStorageProfile</a></td>
-        <td>
-                Represents a Provider vDC storage profile.</td>
-        <td>5.1</td>
-    </tr>
-                          <tr class="r1">
-        <td nowrap="1"><a href="types/ProviderVdcStorageProfilesType.html" name="//apple_ref/cpp/Element/ProviderVdcStorageProfiles" class="dashAnchor">ProviderVdcStorageProfiles</a></td>
-        <td>
-                Container for references to storage profiles associated with a
-                Provider vDC.</td>
-        <td>5.1</td>
-    </tr>
-                              <tr class="r0">
-        <td nowrap="1"><a href="types/PublishExternalCatalogParamsType.html" name="//apple_ref/cpp/Element/PublishExternalCatalogParams" class="dashAnchor">PublishExternalCatalogParams</a></td>
-        <td>
-                 Configuration parameters for a catalog that is published
-                 externally.</td>
-        <td>5.5</td>
-    </tr>
-                          <tr class="r1">
-        <td nowrap="1"><a href="types/RightType.html" name="//apple_ref/cpp/Element/Right" class="dashAnchor">Right</a></td>
-        <td>
-                Represents a right.</td>
-        <td>0.9</td>
-    </tr>
-                              <tr class="r0">
-        <td nowrap="1"><a href="types/RoleType.html" name="//apple_ref/cpp/Element/Role" class="dashAnchor">Role</a></td>
-        <td>
-                A named collection of rights.</td>
-        <td>0.9</td>
-    </tr>
-                          <tr class="r1">
-        <td nowrap="1"><a href="types/UpdateVdcStorageProfilesType.html" name="//apple_ref/cpp/Element/UpdateVdcStorageProfiles" class="dashAnchor">UpdateVdcStorageProfiles</a></td>
-        <td>
-                Parameters for updating storage profiles in an organization vDC.</td>
-        <td>5.1</td>
-    </tr>
-                              <tr class="r0">
-        <td nowrap="1"><a href="types/UserType.html" name="//apple_ref/cpp/Element/User" class="dashAnchor">User</a></td>
-        <td>
-                Represents a local or imported user.</td>
-        <td>0.9</td>
-    </tr>
-                          <tr class="r1">
-        <td nowrap="1"><a href="types/OrgLeaseSettingsType.html" name="//apple_ref/cpp/Element/VAppLeaseSettings" class="dashAnchor">VAppLeaseSettings</a></td>
-        <td>
-                Represents default lease durations and policies for this
-                organization.</td>
-        <td>0.9</td>
-    </tr>
-                              <tr class="r0">
-        <td nowrap="1"><a href="types/VCloudType.html" name="//apple_ref/cpp/Element/VCloud" class="dashAnchor">VCloud</a></td>
-        <td>
-                Represents the admin view of a cloud.</td>
-        <td>0.9</td>
-    </tr>
-                          <tr class="r1">
-        <td nowrap="1"><a href="types/VdcReferencesType.html" name="//apple_ref/cpp/Element/VdcReferences" class="dashAnchor">VdcReferences</a></td>
-        <td>
-                List of organization vDCs backed by this Provider vDC.</td>
-        <td>1.0</td>
-    </tr>
-                              <tr class="r0">
-        <td nowrap="1"><a href="types/VdcStorageProfileParamsType.html" name="//apple_ref/cpp/Element/VdcStorageProfileParams" class="dashAnchor">VdcStorageProfileParams</a></td>
-        <td>
-                 Represents the parameters to create a storage profile in an organization vDC
-            </td>
-        <td>5.1</td>
-    </tr>
-  </table>
-
-<br/>
-
-<br/>
-<br/>
-</body>
+<br/>&#13;
+&#13;
+<h1>vCloud API Admin Elements</h1>&#13;
+&#13;
+<h2 class="index">Admin Elements</h2>&#13;
+<br/>&#13;
+<p class="table-title">Admin Elements (39)</p>&#13;
+<table cellspacing="0">&#13;
+  <tr>&#13;
+      <th>Element</th>&#13;
+      <th>Description</th>&#13;
+      <th>Since</th>&#13;
+  </tr>&#13;
+&#13;
+                          <tr class="r1">&#13;
+        <td nowrap="1"><a href="types/AdminCatalogType.html" name="//apple_ref/cpp/Element/AdminCatalog" class="dashAnchor">AdminCatalog</a></td>&#13;
+        <td>&#13;
+                Represents the admin view of a catalog.</td>&#13;
+        <td>1.5</td>&#13;
+    </tr>&#13;
+                              <tr class="r0">&#13;
+        <td nowrap="1"><a href="types/AdminOrgType.html" name="//apple_ref/cpp/Element/AdminOrg" class="dashAnchor">AdminOrg</a></td>&#13;
+        <td>&#13;
+                Represents the admin view of an organization.</td>&#13;
+        <td>0.9</td>&#13;
+    </tr>&#13;
+                          <tr class="r1">&#13;
+        <td nowrap="1"><a href="types/AdminVdcType.html" name="//apple_ref/cpp/Element/AdminVdc" class="dashAnchor">AdminVdc</a></td>&#13;
+        <td>&#13;
+                Represents the admin view of an organization vDC.</td>&#13;
+        <td>0.9</td>&#13;
+    </tr>&#13;
+                              <tr class="r0">&#13;
+        <td nowrap="1"><a href="types/AdminVdcStorageProfileType.html" name="//apple_ref/cpp/Element/AdminVdcStorageProfile" class="dashAnchor">AdminVdcStorageProfile</a></td>&#13;
+        <td>&#13;
+                Represents a storage profile in an organization vDC.</td>&#13;
+        <td>5.1</td>&#13;
+    </tr>&#13;
+                          <tr class="r1">&#13;
+        <td nowrap="1"><a href="types/CreateVdcParamsType.html" name="//apple_ref/cpp/Element/CreateVdcParams" class="dashAnchor">CreateVdcParams</a></td>&#13;
+        <td>&#13;
+                Parameters for creating an organization vDC.</td>&#13;
+        <td>5.1</td>&#13;
+    </tr>&#13;
+                              <tr class="r0">&#13;
+        <td nowrap="1"><a href="types/ExternalCatalogSubscriptionParamsType.html" name="//apple_ref/cpp/Element/ExternalCatalogSubscriptionParams" class="dashAnchor">ExternalCatalogSubscriptionParams</a></td>&#13;
+        <td>&#13;
+                Configuration parameters for a catalog that has an external&#13;
+                subscription.</td>&#13;
+        <td>5.5</td>&#13;
+    </tr>&#13;
+                          <tr class="r1">&#13;
+        <td nowrap="1"><a href="types/ExternalNetworkType.html" name="//apple_ref/cpp/Element/ExternalNetwork" class="dashAnchor">ExternalNetwork</a></td>&#13;
+        <td>&#13;
+                Represents the admin view of an external network.</td>&#13;
+        <td>1.0</td>&#13;
+    </tr>&#13;
+                              <tr class="r0">&#13;
+        <td nowrap="1"><a href="types/OrgGeneralSettingsType.html" name="//apple_ref/cpp/Element/GeneralOrgSettings" class="dashAnchor">GeneralOrgSettings</a></td>&#13;
+        <td>&#13;
+                Represents general settings for an organization.</td>&#13;
+        <td>1.5</td>&#13;
+    </tr>&#13;
+                          <tr class="r1">&#13;
+        <td nowrap="1"><a href="types/GroupType.html" name="//apple_ref/cpp/Element/Group" class="dashAnchor">Group</a></td>&#13;
+        <td>&#13;
+                Represents a group in this organization.</td>&#13;
+        <td>0.9</td>&#13;
+    </tr>&#13;
+                              <tr class="r0">&#13;
+        <td nowrap="1"><a href="types/InstantiateVdcTemplateParamsType.html" name="//apple_ref/cpp/Element/InstantiateVdcTemplateParams" class="dashAnchor">InstantiateVdcTemplateParams</a></td>&#13;
+        <td>&#13;
+                A basic type used to pass arguments to the instantiate VDC template operation,&#13;
+                this provides a name and optional description for a VDC instantiated from a template.</td>&#13;
+        <td>5.7</td>&#13;
+    </tr>&#13;
+                          <tr class="r1">&#13;
+        <td nowrap="1"><a href="types/OAuthKeyConfigurationType.html" name="//apple_ref/cpp/Element/OAuthKeyConfiguration" class="dashAnchor">OAuthKeyConfiguration</a></td>&#13;
+        <td>&#13;
+                OAuth Key Configuration&#13;
+            </td>&#13;
+        <td>9.0</td>&#13;
+    </tr>&#13;
+                              <tr class="r0">&#13;
+        <td nowrap="1"><a href="types/OAuthKeyConfigurationsListType.html" name="//apple_ref/cpp/Element/OAuthKeyConfigurations" class="dashAnchor">OAuthKeyConfigurations</a></td>&#13;
+        <td>&#13;
+                Contains a list of OAuth Key configurations.</td>&#13;
+        <td>5.11</td>&#13;
+    </tr>&#13;
+                          <tr class="r1">&#13;
+        <td nowrap="1"><a href="types/OrgAssociationType.html" name="//apple_ref/cpp/Element/OrgAssociationMember" class="dashAnchor">OrgAssociationMember</a></td>&#13;
+        <td>&#13;
+                A reference to another organization&#13;
+            </td>&#13;
+        <td>5.6</td>&#13;
+    </tr>&#13;
+                              <tr class="r0">&#13;
+        <td nowrap="1"><a href="types/OrgAssociationsType.html" name="//apple_ref/cpp/Element/OrgAssociations" class="dashAnchor">OrgAssociations</a></td>&#13;
+        <td>&#13;
+                Container for OrgAssociationType&#13;
+             </td>&#13;
+        <td>5.6</td>&#13;
+    </tr>&#13;
+                          <tr class="r1">&#13;
+        <td nowrap="1"><a href="types/OrgEmailSettingsType.html" name="//apple_ref/cpp/Element/OrgEmailSettings" class="dashAnchor">OrgEmailSettings</a></td>&#13;
+        <td>&#13;
+                Represents the email settings for an organization.</td>&#13;
+        <td>0.9</td>&#13;
+    </tr>&#13;
+                              <tr class="r0">&#13;
+        <td nowrap="1"><a href="types/OrgFederationSettingsType.html" name="//apple_ref/cpp/Element/OrgFederationSettings" class="dashAnchor">OrgFederationSettings</a></td>&#13;
+        <td>&#13;
+                Represents federation settings for identity federation.</td>&#13;
+        <td>5.1</td>&#13;
+    </tr>&#13;
+                          <tr class="r1">&#13;
+        <td nowrap="1"><a href="types/OrgGuestPersonalizationSettingsType.html" name="//apple_ref/cpp/Element/OrgGuestPersonalizationSettings" class="dashAnchor">OrgGuestPersonalizationSettings</a></td>&#13;
+        <td>&#13;
+                Represents default guest personalization settings for an&#13;
+                organization.</td>&#13;
+        <td>5.1</td>&#13;
+    </tr>&#13;
+                              <tr class="r0">&#13;
+        <td nowrap="1"><a href="types/OrgLdapSettingsType.html" name="//apple_ref/cpp/Element/OrgLdapSettings" class="dashAnchor">OrgLdapSettings</a></td>&#13;
+        <td>&#13;
+                Represents LDAP connection settings for this organization.</td>&#13;
+        <td>1.5</td>&#13;
+    </tr>&#13;
+                          <tr class="r1">&#13;
+        <td nowrap="1"><a href="types/OrgOAuthSettingsType.html" name="//apple_ref/cpp/Element/OrgOAuthSettings" class="dashAnchor">OrgOAuthSettings</a></td>&#13;
+        <td>&#13;
+                Contains OAuth identity provider settings for an organization.</td>&#13;
+        <td>9.0</td>&#13;
+    </tr>&#13;
+                              <tr class="r0">&#13;
+        <td nowrap="1"><a href="types/OrgOperationLimitsSettingsType.html" name="//apple_ref/cpp/Element/OrgOperationLimitsSettings" class="dashAnchor">OrgOperationLimitsSettings</a></td>&#13;
+        <td>&#13;
+                Represents operation limits settings for an organization.</td>&#13;
+        <td>5.1</td>&#13;
+    </tr>&#13;
+                          <tr class="r1">&#13;
+        <td nowrap="1"><a href="types/OrgPasswordPolicySettingsType.html" name="//apple_ref/cpp/Element/OrgPasswordPolicySettings" class="dashAnchor">OrgPasswordPolicySettings</a></td>&#13;
+        <td>&#13;
+                Represents password policy settings for this organization.</td>&#13;
+        <td>1.5</td>&#13;
+    </tr>&#13;
+                              <tr class="r0">&#13;
+        <td nowrap="1"><a href="types/OrgSettingsType.html" name="//apple_ref/cpp/Element/OrgSettings" class="dashAnchor">OrgSettings</a></td>&#13;
+        <td>&#13;
+                Container for this organization's settings.</td>&#13;
+        <td>1.5</td>&#13;
+    </tr>&#13;
+                          <tr class="r1">&#13;
+        <td nowrap="1"><a href="types/OrgVAppTemplateLeaseSettingsType.html" name="//apple_ref/cpp/Element/OrgVAppTemplateLeaseSettings" class="dashAnchor">OrgVAppTemplateLeaseSettings</a></td>&#13;
+        <td>&#13;
+                Represents default vAppTemplate lease policies for this&#13;
+                organization.</td>&#13;
+        <td>1.5</td>&#13;
+    </tr>&#13;
+                              <tr class="r0">&#13;
+        <td nowrap="1"><a href="types/OrgsType.html" name="//apple_ref/cpp/Element/Orgs" class="dashAnchor">Orgs</a></td>&#13;
+        <td>&#13;
+                Represents a list of organizations.</td>&#13;
+        <td>5.5</td>&#13;
+    </tr>&#13;
+                          <tr class="r1">&#13;
+        <td nowrap="1"><a href="types/ProviderVdcType.html" name="//apple_ref/cpp/Element/ProviderVdc" class="dashAnchor">ProviderVdc</a></td>&#13;
+        <td>&#13;
+                Represents a Provider vDC.</td>&#13;
+        <td>0.9</td>&#13;
+    </tr>&#13;
+                              <tr class="r0">&#13;
+        <td nowrap="1"><a href="types/ProviderVdcStorageProfileType.html" name="//apple_ref/cpp/Element/ProviderVdcStorageProfile" class="dashAnchor">ProviderVdcStorageProfile</a></td>&#13;
+        <td>&#13;
+                Represents a Provider vDC storage profile.</td>&#13;
+        <td>5.1</td>&#13;
+    </tr>&#13;
+                          <tr class="r1">&#13;
+        <td nowrap="1"><a href="types/ProviderVdcStorageProfilesType.html" name="//apple_ref/cpp/Element/ProviderVdcStorageProfiles" class="dashAnchor">ProviderVdcStorageProfiles</a></td>&#13;
+        <td>&#13;
+                Container for references to storage profiles associated with a&#13;
+                Provider vDC.</td>&#13;
+        <td>5.1</td>&#13;
+    </tr>&#13;
+                              <tr class="r0">&#13;
+        <td nowrap="1"><a href="types/PublishExternalCatalogParamsType.html" name="//apple_ref/cpp/Element/PublishExternalCatalogParams" class="dashAnchor">PublishExternalCatalogParams</a></td>&#13;
+        <td>&#13;
+                 Configuration parameters for a catalog that is published&#13;
+                 externally.</td>&#13;
+        <td>5.5</td>&#13;
+    </tr>&#13;
+                          <tr class="r1">&#13;
+        <td nowrap="1"><a href="types/RightType.html" name="//apple_ref/cpp/Element/Right" class="dashAnchor">Right</a></td>&#13;
+        <td>&#13;
+                Represents a right.</td>&#13;
+        <td>0.9</td>&#13;
+    </tr>&#13;
+                              <tr class="r0">&#13;
+        <td nowrap="1"><a href="types/RoleType.html" name="//apple_ref/cpp/Element/Role" class="dashAnchor">Role</a></td>&#13;
+        <td>&#13;
+                A named collection of rights.</td>&#13;
+        <td>0.9</td>&#13;
+    </tr>&#13;
+                          <tr class="r1">&#13;
+        <td nowrap="1"><a href="types/UpdateVdcStorageProfilesType.html" name="//apple_ref/cpp/Element/UpdateVdcStorageProfiles" class="dashAnchor">UpdateVdcStorageProfiles</a></td>&#13;
+        <td>&#13;
+                Parameters for updating storage profiles in an organization vDC.</td>&#13;
+        <td>5.1</td>&#13;
+    </tr>&#13;
+                              <tr class="r0">&#13;
+        <td nowrap="1"><a href="types/UserType.html" name="//apple_ref/cpp/Element/User" class="dashAnchor">User</a></td>&#13;
+        <td>&#13;
+                Represents a local or imported user.</td>&#13;
+        <td>0.9</td>&#13;
+    </tr>&#13;
+                          <tr class="r1">&#13;
+        <td nowrap="1"><a href="types/OrgLeaseSettingsType.html" name="//apple_ref/cpp/Element/VAppLeaseSettings" class="dashAnchor">VAppLeaseSettings</a></td>&#13;
+        <td>&#13;
+                Represents default lease durations and policies for this&#13;
+                organization.</td>&#13;
+        <td>0.9</td>&#13;
+    </tr>&#13;
+                              <tr class="r0">&#13;
+        <td nowrap="1"><a href="types/VCloudType.html" name="//apple_ref/cpp/Element/VCloud" class="dashAnchor">VCloud</a></td>&#13;
+        <td>&#13;
+                Represents the admin view of a cloud.</td>&#13;
+        <td>0.9</td>&#13;
+    </tr>&#13;
+                          <tr class="r1">&#13;
+        <td nowrap="1"><a href="types/VdcReferencesType.html" name="//apple_ref/cpp/Element/VdcReferences" class="dashAnchor">VdcReferences</a></td>&#13;
+        <td>&#13;
+                List of organization vDCs backed by this Provider vDC.</td>&#13;
+        <td>1.0</td>&#13;
+    </tr>&#13;
+                              <tr class="r0">&#13;
+        <td nowrap="1"><a href="types/VdcStorageProfileParamsType.html" name="//apple_ref/cpp/Element/VdcStorageProfileParams" class="dashAnchor">VdcStorageProfileParams</a></td>&#13;
+        <td>&#13;
+                 Represents the parameters to create a storage profile in an organization vDC&#13;
+            </td>&#13;
+        <td>5.1</td>&#13;
+    </tr>&#13;
+                          <tr class="r1">&#13;
+        <td nowrap="1"><a href="types/VdcTemplateType.html" name="//apple_ref/cpp/Element/VdcTemplate" class="dashAnchor">VdcTemplate</a></td>&#13;
+        <td>&#13;
+                A reference to a VDC template.</td>&#13;
+        <td>5.7</td>&#13;
+    </tr>&#13;
+                              <tr class="r0">&#13;
+        <td nowrap="1"><a href="types/VdcTemplateListType.html" name="//apple_ref/cpp/Element/VdcTemplateList" class="dashAnchor">VdcTemplateList</a></td>&#13;
+        <td>&#13;
+                Represents a list of VDC templates.</td>&#13;
+        <td>5.7</td>&#13;
+    </tr>&#13;
+                          <tr class="r1">&#13;
+        <td nowrap="1"><a href="types/VdcTemplatesType.html" name="//apple_ref/cpp/Element/VdcTemplates" class="dashAnchor">VdcTemplates</a></td>&#13;
+        <td>&#13;
+                Container for VdcTemplateType&#13;
+             </td>&#13;
+        <td>5.7</td>&#13;
+    </tr>&#13;
+  </table>&#13;
+&#13;
+<br/>&#13;
+&#13;
+<br/>&#13;
+<br/>&#13;
+</body>&#13;
 </html>

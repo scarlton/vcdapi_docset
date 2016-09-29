@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>vCloud REST API - OrgOperationLimitsSettings</title>
+    <title>vCloud API - OrgOperationLimitsSettings</title>
     <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
     <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
 
@@ -21,14 +21,17 @@
     <dd><a href="http://www.vmware.com/vcloud/v1.5">http://www.vmware.com/vcloud/v1.5</a></dd>
     <dt>Description:</dt>
     <dd>
-                Represents operation limits settings for an organization.
+                Represents operation limits settings for an organization. An
+                operation is defined as resource-intensive if it returns a Task
+                object. The default value for all operation limits settings is
+                0, which specifies no limit.
             </dd>
     <dt>Since:</dt>
     <dd>5.1</dd>
-        <dt>Schema:</dt>
-    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/admin/vCloudEntities.xsd">vCloudEntities.xsd</a></dd>
+            <dt>Schema:</dt>
+    <dd><a href="file:/build/mts/release/bora-3879706/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/admin/vCloudEntities.xsd">vCloudEntities.xsd</a></dd>
     <dt>Media type(s):</dt>
-    <dd>application/vnd.vmware.admin.operationLimitsSettings+xml<br/>application/vnd.vmware.admin.guestPersonalizationSettings+xml<br/></dd>
+    <dd>application/vnd.vmware.admin.operationLimitsSettings+xml<br/></dd>
     <dt>Extends:</dt>
     <dd><a href="../types/ResourceType.html">ResourceType</a></dd>
 
@@ -39,6 +42,8 @@
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">ConsolesPerVmLimit</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">ConsolesPerVmLimit</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">OperationsPerUser</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">OperationsPerUser</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">OperationsPerOrg</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">OperationsPerOrg</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">QueuedOperationsPerUser</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">QueuedOperationsPerUser</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">QueuedOperationsPerOrg</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">QueuedOperationsPerOrg</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain"/><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">OrgOperationLimitsSettings</span><span class="xml_tag_symbols">&gt;</span><br/>
 </dd>
 
@@ -130,8 +135,14 @@
                 <td/>
                 <td>
                                 Maximum number of resource-intensive operations
-                                owned by this organization that can run
-                                simultaneously.
+                                owned by this organization that can be
+                                simultaneously eligible to run. When an
+                                organization member makes a request that would
+                                cause this limit to be exceeded, the requested
+                                operation is queued but remains ineligible to
+                                run until enough of the organization's eligible
+                                requests have been run to allow an ineligible
+                                request to become eligible.
                             </td>
             </tr>
                                       <a name="OperationsPerUser"/>
@@ -144,8 +155,46 @@
                 <td/>
                 <td>
                                 Maximum number of resource-intensive operations
-                                that a user in this organization can run
-                                simultaneously.
+                                requested by a user in this organization that
+                                can be simultaneously eligible to run. When a
+                                user makes a request that would cause this
+                                limit to be exceeded, the requested operation
+                                is queued but remains ineligible to run until
+                                enough of the user's eligible requests have
+                                been run to allow an ineligible request to
+                                become eligible.
+                            </td>
+            </tr>
+                              <a name="QueuedOperationsPerOrg"/>
+                    <tr class="r1">
+                <td>QueuedOperationsPerOrg</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.11</td>
+                <td/>
+                <td>
+                                Maximum number of queued resource-intensive operations
+                                allowed for all users in this organization.
+                                When an organization member makes a request
+                                that would cause this limit to be exceeded, the
+                                request fails and returns HTTP status 400.
+                            </td>
+            </tr>
+                                      <a name="QueuedOperationsPerUser"/>
+                    <tr class="r0">
+                <td>QueuedOperationsPerUser</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.11</td>
+                <td/>
+                <td>
+                                Maximum number of resource-intensive operations
+                                that a user in this organization can queue.
+                                When a user makes a request that would cause
+                                this limit to be exceeded, the request fails
+                                and returns HTTP status 400.
                             </td>
             </tr>
                               <a name="VCloudExtension"/>

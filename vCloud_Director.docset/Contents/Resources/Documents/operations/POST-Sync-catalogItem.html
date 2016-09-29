@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>vCloud REST API - POST-Sync-catalogItem</title>
+    <title>vCloud API - POST-Sync-catalogItem</title>
     <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
     <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
 
@@ -16,10 +16,10 @@
     <dt>Operation:</dt>
     <dd>POST /catalogItem/{id}/action/sync</dd>
     <dt>Description:</dt>
-    <dd/>
+    <dd>Synchronize a catalog item with its source object.</dd>
     <dt>Since:</dt>
-    <dd/>
-        <dt>Input parameters</dt>
+    <dd>5.5</dd>
+                <dt>Input parameters</dt>
     <dd>
                 <dl>
             <dt>Consume media type(s):</dt>
@@ -30,7 +30,11 @@
     </dd>
     <dt>Output parameters</dt>
     <dd>
-                <dl>
+                    {@link TaskType}
+<p>
+ The response is a Task element. You can monitor the task to
+ track the progress of this operation.<br/><br/>
+                </p><dl>
             <dt>Produce media type(s):</dt>
             <dd>application/vnd.vmware.vcloud.task+xml<br/></dd>
             <dt>Output type:</dt>

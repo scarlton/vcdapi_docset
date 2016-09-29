@@ -1,1323 +1,1378 @@
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>vCloud REST API Extension Queries</title>
-    <link rel="stylesheet" type="text/css" href="doc-style.css"/>
-
+<html>&#13;
+<head>&#13;
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>&#13;
+    <title>vCloud API Extension Queries</title>&#13;
+    <link rel="stylesheet" type="text/css" href="doc-style.css"/>&#13;
 <!-- -->
-</head><style>div.feedbackhover { display: none!important; padding:0; visibility:hidden}span.st_sharethis { display: none!important; padding:0; visibility:hidden}</style>
+</head>&#13;
 <body onload="javascript:setupEventHandlers()">
-<br/>
-
-<h1>vCloud REST API Extension Queries</h1>
-
-<h2 class="index">Extension Queries</h2>
-<br/>
-<p class="table-title">Extension Queries (46)</p>
-    <table cellspacing="0">
-      <tr>
-        <th>Type Name</th>
-        <th>Description</th>
-        <th>User</th>
-        <th>Admin</th>
-        <th>System</th>
-        <th>Format</th>
-        <th>Records Result</th>
-        <th>Since</th>
-        <th>Deprecated</th>
-      </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/aclRule.html" name="//apple_ref/cpp/Query/aclRule" class="dashAnchor">aclRule</a></td>
-            <td>
-                All ACL rules defined in the system by extension services.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAclRuleRecordType.html" name="//apple_ref/cpp/Query/AclRuleRecord" class="dashAnchor">AclRuleRecord</a>)
-            </td>
-            <td>
-                5.1
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/adminAllocatedExternalAddress.html" name="//apple_ref/cpp/Query/adminAllocatedExternalAddress" class="dashAnchor">adminAllocatedExternalAddress</a></td>
-            <td>
-                All allocated external IP addresses in the system and the networks that use them.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            records,idrecords
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAdminAllocatedExternalAddressRecordType.html" name="//apple_ref/cpp/Query/AdminAllocatedExternalAddressRecord" class="dashAnchor">AdminAllocatedExternalAddressRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            5.1
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/adminApiDefinition.html" name="//apple_ref/cpp/Query/adminApiDefinition" class="dashAnchor">adminApiDefinition</a></td>
-            <td>
-                System Administrator representation of all extension service API definitions.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAdminApiDefinitionRecordType.html" name="//apple_ref/cpp/Query/AdminApiDefinitionRecord" class="dashAnchor">AdminApiDefinitionRecord</a>)
-            </td>
-            <td>
-                5.1
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/adminCatalog.html" name="//apple_ref/cpp/Query/adminCatalog" class="dashAnchor">adminCatalog</a></td>
-            <td>
-                All catalogs in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAdminCatalogRecordType.html" name="//apple_ref/cpp/Query/AdminCatalogRecord" class="dashAnchor">AdminCatalogRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/adminCatalogItem.html" name="//apple_ref/cpp/Query/adminCatalogItem" class="dashAnchor">adminCatalogItem</a></td>
-            <td>
-                Catalog items in all catalogs in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAdminCatalogItemRecordType.html" name="//apple_ref/cpp/Query/AdminCatalogItemRecord" class="dashAnchor">AdminCatalogItemRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/adminDisk.html" name="//apple_ref/cpp/Query/adminDisk" class="dashAnchor">adminDisk</a></td>
-            <td>
-                All independent disks in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAdminDiskRecordType.html" name="//apple_ref/cpp/Query/AdminDiskRecord" class="dashAnchor">AdminDiskRecord</a>)
-            </td>
-            <td>
-                5.1
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/adminEvent.html" name="//apple_ref/cpp/Query/adminEvent" class="dashAnchor">adminEvent</a></td>
-            <td>
-                All stored event records in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAdminEventRecordType.html" name="//apple_ref/cpp/Query/AdminEventRecord" class="dashAnchor">AdminEventRecord</a>)
-            </td>
-            <td>
-                5.1
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/adminFileDescriptor.html" name="//apple_ref/cpp/Query/adminFileDescriptor" class="dashAnchor">adminFileDescriptor</a></td>
-            <td>
-                System Administrator representation of all API filters defined in the system by extension services.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAdminFileDescriptorRecordType.html" name="//apple_ref/cpp/Query/AdminFileDescriptorRecord" class="dashAnchor">AdminFileDescriptorRecord</a>)
-            </td>
-            <td>
-                5.1
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/adminGroup.html" name="//apple_ref/cpp/Query/adminGroup" class="dashAnchor">adminGroup</a></td>
-            <td>
-                Groups in all organizations in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAdminGroupRecordType.html" name="//apple_ref/cpp/Query/AdminGroupRecord" class="dashAnchor">AdminGroupRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/adminMedia.html" name="//apple_ref/cpp/Query/adminMedia" class="dashAnchor">adminMedia</a></td>
-            <td>
-                All media in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAdminMediaRecordType.html" name="//apple_ref/cpp/Query/AdminMediaRecord" class="dashAnchor">AdminMediaRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/adminOrgNetwork.html" name="//apple_ref/cpp/Query/adminOrgNetwork" class="dashAnchor">adminOrgNetwork</a></td>
-            <td>
-                All organization networks in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAdminOrgNetworkRecordType.html" name="//apple_ref/cpp/Query/AdminOrgNetworkRecord" class="dashAnchor">AdminOrgNetworkRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            5.1
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/adminOrgVdc.html" name="//apple_ref/cpp/Query/adminOrgVdc" class="dashAnchor">adminOrgVdc</a></td>
-            <td>
-                All organization vDCs in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAdminVdcRecordType.html" name="//apple_ref/cpp/Query/AdminVdcRecord" class="dashAnchor">AdminVdcRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/adminOrgVdcStorageProfile.html" name="//apple_ref/cpp/Query/adminOrgVdcStorageProfile" class="dashAnchor">adminOrgVdcStorageProfile</a></td>
-            <td>
-                All organization VDC storage profiles in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAdminOrgVdcStorageProfileRecordType.html" name="//apple_ref/cpp/Query/AdminOrgVdcStorageProfileRecord" class="dashAnchor">AdminOrgVdcStorageProfileRecord</a>)
-            </td>
-            <td>
-                5.1
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/adminService.html" name="//apple_ref/cpp/Query/adminService" class="dashAnchor">adminService</a></td>
-            <td>
-                System Administrator representation of all extension services registered with the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAdminServiceRecordType.html" name="//apple_ref/cpp/Query/AdminServiceRecord" class="dashAnchor">AdminServiceRecord</a>)
-            </td>
-            <td>
-                5.1
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/adminShadowVM.html" name="//apple_ref/cpp/Query/adminShadowVM" class="dashAnchor">adminShadowVM</a></td>
-            <td>
-                All shadow VMs in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAdminShadowVMRecordType.html" name="//apple_ref/cpp/Query/AdminShadowVMRecord" class="dashAnchor">AdminShadowVMRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/adminTask.html" name="//apple_ref/cpp/Query/adminTask" class="dashAnchor">adminTask</a></td>
-            <td>
-                All active or recently completed tasks in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAdminTaskRecordType.html" name="//apple_ref/cpp/Query/AdminTaskRecord" class="dashAnchor">AdminTaskRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/adminUser.html" name="//apple_ref/cpp/Query/adminUser" class="dashAnchor">adminUser</a></td>
-            <td>
-                Users in all organizations in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAdminUserRecordType.html" name="//apple_ref/cpp/Query/AdminUserRecord" class="dashAnchor">AdminUserRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/adminVApp.html" name="//apple_ref/cpp/Query/adminVApp" class="dashAnchor">adminVApp</a></td>
-            <td>
-                All vApps in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAdminVAppRecordType.html" name="//apple_ref/cpp/Query/AdminVAppRecord" class="dashAnchor">AdminVAppRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/adminVAppNetwork.html" name="//apple_ref/cpp/Query/adminVAppNetwork" class="dashAnchor">adminVAppNetwork</a></td>
-            <td>
-                All vApp networks in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAdminVAppNetworkRecordType.html" name="//apple_ref/cpp/Query/AdminVAppNetworkRecord" class="dashAnchor">AdminVAppNetworkRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/adminVAppTemplate.html" name="//apple_ref/cpp/Query/adminVAppTemplate" class="dashAnchor">adminVAppTemplate</a></td>
-            <td>
-                All vApp templates in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAdminVAppTemplateRecordType.html" name="//apple_ref/cpp/Query/AdminVAppTemplateRecord" class="dashAnchor">AdminVAppTemplateRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/adminVM.html" name="//apple_ref/cpp/Query/adminVM" class="dashAnchor">adminVM</a></td>
-            <td>
-                All VMs in vApps or vApp templates in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAdminVMRecordType.html" name="//apple_ref/cpp/Query/AdminVMRecord" class="dashAnchor">AdminVMRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/adminVMDiskRelation.html" name="//apple_ref/cpp/Query/adminVMDiskRelation" class="dashAnchor">adminVMDiskRelation</a></td>
-            <td>
-                 Independent disks in the system that are attached to a VM.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            records,idrecords
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultAdminVmDiskRelationRecordType.html" name="//apple_ref/cpp/Query/AdminVmDiskRelationRecord" class="dashAnchor">AdminVmDiskRelationRecord</a>)
-            </td>
-            <td>
-                5.1
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/apiFilter.html" name="//apple_ref/cpp/Query/apiFilter" class="dashAnchor">apiFilter</a></td>
-            <td>
-                All API filters defined in the system for extension services.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultApiFilterRecordType.html" name="//apple_ref/cpp/Query/ApiFilterRecord" class="dashAnchor">ApiFilterRecord</a>)
-            </td>
-            <td>
-                5.1
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/blockingTask.html" name="//apple_ref/cpp/Query/blockingTask" class="dashAnchor">blockingTask</a></td>
-            <td>
-                All active blocking tasks in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultBlockingTaskRecordType.html" name="//apple_ref/cpp/Query/BlockingTaskRecord" class="dashAnchor">BlockingTaskRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/cell.html" name="//apple_ref/cpp/Query/cell" class="dashAnchor">cell</a></td>
-            <td>
-                All vCloud Director cells supporting this cloud.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            records,idrecords
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultCellRecordType.html" name="//apple_ref/cpp/Query/CellRecord" class="dashAnchor">CellRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/condition.html" name="//apple_ref/cpp/Query/condition" class="dashAnchor">condition</a></td>
-            <td>
-                System alerts for objects that have errors or warnings.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            records,idrecords
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultConditionRecordType.html" name="//apple_ref/cpp/Query/ConditionRecord" class="dashAnchor">ConditionRecord</a>)
-            </td>
-            <td>
-                5.1
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/datastore.html" name="//apple_ref/cpp/Query/datastore" class="dashAnchor">datastore</a></td>
-            <td>
-                All datastores in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultDatastoreRecordType.html" name="//apple_ref/cpp/Query/DatastoreRecord" class="dashAnchor">DatastoreRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/datastoreProviderVdcRelation.html" name="//apple_ref/cpp/Query/datastoreProviderVdcRelation" class="dashAnchor">datastoreProviderVdcRelation</a></td>
-            <td>
-                All datastores in the system and the Provider vDCs that use them.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            records,idrecords
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultDatastoreProviderVdcRelationRecordType.html" name="//apple_ref/cpp/Query/DatastoreProviderVdcRelationRecord" class="dashAnchor">DatastoreProviderVdcRelationRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/dvSwitch.html" name="//apple_ref/cpp/Query/dvSwitch" class="dashAnchor">dvSwitch</a></td>
-            <td>
-                All vCenter distributed virtual switches available for use by the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            records,idrecords
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultDvSwitchRecordType.html" name="//apple_ref/cpp/Query/DvSwitchRecord" class="dashAnchor">DvSwitchRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/externalLocalization.html" name="//apple_ref/cpp/Query/externalLocalization" class="dashAnchor">externalLocalization</a></td>
-            <td>
-                Localization resources for all registered extension services.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            records,idrecords
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultExternalLocalizationRecordType.html" name="//apple_ref/cpp/Query/ExternalLocalizationRecord" class="dashAnchor">ExternalLocalizationRecord</a>)
-            </td>
-            <td>
-                5.1
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/externalNetwork.html" name="//apple_ref/cpp/Query/externalNetwork" class="dashAnchor">externalNetwork</a></td>
-            <td>
-                External networks in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultNetworkRecordType.html" name="//apple_ref/cpp/Query/NetworkRecord" class="dashAnchor">NetworkRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/host.html" name="//apple_ref/cpp/Query/host" class="dashAnchor">host</a></td>
-            <td>
-                ESX/ESXi hosts registered to the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultHostRecordType.html" name="//apple_ref/cpp/Query/HostRecord" class="dashAnchor">HostRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/networkPool.html" name="//apple_ref/cpp/Query/networkPool" class="dashAnchor">networkPool</a></td>
-            <td>
-                All network pools in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultNetworkPoolRecordType.html" name="//apple_ref/cpp/Query/NetworkPoolRecord" class="dashAnchor">NetworkPoolRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/orgVdcResourcePoolRelation.html" name="//apple_ref/cpp/Query/orgVdcResourcePoolRelation" class="dashAnchor">orgVdcResourcePoolRelation</a></td>
-            <td>
-                All resource pools in the system and the organization vDCs that use them.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            records,idrecords
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultOrgVdcResourcePoolRelationRecordType.html" name="//apple_ref/cpp/Query/OrgVdcResourcePoolRelationRecord" class="dashAnchor">OrgVdcResourcePoolRelationRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/portgroup.html" name="//apple_ref/cpp/Query/portgroup" class="dashAnchor">portgroup</a></td>
-            <td>
-                All vCenter portgroups in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            records,idrecords
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultPortgroupRecordType.html" name="//apple_ref/cpp/Query/PortgroupRecord" class="dashAnchor">PortgroupRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/providerVdc.html" name="//apple_ref/cpp/Query/providerVdc" class="dashAnchor">providerVdc</a></td>
-            <td>
-                All provider vDCs in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultVMWProviderVdcRecordType.html" name="//apple_ref/cpp/Query/VMWProviderVdcRecord" class="dashAnchor">VMWProviderVdcRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/providerVdcResourcePoolRelation.html" name="//apple_ref/cpp/Query/providerVdcResourcePoolRelation" class="dashAnchor">providerVdcResourcePoolRelation</a></td>
-            <td>
-                All resource pools in the system and the Provider vDCs that use them.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            records,idrecords
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultProviderVdcResourcePoolRelationRecordType.html" name="//apple_ref/cpp/Query/ProviderVdcResourcePoolRelationRecord" class="dashAnchor">ProviderVdcResourcePoolRelationRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/providerVdcStorageProfile.html" name="//apple_ref/cpp/Query/providerVdcStorageProfile" class="dashAnchor">providerVdcStorageProfile</a></td>
-            <td>
-                All Provider VDC storage profiles in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultProviderVdcStorageProfileRecordType.html" name="//apple_ref/cpp/Query/ProviderVdcStorageProfileRecord" class="dashAnchor">ProviderVdcStorageProfileRecord</a>)
-            </td>
-            <td>
-                5.1
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/resourceClass.html" name="//apple_ref/cpp/Query/resourceClass" class="dashAnchor">resourceClass</a></td>
-            <td>
-                All resources classes defined in the system by extension services.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultResourceClassRecordType.html" name="//apple_ref/cpp/Query/ResourceClassRecord" class="dashAnchor">ResourceClassRecord</a>)
-            </td>
-            <td>
-                5.1
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/resourceClassAction.html" name="//apple_ref/cpp/Query/resourceClassAction" class="dashAnchor">resourceClassAction</a></td>
-            <td>
-                All resource class actions defined in the system by extension services.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultResourceClassActionRecordType.html" name="//apple_ref/cpp/Query/ResourceClassActionRecord" class="dashAnchor">ResourceClassActionRecord</a>)
-            </td>
-            <td>
-                5.1
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/resourcePool.html" name="//apple_ref/cpp/Query/resourcePool" class="dashAnchor">resourcePool</a></td>
-            <td>
-                All resource pools in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            records,idrecords
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultResourcePoolRecordType.html" name="//apple_ref/cpp/Query/ResourcePoolRecord" class="dashAnchor">ResourcePoolRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/resourcePoolVmList.html" name="//apple_ref/cpp/Query/resourcePoolVmList" class="dashAnchor">resourcePoolVmList</a></td>
-            <td>
-                All VMs in the system and the resource pools they use.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultResourcePoolVMRecordType.html" name="//apple_ref/cpp/Query/ResourcePoolVMRecord" class="dashAnchor">ResourcePoolVMRecord</a>)
-            </td>
-            <td>
-                5.1
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/serviceLink.html" name="//apple_ref/cpp/Query/serviceLink" class="dashAnchor">serviceLink</a></td>
-            <td>
-                All service links defined by extension services.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultServiceLinkRecordType.html" name="//apple_ref/cpp/Query/ServiceLinkRecord" class="dashAnchor">ServiceLinkRecord</a>)
-            </td>
-            <td>
-                5.1
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/serviceResource.html" name="//apple_ref/cpp/Query/serviceResource" class="dashAnchor">serviceResource</a></td>
-            <td>
-                All service resources defined in the system by extension services.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultServiceResourceRecordType.html" name="//apple_ref/cpp/Query/ServiceResourceRecord" class="dashAnchor">ServiceResourceRecord</a>)
-            </td>
-            <td>
-                5.1
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-              
-        <tr class="r1">
-            <td><a href="queries/strandedItem.html" name="//apple_ref/cpp/Query/strandedItem" class="dashAnchor">strandedItem</a></td>
-            <td>
-                All stranded items in the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultStrandedItemRecordType.html" name="//apple_ref/cpp/Query/StrandedItemRecord" class="dashAnchor">StrandedItemRecord</a>)
-            </td>
-            <td>
-                5.1
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-                      
-        <tr class="r0">
-            <td><a href="queries/virtualCenter.html" name="//apple_ref/cpp/Query/virtualCenter" class="dashAnchor">virtualCenter</a></td>
-            <td>
-                All vCenter servers registered to the system.
-            </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            -
-                        </td>
-            <td>
-                            YES
-                        </td>
-            <td>
-                            All
-                        </td>
-            <td>
-                                QueryResultRecords of (<a href="types/QueryResultVirtualCenterRecordType.html" name="//apple_ref/cpp/Query/VirtualCenterRecord" class="dashAnchor">VirtualCenterRecord</a>)
-            </td>
-            <td>
-                
-            </td>
-            <td>
-                            -
-                        </td>
-        </tr>
-          </table>
-   <br/>
-
-<br/>
-<br/>
-</body>
+<br/>&#13;
+&#13;
+<h1>vCloud API Extension Queries</h1>&#13;
+&#13;
+<h2 class="index">Extension Queries</h2>&#13;
+<br/>&#13;
+<p class="table-title">Extension Queries (48)</p>&#13;
+    <table cellspacing="0">&#13;
+      <tr>&#13;
+        <th>Type Name</th>&#13;
+        <th>Description</th>&#13;
+        <th>User</th>&#13;
+        <th>Admin</th>&#13;
+        <th>System</th>&#13;
+        <th>Format</th>&#13;
+        <th>Records Result</th>&#13;
+        <th>Since</th>&#13;
+        <th>Deprecated</th>&#13;
+      </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/aclRule.html" name="//apple_ref/cpp/Query/aclRule" class="dashAnchor">aclRule</a></td>&#13;
+            <td>&#13;
+                All ACL rules defined in the system by extension services.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAclRuleRecordType.html" name="//apple_ref/cpp/Query/AclRuleRecord" class="dashAnchor">AclRuleRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                5.1&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/adminAllocatedExternalAddress.html" name="//apple_ref/cpp/Query/adminAllocatedExternalAddress" class="dashAnchor">adminAllocatedExternalAddress</a></td>&#13;
+            <td>&#13;
+                All allocated external IP addresses in the system and the networks that use them.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            records,idrecords&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAdminAllocatedExternalAddressRecordType.html" name="//apple_ref/cpp/Query/AdminAllocatedExternalAddressRecord" class="dashAnchor">AdminAllocatedExternalAddressRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            5.1&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/adminApiDefinition.html" name="//apple_ref/cpp/Query/adminApiDefinition" class="dashAnchor">adminApiDefinition</a></td>&#13;
+            <td>&#13;
+                System Administrator representation of all extension service API definitions.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAdminApiDefinitionRecordType.html" name="//apple_ref/cpp/Query/AdminApiDefinitionRecord" class="dashAnchor">AdminApiDefinitionRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                5.1&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/adminCatalog.html" name="//apple_ref/cpp/Query/adminCatalog" class="dashAnchor">adminCatalog</a></td>&#13;
+            <td>&#13;
+                All catalogs in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAdminCatalogRecordType.html" name="//apple_ref/cpp/Query/AdminCatalogRecord" class="dashAnchor">AdminCatalogRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/adminCatalogItem.html" name="//apple_ref/cpp/Query/adminCatalogItem" class="dashAnchor">adminCatalogItem</a></td>&#13;
+            <td>&#13;
+                Catalog items in all catalogs in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAdminCatalogItemRecordType.html" name="//apple_ref/cpp/Query/AdminCatalogItemRecord" class="dashAnchor">AdminCatalogItemRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/adminDisk.html" name="//apple_ref/cpp/Query/adminDisk" class="dashAnchor">adminDisk</a></td>&#13;
+            <td>&#13;
+                All independent disks in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAdminDiskRecordType.html" name="//apple_ref/cpp/Query/AdminDiskRecord" class="dashAnchor">AdminDiskRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                5.1&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/adminEvent.html" name="//apple_ref/cpp/Query/adminEvent" class="dashAnchor">adminEvent</a></td>&#13;
+            <td>&#13;
+                All stored event records in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAdminEventRecordType.html" name="//apple_ref/cpp/Query/AdminEventRecord" class="dashAnchor">AdminEventRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                5.1&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/adminFileDescriptor.html" name="//apple_ref/cpp/Query/adminFileDescriptor" class="dashAnchor">adminFileDescriptor</a></td>&#13;
+            <td>&#13;
+                System Administrator representation of all API filters defined in the system by extension services.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAdminFileDescriptorRecordType.html" name="//apple_ref/cpp/Query/AdminFileDescriptorRecord" class="dashAnchor">AdminFileDescriptorRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                5.1&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/adminGroup.html" name="//apple_ref/cpp/Query/adminGroup" class="dashAnchor">adminGroup</a></td>&#13;
+            <td>&#13;
+                Groups in all organizations in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAdminGroupRecordType.html" name="//apple_ref/cpp/Query/AdminGroupRecord" class="dashAnchor">AdminGroupRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/adminMedia.html" name="//apple_ref/cpp/Query/adminMedia" class="dashAnchor">adminMedia</a></td>&#13;
+            <td>&#13;
+                All media in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAdminMediaRecordType.html" name="//apple_ref/cpp/Query/AdminMediaRecord" class="dashAnchor">AdminMediaRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/adminOrgNetwork.html" name="//apple_ref/cpp/Query/adminOrgNetwork" class="dashAnchor">adminOrgNetwork</a></td>&#13;
+            <td>&#13;
+                All organization networks in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAdminOrgNetworkRecordType.html" name="//apple_ref/cpp/Query/AdminOrgNetworkRecord" class="dashAnchor">AdminOrgNetworkRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            5.1&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/adminOrgVdc.html" name="//apple_ref/cpp/Query/adminOrgVdc" class="dashAnchor">adminOrgVdc</a></td>&#13;
+            <td>&#13;
+                All organization vDCs in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAdminVdcRecordType.html" name="//apple_ref/cpp/Query/AdminVdcRecord" class="dashAnchor">AdminVdcRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/adminOrgVdcStorageProfile.html" name="//apple_ref/cpp/Query/adminOrgVdcStorageProfile" class="dashAnchor">adminOrgVdcStorageProfile</a></td>&#13;
+            <td>&#13;
+                All organization VDC storage profiles in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAdminOrgVdcStorageProfileRecordType.html" name="//apple_ref/cpp/Query/AdminOrgVdcStorageProfileRecord" class="dashAnchor">AdminOrgVdcStorageProfileRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                5.1&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/adminService.html" name="//apple_ref/cpp/Query/adminService" class="dashAnchor">adminService</a></td>&#13;
+            <td>&#13;
+                System Administrator representation of all extension services registered with the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAdminServiceRecordType.html" name="//apple_ref/cpp/Query/AdminServiceRecord" class="dashAnchor">AdminServiceRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                5.1&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/adminShadowVM.html" name="//apple_ref/cpp/Query/adminShadowVM" class="dashAnchor">adminShadowVM</a></td>&#13;
+            <td>&#13;
+                All shadow VMs in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAdminShadowVMRecordType.html" name="//apple_ref/cpp/Query/AdminShadowVMRecord" class="dashAnchor">AdminShadowVMRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/adminTask.html" name="//apple_ref/cpp/Query/adminTask" class="dashAnchor">adminTask</a></td>&#13;
+            <td>&#13;
+                All active or recently completed tasks in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAdminTaskRecordType.html" name="//apple_ref/cpp/Query/AdminTaskRecord" class="dashAnchor">AdminTaskRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/adminUser.html" name="//apple_ref/cpp/Query/adminUser" class="dashAnchor">adminUser</a></td>&#13;
+            <td>&#13;
+                Users in all organizations in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAdminUserRecordType.html" name="//apple_ref/cpp/Query/AdminUserRecord" class="dashAnchor">AdminUserRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/adminVApp.html" name="//apple_ref/cpp/Query/adminVApp" class="dashAnchor">adminVApp</a></td>&#13;
+            <td>&#13;
+                All vApps in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAdminVAppRecordType.html" name="//apple_ref/cpp/Query/AdminVAppRecord" class="dashAnchor">AdminVAppRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/adminVAppNetwork.html" name="//apple_ref/cpp/Query/adminVAppNetwork" class="dashAnchor">adminVAppNetwork</a></td>&#13;
+            <td>&#13;
+                All vApp networks in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAdminVAppNetworkRecordType.html" name="//apple_ref/cpp/Query/AdminVAppNetworkRecord" class="dashAnchor">AdminVAppNetworkRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/adminVAppTemplate.html" name="//apple_ref/cpp/Query/adminVAppTemplate" class="dashAnchor">adminVAppTemplate</a></td>&#13;
+            <td>&#13;
+                All vApp templates in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAdminVAppTemplateRecordType.html" name="//apple_ref/cpp/Query/AdminVAppTemplateRecord" class="dashAnchor">AdminVAppTemplateRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/adminVM.html" name="//apple_ref/cpp/Query/adminVM" class="dashAnchor">adminVM</a></td>&#13;
+            <td>&#13;
+                All VMs in vApps or vApp templates in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAdminVMRecordType.html" name="//apple_ref/cpp/Query/AdminVMRecord" class="dashAnchor">AdminVMRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/adminVMDiskRelation.html" name="//apple_ref/cpp/Query/adminVMDiskRelation" class="dashAnchor">adminVMDiskRelation</a></td>&#13;
+            <td>&#13;
+                 Independent disks in the system that are attached to a VM.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            records,idrecords&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultAdminVmDiskRelationRecordType.html" name="//apple_ref/cpp/Query/AdminVmDiskRelationRecord" class="dashAnchor">AdminVmDiskRelationRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                5.1&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/apiFilter.html" name="//apple_ref/cpp/Query/apiFilter" class="dashAnchor">apiFilter</a></td>&#13;
+            <td>&#13;
+                All API filters defined in the system for extension services.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultApiFilterRecordType.html" name="//apple_ref/cpp/Query/ApiFilterRecord" class="dashAnchor">ApiFilterRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                5.1&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/blockingTask.html" name="//apple_ref/cpp/Query/blockingTask" class="dashAnchor">blockingTask</a></td>&#13;
+            <td>&#13;
+                All active blocking tasks in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultBlockingTaskRecordType.html" name="//apple_ref/cpp/Query/BlockingTaskRecord" class="dashAnchor">BlockingTaskRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/cell.html" name="//apple_ref/cpp/Query/cell" class="dashAnchor">cell</a></td>&#13;
+            <td>&#13;
+                All vCloud Director cells supporting this cloud.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            records,idrecords&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultCellRecordType.html" name="//apple_ref/cpp/Query/CellRecord" class="dashAnchor">CellRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/condition.html" name="//apple_ref/cpp/Query/condition" class="dashAnchor">condition</a></td>&#13;
+            <td>&#13;
+                System alerts for objects that have errors or warnings.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            records,idrecords&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultConditionRecordType.html" name="//apple_ref/cpp/Query/ConditionRecord" class="dashAnchor">ConditionRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                5.1&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/datastore.html" name="//apple_ref/cpp/Query/datastore" class="dashAnchor">datastore</a></td>&#13;
+            <td>&#13;
+                All datastores in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultDatastoreRecordType.html" name="//apple_ref/cpp/Query/DatastoreRecord" class="dashAnchor">DatastoreRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/datastoreProviderVdcRelation.html" name="//apple_ref/cpp/Query/datastoreProviderVdcRelation" class="dashAnchor">datastoreProviderVdcRelation</a></td>&#13;
+            <td>&#13;
+                All datastores in the system and the Provider vDCs that use them.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            records,idrecords&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultDatastoreProviderVdcRelationRecordType.html" name="//apple_ref/cpp/Query/DatastoreProviderVdcRelationRecord" class="dashAnchor">DatastoreProviderVdcRelationRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/dvSwitch.html" name="//apple_ref/cpp/Query/dvSwitch" class="dashAnchor">dvSwitch</a></td>&#13;
+            <td>&#13;
+                All vCenter distributed virtual switches available for use by the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            records,idrecords&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultDvSwitchRecordType.html" name="//apple_ref/cpp/Query/DvSwitchRecord" class="dashAnchor">DvSwitchRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/externalLocalization.html" name="//apple_ref/cpp/Query/externalLocalization" class="dashAnchor">externalLocalization</a></td>&#13;
+            <td>&#13;
+                Localization resources for all registered extension services.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            records,idrecords&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultExternalLocalizationRecordType.html" name="//apple_ref/cpp/Query/ExternalLocalizationRecord" class="dashAnchor">ExternalLocalizationRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                5.1&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/externalNetwork.html" name="//apple_ref/cpp/Query/externalNetwork" class="dashAnchor">externalNetwork</a></td>&#13;
+            <td>&#13;
+                External networks in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultNetworkRecordType.html" name="//apple_ref/cpp/Query/NetworkRecord" class="dashAnchor">NetworkRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/host.html" name="//apple_ref/cpp/Query/host" class="dashAnchor">host</a></td>&#13;
+            <td>&#13;
+                ESX/ESXi hosts registered to the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultHostRecordType.html" name="//apple_ref/cpp/Query/HostRecord" class="dashAnchor">HostRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/networkPool.html" name="//apple_ref/cpp/Query/networkPool" class="dashAnchor">networkPool</a></td>&#13;
+            <td>&#13;
+                All network pools in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultNetworkPoolRecordType.html" name="//apple_ref/cpp/Query/NetworkPoolRecord" class="dashAnchor">NetworkPoolRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/orgVdcResourcePoolRelation.html" name="//apple_ref/cpp/Query/orgVdcResourcePoolRelation" class="dashAnchor">orgVdcResourcePoolRelation</a></td>&#13;
+            <td>&#13;
+                All resource pools in the system and the organization vDCs that use them.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            records,idrecords&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultOrgVdcResourcePoolRelationRecordType.html" name="//apple_ref/cpp/Query/OrgVdcResourcePoolRelationRecord" class="dashAnchor">OrgVdcResourcePoolRelationRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/portgroup.html" name="//apple_ref/cpp/Query/portgroup" class="dashAnchor">portgroup</a></td>&#13;
+            <td>&#13;
+                All vCenter portgroups in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            records,idrecords&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultPortgroupRecordType.html" name="//apple_ref/cpp/Query/PortgroupRecord" class="dashAnchor">PortgroupRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/providerVdc.html" name="//apple_ref/cpp/Query/providerVdc" class="dashAnchor">providerVdc</a></td>&#13;
+            <td>&#13;
+                All provider vDCs in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultVMWProviderVdcRecordType.html" name="//apple_ref/cpp/Query/VMWProviderVdcRecord" class="dashAnchor">VMWProviderVdcRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/providerVdcResourcePoolRelation.html" name="//apple_ref/cpp/Query/providerVdcResourcePoolRelation" class="dashAnchor">providerVdcResourcePoolRelation</a></td>&#13;
+            <td>&#13;
+                All resource pools in the system and the Provider vDCs that use them.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            records,idrecords&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultProviderVdcResourcePoolRelationRecordType.html" name="//apple_ref/cpp/Query/ProviderVdcResourcePoolRelationRecord" class="dashAnchor">ProviderVdcResourcePoolRelationRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/providerVdcStorageProfile.html" name="//apple_ref/cpp/Query/providerVdcStorageProfile" class="dashAnchor">providerVdcStorageProfile</a></td>&#13;
+            <td>&#13;
+                All Provider VDC storage profiles in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultProviderVdcStorageProfileRecordType.html" name="//apple_ref/cpp/Query/ProviderVdcStorageProfileRecord" class="dashAnchor">ProviderVdcStorageProfileRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                5.1&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/resourceClass.html" name="//apple_ref/cpp/Query/resourceClass" class="dashAnchor">resourceClass</a></td>&#13;
+            <td>&#13;
+                All resources classes defined in the system by extension services.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultResourceClassRecordType.html" name="//apple_ref/cpp/Query/ResourceClassRecord" class="dashAnchor">ResourceClassRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                5.1&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/resourceClassAction.html" name="//apple_ref/cpp/Query/resourceClassAction" class="dashAnchor">resourceClassAction</a></td>&#13;
+            <td>&#13;
+                All resource class actions defined in the system by extension services.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultResourceClassActionRecordType.html" name="//apple_ref/cpp/Query/ResourceClassActionRecord" class="dashAnchor">ResourceClassActionRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                5.1&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/resourcePool.html" name="//apple_ref/cpp/Query/resourcePool" class="dashAnchor">resourcePool</a></td>&#13;
+            <td>&#13;
+                All resource pools in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            records,idrecords&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultResourcePoolRecordType.html" name="//apple_ref/cpp/Query/ResourcePoolRecord" class="dashAnchor">ResourcePoolRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/resourcePoolVmList.html" name="//apple_ref/cpp/Query/resourcePoolVmList" class="dashAnchor">resourcePoolVmList</a></td>&#13;
+            <td>&#13;
+                All VMs in the system and the resource pools they use.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultResourcePoolVMRecordType.html" name="//apple_ref/cpp/Query/ResourcePoolVMRecord" class="dashAnchor">ResourcePoolVMRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                5.1&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/serviceLink.html" name="//apple_ref/cpp/Query/serviceLink" class="dashAnchor">serviceLink</a></td>&#13;
+            <td>&#13;
+                All service links defined by extension services.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultServiceLinkRecordType.html" name="//apple_ref/cpp/Query/ServiceLinkRecord" class="dashAnchor">ServiceLinkRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                5.1&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/serviceResource.html" name="//apple_ref/cpp/Query/serviceResource" class="dashAnchor">serviceResource</a></td>&#13;
+            <td>&#13;
+                All service resources defined in the system by extension services.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultServiceResourceRecordType.html" name="//apple_ref/cpp/Query/ServiceResourceRecord" class="dashAnchor">ServiceResourceRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                5.1&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/strandedItem.html" name="//apple_ref/cpp/Query/strandedItem" class="dashAnchor">strandedItem</a></td>&#13;
+            <td>&#13;
+                All stranded items in the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultStrandedItemRecordType.html" name="//apple_ref/cpp/Query/StrandedItemRecord" class="dashAnchor">StrandedItemRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                5.1&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/vchsEdgeGateway.html" name="//apple_ref/cpp/Query/vchsEdgeGateway" class="dashAnchor">vchsEdgeGateway</a></td>&#13;
+            <td>&#13;
+                Summary Information for a specific edge gateway.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultVchsEdgeGatewayRecordType.html" name="//apple_ref/cpp/Query/VchsEdgeGatewayRecord" class="dashAnchor">VchsEdgeGatewayRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                5.7&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+              &#13;
+        <tr class="r1">&#13;
+            <td><a href="queries/vchsOrgVdcNetwork.html" name="//apple_ref/cpp/Query/vchsOrgVdcNetwork" class="dashAnchor">vchsOrgVdcNetwork</a></td>&#13;
+            <td>&#13;
+                Summary Information for a specific Org Vdc Network.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultVchsOrgVdcNetworkRecordType.html" name="//apple_ref/cpp/Query/VchsOrgVdcNetworkRecord" class="dashAnchor">VchsOrgVdcNetworkRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                5.7&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+                      &#13;
+        <tr class="r0">&#13;
+            <td><a href="queries/virtualCenter.html" name="//apple_ref/cpp/Query/virtualCenter" class="dashAnchor">virtualCenter</a></td>&#13;
+            <td>&#13;
+                All vCenter servers registered to the system.&#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+            <td>&#13;
+                            YES&#13;
+                        </td>&#13;
+            <td>&#13;
+                            All&#13;
+                        </td>&#13;
+            <td>&#13;
+                                QueryResultRecords of (<a href="types/QueryResultVirtualCenterRecordType.html" name="//apple_ref/cpp/Query/VirtualCenterRecord" class="dashAnchor">VirtualCenterRecord</a>)&#13;
+            </td>&#13;
+            <td>&#13;
+                &#13;
+            </td>&#13;
+            <td>&#13;
+                            -&#13;
+                        </td>&#13;
+        </tr>&#13;
+          </table>&#13;
+   <br/>&#13;
+&#13;
+<br/>&#13;
+<br/>&#13;
+</body>&#13;
 </html>

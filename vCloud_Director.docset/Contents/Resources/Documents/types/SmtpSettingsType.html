@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>vCloud REST API - SmtpSettingsType</title>
+    <title>vCloud API - SmtpSettingsType</title>
     <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
     <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
 
@@ -23,8 +23,8 @@
              </dd>
     <dt>Since:</dt>
     <dd>1.5</dd>
-        <dt>Schema:</dt>
-    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/settings.xsd">settings.xsd</a></dd>
+            <dt>Schema:</dt>
+    <dd><a href="file:/build/mts/release/bora-3879706/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/extension/settings.xsd">settings.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -38,6 +38,8 @@
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">SmtpServerName</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">SmtpServerName</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">SmtpServerPort</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">SmtpServerPort</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">ssl</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">ssl</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/SmtpSecureModeType.html" target="classFrame" title="vcloud_v1.5:SmtpSecureMode">vcloud_v1.5:SmtpSecureMode</a></span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="../types/SmtpSecureModeType.html" target="classFrame" title="vcloud_v1.5:SmtpSecureModeType">vcloud_v1.5:SmtpSecureModeType</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name"><a href="../types/SmtpSecureModeType.html" target="classFrame" title="vcloud_v1.5:SmtpSecureMode">vcloud_v1.5:SmtpSecureMode</a></span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">SslTrustStore</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">SslTrustStore</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">UserName</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">UserName</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Password</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Password</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain"/><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">SmtpSettingsType</span><span class="xml_tag_symbols">&gt;</span><br/>
@@ -121,8 +123,23 @@
                                 SMTP admin password. 128 characters or less.
                             </td>
             </tr>
-                              <a name="SmtpServerName"/>
+                              <a name="SmtpSecureMode"/>
                     <tr class="r1">
+                <td>SmtpSecureMode</td>
+                <td><a href="../types/SmtpSecureModeType.html">SmtpSecureModeType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>11.0</td>
+                <td/>
+                <td>
+                                Security protocol to use when connecting to the SMTP server. One of:<br/>
+                                startTls -- Use the STARTTLS protocol<br/>
+                                ssl -- -Use the SSL/TLS protocol<br/>
+                                none -- Do not use any security protocol
+                            </td>
+            </tr>
+                                      <a name="SmtpServerName"/>
+                    <tr class="r0">
                 <td>SmtpServerName</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
                 <td>No</td>
@@ -133,8 +150,8 @@
                                 SMTP server hostname.
                             </td>
             </tr>
-                                      <a name="SmtpServerPort"/>
-                    <tr class="r0">
+                              <a name="SmtpServerPort"/>
+                    <tr class="r1">
                 <td>SmtpServerPort</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
                 <td>No</td>
@@ -143,6 +160,18 @@
                 <td/>
                 <td>
                                 SMTP server port.
+                            </td>
+            </tr>
+                                      <a name="SslTrustStore"/>
+                    <tr class="r0">
+                <td>SslTrustStore</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>11.0</td>
+                <td/>
+                <td>
+                                 Custom truststore to use to trust peer certificates when establishing a secure connection using SSL/STARTTLS (when enabled).
                             </td>
             </tr>
                               <a name="UseAuthentication"/>
@@ -191,7 +220,7 @@
                 <td>No</td>
                 <td/>
                 <td>1.5</td>
-                <td/>
+                <td>11.0</td>
                 <td>
                                 True if the SMTP server requires an SSL
                                 connection.

@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>vCloud REST API - DELETE-Vdc</title>
+    <title>vCloud API - DELETE-Vdc</title>
     <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
     <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
 
@@ -10,19 +10,20 @@
 <body onload="javascript:setupEventHandlers()">
 <br/>
 
-<h1>DELETE /admin/vdc/{id}</h1>
+<h1>DELETE /vdc/{id}</h1>
 
 <dl>
     <dt>Operation:</dt>
-    <dd>DELETE /admin/vdc/{id}</dd>
+    <dd>DELETE /vdc/{id}</dd>
     <dt>Description:</dt>
     <dd>Delete an organization vDC.
 
  <p>
- You must disable the virtual datacenter before you can delete it.</p></dd>
+ You must disable the virtual datacenter before you can delete it, unless
+ {@code RestConstants.DeleteParameters.FORCE} is asserted</p></dd>
     <dt>Since:</dt>
-    <dd>0.9</dd>
-        <dt>Input parameters</dt>
+    <dd>5.7</dd>
+                <dt>Input parameters</dt>
     <dd>
                 <dl>
             <dt>Consume media type(s):</dt>
@@ -34,9 +35,9 @@
     <dt>Output parameters</dt>
     <dd>
                     TaskType
- <p>
- This operation is asynchronous and returns a task that
- you can monitor to track the progress of the request.<br/><br/>
+         <p>
+         This operation is asynchronous and returns a task that you can monitor to track the
+         progress of the request.<br/><br/>
                 </p><dl>
             <dt>Produce media type(s):</dt>
             <dd>application/vnd.vmware.vcloud.task+xml<br/></dd>

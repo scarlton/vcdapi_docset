@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>vCloud REST API - VersionInfoType</title>
+    <title>vCloud API - VersionInfoType</title>
     <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
     <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
 
@@ -23,15 +23,15 @@
             </dd>
     <dt>Since:</dt>
     <dd>0.9</dd>
-        <dt>Schema:</dt>
-    <dd><a href="file:///build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/schemas/versioning/versions.xsd">versions.xsd</a></dd>
+            <dt>Schema:</dt>
+    <dd><a href="file:///build/mts/release/bora-3879706/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/schemas/versioning/versions.xsd">versions.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
     <dd><a href="http://www.w3.org/TR/xmlschema-0/#anyType">anyType</a></dd>
 
     <dt>XML Representation:</dt>
-    <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">VersionInfoType</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/versions</span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
+    <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">VersionInfoType</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/versions</span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/VersionInfoType.html#deprecated" target="classFrame" title="deprecated">deprecated</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Version</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Version</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">LoginUrl</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">LoginUrl</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/MediaTypeMappingType.html" target="classFrame" title="MediaTypeMapping">MediaTypeMapping</a></span><span class="xml_tag_symbols">&gt;</span><br/>
@@ -42,6 +42,33 @@
 <span class="xml_plain"/><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">VersionInfoType</span><span class="xml_tag_symbols">&gt;</span><br/>
 </dd>
 
+        <a id="attributes" name="attributes"/>
+    <dt><p class="table-title">Attributes</p></dt>
+    <dd>
+    <table cellspacing="0">
+      <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Modifiable</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+        <th>Description</th>
+              </tr>
+                      <a name="deprecated"/>
+        <tr class="r1">
+            <td>deprecated</td>
+            <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+            <td>No</td>
+            <td>none</td>
+            <td>20.0</td>
+            <td/>
+            <td>
+                    Indicates whether the API version is deprecated for upcoming removal.
+                </td>
+                    </tr>
+          </table>
+    </dd>
     
         <a id="elements" name="elements"/>
     <dt><p class="table-title">Elements</p></dt>
@@ -77,7 +104,8 @@
                 <td>0.9</td>
                 <td/>
                 <td>
-                        Media type mapping.
+                        Media type mapping. This element is not present when
+                        the API version is 5.7 or higher.
                     </td>
             </tr>
                               <a name="Version"/>

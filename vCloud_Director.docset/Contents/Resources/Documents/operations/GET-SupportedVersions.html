@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>vCloud REST API - GET-SupportedVersions</title>
+    <title>vCloud API - GET-SupportedVersions</title>
     <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
     <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
 
@@ -16,10 +16,11 @@
     <dt>Operation:</dt>
     <dd>GET /versions</dd>
     <dt>Description:</dt>
-    <dd/>
+    <dd>Retrieve a list of vCloud API versions supported by this system. This
+ request does not require an authentication token.</dd>
     <dt>Since:</dt>
-    <dd/>
-        <dt>Input parameters</dt>
+    <dd>1.5</dd>
+                <dt>Input parameters</dt>
     <dd>
                 <dl>
             <dt>Consume media type(s):</dt>
@@ -30,7 +31,7 @@
     </dd>
     <dt>Output parameters</dt>
     <dd>
-                    the supported versions as a string<br/><br/>
+                    The list of supported vCloud API versions and their login URLs.<br/><br/>
                 <dl>
             <dt>Produce media type(s):</dt>
             <dd>text/xml<br/>application/*+xml<br/></dd>

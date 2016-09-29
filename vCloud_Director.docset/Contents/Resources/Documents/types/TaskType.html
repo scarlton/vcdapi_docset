@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>vCloud REST API - Task</title>
+    <title>vCloud API - Task</title>
     <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
     <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
 
@@ -25,8 +25,8 @@
             </dd>
     <dt>Since:</dt>
     <dd>0.9</dd>
-        <dt>Schema:</dt>
-    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/task.xsd">task.xsd</a></dd>
+            <dt>Schema:</dt>
+    <dd><a href="file:/build/mts/release/bora-3879706/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/task.xsd">task.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.vcloud.task+xml<br/></dd>
     <dt>Extends:</dt>
@@ -44,13 +44,18 @@
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Task</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="../types/TaskType.html" target="classFrame" title="TaskType">TaskType</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Task</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name"><a href="../types/TasksInProgressType.html" target="classFrame" title="Tasks">Tasks</a></span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/ReferenceType.html" target="classFrame" title="Owner">Owner</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/ErrorType.html" target="classFrame" title="Error">Error</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ErrorType.html#message" target="classFrame" title="message">message</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ErrorType.html#majorErrorCode" target="classFrame" title="majorErrorCode">majorErrorCode</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ErrorType.html#minorErrorCode" target="classFrame" title="minorErrorCode">minorErrorCode</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ErrorType.html#vendorSpecificErrorCode" target="classFrame" title="vendorSpecificErrorCode">vendorSpecificErrorCode</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/ErrorType.html#stackTrace" target="classFrame" title="stackTrace">stackTrace</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/ErrorType.html" target="classFrame" title="Error">Error</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ErrorType.html#stackTrace" target="classFrame" title="stackTrace">stackTrace</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ErrorType.html#message" target="classFrame" title="message">message</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ErrorType.html#majorErrorCode" target="classFrame" title="majorErrorCode">majorErrorCode</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ErrorType.html#minorErrorCode" target="classFrame" title="minorErrorCode">minorErrorCode</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name"><a href="../types/ErrorType.html#vendorSpecificErrorCode" target="classFrame" title="vendorSpecificErrorCode">vendorSpecificErrorCode</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/TenantErrorType.html" target="classFrame" title="TenantError">TenantError</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/TenantErrorType.html#message" target="classFrame" title="message">message</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/TenantErrorType.html#majorErrorCode" target="classFrame" title="majorErrorCode">majorErrorCode</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/TenantErrorType.html#minorErrorCode" target="classFrame" title="minorErrorCode">minorErrorCode</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/TenantErrorType.html#vendorSpecificErrorCode" target="classFrame" title="vendorSpecificErrorCode">vendorSpecificErrorCode</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name"><a href="../types/ErrorType.html" target="classFrame" title="Error">Error</a></span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/ReferenceType.html" target="classFrame" title="User">User</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/ReferenceType.html" target="classFrame" title="Organization">Organization</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#href" target="classFrame" title="href">href</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#anyURI" target="classFrame" title="xs:anyURI">xs:anyURI</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#id" target="classFrame" title="id">id</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#type" target="classFrame" title="type">type</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/ReferenceType.html#name" target="classFrame" title="name">name</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">/&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Progress</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Progress</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Params</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain">...</span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Params</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Details</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Details</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/ResultType.html" target="classFrame" title="Result">Result</a></span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">ResultContent</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain">...</span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">ResultContent</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name"><a href="../types/ResultType.html" target="classFrame" title="Result">Result</a></span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain"/><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Task</span><span class="xml_tag_symbols">&gt;</span><br/>
 </dd>
 
@@ -365,8 +370,21 @@
                                 Not available for all tasks.
                             </td>
             </tr>
-                              <a name="Tasks"/>
+                              <a name="Result"/>
                     <tr class="r1">
+                <td>Result</td>
+                <td><a href="../types/ResultType.html">ResultType</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>13.0</td>
+                <td/>
+                <td>
+                                An optional element that can be used to hold the result
+                                of a task.
+                            </td>
+            </tr>
+                                      <a name="Tasks"/>
+                    <tr class="r0">
                 <td>Tasks</td>
                 <td><a href="../types/TasksInProgressType.html">TasksInProgressType</a></td>
                 <td>No</td>
@@ -378,8 +396,8 @@
                                 completed tasks associated with this entity.
                             </td>
             </tr>
-                                      <a name="User"/>
-                    <tr class="r0">
+                              <a name="User"/>
+                    <tr class="r1">
                 <td>User</td>
                 <td><a href="../types/ReferenceType.html">ReferenceType</a></td>
                 <td>No</td>
@@ -390,8 +408,8 @@
                                 The user who started the task.
                             </td>
             </tr>
-                              <a name="VCloudExtension"/>
-                    <tr class="r1">
+                                      <a name="VCloudExtension"/>
+                    <tr class="r0">
                 <td>VCloudExtension</td>
                 <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
                 <td>No</td>
@@ -436,68 +454,89 @@
         </tr>
                       <tr class="r1">
             <td nowrap="1">create</td>
+            <td nowrap="1"><a href="../operations/POST-ConfigureSyslogServerSettings.html">POST /admin/edgeGateway/{id}/action/configureSyslogServerSettings</a></td>
+                        <td>Configure Syslog server settings for the org vdc edge gateway</td>
+            <td>5.11</td>
+            <td/>
+        </tr>
+                              <tr class="r0">
+            <td nowrap="1">create</td>
+            <td nowrap="1"><a href="../operations/POST-ConvertToAdvancedNetworking.html">POST /admin/edgeGateway/{id}/action/convertToAdvancedNetworking</a></td>
+                        <td>Upgrade to advanced networking for a gateway</td>
+            <td>7.0</td>
+            <td/>
+        </tr>
+                      <tr class="r1">
+            <td nowrap="1">create</td>
+            <td nowrap="1"><a href="../operations/POST-ModifyFormFactor.html">POST /admin/edgeGateway/{id}/action/modifyFormFactor</a></td>
+                        <td>Modify edgeGateway form factor.</td>
+            <td>11.0</td>
+            <td/>
+        </tr>
+                              <tr class="r0">
+            <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-ReapplyServicesOnEdgeGateway.html">POST /admin/edgeGateway/{id}/action/reapplyServices</a></td>
                         <td>Reapply services on an edgeGateway.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-RedeployEdgeGateway.html">POST /admin/edgeGateway/{id}/action/redeploy</a></td>
                         <td>Redeploy edgeGateway.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-SyncSyslogSettingsOnEdgeGateway.html">POST /admin/edgeGateway/{id}/action/syncSyslogServerSettings</a></td>
                         <td>Synchronize syslog server settings on an edgeGateway.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-UpgradeEdgeGateway.html">POST /admin/edgeGateway/{id}/action/upgradeConfig</a></td>
                         <td>Upgrade edgeGateway configuration from compact to full.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-DisableHost.html">POST /admin/extension/host/{id}/action/disable</a></td>
                         <td>Disable a host.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-EnableHost.html">POST /admin/extension/host/{id}/action/enable</a></td>
                         <td>Enable a host.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-PrepareHost.html">POST /admin/extension/host/{id}/action/prepare</a></td>
                         <td>Prepare a host.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-RepairHost.html">POST /admin/extension/host/{id}/action/repair</a></td>
                         <td>Repair a host.</td>
             <td>1.0</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-UnprepareHost.html">POST /admin/extension/host/{id}/action/unprepare</a></td>
                         <td>Unprepare a host.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-UpgradeHostAgent.html">POST /admin/extension/host/{id}/action/upgrade</a></td>
                         <td>Upgrade the vCloud Director host agent on a host
@@ -505,70 +544,70 @@
             <td>1.0</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-MergeProviderVdc.html">POST /admin/extension/providervdc/{id}/action/merge</a></td>
                         <td>Merge provider vDCs.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-UpdatePvdcResourcePools.html">POST /admin/extension/providervdc/{id}/action/updateResourcePools</a></td>
                         <td>Add or remove provider vDC resource pools.</td>
             <td>1.5</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-UpdateProviderVdcStorageClasses.html">POST /admin/extension/providervdc/{id}/storageProfiles</a></td>
                         <td>Update storage classes of a provider vDC.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-MigrateVm.html">POST /admin/extension/resourcePool/{id}/action/migrateVms</a></td>
                         <td>Migrate one or more virtual machines to a different resource pool.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-ForceDeleteStrandedItem.html">POST /admin/extension/strandedItem/{id}/action/forceDelete</a></td>
                         <td>Removes stranded item and its children</td>
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-ForceVimServerReconnect.html">POST /admin/extension/vimServer/{id}/action/forcevimserverreconnect</a></td>
                         <td>Force vCloud Director to reconnect to a registered vCenter server.</td>
             <td>1.0</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-RefreshVCenter.html">POST /admin/extension/vimServer/{id}/action/refresh</a></td>
                         <td>Refresh vCenter server.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-RefreshStorageClasses.html">POST /admin/extension/vimServer/{id}/action/refreshStorageProfiles</a></td>
                         <td>Refresh Storage Classes data from a registered vCenter server.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-UnregisterVimServer.html">POST /admin/extension/vimServer/{id}/action/unregister</a></td>
                         <td>Unregister a vCenter server.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-ImportVmIntoExistingVapp.html">POST /admin/extension/vimServer/{id}/importVmIntoExistingVApp</a></td>
                         <td>Import a virtual machine from vCenter into an existing vCloud Director
@@ -576,25 +615,32 @@
             <td>1.5</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-ResetNetwork.html">POST /admin/network/{id}/action/reset</a></td>
                         <td>Reset networking services on a network.</td>
             <td>1.5</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-SyncSyslogSettingsOfNetwork.html">POST /admin/network/{id}/action/syncSyslogServerSettings</a></td>
                         <td>Synchronize syslog server settings for a network.</td>
             <td>1.5</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-UpdateNetworkMetadata.html">POST /admin/network/{id}/metadata</a></td>
                         <td>Merge the metadata provided in the request with existing metadata.</td>
             <td>1.5</td>
+            <td/>
+        </tr>
+                      <tr class="r1">
+            <td nowrap="1">create</td>
+            <td nowrap="1"><a href="../operations/POST-AddOrgAssociation.html">POST /admin/org/{id}/associations</a></td>
+                        <td>Adds a new member to this organization's associations</td>
+            <td/>
             <td/>
         </tr>
                               <tr class="r0">
@@ -677,8 +723,8 @@
                       <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-Sync-catalogItem.html">POST /catalogItem/{id}/action/sync</a></td>
-                        <td/>
-            <td/>
+                        <td>Synchronize a catalog item with its source object.</td>
+            <td>5.5</td>
             <td/>
         </tr>
                               <tr class="r0">
@@ -711,12 +757,19 @@
         </tr>
                               <tr class="r0">
             <td nowrap="1">create</td>
+            <td nowrap="1"><a href="../operations/POST-InstantiateVdcTemplate.html">POST /org/{id}/action/instantiate</a></td>
+                        <td>Instantiates a VDC template.</td>
+            <td>5.7</td>
+            <td/>
+        </tr>
+                      <tr class="r1">
+            <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-CreateTask.html">POST /tasksList/{id}</a></td>
                         <td>Post an external task to this organization.</td>
             <td/>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-ReconfigureVm.html">POST /vApp/vm-{id}/action/reconfigureVm</a></td>
                         <td>Updates Vm name, Description, and any or all of the following sections.<br/>
@@ -730,112 +783,112 @@
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-CheckVmCompliance.html">POST /vApp/{id}/action/checkCompliance</a></td>
-                        <td>Perform storage profile compliance check on a VM.</td>
+                        <td>Check storage profile compliance for the specified VM.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-ConsolidateVm-vApp.html">POST /vApp/{id}/action/consolidate</a></td>
                         <td>Consolidate VM snapshots.</td>
             <td>1.5</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-CreateSnapshot.html">POST /vApp/{id}/action/createSnapshot</a></td>
                         <td>Creates new snapshot of a virtual machine or of all the virtual machines in a vApp.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-DeployVApp.html">POST /vApp/{id}/action/deploy</a></td>
                         <td>Deploy a vApp or VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-DisableNestedHv.html">POST /vApp/{id}/action/disableNestedHypervisor</a></td>
                         <td>Hide hardware-assisted CPU virtualization from guest OS.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-DiscardVAppState.html">POST /vApp/{id}/action/discardSuspendedState</a></td>
                         <td>Discard suspended state of a vApp or VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-EnableVAppDownload.html">POST /vApp/{id}/action/enableDownload</a></td>
                         <td>Enable a vApp for download.</td>
             <td>5.5</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-EnabledNestedHv.html">POST /vApp/{id}/action/enableNestedHypervisor</a></td>
                         <td>Expose hardware-assisted CPU virtualization to guest OS.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-InstallVMwareTools.html">POST /vApp/{id}/action/installVMwareTools</a></td>
                         <td>Install VMware Tools on a running VM.</td>
             <td>1.5</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-RecomposeVApp.html">POST /vApp/{id}/action/recomposeVApp</a></td>
                         <td>Recompose a vApp to add or remove VMs.</td>
             <td>1.0</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-ReloadFromVc.html">POST /vApp/{id}/action/reloadFromVc</a></td>
                         <td>Reloads VM state from VC.</td>
             <td>5.6</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-RelocateVm-vApp.html">POST /vApp/{id}/action/relocate</a></td>
                         <td>Relocate a VM to a different datastore.</td>
             <td>1.5</td>
             <td>Since version 5.1 modifyVm should be used to relocate vm to a different storage profile. Storage profile can be specified by using VmType and making modifyVm request.</td>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-RemoveAllSnapshots.html">POST /vApp/{id}/action/removeAllSnapshots</a></td>
                         <td>Removes all user created snapshots for a vApp or virtual machine.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-RevertSnapshot.html">POST /vApp/{id}/action/revertToCurrentSnapshot</a></td>
                         <td>Reverts a vApp or virtual machine to the current snapshot, if any.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-UndeployVApp.html">POST /vApp/{id}/action/undeploy</a></td>
                         <td>Undeploy a vApp/VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-UpgradeHwVersion.html">POST /vApp/{id}/action/upgradeHardwareVersion</a></td>
                         <td>Upgrade the virtual hardware version of a VM to the highest supported
@@ -843,109 +896,117 @@
             <td>1.5</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-AttachDisk.html">POST /vApp/{id}/disk/action/attach</a></td>
                         <td>Attach a disk to a VM.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-DetachDisk.html">POST /vApp/{id}/disk/action/detach</a></td>
                         <td>Detach a disk from a VM.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-EjectCdRom.html">POST /vApp/{id}/media/action/ejectMedia</a></td>
                         <td>Eject virtual media.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-InsertCdRom.html">POST /vApp/{id}/media/action/insertMedia</a></td>
                         <td>Insert virtual media.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-UpdateVAppMetadata.html">POST /vApp/{id}/metadata</a></td>
                         <td>Merge the metadata provided in the request with existing metadata.</td>
             <td>1.5</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-PowerOffVApp.html">POST /vApp/{id}/power/action/powerOff</a></td>
                         <td>Power off a vApp or VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-PowerOnVApp.html">POST /vApp/{id}/power/action/powerOn</a></td>
                         <td>Power on a vApp or VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-RebootVApp.html">POST /vApp/{id}/power/action/reboot</a></td>
                         <td>Reboot a vApp or VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-ResetVApp.html">POST /vApp/{id}/power/action/reset</a></td>
                         <td>Reset a vApp or VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-ShutdownVApp.html">POST /vApp/{id}/power/action/shutdown</a></td>
                         <td>Shut down a vApp or VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-SuspendVApp.html">POST /vApp/{id}/power/action/suspend</a></td>
                         <td>Suspend a vApp or VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-ConsolidateVm-vAppTemplate.html">POST /vAppTemplate/{id}/action/consolidate</a></td>
                         <td>Consolidate VM snapshots.</td>
             <td>1.5</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-EnableVAppTemplateDownload.html">POST /vAppTemplate/{id}/action/enableDownload</a></td>
                         <td>Enable a vApp template for download</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-RelocateVm-vAppTemplate.html">POST /vAppTemplate/{id}/action/relocate</a></td>
                         <td>Relocate a VM to a different datastore.</td>
             <td>1.5</td>
             <td>Since version 5.1</td>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">create</td>
             <td nowrap="1"><a href="../operations/POST-UpdateVAppTemplateMetadata.html">POST /vAppTemplate/{id}/metadata</a></td>
                         <td>Merge the metadata provided in the request with existing metadata.</td>
             <td>1.5</td>
+            <td/>
+        </tr>
+                              <tr class="r0">
+            <td nowrap="1">create</td>
+            <td nowrap="1"><a href="../operations/POST-CreateVmAffinityRule.html">POST /vdc/{id}/vmAffinityRules</a></td>
+                        <td>Creates a new VM affinity rule.This operation is asynchronous and returns
+ a task that you can monitor to track the progress of the request.</td>
+            <td/>
             <td/>
         </tr>
                       <tr class="r1">
@@ -1001,68 +1062,75 @@
         </tr>
                               <tr class="r0">
             <td nowrap="1">as output</td>
+            <td nowrap="1"><a href="../operations/PUT-GetVdcTemplates.html">PUT /admin/edgeGateway/{gatewayId}/action/manageExternalIpAddresses</a></td>
+                        <td>Allocate / Deallocate IP Address to a specific Edge Gateway.</td>
+            <td>5.7</td>
+            <td/>
+        </tr>
+                      <tr class="r1">
+            <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-EdgeGateway.html">DELETE /admin/edgeGateway/{id}</a></td>
                         <td>Delete an edge gateway.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-EdgeGateway.html">PUT /admin/edgeGateway/{id}</a></td>
                         <td>Update an edge gateway</td>
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-ExternalNetwork.html">DELETE /admin/extension/externalnet/{id}</a></td>
                         <td>Delete an external network.</td>
             <td>1.0</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-NetworkPool.html">DELETE /admin/extension/networkPool/{id}</a></td>
                         <td>Delete a network pool.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-ProviderVdc.html">DELETE /admin/extension/providervdc/{id}</a></td>
                         <td>Delete a provider vDC.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-LookupService.html">PUT /admin/extension/settings/lookupService</a></td>
                         <td>Register / unregister Lookup Service to / from vCD.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-StrandedItem.html">DELETE /admin/extension/strandedItem/{id}</a></td>
                         <td>Removes stranded item.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-AllStrandedItems.html">DELETE /admin/extension/strandedItems</a></td>
                         <td>Removes all stranded items.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-VirtualCenter.html">PUT /admin/extension/vimServer/{id}</a></td>
                         <td>Update the representation of a registered vCenter server.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-VsmManager.html">PUT /admin/extension/vsm/{id}</a></td>
                         <td>Update vShield Manager configuration details, including administrator
@@ -1070,28 +1138,28 @@
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-Network.html">DELETE /admin/network/{id}</a></td>
                         <td>Delete a network.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-OrgVdcNetwork.html">PUT /admin/network/{id}</a></td>
                         <td>Update an organization network.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-NetworkMetadataItem-metadata.html">DELETE /admin/network/{id}/metadata/{domain}/{key}</a></td>
                         <td>Delete the specified key in the specified domain and its value from network metadata.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-NetworkMetadataItem-metadata.html">PUT /admin/network/{id}/metadata/{domain}/{key}</a></td>
                         <td>Set the value for the specified metadata key in the specified domain to the value provided,
@@ -1099,14 +1167,14 @@
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-NetworkMetadataItem-metadata.html">DELETE /admin/network/{id}/metadata/{key}</a></td>
                         <td>Delete the specified key and its value from network metadata.</td>
             <td>1.5</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-NetworkMetadataItem-metadata.html">PUT /admin/network/{id}/metadata/{key}</a></td>
                         <td>Set the value for the specified metadata key to the value provided,
@@ -1114,14 +1182,31 @@
             <td>1.5</td>
             <td/>
         </tr>
+                      <tr class="r1">
+            <td nowrap="1">as output</td>
+            <td nowrap="1"><a href="../operations/PUT-SetAssociations.html">PUT /admin/org/{id}/associations</a></td>
+                        <td>Replaces the organization's current list of association members with the specified list of
+ members
+ <p>
+ If the list is empty, all existing members will be deleted.</p></td>
+            <td/>
+            <td/>
+        </tr>
                               <tr class="r0">
+            <td nowrap="1">as output</td>
+            <td nowrap="1"><a href="../operations/DELETE-Association.html">DELETE /admin/org/{id}/associations/{associatedOrgId}</a></td>
+                        <td>Removes the specified member from this organization's associations.</td>
+            <td/>
+            <td/>
+        </tr>
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-OrganizationMetadataItem-metadata.html">DELETE /admin/org/{id}/metadata/{domain}/{key}</a></td>
                         <td>Delete the specified key in the specified domain and its value from organization metadata.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-OrganizationMetadataItem-metadata.html">PUT /admin/org/{id}/metadata/{domain}/{key}</a></td>
                         <td>Set the value for the specified metadata key in the specified domain to the value provided,
@@ -1129,14 +1214,14 @@
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-OrganizationMetadataItem-metadata.html">DELETE /admin/org/{id}/metadata/{key}</a></td>
                         <td>Delete the specified key and its value from organization metadata.</td>
             <td>1.5</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-OrganizationMetadataItem-metadata.html">PUT /admin/org/{id}/metadata/{key}</a></td>
                         <td>Set the value for the specified metadata key to the value provided,
@@ -1144,14 +1229,14 @@
             <td>1.5</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-ProviderVdcMetadataItem-metadata.html">DELETE /admin/providervdc/{id}/metadata/{domain}/{key}</a></td>
                         <td>Delete the specified key in the specified domain and its value from provider vDC metadata.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-ProviderVdcMetadataItem-metadata.html">PUT /admin/providervdc/{id}/metadata/{domain}/{key}</a></td>
                         <td>Set the value for the specified metadata key in the specified domain to the value provided,
@@ -1159,14 +1244,14 @@
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-ProviderVdcMetadataItem-metadata.html">DELETE /admin/providervdc/{id}/metadata/{key}</a></td>
                         <td>Delete the specified key and its value from provider vDC metadata.</td>
             <td>1.5</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-ProviderVdcMetadataItem-metadata.html">PUT /admin/providervdc/{id}/metadata/{key}</a></td>
                         <td>Set the value for the specified metadata key to the value provided, overwriting any existing
@@ -1174,14 +1259,14 @@
             <td>1.5</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-ProviderVdcStorageProfileMetadataItem-metadata.html">DELETE /admin/pvdcStorageProfile/{id}/metadata/{domain}/{key}</a></td>
                         <td>Delete the specified key and its value from Provider VDC Storage Profile metadata.</td>
             <td/>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-ProviderVdcStorageProfileMetadataItem-metadata.html">PUT /admin/pvdcStorageProfile/{id}/metadata/{domain}/{key}</a></td>
                         <td>Set the value for the specified metadata key to the value provided,
@@ -1189,14 +1274,14 @@
             <td/>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-ProviderVdcStorageProfileMetadataItem-metadata.html">DELETE /admin/pvdcStorageProfile/{id}/metadata/{key}</a></td>
                         <td>Delete the specified key and its value from Provider VDC Storage Profile metadata.</td>
             <td/>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-ProviderVdcStorageProfileMetadataItem-metadata.html">PUT /admin/pvdcStorageProfile/{id}/metadata/{key}</a></td>
                         <td>Set the value for the specified metadata key to the value provided,
@@ -1204,28 +1289,28 @@
             <td/>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
-            <td nowrap="1"><a href="../operations/DELETE-Vdc.html">DELETE /admin/vdc/{id}</a></td>
+            <td nowrap="1"><a href="../operations/DELETE-Vdc-AdminView.html">DELETE /admin/vdc/{id}</a></td>
                         <td>Delete an organization vDC.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-Vdc.html">PUT /admin/vdc/{id}</a></td>
                         <td>Modify an organization vDC.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-VdcMetadataItem-metadata.html">DELETE /admin/vdc/{id}/metadata/{domain}/{key}</a></td>
                         <td>Delete the specified key in the specified domain and its value from virtual datacenter metadata.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-VdcMetadataItem-metadata.html">PUT /admin/vdc/{id}/metadata/{domain}/{key}</a></td>
                         <td>Set the value for the specified metadata key in the specified domain to the value provided,
@@ -1233,14 +1318,14 @@
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-VdcMetadataItem-metadata.html">DELETE /admin/vdc/{id}/metadata/{key}</a></td>
                         <td>Delete the specified key and its value from virtual datacenter metadata.</td>
             <td>1.5</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-VdcMetadataItem-metadata.html">PUT /admin/vdc/{id}/metadata/{key}</a></td>
                         <td>Set the value for the specified metadata key to the value provided,
@@ -1248,14 +1333,14 @@
             <td>1.5</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-VdcStorageClassMetadataItem-metadata.html">DELETE /admin/vdcStorageProfile/{id}/metadata/{domain}/{key}</a></td>
                         <td>Delete the specified key and its value from vDC storage profile metadata.</td>
             <td/>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-VdcStorageClassMetadataItem-metadata.html">PUT /admin/vdcStorageProfile/{id}/metadata/{domain}/{key}</a></td>
                         <td>Set the value for the specified metadata key to the value provided,
@@ -1263,14 +1348,14 @@
             <td/>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-VdcStorageClassMetadataItem-metadata.html">DELETE /admin/vdcStorageProfile/{id}/metadata/{key}</a></td>
                         <td>Delete the specified key and its value from vDC storage profile metadata.</td>
             <td/>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-VdcStorageClassMetadataItem-metadata.html">PUT /admin/vdcStorageProfile/{id}/metadata/{key}</a></td>
                         <td>Set the value for the specified metadata key to the value provided,
@@ -1278,14 +1363,14 @@
             <td/>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-CatalogItemMetadataItem-metadata.html">DELETE /catalogItem/{id}/metadata/{domain}/{key}</a></td>
                         <td>Delete the specified key in the specified domain and its value from catalog item metadata.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-CatalogItemMetadataItem-metadata.html">PUT /catalogItem/{id}/metadata/{domain}/{key}</a></td>
                         <td>Set the metadata value for the specified key in the specified domain to the value provided,
@@ -1293,14 +1378,14 @@
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-CatalogItemMetadataItem-metadata.html">DELETE /catalogItem/{id}/metadata/{key}</a></td>
                         <td>Delete the specified key and its value from catalog item metadata.</td>
             <td>1.5</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-CatalogItemMetadataItem-metadata.html">PUT /catalogItem/{id}/metadata/{key}</a></td>
                         <td>Set the metadata value for the specified key to the value provided,
@@ -1308,28 +1393,28 @@
             <td>1.5</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-Disk.html">DELETE /disk/{id}</a></td>
                         <td>Delete a disk.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-Disk.html">PUT /disk/{id}</a></td>
                         <td>Update the name, description, and storage class of a disk.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-DiskMetadataItem-metadata.html">DELETE /disk/{id}/metadata/{domain}/{key}</a></td>
                         <td>Delete the specified key and its value from disk metadata.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-DiskMetadataItem-metadata.html">PUT /disk/{id}/metadata/{domain}/{key}</a></td>
                         <td>Set the value for the specified metadata key to the value provided,
@@ -1337,14 +1422,14 @@
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-DiskMetadataItem-metadata.html">DELETE /disk/{id}/metadata/{key}</a></td>
                         <td>Delete the specified key and its value from disk metadata.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-DiskMetadataItem-metadata.html">PUT /disk/{id}/metadata/{key}</a></td>
                         <td>Set the value for the specified metadata key to the value provided,
@@ -1352,28 +1437,28 @@
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-Media.html">DELETE /media/{id}</a></td>
                         <td>Delete a media object.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-MediaNameAndDescription.html">PUT /media/{id}</a></td>
                         <td>Update the name and description of a media object.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-MediaMetadataItem-metadata.html">DELETE /media/{id}/metadata/{domain}/{key}</a></td>
                         <td>Delete the specified key in the specified domain and its value from media object metadata.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-MediaMetadataItem-metadata.html">PUT /media/{id}/metadata/{domain}/{key}</a></td>
                         <td>Set the value for the specified metadata key in the specified domain to the value provided,
@@ -1381,14 +1466,14 @@
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-MediaMetadataItem-metadata.html">DELETE /media/{id}/metadata/{key}</a></td>
                         <td>Delete the specified key and its value from media object metadata.</td>
             <td>1.5</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-MediaMetadataItem-metadata.html">PUT /media/{id}/metadata/{key}</a></td>
                         <td>Set the value for the specified metadata key to the value provided,
@@ -1396,56 +1481,56 @@
             <td>1.5</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-ShadowVm.html">DELETE /shadowVm/{id}</a></td>
                         <td>Deletes shadow VM.</td>
             <td>1.5</td>
             <td>Since version 5.1 this operation may be removed in a future release.</td>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-Vm.html">PUT /vApp/vm-{id}</a></td>
                         <td>Modify the name or description of a VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-VApp.html">DELETE /vApp/{id}</a></td>
                         <td>Delete a vApp or VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-VAppNameAndDescription.html">PUT /vApp/{id}</a></td>
                         <td>Modify the name or description of a vApp.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-GuestCustomizationSection-vApp.html">PUT /vApp/{id}/guestCustomizationSection</a></td>
                         <td>Updates the guest customization section of a VM.</td>
             <td>1.0</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-LeaseSettingsSection-vApp.html">PUT /vApp/{id}/leaseSettingsSection</a></td>
                         <td>Updates the lease settings section of a vApp or vApp template.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-VAppMetadataItem-metadata.html">DELETE /vApp/{id}/metadata/{domain}/{key}</a></td>
                         <td>Delete the specified key and its value from vApp or VM metadata.</td>
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-VAppMetadataItem-metadata.html">PUT /vApp/{id}/metadata/{domain}/{key}</a></td>
                         <td>Set the value for the specified metadata key to the value provided,
@@ -1453,14 +1538,14 @@
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-VAppMetadataItem-metadata.html">DELETE /vApp/{id}/metadata/{key}</a></td>
                         <td>Delete the specified key and its value from vApp or VM metadata.</td>
             <td>1.5</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-VAppMetadataItem-metadata.html">PUT /vApp/{id}/metadata/{key}</a></td>
                         <td>Set the value for the specified metadata key to the value provided,
@@ -1468,56 +1553,56 @@
             <td>1.5</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-NetworkConfigSection-vApp.html">PUT /vApp/{id}/networkConfigSection</a></td>
                         <td>Update the network config section of a vApp.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-NetworkConnectionSystemSection-vApp.html">PUT /vApp/{id}/networkConnectionSection</a></td>
                         <td>Update the network connection section of a VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-OperatingSystemSection.html">PUT /vApp/{id}/operatingSystemSection</a></td>
                         <td>Update the operating system section of a VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-ProductSections.html">PUT /vApp/{id}/productSections</a></td>
                         <td>Update all ProductSection elements in a vApp template, vApp, or VM.</td>
             <td>1.5</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-StartupSection.html">PUT /vApp/{id}/startupSection</a></td>
                         <td>Update the startup section of a vApp.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-VirtualHardwareSection-vApp.html">PUT /vApp/{id}/virtualHardwareSection</a></td>
                         <td>Update the virtual hardware section of a VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-Cpu-vApp.html">PUT /vApp/{id}/virtualHardwareSection/cpu</a></td>
                         <td>Update the RASD item that specifies CPU properties of a VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-Disks-vApp.html">PUT /vApp/{id}/virtualHardwareSection/disks</a></td>
                         <td>Update all RASD items that specify hard disk and hard disk
@@ -1525,63 +1610,63 @@
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-Memory-vApp.html">PUT /vApp/{id}/virtualHardwareSection/memory</a></td>
                         <td>Update the RASD item that specifies memory properties of a VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-NetworkCards-vApp.html">PUT /vApp/{id}/virtualHardwareSection/networkCards</a></td>
                         <td>Update all RASD items that specify network card properties of a VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-SerialPorts-vApp.html">PUT /vApp/{id}/virtualHardwareSection/serialPorts</a></td>
                         <td>Modifies all RASD items that specify serial port properties of a VM.</td>
             <td>1.5</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-VmCapabilities.html">PUT /vApp/{id}/vmCapabilities</a></td>
                         <td>Updates VM's {@link VmCapabilities}</td>
             <td/>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-VAppTemplate.html">DELETE /vAppTemplate/{id}</a></td>
                         <td>Delete a vApp template.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-VAppTemplate.html">PUT /vAppTemplate/{id}</a></td>
                         <td>Update the name, description and gold master of a vApp template.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-GuestCustomizationSection-vAppTemplate.html">PUT /vAppTemplate/{id}/guestCustomizationSection</a></td>
                         <td>Updates the guest customization section of a VM.</td>
             <td>1.0</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-LeaseSettingsSection-vAppTemplate.html">PUT /vAppTemplate/{id}/leaseSettingsSection</a></td>
                         <td>Updates the lease settings section of a vApp or vApp template.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-VAppTemplateMetadataItem-metadata.html">DELETE /vAppTemplate/{id}/metadata/{domain}/{key}</a></td>
                         <td>Delete the specified key in the specified domain and its value from vApp template or VM
@@ -1589,7 +1674,7 @@
             <td>5.1</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-VAppTemplateMetadataItem-metadata.html">PUT /vAppTemplate/{id}/metadata/{domain}/{key}</a></td>
                         <td>Set the value for the specified metadata key in the specified domain to the value provided,
@@ -1597,7 +1682,7 @@
             <td>5.1</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/DELETE-VAppTemplateMetadataItem-metadata.html">DELETE /vAppTemplate/{id}/metadata/{key}</a></td>
                         <td>Delete the specified key and its value from vApp template or VM
@@ -1605,7 +1690,7 @@
             <td>1.5</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-VAppTemplateMetadataItem-metadata.html">PUT /vAppTemplate/{id}/metadata/{key}</a></td>
                         <td>Set the value for the specified metadata key to the value provided,
@@ -1613,35 +1698,35 @@
             <td>1.5</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-NetworkConfigSection-vAppTemplate.html">PUT /vAppTemplate/{id}/networkConfigSection</a></td>
                         <td>Update the network config section of a vApp.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-NetworkConnectionSystemSection-vAppTemplate.html">PUT /vAppTemplate/{id}/networkConnectionSection</a></td>
                         <td>Update the network connection section of a VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-VirtualHardwareSection-vAppTemplate.html">PUT /vAppTemplate/{id}/virtualHardwareSection</a></td>
                         <td>Update the virtual hardware section of a VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-Cpu-vAppTemplate.html">PUT /vAppTemplate/{id}/virtualHardwareSection/cpu</a></td>
                         <td>Update the RASD item that specifies CPU properties of a VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-Disks-vAppTemplate.html">PUT /vAppTemplate/{id}/virtualHardwareSection/disks</a></td>
                         <td>Update all RASD items that specify hard disk and hard disk
@@ -1649,25 +1734,53 @@
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-Memory-vAppTemplate.html">PUT /vAppTemplate/{id}/virtualHardwareSection/memory</a></td>
                         <td>Update the RASD item that specifies memory properties of a VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                              <tr class="r0">
+                      <tr class="r1">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-NetworkCards-vAppTemplate.html">PUT /vAppTemplate/{id}/virtualHardwareSection/networkCards</a></td>
                         <td>Update all RASD items that specify network card properties of a VM.</td>
             <td>0.9</td>
             <td/>
         </tr>
-                      <tr class="r1">
+                              <tr class="r0">
             <td nowrap="1">as output</td>
             <td nowrap="1"><a href="../operations/PUT-SerialPorts-vAppTemplate.html">PUT /vAppTemplate/{id}/virtualHardwareSection/serialPorts</a></td>
                         <td>Modifies all RASD items that specify serial port properties of a VM.</td>
             <td>1.5</td>
+            <td/>
+        </tr>
+                      <tr class="r1">
+            <td nowrap="1">as output</td>
+            <td nowrap="1"><a href="../operations/DELETE-Vdc.html">DELETE /vdc/{id}</a></td>
+                        <td>Delete an organization vDC.</td>
+            <td>5.7</td>
+            <td/>
+        </tr>
+                              <tr class="r0">
+            <td nowrap="1">as output</td>
+            <td nowrap="1"><a href="../operations/PUT-VdcNameAndDescription.html">PUT /vdc/{id}</a></td>
+                        <td>Modify the name and/or description of an organization vDC.</td>
+            <td>5.7</td>
+            <td/>
+        </tr>
+                      <tr class="r1">
+            <td nowrap="1">as output</td>
+            <td nowrap="1"><a href="../operations/DELETE-VmAffinityRule.html">DELETE /vdc/{id}/vmAffinityRules/{ruleId}</a></td>
+                        <td>Deletes the specified VM affinity/anti-affinity rule</td>
+            <td/>
+            <td/>
+        </tr>
+                              <tr class="r0">
+            <td nowrap="1">as output</td>
+            <td nowrap="1"><a href="../operations/PUT-VmAffinityRule.html">PUT /vdc/{id}/vmAffinityRules/{ruleId}</a></td>
+                        <td>Updates the specified VM affinity/anti-affinity rule.</td>
+            <td/>
             <td/>
         </tr>
           </table>

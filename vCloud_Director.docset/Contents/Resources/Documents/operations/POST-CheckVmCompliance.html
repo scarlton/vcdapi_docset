@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>vCloud REST API - POST-CheckVmCompliance</title>
+    <title>vCloud API - POST-CheckVmCompliance</title>
     <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
     <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
 
@@ -16,10 +16,10 @@
     <dt>Operation:</dt>
     <dd>POST /vApp/{id}/action/checkCompliance</dd>
     <dt>Description:</dt>
-    <dd>Perform storage profile compliance check on a VM.</dd>
+    <dd>Check storage profile compliance for the specified VM.</dd>
     <dt>Since:</dt>
     <dd>5.1</dd>
-        <dt>Input parameters</dt>
+                <dt>Input parameters</dt>
     <dd>
                 <dl>
             <dt>Consume media type(s):</dt>
@@ -32,9 +32,9 @@
     <dd>
                     TaskType
  <p>
- This operation is asynchronous and return a task.
- When the task completes, the compliance check on the VM has been completed and the results
- can be retrieved.<br/><br/>
+ This operation is asynchronous and returns a task.
+ When the task completes, you can retrieve the results by making a
+ GET /vApp/vm-{id}/complianceResult request.<br/><br/>
                 </p><dl>
             <dt>Produce media type(s):</dt>
             <dd>application/vnd.vmware.vcloud.task+xml<br/></dd>

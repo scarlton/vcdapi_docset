@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>vCloud REST API - ComplianceResult</title>
+    <title>vCloud API - ComplianceResult</title>
     <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
     <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
 
@@ -21,12 +21,14 @@
     <dd><a href="http://www.vmware.com/vcloud/v1.5">http://www.vmware.com/vcloud/v1.5</a></dd>
     <dt>Description:</dt>
     <dd>
-                Represents the results of a compliance check.
+                Represents the results of a
+                GET /vApp/vm-{id}/complianceResult
+                request. Empty if such a request has never been made.
             </dd>
     <dt>Since:</dt>
     <dd>5.1</dd>
-        <dt>Schema:</dt>
-    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/vApp.xsd">vApp.xsd</a></dd>
+            <dt>Schema:</dt>
+    <dd><a href="file:/build/mts/release/bora-3879706/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/vApp.xsd">vApp.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>application/vnd.vmware.vm.complianceResult+xml<br/></dd>
     <dt>Extends:</dt>
@@ -123,8 +125,10 @@
                       <tr class="r1">
             <td nowrap="1">read</td>
             <td nowrap="1"><a href="../operations/GET-VmComplianceResults.html">GET /vApp/{id}/complianceResult</a></td>
-                        <td/>
-            <td/>
+                        <td>Return the results of the most recent
+ POST /vApp/vm-{id}/action/checkCompliance
+ request to the specified VM.</td>
+            <td>5.1</td>
             <td/>
         </tr>
           </table>

@@ -1,0 +1,59 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>vCloud API - PUT-SetAssociations</title>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
+<!-- -->
+</head>
+<body onload="javascript:setupEventHandlers()">
+<br/>
+
+<h1>PUT /admin/org/{id}/associations</h1>
+
+<dl>
+    <dt>Operation:</dt>
+    <dd>PUT /admin/org/{id}/associations</dd>
+    <dt>Description:</dt>
+    <dd>Replaces the organization's current list of association members with the specified list of
+ members
+ <p>
+ If the list is empty, all existing members will be deleted.</p></dd>
+    <dt>Since:</dt>
+    <dd/>
+                <dt>Input parameters</dt>
+    <dd>
+                    non-null, possibly empty {@link List} of {@link OrgAssociationsType}s representing
+            new list of members for this organization's associations<br/><br/>
+                <dl>
+            <dt>Consume media type(s):</dt>
+            <dd>application/vnd.vmware.admin.organizationAssociations+xml<br/></dd>
+            <dt>Input type:</dt>
+            <dd><a href="../types/OrgAssociationsType.html">OrgAssociationsType</a></dd>
+        </dl>
+    </dd>
+    <dt>Output parameters</dt>
+    <dd>
+                    Reference to the task updating the org's associations<br/><br/>
+                <dl>
+            <dt>Produce media type(s):</dt>
+            <dd>application/vnd.vmware.vcloud.task+xml<br/></dd>
+            <dt>Output type:</dt>
+            <dd><a href="../types/TaskType.html">TaskType</a></dd>
+        </dl>
+    </dd>
+    <dt>Examples</dt>
+    <a id="examples" name="examples"/>
+    <dd>
+    <dl>
+        </dl>
+    </dd>
+</dl>
+
+<br/>
+
+<br/>
+<br/>
+</body>
+</html>

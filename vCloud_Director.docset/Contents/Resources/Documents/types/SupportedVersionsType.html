@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>vCloud REST API - SupportedVersions</title>
+    <title>vCloud API - SupportedVersions</title>
     <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
     <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
 
@@ -25,16 +25,16 @@
             </dd>
     <dt>Since:</dt>
     <dd>0.9</dd>
-        <dt>Schema:</dt>
-    <dd><a href="file:///build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/schemas/versioning/versions.xsd">versions.xsd</a></dd>
+            <dt>Schema:</dt>
+    <dd><a href="file:///build/mts/release/bora-3879706/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/schemas/versioning/versions.xsd">versions.xsd</a></dd>
     <dt>Media type(s):</dt>
-    <dd>text/xml<br/>application/*+xml<br/></dd>
+    <dd>application/*+xml<br/>text/xml<br/></dd>
     <dt>Extends:</dt>
     <dd><a href="http://www.w3.org/TR/xmlschema-0/#anyType">anyType</a></dd>
 
     <dt>XML Representation:</dt>
     <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">SupportedVersions</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/versions</span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
-<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/VersionInfoType.html" target="classFrame" title="VersionInfo">VersionInfo</a></span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/VersionInfoType.html" target="classFrame" title="VersionInfo">VersionInfo</a></span><span class="xml_plain">&#160;</span><span class="xml_attribute_name"><a href="../types/VersionInfoType.html#deprecated" target="classFrame" title="deprecated">deprecated</a></span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">Version</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">Version</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">LoginUrl</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">LoginUrl</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/MediaTypeMappingType.html" target="classFrame" title="MediaTypeMapping">MediaTypeMapping</a></span><span class="xml_tag_symbols">&gt;</span><br/>
@@ -91,8 +91,8 @@
                       <tr class="r1">
             <td nowrap="1">read</td>
             <td nowrap="1"><a href="../operations/GET-SupportedVersions.html">GET /versions</a></td>
-                        <td/>
-            <td/>
+                        <td>Retrieve a list of vCloud API versions supported by this system.</td>
+            <td>1.5</td>
             <td/>
         </tr>
           </table>

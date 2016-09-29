@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>vCloud REST API - NetworkConnection</title>
+    <title>vCloud API - NetworkConnection</title>
     <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
     <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
 
@@ -25,8 +25,8 @@
             </dd>
     <dt>Since:</dt>
     <dd>0.9</dd>
-        <dt>Schema:</dt>
-    <dd><a href="file:/build/mts/release/bora-2061757/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/vApp.xsd">vApp.xsd</a></dd>
+            <dt>Schema:</dt>
+    <dd><a href="file:/build/mts/release/bora-3879706/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/vcloud/vApp.xsd">vApp.xsd</a></dd>
     <dt>Media type(s):</dt>
     <dd>None</dd>
     <dt>Extends:</dt>
@@ -40,6 +40,7 @@
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">IsConnected</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">IsConnected</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">MACAddress</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">MACAddress</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">IpAddressAllocationMode</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">IpAddressAllocationMode</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">NetworkAdapterType</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">NetworkAdapterType</span><span class="xml_tag_symbols">&gt;</span><br/>
 <span class="xml_plain"/><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">NetworkConnection</span><span class="xml_tag_symbols">&gt;</span><br/>
 </dd>
 
@@ -171,8 +172,28 @@
                                 MAC address associated with the NIC.
                             </td>
             </tr>
-                                      <a name="NetworkConnectionIndex"/>
+                                      <a name="NetworkAdapterType"/>
                     <tr class="r0">
+                <td>NetworkAdapterType</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>No</td>
+                <td>always</td>
+                <td>5.11</td>
+                <td/>
+                <td>
+                                Type of network adapter to be used for this connection.
+                                One of:<br/>
+                                <b>VLANCE (emulated version of the AMD 79C970 PCnet32-LANCE NIC)</b><br/>
+                                <b>E1000 (emulated version of the Intel 82545EM Gigabit Ethernet NIC)</b><br/>
+                                <b>E1000E (emulates a newer model of Intel Gigabit NIC (number 82574))</b><br/>
+                                <b>VMXNET (has no physical counterpart; optimized for performance in a virtual machine)</b><br/>
+                                <b>VMXNET2 (based on the VMXNET adapter but provides some high-performance features)</b><br/>
+                                <b>VMXNET3 (next generation of a paravirtualized NIC designed for performance; not related to VMXNET or VMXNET2)</b><br/>
+                                <b>FLEXIBLE (identifies itself as a Vlance adapter when a virtual machine boots, but initializes itself and functions as either a Vlance or a VMXNET adapter, depending on which driver initializes it)</b><br/>
+                            </td>
+            </tr>
+                              <a name="NetworkConnectionIndex"/>
+                    <tr class="r1">
                 <td>NetworkConnectionIndex</td>
                 <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
                 <td>Yes</td>
@@ -184,8 +205,8 @@
                                 First slot number is 0.
                             </td>
             </tr>
-                              <a name="VCloudExtension"/>
-                    <tr class="r1">
+                                      <a name="VCloudExtension"/>
+                    <tr class="r0">
                 <td>VCloudExtension</td>
                 <td><a href="../types/VCloudExtensionType.html">VCloudExtensionType</a></td>
                 <td>No</td>

@@ -1,0 +1,174 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>vCloud API - EdgeGatewaySummaryType</title>
+    <link rel="stylesheet" type="text/css" href="../doc-style.css"/>
+    <link rel="stylesheet" type="text/css" href="../xml-style.css"/>
+
+<!-- -->
+</head>
+<body onload="javascript:setupEventHandlers()">
+<br/>
+
+<h1>EdgeGatewaySummaryType</h1>
+
+<dl>
+        <dt>Type:</dt>
+    <dd>EdgeGatewaySummaryType</dd>
+    <dt>Namespace:</dt>
+    <dd><a href="http://www.vmware.com/vcloud/networkservice/1.0">http://www.vmware.com/vcloud/networkservice/1.0</a></dd>
+    <dt>Description:</dt>
+    <dd>
+				Summary Information for a specific Edge Gateway
+			</dd>
+    <dt>Since:</dt>
+    <dd/>
+            <dt>Schema:</dt>
+    <dd><a href="file:///build/mts/release/bora-3879706/cloud/utilities/rest-api-docgenerator/target/rest-api-schemas/1.5/schemas/networkservice/network.xsd">network.xsd</a></dd>
+    <dt>Media type(s):</dt>
+    <dd>None</dd>
+    <dt>Extends:</dt>
+    <dd><a href="http://www.vmware.com/vcloud/networkservice/common/1.0">VdcAwareEntityType</a></dd>
+
+    <dt>XML Representation:</dt>
+    <dd><span class="xml_plain"/><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">EdgeGatewaySummaryType</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/networkservice/1.0</span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns:vcloud_v1.5</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/v1.5</span><span class="xml_attribute_value">"</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_attribute_name">xmlns:common_1.0</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/networkservice/common/1.0</span><span class="xml_attribute_value">"</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">xmlns:ipam_1.0</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">"</span><span class="xml_attribute_value">http://www.vmware.com/vcloud/networkservice/ipam/1.0</span><span class="xml_attribute_value">"</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">EdgeGatewayName</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">EdgeGatewayName</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/IpAddressType.html" target="classFrame" title="vcloud_v1.5:EdgeGatewayIP">vcloud_v1.5:EdgeGatewayIP</a></span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="../types/IpAddressType.html" target="classFrame" title="vcloud_v1.5:IpAddressType">vcloud_v1.5:IpAddressType</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name"><a href="../types/IpAddressType.html" target="classFrame" title="vcloud_v1.5:EdgeGatewayIP">vcloud_v1.5:EdgeGatewayIP</a></span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">EdgeGatewayBackingConfig</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">EdgeGatewayBackingConfig</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">HaEnabled</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#boolean" target="classFrame" title="xs:boolean">xs:boolean</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">HaEnabled</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">NumberOfOrgNetworks</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#int" target="classFrame" title="xs:int">xs:int</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">NumberOfOrgNetworks</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">EdgeGatewayStatus</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">EdgeGatewayStatus</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="http://www.vmware.com/vcloud/networkservice/ipam/1.0" target="classFrame" title="ipam_1.0:PublicIP">ipam_1.0:PublicIP</a></span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.vmware.com/vcloud/networkservice/ipam/1.0" target="classFrame" title="ipam_1.0:IpAddressUsageType">ipam_1.0:IpAddressUsageType</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name"><a href="http://www.vmware.com/vcloud/networkservice/ipam/1.0" target="classFrame" title="ipam_1.0:PublicIP">ipam_1.0:PublicIP</a></span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/EdgeGatewayIpAddressListType.html" target="classFrame" title="IPAddressUsageList">IPAddressUsageList</a></span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name"><a href="../types/EdgeGatewayIpAddressType.html" target="classFrame" title="EdgeGatewayIpAddress">EdgeGatewayIpAddress</a></span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">GatewayInterfaceNetworkName</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">GatewayInterfaceNetworkName</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">GatewayInterfaceNetworkUri</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_plain"><a href="http://www.w3.org/TR/xmlschema-0/#string" target="classFrame" title="xs:string">xs:string</a></span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">GatewayInterfaceNetworkUri</span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name"><a href="../types/EdgeGatewayIpAddressType.html" target="classFrame" title="EdgeGatewayIpAddress">EdgeGatewayIpAddress</a></span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain">&#160;&#160;&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name"><a href="../types/EdgeGatewayIpAddressListType.html" target="classFrame" title="IPAddressUsageList">IPAddressUsageList</a></span><span class="xml_tag_symbols">&gt;</span><br/>
+<span class="xml_plain"/><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">EdgeGatewaySummaryType</span><span class="xml_tag_symbols">&gt;</span><br/>
+</dd>
+
+    
+        <a id="elements" name="elements"/>
+    <dt><p class="table-title">Elements</p></dt>
+    <dd>
+    <table cellspacing="0">
+      <tr>
+        <th>Element</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Modifiable</th>
+        <th>Since</th>
+        <th>Deprecated</th>
+        <th>Description</th>
+      </tr>
+                      <a name="EdgeGatewayBackingConfig"/>
+                    <tr class="r1">
+                <td>EdgeGatewayBackingConfig</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
+                <td/>
+                <td/>
+                <td/>
+                <td>
+								The Gateway Backing Config i.e "compact"
+								or "full"
+							</td>
+            </tr>
+                                      <a name="EdgeGatewayIP"/>
+                    <tr class="r0">
+                <td>EdgeGatewayIP</td>
+                <td><a href="../types/IpAddressType.html">IpAddressType</a></td>
+                <td>Yes</td>
+                <td/>
+                <td/>
+                <td/>
+                <td>
+								Gateway IP of this EdgeGateway
+							</td>
+            </tr>
+                              <a name="EdgeGatewayName"/>
+                    <tr class="r1">
+                <td>EdgeGatewayName</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
+                <td/>
+                <td/>
+                <td/>
+                <td>
+								EdgeGateway Name
+							</td>
+            </tr>
+                                      <a name="EdgeGatewayStatus"/>
+                    <tr class="r0">
+                <td>EdgeGatewayStatus</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#string">string</a></td>
+                <td>Yes</td>
+                <td/>
+                <td/>
+                <td/>
+                <td>
+                                The status of this EdgeGateway. {READY, NOT-READY}
+                            </td>
+            </tr>
+                              <a name="HaEnabled"/>
+                    <tr class="r1">
+                <td>HaEnabled</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#boolean">boolean</a></td>
+                <td>Yes</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+                                      <a name="IPAddressUsageList"/>
+                    <tr class="r0">
+                <td>IPAddressUsageList</td>
+                <td><a href="../types/EdgeGatewayIpAddressListType.html">EdgeGatewayIpAddressListType</a></td>
+                <td>Yes</td>
+                <td/>
+                <td/>
+                <td/>
+                <td>
+                                The List of IPs with Usage details, that are in the sub-allocation IP-pool of the EdgeGateway
+                            </td>
+            </tr>
+                              <a name="NumberOfOrgNetworks"/>
+                    <tr class="r1">
+                <td>NumberOfOrgNetworks</td>
+                <td><a href="http://www.w3.org/TR/xmlschema-0/#int">int</a></td>
+                <td>Yes</td>
+                <td/>
+                <td/>
+                <td/>
+                <td>
+								Number of Org VDC Networks connected to
+								the EdgeGateway
+							</td>
+            </tr>
+                                      <a name="PublicIP"/>
+                    <tr class="r0">
+                <td>PublicIP</td>
+                <td><a href="http://www.vmware.com/vcloud/networkservice/ipam/1.0">IpAddressUsageType</a></td>
+                <td>Yes</td>
+                <td/>
+                <td/>
+                <td/>
+                <td>
+                                The Usage count of IPs in the sub-allocation IP-pool of the EdgeGateway
+                            </td>
+            </tr>
+                  </table>
+    </dd>
+    
+    
+    
+</dl>
+
+<br/>
+
+<br/>
+<br/>
+</body>
+</html>

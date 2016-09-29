@@ -1,6 +1,6 @@
 {
     "name": "vCloud Director",
-    "version": "5.6.0",
+    "version": "20.0",
     "archive": "vCloud_Director.tgz",
     "author": {
         "name": "Steve Carlton",
@@ -9,6 +9,10 @@
     "aliases": ["vCD"],
 
     "specific_versions": [
+        {
+            "version": "20.0",
+            "archive": "versions/20.0/vCloud_Director.tgz"
+        },
         {
             "version": "5.6.0",
             "archive": "versions/5.6.0/vCloud_Director.tgz"

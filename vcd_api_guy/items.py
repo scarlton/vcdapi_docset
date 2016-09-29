@@ -8,6 +8,6 @@ class DocsetItem(Item):
     content = Field()
 
 class SupportingFileItem(Item):
-	path = Field()
-	content = Field()
-	toc = Field()
+    path = Field()
+    content = Field()
+    toc = Field()
